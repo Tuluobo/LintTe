@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		AA1DCC14E965CE42CA7E5EF7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4464D594B9180D199220DA /* libPods.a */; };
 		D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90B61BD4C90A000B38D9 /* AppDelegate.swift */; };
-		D24A90B91BD4C90A000B38D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90B81BD4C90A000B38D9 /* ViewController.swift */; };
+		D24A90B91BD4C90A000B38D9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90B81BD4C90A000B38D9 /* MainViewController.swift */; };
 		D24A90BC1BD4C90A000B38D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24A90BA1BD4C90A000B38D9 /* Main.storyboard */; };
 		D24A90BF1BD4C90A000B38D9 /* LintTe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D24A90BD1BD4C90A000B38D9 /* LintTe.xcdatamodeld */; };
 		D24A90C11BD4C90A000B38D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24A90C01BD4C90A000B38D9 /* Assets.xcassets */; };
 		D24A90C41BD4C90A000B38D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24A90C21BD4C90A000B38D9 /* LaunchScreen.storyboard */; };
 		D24A90CF1BD4C90A000B38D9 /* LintTeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90CE1BD4C90A000B38D9 /* LintTeTests.swift */; };
 		D24A90DA1BD4C90A000B38D9 /* LintTeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90D91BD4C90A000B38D9 /* LintTeUITests.swift */; };
+		D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90EE1BD4CB43000B38D9 /* Defines.swift */; settings = {ASSET_TAGS = (); }; };
+		D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */; settings = {ASSET_TAGS = (); }; };
+		D24A90F31BD4CBAF000B38D9 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F21BD4CBAF000B38D9 /* SearchTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D24A90F51BD4CBBB000B38D9 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F41BD4CBBB000B38D9 /* MessageTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D24A90F91BD4CBD4000B38D9 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F81BD4CBD4000B38D9 /* ProfileTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */; settings = {ASSET_TAGS = (); }; };
+		D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */; settings = {ASSET_TAGS = (); }; };
+		D24A91001BD4CF46000B38D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A90FF1BD4CF46000B38D9 /* QuartzCore.framework */; };
+		D24A91021BD4CF4E000B38D9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91011BD4CF4E000B38D9 /* ImageIO.framework */; };
+		D24A91041BD4CF5A000B38D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91031BD4CF5A000B38D9 /* SystemConfiguration.framework */; };
+		D24A91061BD4CF64000B38D9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91051BD4CF64000B38D9 /* Security.framework */; };
+		D24A91081BD4CF6B000B38D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91071BD4CF6B000B38D9 /* Foundation.framework */; };
+		D24A910A1BD4CF72000B38D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */; };
+		D24A910C1BD4CF9E000B38D9 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */; };
+		D24A910E1BD4CFC1000B38D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +56,7 @@
 		6464F7CDA87D45C66D225146 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D24A90B31BD4C90A000B38D9 /* LintTe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LintTe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24A90B61BD4C90A000B38D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D24A90B81BD4C90A000B38D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D24A90B81BD4C90A000B38D9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D24A90BB1BD4C90A000B38D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D24A90BE1BD4C90A000B38D9 /* LintTe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LintTe.xcdatamodel; sourceTree = "<group>"; };
 		D24A90C01BD4C90A000B38D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +68,23 @@
 		D24A90D51BD4C90A000B38D9 /* LintTeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LintTeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24A90D91BD4C90A000B38D9 /* LintTeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintTeUITests.swift; sourceTree = "<group>"; };
 		D24A90DB1BD4C90A000B38D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24A90EE1BD4CB43000B38D9 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoURL.swift; sourceTree = "<group>"; };
+		D24A90F21BD4CBAF000B38D9 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		D24A90F41BD4CBBB000B38D9 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		D24A90F81BD4CBD4000B38D9 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weibo.swift; sourceTree = "<group>"; };
+		D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboUser.swift; sourceTree = "<group>"; };
+		D24A90FE1BD4CDF7000B38D9 /* LintTe-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LintTe-bridging-Header.h"; sourceTree = "<group>"; };
+		D24A90FF1BD4CF46000B38D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D24A91011BD4CF4E000B38D9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D24A91031BD4CF5A000B38D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D24A91051BD4CF64000B38D9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D24A91071BD4CF6B000B38D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		D77A21DE90176B9981A3AF30 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +93,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24A910E1BD4CFC1000B38D9 /* libsqlite3.dylib in Frameworks */,
+				D24A910C1BD4CF9E000B38D9 /* libz.1.dylib in Frameworks */,
+				D24A910A1BD4CF72000B38D9 /* CoreGraphics.framework in Frameworks */,
+				D24A91081BD4CF6B000B38D9 /* Foundation.framework in Frameworks */,
+				D24A91061BD4CF64000B38D9 /* Security.framework in Frameworks */,
+				D24A91041BD4CF5A000B38D9 /* SystemConfiguration.framework in Frameworks */,
+				D24A91021BD4CF4E000B38D9 /* ImageIO.framework in Frameworks */,
+				D24A91001BD4CF46000B38D9 /* QuartzCore.framework in Frameworks */,
 				AA1DCC14E965CE42CA7E5EF7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +125,14 @@
 		2170E1020AE92C37BBB24599 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */,
+				D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */,
+				D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */,
+				D24A91071BD4CF6B000B38D9 /* Foundation.framework */,
+				D24A91051BD4CF64000B38D9 /* Security.framework */,
+				D24A91031BD4CF5A000B38D9 /* SystemConfiguration.framework */,
+				D24A91011BD4CF4E000B38D9 /* ImageIO.framework */,
+				D24A90FF1BD4CF46000B38D9 /* QuartzCore.framework */,
 				3D4464D594B9180D199220DA /* libPods.a */,
 			);
 			name = Frameworks;
@@ -123,13 +172,15 @@
 		D24A90B51BD4C90A000B38D9 /* LintTe */ = {
 			isa = PBXGroup;
 			children = (
-				D24A90B61BD4C90A000B38D9 /* AppDelegate.swift */,
-				D24A90B81BD4C90A000B38D9 /* ViewController.swift */,
+				D24A90ED1BD4CB32000B38D9 /* Search */,
+				D24A90EC1BD4CB29000B38D9 /* Message */,
+				D24A90EA1BD4CB1D000B38D9 /* Home */,
+				D24A90E91BD4CB07000B38D9 /* Profile */,
+				D24A90E81BD4CB01000B38D9 /* Model */,
 				D24A90BA1BD4C90A000B38D9 /* Main.storyboard */,
 				D24A90C01BD4C90A000B38D9 /* Assets.xcassets */,
-				D24A90C21BD4C90A000B38D9 /* LaunchScreen.storyboard */,
-				D24A90C51BD4C90A000B38D9 /* Info.plist */,
-				D24A90BD1BD4C90A000B38D9 /* LintTe.xcdatamodeld */,
+				D24A90EB1BD4CB21000B38D9 /* Application */,
+				D24A90E71BD4CAF9000B38D9 /* Supporting Files */,
 			);
 			path = LintTe;
 			sourceTree = "<group>";
@@ -150,6 +201,69 @@
 				D24A90DB1BD4C90A000B38D9 /* Info.plist */,
 			);
 			path = LintTeUITests;
+			sourceTree = "<group>";
+		};
+		D24A90E71BD4CAF9000B38D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D24A90EE1BD4CB43000B38D9 /* Defines.swift */,
+				D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */,
+				D24A90C51BD4C90A000B38D9 /* Info.plist */,
+				D24A90C21BD4C90A000B38D9 /* LaunchScreen.storyboard */,
+				D24A90BD1BD4C90A000B38D9 /* LintTe.xcdatamodeld */,
+				D24A90FE1BD4CDF7000B38D9 /* LintTe-bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D24A90E81BD4CB01000B38D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */,
+				D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D24A90E91BD4CB07000B38D9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D24A90F81BD4CBD4000B38D9 /* ProfileTableViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		D24A90EA1BD4CB1D000B38D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		D24A90EB1BD4CB21000B38D9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D24A90B81BD4C90A000B38D9 /* MainViewController.swift */,
+				D24A90B61BD4C90A000B38D9 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		D24A90EC1BD4CB29000B38D9 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D24A90F41BD4CBBB000B38D9 /* MessageTableViewController.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		D24A90ED1BD4CB32000B38D9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D24A90F21BD4CBAF000B38D9 /* SearchTableViewController.swift */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,9 +450,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24A90B91BD4C90A000B38D9 /* ViewController.swift in Sources */,
+				D24A90F91BD4CBD4000B38D9 /* ProfileTableViewController.swift in Sources */,
+				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
+				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
+				D24A90F31BD4CBAF000B38D9 /* SearchTableViewController.swift in Sources */,
+				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
+				D24A90B91BD4C90A000B38D9 /* MainViewController.swift in Sources */,
 				D24A90BF1BD4C90A000B38D9 /* LintTe.xcdatamodeld in Sources */,
+				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
+				D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */,
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
+				D24A90F51BD4CBBB000B38D9 /* MessageTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +607,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LintTe/LintTe-bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -497,6 +620,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LintTe/LintTe-bridging-Header.h";
 			};
 			name = Release;
 		};
