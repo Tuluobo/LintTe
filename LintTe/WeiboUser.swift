@@ -34,7 +34,7 @@ public struct WeiboUser: CustomStringConvertible {
     public var verified: Bool = false       //是否是微博认证用户，即加V用户，true：是，false：否
     public var verified_type: Int = 0       //暂未支持
     public var remark: String?              //用户备注信息，只有在查询用户关系时才返回此字段
-    public var status: AnyObject?           //用户的最近一条微博信息字段 详细
+    //public var status: Weibo?               //用户的最近一条微博信息字段 详细
     public var allow_all_comment: Bool = true//是否允许所有人对我的微博进行评论，true：是，false：否
     public var avatar_large: NSURL?         //用户头像地址（大图），180×180像素
     public var avatar_hd: NSURL?            //用户头像地址（高清），高清头像原图
@@ -59,7 +59,7 @@ public struct WeiboUser: CustomStringConvertible {
         if name != nil && screenName != nil {
             self.name = name!
             self.screen_name = screenName!
-            self.id = Int64((data?.valueForKey("id") as! NSNumber).intValue)
+            self.id = Int64((data?.valueForKey("id") as! NSNumber).longLongValue)
             self.province = Int((data?.valueForKey("province") as? NSNumber ?? 0).integerValue)
             self.city = Int((data?.valueForKey("city") as? NSNumber ?? 0).integerValue)
             self.location = data?.valueForKey("location") as? String
@@ -82,7 +82,7 @@ public struct WeiboUser: CustomStringConvertible {
             self.verified = data?.valueForKey("verified") as? Bool ?? false
             
             self.remark = data?.valueForKey("remark") as? String
-            self.status = Weibo(data: data?.valueForKey("status") as? NSDictionary)
+            //self.status = Weibo(data: (data?.valueForKey("status") as? NSDictionary))
             self.allow_all_comment = data?.valueForKey("allow_all_comment") as? Bool ?? true
             self.avatar_large = NSURL(string: (data?.valueForKey("avatar_large") as? String)!)
             self.avatar_hd = NSURL(string: (data?.valueForKey("avatar_hd") as? String)!)

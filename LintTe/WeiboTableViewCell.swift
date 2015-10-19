@@ -16,7 +16,7 @@ class WeiboTableViewCell: UITableViewCell {
     @IBOutlet weak var createTimeLabel: UILabel!
     @IBOutlet weak var wbTextLabel: UILabel!
     
-    var weibo: Weibo? {
+    var data: Weibo? {
         didSet {
             updateUI()
         }
@@ -28,18 +28,18 @@ class WeiboTableViewCell: UITableViewCell {
         createTimeLabel.text = nil
         wbTextLabel.attributedText = nil
         
-        if let weibo = self.weibo {
+        if let data = self.data {
             
-            screenName.text = "\(weibo.user)"
-            createTimeLabel.text = "\(weibo.created_at):\(weibo.source)"
-            wbTextLabel.text = weibo.text
+            screenName.text = "\(data.user)"
+            createTimeLabel.text = "\(data.created_at):\(data.source)"
+            wbTextLabel.text = data.text
             
-            if let profileImageURL = weibo.user.profile_image_url {
+            if let profileImageURL = data.user.profile_image_url {
                 let qos = Int(QOS_CLASS_USER_INITIATED.rawValue)
                 dispatch_async(dispatch_get_global_queue(qos, 0), { () -> Void in
                     let imageData = NSData(contentsOfURL: profileImageURL)
                     dispatch_sync(dispatch_get_main_queue()){
-                        if profileImageURL == self.weibo?.user.profile_image_url {
+                        if profileImageURL == self.data?.user.profile_image_url {
                             if imageData != nil {
                                 self.profileImageView?.image = UIImage(data: imageData!)
                             }

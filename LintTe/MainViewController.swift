@@ -46,14 +46,13 @@ class MainViewController: UIViewController, WeiboSDKDelegate {
     }
     
     private func getProfile(){
-//        let parameters = ["access_token":accessToken, "uid":userID]
-//        manager.GET(WeiBoURL.weiboUserUrl, parameters: parameters, success: { (operation, response) -> Void in
-//            me = WeiboUser(data: (response as! NSDictionary))
-//            print("\(response)")
-//            self.go()
-//            }) { (operation, error) -> Void in
-//                print("Error[getProfile:]:\(error)")
-//        }
+        let parameters = ["access_token":accessToken, "uid":userID]
+        AFHTTPRequestOperationManager().GET(WeiBoURL.weiboUserUrl, parameters: parameters, success: { (operation, response) -> Void in
+            me = WeiboUser(data: (response as! NSDictionary))
+            self.go()
+            }) { (operation, error) -> Void in
+                print("Error[getProfile:]:\(error)")
+        }
         
         
         

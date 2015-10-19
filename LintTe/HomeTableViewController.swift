@@ -11,10 +11,11 @@ import UIKit
 class HomeTableViewController: UITableViewController {
 
     var weibos = [NSDictionary]()
-    
+    var since_id: Int64 = 0         //则返回ID比since_id大的微博
+    var max_id: Int64 = 0           //返回ID小于或等于max_id的微博，默认为0
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.contentInset = UIEdgeInsetsMake(60.0, 0.0, 0.0, 0.0);
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
         refresh()
@@ -28,14 +29,24 @@ class HomeTableViewController: UITableViewController {
     }
     func refresh(){
         refresh(refreshControl!)
+        print("refresh")
     }
     @IBAction func refresh(sender: UIRefreshControl) {
-        let manager = AFHTTPRequestOperationManager()
-        let parameters = ["access_token": accessToken, "count":100]
-        manager.GET(WeiBoURL.weiboAllUrl, parameters: parameters, success: { (operation, response) -> Void in
-            self.weibos = (response as? NSDictionary)!.valueForKey("statuses") as! [NSDictionary]
-            self.tableView.reloadData()
-            sender.endRefreshing()
+        let parameters  = [
+            "access_token": "\(accessToken)",
+            "since_id": "\(since_id)",
+            "max_id": "\(max_id)",
+            "count": 100,
+        ]
+        
+        AFHTTPRequestOperationManager().GET(WeiBoURL.weiboAllUrl, parameters: parameters, success: { (operation, response) -> Void in
+                let dict = response as! NSDictionary
+                self.weibos = (dict.valueForKey("statuses") as? [NSDictionary])!
+                print(self.weibos.count)
+                self.max_id = Int64((dict.valueForKey("max_id") as? NSNumber ?? 0).longLongValue)
+                self.since_id = Int64((dict.valueForKey("since_id") as? NSNumber ?? 0).longLongValue)
+//                self.tableView.reloadData()
+//                sender.endRefreshing()
             }) { (operation, error) -> Void in
                 print("Error[refresh:]:\(error)")
                 sender.endRefreshing()
@@ -61,9 +72,7 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("weibo", forIndexPath: indexPath) as! WeiboTableViewCell
-
-        cell.weibo = Weibo(data: weibos[indexPath.row])
-
+        cell.data = Weibo(data: weibos[indexPath.row])
         return cell
     }
     

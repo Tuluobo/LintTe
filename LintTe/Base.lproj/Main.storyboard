@@ -111,31 +111,31 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="280" verticalHuggingPriority="251" horizontalCompressionResistancePriority="780" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8h-it-vOb">
-                                            <rect key="frame" x="8" y="58" width="584" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="240" verticalCompressionResistancePriority="700" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8h-it-vOb">
+                                            <rect key="frame" x="8" y="58" width="584" height="105.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" horizontalCompressionResistancePriority="700" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys1-xN-9jM">
-                                            <rect key="frame" x="8" y="177.5" width="189.5" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys1-xN-9jM">
+                                            <rect key="frame" x="8" y="171" width="189.5" height="30"/>
                                             <animations/>
                                             <state key="normal" title="转发"/>
                                             <connections>
                                                 <action selector="forward:" destination="EKK-pn-Fjg" eventType="touchUpInside" id="8Nn-tX-yfJ"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwW-Lp-Bi0">
-                                            <rect key="frame" x="402" y="172" width="189.5" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwW-Lp-Bi0">
+                                            <rect key="frame" x="402" y="171" width="189.5" height="30"/>
                                             <animations/>
                                             <state key="normal" title="赞"/>
                                             <connections>
                                                 <action selector="like:" destination="EKK-pn-Fjg" eventType="touchUpInside" id="MrT-0a-KeU"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mm-n1-4Th">
-                                            <rect key="frame" x="205" y="173" width="189" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mm-n1-4Th">
+                                            <rect key="frame" x="205" y="171" width="189" height="30"/>
                                             <animations/>
                                             <state key="normal" title="评论"/>
                                             <connections>
@@ -161,7 +161,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="f3s-Tm-9yX" secondAttribute="trailing" id="fqc-B9-TPb"/>
                                         <constraint firstItem="ys1-xN-9jM" firstAttribute="width" secondItem="9Mm-n1-4Th" secondAttribute="width" id="mC9-SR-JHC"/>
                                         <constraint firstItem="9Mm-n1-4Th" firstAttribute="width" secondItem="YwW-Lp-Bi0" secondAttribute="width" id="mtx-Qo-q7m"/>
-                                        <constraint firstItem="ys1-xN-9jM" firstAttribute="top" secondItem="e8h-it-vOb" secondAttribute="bottom" id="otf-81-60A"/>
+                                        <constraint firstItem="ys1-xN-9jM" firstAttribute="top" secondItem="e8h-it-vOb" secondAttribute="bottom" constant="8" symbolic="YES" id="otf-81-60A"/>
                                         <constraint firstItem="ys1-xN-9jM" firstAttribute="leading" secondItem="Fzc-KX-piF" secondAttribute="leadingMargin" id="q4f-t9-d3b"/>
                                         <constraint firstItem="ys1-xN-9jM" firstAttribute="baseline" secondItem="9Mm-n1-4Th" secondAttribute="baseline" id="qcw-zI-K11"/>
                                         <constraint firstAttribute="topMargin" secondItem="vuJ-9t-Igb" secondAttribute="top" id="qrE-SZ-H4d"/>
@@ -235,7 +235,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WM-cd-iPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2253" y="651"/>
+            <point key="canvasLocation" x="2253" y="628"/>
         </scene>
         <!--设置-->
         <scene sceneID="GXP-n2-C42">

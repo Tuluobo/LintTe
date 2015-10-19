@@ -238,8 +238,8 @@
 		D24A90EA1BD4CB1D000B38D9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
 				D2DD12A11BD4F18300248C35 /* WeiboTableViewCell.swift */,
+				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
