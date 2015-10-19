@@ -339,7 +339,6 @@
 				TargetAttributes = {
 					D24A90B21BD4C90A000B38D9 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = AK59XPPTYB;
 					};
 					D24A90C91BD4C90A000B38D9 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -607,6 +606,7 @@
 			baseConfigurationReference = 6464F7CDA87D45C66D225146 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (TBRUQED6AS)";
 				INFOPLIST_FILE = LintTe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -621,6 +621,7 @@
 			baseConfigurationReference = D77A21DE90176B9981A3AF30 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (TBRUQED6AS)";
 				INFOPLIST_FILE = LintTe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -721,6 +722,7 @@
 			baseConfigurationReference = D77A21DE90176B9981A3AF30 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (TBRUQED6AS)";
 				INFOPLIST_FILE = LintTe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -797,6 +799,7 @@
 			baseConfigurationReference = D77A21DE90176B9981A3AF30 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (TBRUQED6AS)";
 				INFOPLIST_FILE = LintTe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

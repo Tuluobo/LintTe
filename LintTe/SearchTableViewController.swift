@@ -12,7 +12,6 @@ class SearchTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.contentInset = UIEdgeInsetsMake(60.0, 0.0, 0.0, 0.0);
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -19,10 +19,9 @@ class HomeTableViewController: UITableViewController {
     var max_id: Int64 = 0           //返回ID小于或等于max_id的微博，默认为0
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.contentInset = UIEdgeInsetsMake(60.0, 0.0, 0.0, 0.0);
-        tableView.estimatedRowHeight = tableView.rowHeight
-        tableView.rowHeight = UITableViewAutomaticDimension
-        self.navigationController?.title = "123@"
+        self.tableView.estimatedRowHeight = tableView.rowHeight
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.navigationItem.title = me.name
         refresh()
         
         
