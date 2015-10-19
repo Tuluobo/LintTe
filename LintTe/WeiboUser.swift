@@ -46,7 +46,7 @@ public struct WeiboUser: CustomStringConvertible {
     
     public var description: String {
         let v = verified ? " ✅" : ""
-        return "@\(screen_name) (\(name))\(v)"
+        return "\(screen_name)\(v)"
     }
     
     init?(data: NSDictionary?){

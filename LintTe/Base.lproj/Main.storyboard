@@ -98,14 +98,14 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuJ-9t-Igb">
-                                            <rect key="frame" x="66" y="8" width="526" height="20.5"/>
+                                            <rect key="frame" x="74" y="8" width="518" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3s-Tm-9yX">
-                                            <rect key="frame" x="66" y="36" width="526" height="20.5"/>
+                                            <rect key="frame" x="74" y="36" width="518" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -165,7 +165,7 @@
                                         <constraint firstItem="ys1-xN-9jM" firstAttribute="leading" secondItem="Fzc-KX-piF" secondAttribute="leadingMargin" id="q4f-t9-d3b"/>
                                         <constraint firstItem="ys1-xN-9jM" firstAttribute="baseline" secondItem="9Mm-n1-4Th" secondAttribute="baseline" id="qcw-zI-K11"/>
                                         <constraint firstAttribute="topMargin" secondItem="vuJ-9t-Igb" secondAttribute="top" id="qrE-SZ-H4d"/>
-                                        <constraint firstItem="vuJ-9t-Igb" firstAttribute="leading" secondItem="p2Q-gI-rzE" secondAttribute="trailing" constant="8" id="rPA-vP-K7P"/>
+                                        <constraint firstItem="vuJ-9t-Igb" firstAttribute="leading" secondItem="p2Q-gI-rzE" secondAttribute="trailing" constant="16" id="rPA-vP-K7P"/>
                                         <constraint firstItem="e8h-it-vOb" firstAttribute="top" secondItem="p2Q-gI-rzE" secondAttribute="bottom" id="uop-zY-QOi"/>
                                         <constraint firstItem="e8h-it-vOb" firstAttribute="leading" secondItem="p2Q-gI-rzE" secondAttribute="leading" id="viK-If-ovj"/>
                                         <constraint firstItem="9Mm-n1-4Th" firstAttribute="height" secondItem="YwW-Lp-Bi0" secondAttribute="height" id="w4q-ZZ-LFS"/>
