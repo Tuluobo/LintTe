@@ -10,42 +10,63 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
+    var weibos = [NSDictionary]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
+        refresh()
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    func refresh(){
+        refresh(refreshControl!)
+    }
+    @IBAction func refresh(sender: UIRefreshControl) {
+        let manager = AFHTTPRequestOperationManager()
+        let parameters = ["access_token": accessToken, "count":100]
+        manager.GET(WeiBoURL.weiboAllUrl, parameters: parameters, success: { (operation, response) -> Void in
+            self.weibos = (response as? NSDictionary)!.valueForKey("statuses") as! [NSDictionary]
+            self.tableView.reloadData()
+            sender.endRefreshing()
+            }) { (operation, error) -> Void in
+                print("Error[refresh:]:\(error)")
+                sender.endRefreshing()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return weibos.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("weibo", forIndexPath: indexPath) as! WeiboTableViewCell
 
-        // Configure the cell...
+        cell.weibo = Weibo(data: weibos[indexPath.row])
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -32,6 +32,7 @@
 		D24A910A1BD4CF72000B38D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */; };
 		D24A910C1BD4CF9E000B38D9 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */; };
 		D24A910E1BD4CFC1000B38D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */; };
+		D2DD12A21BD4F18300248C35 /* WeiboTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD12A11BD4F18300248C35 /* WeiboTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		D2DD12A11BD4F18300248C35 /* WeiboTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboTableViewCell.swift; sourceTree = "<group>"; };
 		D77A21DE90176B9981A3AF30 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,14 +174,14 @@
 		D24A90B51BD4C90A000B38D9 /* LintTe */ = {
 			isa = PBXGroup;
 			children = (
-				D24A90ED1BD4CB32000B38D9 /* Search */,
-				D24A90EC1BD4CB29000B38D9 /* Message */,
-				D24A90EA1BD4CB1D000B38D9 /* Home */,
-				D24A90E91BD4CB07000B38D9 /* Profile */,
-				D24A90E81BD4CB01000B38D9 /* Model */,
 				D24A90BA1BD4C90A000B38D9 /* Main.storyboard */,
 				D24A90C01BD4C90A000B38D9 /* Assets.xcassets */,
+				D24A90EA1BD4CB1D000B38D9 /* Home */,
+				D24A90EC1BD4CB29000B38D9 /* Message */,
+				D24A90ED1BD4CB32000B38D9 /* Search */,
+				D24A90E91BD4CB07000B38D9 /* Profile */,
 				D24A90EB1BD4CB21000B38D9 /* Application */,
+				D24A90E81BD4CB01000B38D9 /* Model */,
 				D24A90E71BD4CAF9000B38D9 /* Supporting Files */,
 			);
 			path = LintTe;
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
+				D2DD12A11BD4F18300248C35 /* WeiboTableViewCell.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
 				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
 				D24A90F31BD4CBAF000B38D9 /* SearchTableViewController.swift in Sources */,
+				D2DD12A21BD4F18300248C35 /* WeiboTableViewCell.swift in Sources */,
 				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
 				D24A90B91BD4C90A000B38D9 /* MainViewController.swift in Sources */,
 				D24A90BF1BD4C90A000B38D9 /* LintTe.xcdatamodeld in Sources */,
@@ -604,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LintTe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -617,6 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LintTe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -672,6 +678,158 @@
 			};
 			name = Release;
 		};
+		D2DD12981BD4DB8100248C35 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		D2DD12991BD4DB8100248C35 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77A21DE90176B9981A3AF30 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LintTe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LintTe/LintTe-bridging-Header.h";
+			};
+			name = AppStore;
+		};
+		D2DD129A1BD4DB8100248C35 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LintTeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LintTe.app/LintTe";
+			};
+			name = AppStore;
+		};
+		D2DD129B1BD4DB8100248C35 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LintTeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LintTe;
+				USES_XCTRUNNER = YES;
+			};
+			name = AppStore;
+		};
+		D2DD129C1BD4DB8A00248C35 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		D2DD129D1BD4DB8A00248C35 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77A21DE90176B9981A3AF30 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LintTe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LintTe/LintTe-bridging-Header.h";
+			};
+			name = AdHoc;
+		};
+		D2DD129E1BD4DB8A00248C35 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LintTeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LintTe.app/LintTe";
+			};
+			name = AdHoc;
+		};
+		D2DD129F1BD4DB8A00248C35 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LintTeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LintTe;
+				USES_XCTRUNNER = YES;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -680,6 +838,8 @@
 			buildConfigurations = (
 				D24A90DC1BD4C90A000B38D9 /* Debug */,
 				D24A90DD1BD4C90A000B38D9 /* Release */,
+				D2DD12981BD4DB8100248C35 /* AppStore */,
+				D2DD129C1BD4DB8A00248C35 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -689,6 +849,8 @@
 			buildConfigurations = (
 				D24A90DF1BD4C90A000B38D9 /* Debug */,
 				D24A90E01BD4C90A000B38D9 /* Release */,
+				D2DD12991BD4DB8100248C35 /* AppStore */,
+				D2DD129D1BD4DB8A00248C35 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -698,6 +860,8 @@
 			buildConfigurations = (
 				D24A90E21BD4C90A000B38D9 /* Debug */,
 				D24A90E31BD4C90A000B38D9 /* Release */,
+				D2DD129A1BD4DB8100248C35 /* AppStore */,
+				D2DD129E1BD4DB8A00248C35 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -707,6 +871,8 @@
 			buildConfigurations = (
 				D24A90E51BD4C90A000B38D9 /* Debug */,
 				D24A90E61BD4C90A000B38D9 /* Release */,
+				D2DD129B1BD4DB8100248C35 /* AppStore */,
+				D2DD129F1BD4DB8A00248C35 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

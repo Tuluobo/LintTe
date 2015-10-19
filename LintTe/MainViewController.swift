@@ -10,6 +10,17 @@ import UIKit
 
 class MainViewController: UIViewController, WeiboSDKDelegate {
 
+    @IBAction func register(sender: UIBarButtonItem) {
+        WeiboSDK.messageRegister("微博注册")
+    }
+
+    @IBAction func login(sender: UIButton) {
+        let request = WBAuthorizeRequest()
+        request.redirectURI = Defines.wbRedirectURI
+        request.scope = "all"
+        
+        WeiboSDK.sendRequest(request)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         loginDelegate = self
@@ -35,15 +46,18 @@ class MainViewController: UIViewController, WeiboSDKDelegate {
     }
     
     private func getProfile(){
-        let manager = AFHTTPRequestOperationManager()
-        let parameters = ["access_token":accessToken, "uid":userID]
-        manager.GET(WeiBoURL.weiboUserUrl, parameters: parameters, success: { (operation, response) -> Void in
-            me = WeiboUser(data: (response as! NSDictionary))
-            print("\(response)")
-            self.go()
-            }) { (operation, error) -> Void in
-                print("Error[getProfile:]:\(error)")
-        }
+//        let parameters = ["access_token":accessToken, "uid":userID]
+//        manager.GET(WeiBoURL.weiboUserUrl, parameters: parameters, success: { (operation, response) -> Void in
+//            me = WeiboUser(data: (response as! NSDictionary))
+//            print("\(response)")
+//            self.go()
+//            }) { (operation, error) -> Void in
+//                print("Error[getProfile:]:\(error)")
+//        }
+        
+        
+        
+        
     }
 }
 
