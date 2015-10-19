@@ -16,6 +16,10 @@ class WeiboTableViewCell: UITableViewCell {
     @IBOutlet weak var createTimeLabel: UILabel!
     @IBOutlet weak var wbTextLabel: UILabel!
     
+
+    @IBOutlet weak var forwardBtn: UIButton!
+    @IBOutlet weak var commentBtn: UIButton!
+    @IBOutlet weak var likeBtn: UIButton!
     var data: Weibo? {
         didSet {
             updateUI()
@@ -27,12 +31,23 @@ class WeiboTableViewCell: UITableViewCell {
         screenName.text = nil
         createTimeLabel.text = nil
         wbTextLabel.attributedText = nil
-        
+        forwardBtn.setTitle("转发", forState: UIControlState.Normal)
+        commentBtn.setTitle("评论", forState: UIControlState.Normal)
+        likeBtn.setTitle("赞", forState: UIControlState.Normal)
         if let data = self.data {
             
             screenName.text = "\(data.user)"
             createTimeLabel.text = "\(data.created_at):\(data.source)"
             wbTextLabel.text = data.text
+            if data.reposts_count > 0 {
+                forwardBtn.setTitle("转发\(data.reposts_count)", forState: UIControlState.Normal)
+            }
+            if data.comments_count > 0 {
+                commentBtn.setTitle("评论\(data.comments_count)", forState: UIControlState.Normal)
+            }
+            if data.attitudes_count > 0 {
+                likeBtn.setTitle("赞\(data.attitudes_count)", forState: UIControlState.Normal)
+            }
             
             if let profileImageURL = data.user.profile_image_url {
                 let qos = Int(QOS_CLASS_USER_INITIATED.rawValue)

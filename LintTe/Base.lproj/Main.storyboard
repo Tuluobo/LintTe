@@ -178,8 +178,10 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="comment" destination="9Mm-n1-4Th" id="KQN-vU-adv"/>
+                                    <outlet property="commentBtn" destination="9Mm-n1-4Th" id="rkM-tz-TnX"/>
                                     <outlet property="createTimeLabel" destination="f3s-Tm-9yX" id="1wj-rc-0zk"/>
+                                    <outlet property="forwardBtn" destination="ys1-xN-9jM" id="f0M-4Q-bcH"/>
+                                    <outlet property="likeBtn" destination="YwW-Lp-Bi0" id="K0O-q5-pdF"/>
                                     <outlet property="profileImageView" destination="p2Q-gI-rzE" id="L3j-RR-Ukz"/>
                                     <outlet property="screenName" destination="vuJ-9t-Igb" id="sc3-4K-aTe"/>
                                     <outlet property="wbTextLabel" destination="e8h-it-vOb" id="1TD-dR-S30"/>
@@ -192,7 +194,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="首页" image="House-1" id="F2o-zk-gtT"/>
-                    <navigationItem key="navigationItem" id="N51-iP-YN3"/>
+                    <navigationItem key="navigationItem" id="N51-iP-YN3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6LK-Ng-G4x"/>
+                    </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="kwp-9Z-huq">
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>

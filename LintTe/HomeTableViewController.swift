@@ -18,6 +18,7 @@ class HomeTableViewController: UITableViewController {
         self.tableView.contentInset = UIEdgeInsetsMake(60.0, 0.0, 0.0, 0.0);
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
+        self.title = "123"
         refresh()
         
         
@@ -29,7 +30,6 @@ class HomeTableViewController: UITableViewController {
     }
     func refresh(){
         refresh(refreshControl!)
-        print("refresh")
     }
     @IBAction func refresh(sender: UIRefreshControl) {
         let parameters  = [
@@ -45,8 +45,8 @@ class HomeTableViewController: UITableViewController {
                 print(self.weibos.count)
                 self.max_id = Int64((dict.valueForKey("max_id") as? NSNumber ?? 0).longLongValue)
                 self.since_id = Int64((dict.valueForKey("since_id") as? NSNumber ?? 0).longLongValue)
-//                self.tableView.reloadData()
-//                sender.endRefreshing()
+                self.tableView.reloadData()
+                sender.endRefreshing()
             }) { (operation, error) -> Void in
                 print("Error[refresh:]:\(error)")
                 sender.endRefreshing()

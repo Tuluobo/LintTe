@@ -42,17 +42,12 @@ public class Weibo: CustomStringConvertible {
         self.pic_ids = nil
         if let user = WeiboUser(data: data?.valueForKey("user") as? NSDictionary){
             self.user = user
-            print("\(self.user)")
             if let text = data?.valueForKey("text") as? String {
                 self.text = text
-                print("\(self.text)")
                 if let created_at = data?.valueForKey("created_at") as? String {
                     self.created_at = created_at
-                    print("\(self.created_at)")
                     self.id = Int64((data?.valueForKey("id") as! NSNumber).longLongValue)
-                    print("\(self.id)")
                     self.mid = (data?.valueForKey("mid") as? String)!
-                    print("\(self.mid)")
                     self.thumbnail_pic = NSURL(string: data?.valueForKey("thumbnail_pic") as? String ?? "")
                     self.bmiddle_pic = NSURL(string: data?.valueForKey("thumbnail_pic") as? String ?? "")
                     self.original_pic = NSURL(string: data?.valueForKey("thumbnail_pic") as? String ?? "")
