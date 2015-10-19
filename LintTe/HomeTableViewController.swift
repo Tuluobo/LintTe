@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum Direction {
+    case UP, DOWN
+}
+
 class HomeTableViewController: UITableViewController {
 
     var weibos = [NSDictionary]()
@@ -18,7 +22,7 @@ class HomeTableViewController: UITableViewController {
         self.tableView.contentInset = UIEdgeInsetsMake(60.0, 0.0, 0.0, 0.0);
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
-        self.title = "123"
+        self.navigationController?.title = "123@"
         refresh()
         
         
@@ -32,6 +36,18 @@ class HomeTableViewController: UITableViewController {
         refresh(refreshControl!)
     }
     @IBAction func refresh(sender: UIRefreshControl) {
+        getData(sender, direction: .UP)
+    }
+    
+    func getData(sender: UIRefreshControl, direction: Direction){
+        
+        if direction == .UP {
+            since_id = 0
+            max_id = 0
+        }else {
+            max_id = since_id
+            since_id = 0
+        }
         let parameters  = [
             "access_token": "\(accessToken)",
             "since_id": "\(since_id)",
@@ -40,17 +56,17 @@ class HomeTableViewController: UITableViewController {
         ]
         
         AFHTTPRequestOperationManager().GET(WeiBoURL.weiboAllUrl, parameters: parameters, success: { (operation, response) -> Void in
-                let dict = response as! NSDictionary
-                self.weibos = (dict.valueForKey("statuses") as? [NSDictionary])!
-                print(self.weibos.count)
-                self.max_id = Int64((dict.valueForKey("max_id") as? NSNumber ?? 0).longLongValue)
-                self.since_id = Int64((dict.valueForKey("since_id") as? NSNumber ?? 0).longLongValue)
-                self.tableView.reloadData()
-                sender.endRefreshing()
+            let dict = response as! NSDictionary
+            self.weibos = (dict.valueForKey("statuses") as? [NSDictionary])!
+            self.max_id = Int64((dict.valueForKey("max_id") as? NSNumber ?? 0).longLongValue)
+            self.since_id = Int64((dict.valueForKey("since_id") as? NSNumber ?? 0).longLongValue)
+            self.tableView.reloadData()
+            sender.endRefreshing()
             }) { (operation, error) -> Void in
                 print("Error[refresh:]:\(error)")
                 sender.endRefreshing()
         }
+
     }
     
     override func didReceiveMemoryWarning() {
