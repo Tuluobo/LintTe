@@ -15,6 +15,7 @@ class MyTableViewCell: UITableViewCell {
     @IBOutlet weak var weiboNumLabel: UILabel!
     @IBOutlet weak var followNumLabel: UILabel!
     @IBOutlet weak var fansNumLabel: UILabel!
+    @IBOutlet weak var verifiedLabel: UILabel!
     
     var data: WeiboUser? {
         didSet {
@@ -28,11 +29,17 @@ class MyTableViewCell: UITableViewCell {
         weiboNumLabel.text = "0"
         followNumLabel.text = "0"
         fansNumLabel.text = "0"
+        verifiedLabel.text = nil
         
         if let user = self.data {
             screenNameLabel?.text = "\(user)"
             if screenNameLabel.text == nil {
                 screenNameLabel.text = "\(user.name)"
+            }
+            if !user.verified {
+                verifiedLabel.text = "微博认证：\(user.verified_reason)"
+            }else{
+                verifiedLabel.frame.size.height = 0
             }
             weiboNumLabel.text = "\(user.statuses_count)"
             followNumLabel.text = "\(user.friends_count)"
