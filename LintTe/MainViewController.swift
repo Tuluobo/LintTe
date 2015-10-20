@@ -8,8 +8,17 @@
 
 import UIKit
 
+struct Accounts {
+    static let UserIDKey = "UserID"
+    static let ATKey = "access_token"
+    static let RTKey = "refresh_token"
+    static let ExDate = "expirationDate"
+}
+
 class MainViewController: UIViewController, WeiboSDKDelegate {
 
+    private let defaults = NSUserDefaults.standardUserDefaults()
+    
     @IBAction func register(sender: UIBarButtonItem) {
         WeiboSDK.messageRegister("微博注册")
     }
@@ -23,7 +32,18 @@ class MainViewController: UIViewController, WeiboSDKDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loginDelegate = self
+        
+        if let date = defaults.objectForKey(Accounts.ExDate) as? NSDate {
+            if date.isEqual(date.earlierDate(NSDate())){
+                print("guoqi")
+            }else{
+                userID = defaults.objectForKey(Accounts.UserIDKey) as? String
+                accessToken = defaults.objectForKey(Accounts.ATKey) as? String
+                self.getProfile()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +56,10 @@ class MainViewController: UIViewController, WeiboSDKDelegate {
             let responseData = response as! WBAuthorizeResponse
             userID = responseData.userID
             accessToken = responseData.accessToken
-            refreshToken = responseData.refreshToken
+            self.defaults.setObject(responseData.userID, forKey: Accounts.UserIDKey)
+            self.defaults.setObject(responseData.accessToken, forKey: Accounts.ATKey)
+            self.defaults.setObject(responseData.refreshToken, forKey: Accounts.RTKey)
+            self.defaults.setObject(responseData.expirationDate, forKey: Accounts.ExDate)
             self.getProfile()
         }
     }

@@ -11,16 +11,14 @@ import CoreData
 
 var userID: String!
 var accessToken: String!
-var refreshToken: String!
 
-var loginDelegate: WeiboSDKDelegate!
+weak var loginDelegate: WeiboSDKDelegate!
 var me: WeiboUser!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
