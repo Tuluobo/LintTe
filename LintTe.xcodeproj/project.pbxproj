@@ -32,6 +32,7 @@
 		D24A910A1BD4CF72000B38D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */; };
 		D24A910C1BD4CF9E000B38D9 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */; };
 		D24A910E1BD4CFC1000B38D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */; };
+		D2680D6E1BD61BFB00B54B36 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2680D6D1BD61BFB00B54B36 /* MyTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D2DD12A21BD4F18300248C35 /* WeiboTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD12A11BD4F18300248C35 /* WeiboTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		D2680D6D1BD61BFB00B54B36 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		D2DD12A11BD4F18300248C35 /* WeiboTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboTableViewCell.swift; sourceTree = "<group>"; };
 		D77A21DE90176B9981A3AF30 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +232,7 @@
 		D24A90E91BD4CB07000B38D9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D2680D6D1BD61BFB00B54B36 /* MyTableViewCell.swift */,
 				D24A90F81BD4CBD4000B38D9 /* ProfileTableViewController.swift */,
 			);
 			name = Profile;
@@ -458,6 +461,7 @@
 				D24A90F31BD4CBAF000B38D9 /* SearchTableViewController.swift in Sources */,
 				D2DD12A21BD4F18300248C35 /* WeiboTableViewCell.swift in Sources */,
 				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
+				D2680D6E1BD61BFB00B54B36 /* MyTableViewCell.swift in Sources */,
 				D24A90B91BD4C90A000B38D9 /* MainViewController.swift in Sources */,
 				D24A90BF1BD4C90A000B38D9 /* LintTe.xcdatamodeld in Sources */,
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,

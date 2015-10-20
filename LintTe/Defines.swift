@@ -16,3 +16,10 @@ struct Defines {
     //友盟
     static let umAppKey = "5621015ee0f55a2264002ef4"
 }
+
+struct Accounts {
+    static let UserIDKey = "UserID"
+    static let ATKey = "access_token"
+    static let RTKey = "refresh_token"
+    static let ExDate = "expirationDate"
+}

@@ -11,15 +11,17 @@ import CoreData
 
 var userID: String!
 var accessToken: String!
-
-weak var loginDelegate: WeiboSDKDelegate!
+let defaults = NSUserDefaults.standardUserDefaults()
 var me: WeiboUser!
 
+
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WeiboSDKDelegate {
 
     var window: UIWindow?
-
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //友盟注册
@@ -27,6 +29,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //微博注册
         WeiboSDK.enableDebugMode(true)
         WeiboSDK.registerApp(Defines.wbAppKey)
+        
+        if let date = defaults.objectForKey(Accounts.ExDate) as? NSDate {
+            if date.isEqual(date.earlierDate(NSDate())){
+                let request = WBAuthorizeRequest()
+                request.redirectURI = Defines.wbRedirectURI
+                request.scope = "all"
+                WeiboSDK.sendRequest(request)
+            }else{
+                userID = defaults.objectForKey(Accounts.UserIDKey) as? String
+                accessToken = defaults.objectForKey(Accounts.ATKey) as? String
+                self.presentView()
+            }
+        }
         
         return true
     }
@@ -44,12 +59,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
-        return WeiboSDK.handleOpenURL(url, delegate: loginDelegate)
+        return WeiboSDK.handleOpenURL(url, delegate: self)
     }
     
     func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
-        return WeiboSDK.handleOpenURL(url, delegate: loginDelegate)
+        return WeiboSDK.handleOpenURL(url, delegate: self)
     }
+    
+    
+    func didReceiveWeiboRequest(request: WBBaseRequest!) { }
+    
+    func didReceiveWeiboResponse(response: WBBaseResponse!) {
+        if response.isKindOfClass(WBAuthorizeResponse) {
+            let responseData = response as! WBAuthorizeResponse
+            userID = responseData.userID
+            accessToken = responseData.accessToken
+            defaults.setObject(responseData.userID, forKey: Accounts.UserIDKey)
+            defaults.setObject(responseData.accessToken, forKey: Accounts.ATKey)
+            defaults.setObject(responseData.refreshToken, forKey: Accounts.RTKey)
+            defaults.setObject(responseData.expirationDate, forKey: Accounts.ExDate)
+            self.presentView()
+        }
+    }
+
+    func presentView(){
+        let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let vc = sb.instantiateViewControllerWithIdentifier("weibo")
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+    }
+    
     
     // MARK: - Core Data stack
 
