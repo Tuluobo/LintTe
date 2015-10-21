@@ -20,6 +20,8 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let cellNib = UINib(nibName: StoryBoard.WeiboCell, bundle: nil)
+        self.tableView.registerNib(cellNib, forCellReuseIdentifier: StoryBoard.WeiboCell)
         //cell自适应高度
         self.tableView.estimatedRowHeight = tableView.rowHeight
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -107,12 +109,15 @@ class HomeTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("weibo", forIndexPath: indexPath) as! WeiboTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(StoryBoard.WeiboCell, forIndexPath: indexPath) as! WeiboTableViewCell
         cell.data = Weibo(data: weibos[indexPath.row])
         return cell
     }
     
-
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

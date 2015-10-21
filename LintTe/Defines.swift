@@ -23,3 +23,7 @@ struct Accounts {
     static let RTKey = "refresh_token"
     static let ExDate = "expirationDate"
 }
+
+struct StoryBoard {
+    static let WeiboCell = "WeiboTableViewCell"
+}

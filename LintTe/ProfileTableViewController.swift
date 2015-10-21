@@ -16,6 +16,8 @@ class ProfileTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let cellNib = UINib(nibName: StoryBoard.WeiboCell, bundle: nil)
+        self.tableView.registerNib(cellNib, forCellReuseIdentifier: StoryBoard.WeiboCell)
         //cell自适应高度
         self.tableView.estimatedRowHeight = tableView.rowHeight
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -65,12 +67,12 @@ class ProfileTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.section == 0{
+        if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier("myprofile", forIndexPath: indexPath) as! MyTableViewCell
             cell.data = me
             return cell
         }else{
-            let cell = tableView.dequeueReusableCellWithIdentifier("weibo", forIndexPath: indexPath) as! WeiboTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier(StoryBoard.WeiboCell, forIndexPath: indexPath) as! WeiboTableViewCell
             cell.data = Weibo(data: weibos[indexPath.row])
             return cell
         }

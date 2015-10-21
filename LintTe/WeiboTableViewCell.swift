@@ -2,7 +2,7 @@
 //  WeiboTableViewCell.swift
 //  LintTe
 //
-//  Created by WangHao on 15/10/19.
+//  Created by WangHao on 15/10/20.
 //  Copyright © 2015年 Tuluobo. All rights reserved.
 //
 
@@ -10,35 +10,39 @@ import UIKit
 
 class WeiboTableViewCell: UITableViewCell {
 
-    
-    @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var screenName: UILabel!
-    @IBOutlet weak var createTimeLabel: UILabel!
-    @IBOutlet weak var wbTextLabel: UILabel!
-    
-
-    @IBOutlet weak var forwardBtn: UIButton!
-    @IBOutlet weak var commentBtn: UIButton!
-    @IBOutlet weak var likeBtn: UIButton!
     var data: Weibo? {
         didSet {
             updateUI()
         }
     }
     
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var createTimeLabel: UILabel!
+    @IBOutlet weak var screenNameLabel: UILabel!
+    @IBOutlet weak var wbTextLabel: UILabel!
+    @IBOutlet weak var sTweetLabel: UILabel!
+
+
+    
+    @IBOutlet weak var forwardBtn: UIButton!
+    @IBOutlet weak var commentBtn: UIButton!
+    @IBOutlet weak var likeBtn: UIButton!
+    
     func updateUI(){
         profileImageView.image = nil
-        screenName.text = nil
+        screenNameLabel.text = nil
         createTimeLabel.text = nil
-        wbTextLabel.attributedText = nil
-        forwardBtn.setTitle("转发", forState: UIControlState.Normal)
-        commentBtn.setTitle("评论", forState: UIControlState.Normal)
-        likeBtn.setTitle("赞", forState: UIControlState.Normal)
+        sTweetLabel.text = nil
         if let data = self.data {
-            
-            screenName.text = "\(data.user)"
+            screenNameLabel.text = "\(data.user)"
             createTimeLabel.text = "\(data.created_at):\(data.source)"
-            wbTextLabel.text = data.text
+            wbTextLabel.text = "\(data.text)"
+            if let retweet = data.retweeted_status{
+               sTweetLabel.text = "\(retweet)"
+            }else{
+                sTweetLabel.frame.size.height = 0
+            }
+            
             if data.reposts_count > 0 {
                 forwardBtn.setTitle("转发\(data.reposts_count)", forState: UIControlState.Normal)
             }
@@ -78,14 +82,16 @@ class WeiboTableViewCell: UITableViewCell {
         print("d---z")
     }
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.sTweetLabel.layer.cornerRadius = 4;   //这里才是实现圆形的地方
+        self.sTweetLabel.clipsToBounds = true;    //这里设置超出部分自动剪裁掉
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-    }
 
+        // Configure the view for the selected state
+    }
+    
 }

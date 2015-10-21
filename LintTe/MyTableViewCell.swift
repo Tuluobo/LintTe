@@ -36,7 +36,7 @@ class MyTableViewCell: UITableViewCell {
             if screenNameLabel.text == nil {
                 screenNameLabel.text = "\(user.name)"
             }
-            if !user.verified {
+            if user.verified {
                 verifiedLabel.text = "微博认证：\(user.verified_reason)"
             }else{
                 verifiedLabel.frame.size.height = 0
