@@ -10,7 +10,7 @@
 1.使用了Cocoapods的第三包管理
 
 AFNetworking
-MBProprocessHub
+MBProgressHUD
 Umeng
 WeiboSDK
 
@@ -19,3 +19,5 @@ WeiboSDK
 3.Object-C和Swift混合编程
 
 2015-10-18
+
+

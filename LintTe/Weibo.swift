@@ -25,7 +25,7 @@ public class Weibo: CustomStringConvertible {
     public var original_pic: NSURL?                 //原始图片地址，没有时不返回此字段
     public var geo: AnyObject? = nil                //地理信息字段 详细
     public var user: WeiboUser                      //微博作者的用户信息字段 详细
-    public var retweeted_status: AnyObject? = nil   //被转发的原微博信息字段，当该微博为转发微博时返回 详细
+    public var retweeted_status: Weibo? = nil       //被转发的原微博信息字段，当该微博为转发微博时
     public var reposts_count: Int = 0               //转发数
     public var comments_count: Int = 0              //评论数
     public var attitudes_count: Int = 0             //表态数
@@ -34,7 +34,7 @@ public class Weibo: CustomStringConvertible {
     public var pic_ids: AnyObject?                  //微博配图ID。多图时返回多图ID，用来拼接图片url。用返回字段thumbnail_pic的地址配上该返回字段的图片ID，即可得到多个图片url。
     
     public var description: String {
-        return "\(self.text)"
+        return "@\(self.user):\(self.text)"
     }
     
     init?(data: NSDictionary?){
@@ -51,6 +51,9 @@ public class Weibo: CustomStringConvertible {
                     self.thumbnail_pic = NSURL(string: data?.valueForKey("thumbnail_pic") as? String ?? "")
                     self.bmiddle_pic = NSURL(string: data?.valueForKey("thumbnail_pic") as? String ?? "")
                     self.original_pic = NSURL(string: data?.valueForKey("thumbnail_pic") as? String ?? "")
+                    if let retweet = data?.valueForKey("retweeted_status") as? NSDictionary {
+                        self.retweeted_status = Weibo(data: retweet)
+                    }
                     self.reposts_count = Int((data?.valueForKey("reposts_count") as? NSNumber ?? 0).integerValue)
                     self.comments_count = Int((data?.valueForKey("comments_count") as? NSNumber ?? 0).integerValue)
                     self.attitudes_count = Int((data?.valueForKey("attitudes_count") as? NSNumber ?? 0).integerValue)
