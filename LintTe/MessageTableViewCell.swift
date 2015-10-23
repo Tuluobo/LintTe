@@ -1,14 +1,14 @@
 //
-//  CommentTableViewCell.swift
+//  MessageTableViewCell.swift
 //  LintTe
 //
-//  Created by WangHao on 15/10/20.
+//  Created by WangHao on 15/10/21.
 //  Copyright © 2015年 Tuluobo. All rights reserved.
 //
 
 import UIKit
 
-class CommentTableViewCell: UITableViewCell {
+class MessageTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +20,5 @@ class CommentTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

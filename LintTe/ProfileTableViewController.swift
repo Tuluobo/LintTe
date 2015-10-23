@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
+class ProfileTableViewController: UITableViewController, WBHttpRequestDelegate {
 
     var weibos = [NSDictionary]()
     var since_id: Int64 = 0         //则返回ID比since_id大的微博
@@ -29,12 +29,22 @@ class ProfileTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
 
+    @IBAction func exit(sender: UIBarButtonItem) {
+        defaults.removeObjectForKey(Accounts.ExDate)
+        WeiboSDK.logOutWithToken(accessToken, delegate: self, withTag: nil)
+        performSegueWithIdentifier("exit", sender: nil)
+    }
     //网络获取数据
     func refresh(){
         let parameters = [
             "access_token": accessToken,
             "max_id": "\(max_id)"
         ]
+        
+        let mbHUD = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        mbHUD.mode = MBProgressHUDMode.Indeterminate
+        mbHUD.labelText = "正在获取微博"
+        
         AFHTTPRequestOperationManager().GET(WeiBoURL.myWeibolListUrl, parameters: parameters, success: { (operation, response) -> Void in
                 let dict = response as! NSDictionary
                 let datas = (dict.valueForKey("statuses") as? [NSDictionary])!
@@ -42,8 +52,10 @@ class ProfileTableViewController: UITableViewController {
                 self.since_id = Int64((dict.valueForKey("since_id") as? NSNumber ?? 0).longLongValue)
                 self.weibos.appendContentsOf(datas)
                 self.tableView.reloadData()
+                MBProgressHUD.hideHUDForView(self.view, animated: true)
             }) { (operation, error) -> Void in
                 print("Error[refresh:]:\(error)")
+                MBProgressHUD.hideHUDForView(self.view, animated: true)
         }
     }
 

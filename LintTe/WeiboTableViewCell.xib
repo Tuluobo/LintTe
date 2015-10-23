@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeiboTableViewCell" rowHeight="253" id="KGk-i7-Jjw" customClass="WeiboTableViewCell" customModule="LintTe" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WeiboTableViewCell" rowHeight="253" id="KGk-i7-Jjw" customClass="WeiboTableViewCell" customModule="LintTe" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="318" height="253"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -39,17 +39,17 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="200" verticalCompressionResistancePriority="700" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhK-fH-Q3i">
-                        <rect key="frame" x="8" y="66" width="302" height="132"/>
+                        <rect key="frame" x="8" y="66" width="302" height="130.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phl-OY-Rxe">
-                        <rect key="frame" x="8" y="230.5" width="95.5" height="13.5"/>
+                        <rect key="frame" x="8" y="229" width="95.5" height="15"/>
                         <animations/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="phl-OY-Rxe" secondAttribute="height" multiplier="7:1" id="NPj-GN-EBU"/>
+                            <constraint firstAttribute="width" secondItem="phl-OY-Rxe" secondAttribute="height" multiplier="64:10" id="NPj-GN-EBU"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <state key="normal" title="转发"/>
@@ -58,7 +58,7 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPk-67-yvi">
-                        <rect key="frame" x="111" y="230.5" width="95" height="13.5"/>
+                        <rect key="frame" x="111" y="229" width="95" height="15"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <state key="normal" title="评论"/>
@@ -67,7 +67,7 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtW-fJ-31J">
-                        <rect key="frame" x="214" y="230.5" width="95.5" height="13.5"/>
+                        <rect key="frame" x="214" y="229" width="95.5" height="15"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <state key="normal" title="赞"/>
@@ -76,11 +76,11 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeZ-bI-tOS">
-                        <rect key="frame" x="8" y="202" width="302" height="20.5"/>
+                        <rect key="frame" x="8" y="200.5" width="302" height="20.5"/>
                         <animations/>
                         <color key="backgroundColor" white="0.82822986580000002" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>

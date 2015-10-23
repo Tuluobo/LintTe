@@ -37,6 +37,10 @@ class WeiboTableViewCell: UITableViewCell {
             screenNameLabel.text = "\(data.user)"
             createTimeLabel.text = "\(data.created_at):\(data.source)"
             wbTextLabel.text = "\(data.text)"
+            
+            
+            
+            
             if let retweet = data.retweeted_status{
                sTweetLabel.text = "\(retweet)"
             }else{

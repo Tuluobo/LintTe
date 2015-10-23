@@ -32,10 +32,9 @@
 		D24A910A1BD4CF72000B38D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */; };
 		D24A910C1BD4CF9E000B38D9 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */; };
 		D24A910E1BD4CFC1000B38D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */; };
-		D25A56461BD6785C00A84A76 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25A56441BD6785C00A84A76 /* CommentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		D25A56471BD6785C00A84A76 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25A56451BD6785C00A84A76 /* CommentTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		D25A564A1BD67C0100A84A76 /* WeiboTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25A56481BD67C0100A84A76 /* WeiboTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D25A564B1BD67C0100A84A76 /* WeiboTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25A56491BD67C0100A84A76 /* WeiboTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		D2656ABA1BD778A00049D81A /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2656AB91BD778A00049D81A /* MessageTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D2680D6E1BD61BFB00B54B36 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2680D6D1BD61BFB00B54B36 /* MyTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D2C443551BD6452B009348F7 /* d_aini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C442041BD6452B009348F7 /* d_aini@2x.png */; settings = {ASSET_TAGS = (); }; };
 		D2C443561BD6452B009348F7 /* d_aini@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C442051BD6452B009348F7 /* d_aini@3x.png */; settings = {ASSET_TAGS = (); }; };
@@ -425,10 +424,9 @@
 		D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
-		D25A56441BD6785C00A84A76 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
-		D25A56451BD6785C00A84A76 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		D25A56481BD67C0100A84A76 /* WeiboTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboTableViewCell.swift; sourceTree = "<group>"; };
 		D25A56491BD67C0100A84A76 /* WeiboTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboTableViewCell.xib; sourceTree = "<group>"; };
+		D2656AB91BD778A00049D81A /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		D2680D6D1BD61BFB00B54B36 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		D2C442041BD6452B009348F7 /* d_aini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aini@2x.png"; sourceTree = "<group>"; };
 		D2C442051BD6452B009348F7 /* d_aini@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aini@3x.png"; sourceTree = "<group>"; };
@@ -938,8 +936,7 @@
 			isa = PBXGroup;
 			children = (
 				D24A90F41BD4CBBB000B38D9 /* MessageTableViewController.swift */,
-				D25A56441BD6785C00A84A76 /* CommentTableViewCell.swift */,
-				D25A56451BD6785C00A84A76 /* CommentTableViewCell.xib */,
+				D2656AB91BD778A00049D81A /* MessageTableViewCell.swift */,
 			);
 			name = Message;
 			sourceTree = "<group>";
@@ -1505,7 +1502,6 @@
 				D2C444121BD6452B009348F7 /* o_weiguan@3x.png in Resources */,
 				D2C443AA1BD6452B009348F7 /* d_shiwang@2x.png in Resources */,
 				D2C444541BD6452B009348F7 /* lxh_jiujie.gif in Resources */,
-				D25A56471BD6785C00A84A76 /* CommentTableViewCell.xib in Resources */,
 				D2C443ED1BD6452B009348F7 /* h_haha@2x.png in Resources */,
 				D2C444191BD6452B009348F7 /* w_fuyun@2x.png in Resources */,
 				D2C4437B1BD6452B009348F7 /* d_han@2x.png in Resources */,
@@ -1845,11 +1841,11 @@
 				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
 				D2680D6E1BD61BFB00B54B36 /* MyTableViewCell.swift in Sources */,
 				D25A564A1BD67C0100A84A76 /* WeiboTableViewCell.swift in Sources */,
+				D2656ABA1BD778A00049D81A /* MessageTableViewCell.swift in Sources */,
 				D24A90B91BD4C90A000B38D9 /* MainViewController.swift in Sources */,
 				D24A90BF1BD4C90A000B38D9 /* LintTe.xcdatamodeld in Sources */,
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
 				D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */,
-				D25A56461BD6785C00A84A76 /* CommentTableViewCell.swift in Sources */,
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
 				D24A90F51BD4CBBB000B38D9 /* MessageTableViewController.swift in Sources */,
 			);

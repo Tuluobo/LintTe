@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO_64x64" translatesAutoresizingMaskIntoConstraints="NO" id="7ot-Vy-S6b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LOGO_64x64" translatesAutoresizingMaskIntoConstraints="NO" id="7ot-Vy-S6b">
                                 <rect key="frame" x="256" y="155" width="87" height="87"/>
                                 <animations/>
                                 <constraints>
@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="425" y="1083"/>
+            <point key="canvasLocation" x="795" y="2266"/>
         </scene>
         <!--Home Table View Controller-->
         <scene sceneID="Brd-ZD-UfT">
@@ -78,6 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VQb-vc-Q4Z">
                                 <rect key="frame" x="0.0" y="92" width="600" height="69"/>
@@ -353,7 +354,16 @@
                             <outlet property="delegate" destination="5yF-xF-hhj" id="cLC-bt-xYu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="我" id="XJ1-eD-WH6"/>
+                    <navigationItem key="navigationItem" title="我" id="XJ1-eD-WH6">
+                        <barButtonItem key="rightBarButtonItem" title="退出" id="beF-v0-Lq1">
+                            <connections>
+                                <action selector="exit:" destination="5yF-xF-hhj" id="cyn-xk-mWR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="exit" id="1w8-MZ-0eN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnN-y9-eW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -520,4 +530,7 @@
         <image name="Mail-1" width="30" height="23"/>
         <image name="Settings-2" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1w8-MZ-0eN"/>
+    </inferredMetricsTieBreakers>
 </document>
