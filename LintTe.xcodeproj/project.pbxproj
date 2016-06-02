@@ -367,6 +367,12 @@
 		D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */; };
 		D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F81CFFE411001FC290 /* NullTableViewController.swift */; };
 		D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */; };
+		D2C860FD1D001FE5001FC290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C860FC1D001FE5001FC290 /* Main.storyboard */; };
+		D2C860FF1D002178001FC290 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C860FE1D002178001FC290 /* Home.storyboard */; };
+		D2C861011D002189001FC290 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861001D002189001FC290 /* Message.storyboard */; };
+		D2C861031D002198001FC290 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861021D002198001FC290 /* Null.storyboard */; };
+		D2C861051D0021A4001FC290 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861041D0021A4001FC290 /* Discover.storyboard */; };
+		D2C861071D0021B6001FC290 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861061D0021B6001FC290 /* Profile.storyboard */; };
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -767,8 +773,14 @@
 		D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
-		D2C860F81CFFE411001FC290 /* NullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullTableViewController.swift; sourceTree = "<group>"; };
+		D2C860F81CFFE411001FC290 /* NullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NullTableViewController.swift; path = ../Main/NullTableViewController.swift; sourceTree = "<group>"; };
 		D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D2C860FC1D001FE5001FC290 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2C860FE1D002178001FC290 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Main/Home.storyboard; sourceTree = "<group>"; };
+		D2C861001D002189001FC290 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../Main/Message.storyboard; sourceTree = "<group>"; };
+		D2C861021D002198001FC290 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Null.storyboard; path = ../Main/Null.storyboard; sourceTree = "<group>"; };
+		D2C861041D0021A4001FC290 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../Main/Discover.storyboard; sourceTree = "<group>"; };
+		D2C861061D0021B6001FC290 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1280,11 +1292,11 @@
 				D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */,
 				D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */,
 				D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */,
+				D2C860E61CFFB819001FC290 /* Main */,
+				D2C860E51CFFB819001FC290 /* Home */,
+				D2C860E71CFFB819001FC290 /* Message */,
 				D2C860E31CFFB819001FC290 /* Compose */,
 				D2C860E41CFFB819001FC290 /* Discover */,
-				D2C860E51CFFB819001FC290 /* Home */,
-				D2C860E61CFFB819001FC290 /* Main */,
-				D2C860E71CFFB819001FC290 /* Message */,
 				D2C860E81CFFB819001FC290 /* Profile */,
 				D2C860E91CFFB819001FC290 /* Tools */,
 			);
@@ -1294,6 +1306,8 @@
 		D2C860E31CFFB819001FC290 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
+				D2C860F81CFFE411001FC290 /* NullTableViewController.swift */,
+				D2C861021D002198001FC290 /* Null.storyboard */,
 			);
 			path = Compose;
 			sourceTree = "<group>";
@@ -1301,6 +1315,7 @@
 		D2C860E41CFFB819001FC290 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				D2C861041D0021A4001FC290 /* Discover.storyboard */,
 				D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */,
 			);
 			path = Discover;
@@ -1309,6 +1324,7 @@
 		D2C860E51CFFB819001FC290 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D2C860FE1D002178001FC290 /* Home.storyboard */,
 				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
 			);
 			path = Home;
@@ -1317,8 +1333,8 @@
 		D2C860E61CFFB819001FC290 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				D2C860F81CFFE411001FC290 /* NullTableViewController.swift */,
 				D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */,
+				D2C860FC1D001FE5001FC290 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1326,6 +1342,7 @@
 		D2C860E71CFFB819001FC290 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				D2C861001D002189001FC290 /* Message.storyboard */,
 				D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */,
 			);
 			path = Message;
@@ -1334,6 +1351,7 @@
 		D2C860E81CFFB819001FC290 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D2C861061D0021B6001FC290 /* Profile.storyboard */,
 				D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */,
 			);
 			path = Profile;
@@ -1468,6 +1486,7 @@
 				D2C4438D1BD6452B009348F7 /* d_kun@2x.png in Resources */,
 				D2C4439D1BD6452B009348F7 /* d_numa@3x.png in Resources */,
 				D2C4446F1BD6452B009348F7 /* lxh_pili.png in Resources */,
+				D2C860FD1D001FE5001FC290 /* Main.storyboard in Resources */,
 				D2C444501BD6452B009348F7 /* lxh_holdzhu@2x.png in Resources */,
 				D2C444931BD6452B009348F7 /* lxh_xuyuan.png in Resources */,
 				D2C4438E1BD6452B009348F7 /* d_kun@3x.png in Resources */,
@@ -1500,6 +1519,7 @@
 				D2C4447C1BD6452B009348F7 /* lxh_quntiweiguan@2x.png in Resources */,
 				D2C443D51BD6452B009348F7 /* d_zuiyou@3x.png in Resources */,
 				D2C443D21BD6452B009348F7 /* d_zhutou@2x.png in Resources */,
+				D2C861031D002198001FC290 /* Null.storyboard in Resources */,
 				D2C4449B1BD6452B009348F7 /* lxh_zaokuangzheng.gif in Resources */,
 				D2C443A71BD6452B009348F7 /* d_shengbing@3x.png in Resources */,
 				D2C443631BD6452B009348F7 /* d_chijing@2x.png in Resources */,
@@ -1532,6 +1552,7 @@
 				D2C443941BD6452B009348F7 /* d_lei@3x.png in Resources */,
 				D2C443C81BD6452B009348F7 /* d_yinxian@3x.png in Resources */,
 				D2C4449E1BD6452B009348F7 /* lxh_zhenjing.gif in Resources */,
+				D2C860FF1D002178001FC290 /* Home.storyboard in Resources */,
 				D2C444961BD6452B009348F7 /* lxh_youyali.png in Resources */,
 				D2C444171BD6452B009348F7 /* o_zhong@2x.png in Resources */,
 				D2C443751BD6452B009348F7 /* d_guzhang@2x.png in Resources */,
@@ -1541,6 +1562,7 @@
 				D2C443AA1BD6452B009348F7 /* d_shiwang@2x.png in Resources */,
 				D2C444541BD6452B009348F7 /* lxh_jiujie.gif in Resources */,
 				D2C443ED1BD6452B009348F7 /* h_haha@2x.png in Resources */,
+				D2C861011D002189001FC290 /* Message.storyboard in Resources */,
 				D2C444191BD6452B009348F7 /* w_fuyun@2x.png in Resources */,
 				D2C4437B1BD6452B009348F7 /* d_han@2x.png in Resources */,
 				D2C4446C1BD6452B009348F7 /* lxh_oye@2x.png in Resources */,
@@ -1654,6 +1676,7 @@
 				D2C444791BD6452B009348F7 /* lxh_qiuguanzhu@2x.png in Resources */,
 				D2C4438F1BD6452B009348F7 /* d_landelini@2x.png in Resources */,
 				D2C443821BD6452B009348F7 /* d_heng@3x.png in Resources */,
+				D2C861051D0021A4001FC290 /* Discover.storyboard in Resources */,
 				D2C443FF1BD6452B009348F7 /* l_xin@2x.png in Resources */,
 				D2C443BD1BD6452B009348F7 /* d_weiqu@2x.png in Resources */,
 				D2C444861BD6452B009348F7 /* lxh_xianghumobai.gif in Resources */,
@@ -1713,6 +1736,7 @@
 				D2C443EA1BD6452B009348F7 /* h_buyao@3x.png in Resources */,
 				D2C443671BD6452B009348F7 /* d_dahaqi@2x.png in Resources */,
 				D2C4435A1BD6452B009348F7 /* d_baibai@3x.png in Resources */,
+				D2C861071D0021B6001FC290 /* Profile.storyboard in Resources */,
 				D2C443581BD6452B009348F7 /* d_aoteman@3x.png in Resources */,
 				D2C443DD1BD6452B009348F7 /* f_jiong@2x.png in Resources */,
 				D2C443B21BD6452B009348F7 /* d_taikaixin@2x.png in Resources */,
@@ -2039,7 +2063,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2078,7 +2102,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2093,7 +2117,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LintTe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
@@ -2110,7 +2134,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LintTe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";

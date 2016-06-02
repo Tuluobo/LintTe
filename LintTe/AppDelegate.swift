@@ -16,16 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
-        // 加载主控制器
-        // 1、实例化 window 对象
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.backgroundColor = UIColor.whiteColor()
-        // 2、设置主控制器
-        self.window?.rootViewController = MainViewController()
-        // 3、显示可见
-        self.window?.makeKeyAndVisible()
-        
         return true
     }
 
