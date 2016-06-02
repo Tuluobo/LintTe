@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // 一般设置全局型的属性，最好放在AppDelagate中设置，这样可以保证后续的操作都在设置之后
+        // 设置整体外观颜色
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         
         return true
     }

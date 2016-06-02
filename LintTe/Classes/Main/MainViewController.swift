@@ -19,7 +19,6 @@ class MainViewController: UITabBarController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        
         let size = tabBar.bounds.size
         composeButton.center = CGPoint(x: size.width/2, y: size.height/2)
         // load在中间按钮

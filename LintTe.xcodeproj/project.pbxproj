@@ -373,6 +373,9 @@
 		D2C861031D002198001FC290 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861021D002198001FC290 /* Null.storyboard */; };
 		D2C861051D0021A4001FC290 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861041D0021A4001FC290 /* Discover.storyboard */; };
 		D2C861071D0021B6001FC290 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861061D0021B6001FC290 /* Profile.storyboard */; };
+		D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C861081D002684001FC290 /* BaseTableViewController.swift */; };
+		D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8610A1D00291F001FC290 /* VisitorView.swift */; };
+		D2C8610D1D002935001FC290 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C8610C1D002935001FC290 /* VisitorView.xib */; };
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -781,6 +784,9 @@
 		D2C861021D002198001FC290 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Null.storyboard; path = ../Main/Null.storyboard; sourceTree = "<group>"; };
 		D2C861041D0021A4001FC290 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../Main/Discover.storyboard; sourceTree = "<group>"; };
 		D2C861061D0021B6001FC290 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
+		D2C861081D002684001FC290 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		D2C8610A1D00291F001FC290 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		D2C8610C1D002935001FC290 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1315,8 +1321,8 @@
 		D2C860E41CFFB819001FC290 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				D2C861041D0021A4001FC290 /* Discover.storyboard */,
 				D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */,
+				D2C861041D0021A4001FC290 /* Discover.storyboard */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -1324,8 +1330,8 @@
 		D2C860E51CFFB819001FC290 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D2C860FE1D002178001FC290 /* Home.storyboard */,
 				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
+				D2C860FE1D002178001FC290 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1335,6 +1341,9 @@
 			children = (
 				D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */,
 				D2C860FC1D001FE5001FC290 /* Main.storyboard */,
+				D2C861081D002684001FC290 /* BaseTableViewController.swift */,
+				D2C8610A1D00291F001FC290 /* VisitorView.swift */,
+				D2C8610C1D002935001FC290 /* VisitorView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1342,8 +1351,8 @@
 		D2C860E71CFFB819001FC290 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				D2C861001D002189001FC290 /* Message.storyboard */,
 				D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */,
+				D2C861001D002189001FC290 /* Message.storyboard */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -1351,8 +1360,8 @@
 		D2C860E81CFFB819001FC290 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				D2C861061D0021B6001FC290 /* Profile.storyboard */,
 				D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */,
+				D2C861061D0021B6001FC290 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1490,6 +1499,7 @@
 				D2C444501BD6452B009348F7 /* lxh_holdzhu@2x.png in Resources */,
 				D2C444931BD6452B009348F7 /* lxh_xuyuan.png in Resources */,
 				D2C4438E1BD6452B009348F7 /* d_kun@3x.png in Resources */,
+				D2C8610D1D002935001FC290 /* VisitorView.xib in Resources */,
 				D2C4437C1BD6452B009348F7 /* d_han@3x.png in Resources */,
 				D2C443691BD6452B009348F7 /* d_dalian@2x.png in Resources */,
 				D2C443981BD6452B009348F7 /* d_nanhaier@2x.png in Resources */,
@@ -1971,6 +1981,7 @@
 			files = (
 				D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */,
 				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
+				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
 				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
 				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
@@ -1979,6 +1990,7 @@
 				D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */,
 				D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */,
 				D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */,
+				D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */,
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
 				D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */,
 			);
