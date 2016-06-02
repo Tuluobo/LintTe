@@ -1,0 +1,6 @@
+framework module Pods_LintTeTests {
+  umbrella header "Pods-LintTeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

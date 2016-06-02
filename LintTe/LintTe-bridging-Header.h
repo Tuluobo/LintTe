@@ -10,10 +10,4 @@
 #define LintTe_bridging_Header_h
 
 
-#import "AFNetworking.h"
-#import "WeiboSDK.h"
-#import "MobClick.h"
-#import "MBProgressHUD.h"
-
-
 #endif /* LintTe_bridging_Header_h */

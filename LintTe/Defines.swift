@@ -8,6 +8,14 @@
 
 import Foundation
 
+// 自定义Log
+func TTLog<T>(message: T, fileName: String = #file, function: String = #function, lineNumber: Int = #line) {
+    #if DEBUG
+    let filename = (fileName as NSString).pathComponents.last
+    print("\(filename!)\(function)[\(lineNumber)]: \(message)")
+    #endif
+}
+
 struct Defines {
     //微博
     static let wbAppKey = "4163659967"
@@ -27,3 +35,5 @@ struct Accounts {
 struct StoryBoard {
     static let WeiboCell = "WeiboTableViewCell"
 }
+
+
