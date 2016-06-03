@@ -376,6 +376,10 @@
 		D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C861081D002684001FC290 /* BaseTableViewController.swift */; };
 		D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8610A1D00291F001FC290 /* VisitorView.swift */; };
 		D2C8610D1D002935001FC290 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C8610C1D002935001FC290 /* VisitorView.xib */; };
+		D2D0562E1D016B6200A68656 /* TitileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0562D1D016B6200A68656 /* TitileButton.swift */; };
+		D2D056311D017C7500A68656 /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D056301D017C7500A68656 /* Popover.storyboard */; };
+		D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056321D0181AF00A68656 /* TTPresentationController.swift */; };
+		D2D056351D018AE300A68656 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056341D018AE300A68656 /* PopoverViewController.swift */; };
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -787,6 +791,10 @@
 		D2C861081D002684001FC290 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		D2C8610A1D00291F001FC290 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		D2C8610C1D002935001FC290 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		D2D0562D1D016B6200A68656 /* TitileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitileButton.swift; sourceTree = "<group>"; };
+		D2D056301D017C7500A68656 /* Popover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
+		D2D056321D0181AF00A68656 /* TTPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationController.swift; sourceTree = "<group>"; };
+		D2D056341D018AE300A68656 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1330,6 +1338,7 @@
 		D2C860E51CFFB819001FC290 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D2D0562F1D017C3500A68656 /* Popover */,
 				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
 				D2C860FE1D002178001FC290 /* Home.storyboard */,
 			);
@@ -1370,8 +1379,19 @@
 			isa = PBXGroup;
 			children = (
 				D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */,
+				D2D0562D1D016B6200A68656 /* TitileButton.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		D2D0562F1D017C3500A68656 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				D2D056321D0181AF00A68656 /* TTPresentationController.swift */,
+				D2D056341D018AE300A68656 /* PopoverViewController.swift */,
+				D2D056301D017C7500A68656 /* Popover.storyboard */,
+			);
+			name = Popover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1561,6 +1581,7 @@
 				D2C443781BD6452B009348F7 /* d_haha@3x.png in Resources */,
 				D2C443941BD6452B009348F7 /* d_lei@3x.png in Resources */,
 				D2C443C81BD6452B009348F7 /* d_yinxian@3x.png in Resources */,
+				D2D056311D017C7500A68656 /* Popover.storyboard in Resources */,
 				D2C4449E1BD6452B009348F7 /* lxh_zhenjing.gif in Resources */,
 				D2C860FF1D002178001FC290 /* Home.storyboard in Resources */,
 				D2C444961BD6452B009348F7 /* lxh_youyali.png in Resources */,
@@ -1980,6 +2001,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */,
+				D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */,
 				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
 				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
 				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
@@ -1987,12 +2009,14 @@
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
 				D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */,
 				D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */,
+				D2D056351D018AE300A68656 /* PopoverViewController.swift in Sources */,
 				D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */,
 				D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */,
 				D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */,
 				D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */,
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
 				D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */,
+				D2D0562E1D016B6200A68656 /* TitileButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

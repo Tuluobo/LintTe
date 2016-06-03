@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--首页-->
+        <!--Home Table View Controller-->
         <scene sceneID="6mR-8W-iD6">
             <objects>
                 <tableViewController id="SIw-ZI-7nZ" customClass="HomeTableViewController" customModule="LintTe" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,33 @@
                             <outlet property="delegate" destination="SIw-ZI-7nZ" id="m3o-lC-mHp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="首页" id="C0u-Ur-g9a"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="C0u-Ur-g9a">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="OHo-WW-tab">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3uf-GE-SnX">
+                                <rect key="frame" x="20" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigationbar_friendattention"/>
+                                <state key="highlighted" image="navigationbar_friendattention_highlighted"/>
+                                <connections>
+                                    <action selector="leftBarBtnClick" destination="SIw-ZI-7nZ" eventType="touchUpInside" id="MuB-bx-MYx"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="wHM-4X-nc8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ewy-ZU-pmk">
+                                <rect key="frame" x="550" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="navigationbar_pop"/>
+                                <state key="highlighted" image="navigationbar_pop_highlighted"/>
+                                <connections>
+                                    <action selector="rightBarBtnClick" destination="SIw-ZI-7nZ" eventType="touchUpInside" id="WuX-qb-mhi"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPh-vH-bW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,6 +79,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="navigationbar_friendattention" width="30" height="30"/>
+        <image name="navigationbar_friendattention_highlighted" width="30" height="30"/>
+        <image name="navigationbar_pop" width="30" height="30"/>
+        <image name="navigationbar_pop_highlighted" width="30" height="30"/>
         <image name="tabbar_home" width="30" height="30"/>
         <image name="tabbar_home_highlighted" width="30" height="30"/>
     </resources>
