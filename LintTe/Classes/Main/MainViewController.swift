@@ -12,8 +12,6 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 设置 tabbar 全局 tintColor 颜色
-        tabBar.tintColor = UIColor.orangeColor()
     }
     
     override func viewWillAppear(animated: Bool) {

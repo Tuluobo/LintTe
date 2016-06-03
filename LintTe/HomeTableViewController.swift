@@ -71,7 +71,9 @@ class HomeTableViewController: BaseTableViewController {
         TTLog("")
     }
     @IBAction func rightBarBtnClick() {
-        TTLog("")
+        let sb = UIStoryboard(name: "QRCode", bundle: nil)
+        let vc = sb.instantiateInitialViewController()
+        self.presentViewController(vc!, animated: true, completion: nil)
     }
 
 
