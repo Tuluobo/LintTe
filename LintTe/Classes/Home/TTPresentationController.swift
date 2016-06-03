@@ -9,6 +9,8 @@
 import UIKit
 
 class TTPresentationController: UIPresentationController {
+    
+    var presentFrame: CGRect = CGRectZero
     // 自定义Modal 出来的控制器不会移除所有的控制器
     // containerView 容器视图
     // presentedView() 通过该方法能够拿到弹出的视图
@@ -17,9 +19,8 @@ class TTPresentationController: UIPresentationController {
     // 用于布局转场动画控件
     override func containerViewWillLayoutSubviews() {
         
-        let oldSize = presentedView()?.frame.size ?? CGSizeZero
-        presentedView()?.frame = CGRect(x: oldSize.width/4, y: 54, width: oldSize.width/2, height: oldSize.width*4/5)
-        
+        presentedView()?.frame = presentFrame
+        ///
         coverButton.addTarget(self, action: #selector(coverBtnClick), forControlEvents: .TouchUpInside)
         containerView?.insertSubview(coverButton, atIndex: 0)
     }
@@ -35,6 +36,6 @@ class TTPresentationController: UIPresentationController {
     
     // MARK: - 内部控制方法
     @objc private func coverBtnClick() {
-        TTLog("")
+        presentedViewController.dismissViewControllerAnimated(true, completion: nil)
     }
 }

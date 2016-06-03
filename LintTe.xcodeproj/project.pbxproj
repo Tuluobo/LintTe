@@ -380,6 +380,7 @@
 		D2D056311D017C7500A68656 /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D056301D017C7500A68656 /* Popover.storyboard */; };
 		D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056321D0181AF00A68656 /* TTPresentationController.swift */; };
 		D2D056351D018AE300A68656 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056341D018AE300A68656 /* PopoverViewController.swift */; };
+		D2D056391D01A92300A68656 /* TTPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056381D01A92300A68656 /* TTPresentationManager.swift */; };
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -795,6 +796,7 @@
 		D2D056301D017C7500A68656 /* Popover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
 		D2D056321D0181AF00A68656 /* TTPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationController.swift; sourceTree = "<group>"; };
 		D2D056341D018AE300A68656 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		D2D056381D01A92300A68656 /* TTPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationManager.swift; sourceTree = "<group>"; };
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1387,6 +1389,7 @@
 		D2D0562F1D017C3500A68656 /* Popover */ = {
 			isa = PBXGroup;
 			children = (
+				D2D056381D01A92300A68656 /* TTPresentationManager.swift */,
 				D2D056321D0181AF00A68656 /* TTPresentationController.swift */,
 				D2D056341D018AE300A68656 /* PopoverViewController.swift */,
 				D2D056301D017C7500A68656 /* Popover.storyboard */,
@@ -2007,6 +2010,7 @@
 				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
 				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
+				D2D056391D01A92300A68656 /* TTPresentationManager.swift in Sources */,
 				D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */,
 				D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */,
 				D2D056351D018AE300A68656 /* PopoverViewController.swift in Sources */,

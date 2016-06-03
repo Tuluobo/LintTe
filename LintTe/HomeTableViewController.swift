@@ -8,14 +8,26 @@
 
 import UIKit
 
-enum Direction {
-    case UP, DOWN, START
-}
-
 class HomeTableViewController: BaseTableViewController {
 
     var weibos = [NSDictionary]()
     
+    // MARK: - 懒加载
+    private lazy var animationManager: TTPresentationManager = {
+        let manager = TTPresentationManager()
+        let size = UIScreen.mainScreen().bounds.size
+        manager.presentFrame = CGRectMake(size.width/4, 54, size.width/2, size.height*3/5)
+        return manager
+    }()
+    private lazy var titleBtn: TitileButton = { () -> TitileButton in
+        // 添加 titleView
+        let btn = TitileButton()
+        btn.setTitle("秃萝卜", forState: .Normal)
+        btn.addTarget(self, action: #selector(titleBtnClick(_:)), forControlEvents: .TouchUpInside)
+        return btn
+    }()
+    
+    // MARK: - 系统进程方法
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,29 +35,34 @@ class HomeTableViewController: BaseTableViewController {
             visitorView?.setupVisitorInfo(nil, title: "关注一些人，回这里看看有什么惊喜！")
             return
         }
-        
-        let titleBtn = TitileButton()
-        titleBtn.setTitle("秃萝卜", forState: .Normal)
-        titleBtn.addTarget(self, action: #selector(titleBtnClick(_:)), forControlEvents: .TouchUpInside)
         navigationItem.titleView = titleBtn
         
+        // 注册通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(titleChange), name: TTPresentationManagerDidPresentedController, object: animationManager)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(titleChange), name: TTPresentationManagerDidDismissedController, object: animationManager)
+    }
+    deinit {
+        // 移除通知
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    // MARK: - 响应函数
+    @objc private func titleChange() {
+        titleBtn.selected = !titleBtn.selected
     }
     
     @objc private func titleBtnClick(button: TitileButton) {
-        // 1、修改按钮状态
-        button.selected = !button.selected
-        
         // 2、显示菜单
         // 2.1 创建菜单
         let sb = UIStoryboard(name: "Popover", bundle: nil)
         guard let menuView = sb.instantiateInitialViewController() else {
             return
         }
-        // 自定义转场动画
+        // 2.2自定义转场动画
         // 设置转场代理
-        menuView.transitioningDelegate = self
+        menuView.transitioningDelegate = animationManager
         menuView.modalPresentationStyle = UIModalPresentationStyle.Custom
-        // 2.2 显示菜单
+        // 2.3 显示菜单
         presentViewController(menuView, animated: true, completion: nil)
         
     }
@@ -124,52 +141,4 @@ class HomeTableViewController: BaseTableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
-
-extension HomeTableViewController: UIViewControllerTransitioningDelegate {
-    // 该方法用于返回一个负责转场的动画，修改尺寸等
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
-        return TTPresentationController(presentedViewController: presented, presentingViewController: presenting)
-    }
-    // 负责转场出现的方式
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self
-    }
-    // 负责转场出消失的方式
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self
-    }
-}
-
-extension HomeTableViewController: UIViewControllerAnimatedTransitioning {
-    // 负责系统的展现消失时间
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 999
-    }
-    
-    /**
-     // 专门负责管理Modal如何展现和消失
-     // 注意：只要实现了这个代理方法，那么系统就不会再有默认的动画了，
-     //      从上至下的移动系统不再帮我们添加,所有的动画有我们实现
-     
-     - parameter transitionContext: 所有的动画需要的参数都包含在这个参数中
-     */
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        // 1、获取需要弹出的视图
-        guard let toView = transitionContext.viewForKey(UITransitionContextToViewKey) else { return }
-        let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)
-        
-        // 2、将需要弹出的视图添加到containerView
-        transitionContext.containerView()?.addSubview(toView)
-        // 3、执行动画
-        toView.transform = CGAffineTransformMakeScale(1.0, 0.0)
-        toView.layer.anchorPoint = CGPointMake(0.5, 0)
-        UIView.animateWithDuration(1.0, animations: {
-            toView.transform = CGAffineTransformIdentity
-            }) { ( _ ) in
-            // 自定义转场动画，在执行完毕一定要告诉系统动画执行完毕
-            transitionContext.completeTransition(true)
-        }
-    }
 }
