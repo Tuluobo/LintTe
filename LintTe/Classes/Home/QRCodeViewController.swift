@@ -37,7 +37,7 @@ class QRCodeViewController: UIViewController {
         // 在这里，右上角为原点，主要是将iPhone 左转90度，转为横屏
         let viewFrame = self.view.frame
         let y = ((viewFrame.width - self.height)/2) / viewFrame.width
-        let x = ((viewFrame.height - self.height)/2 - 40) / viewFrame.height
+        let x = ((viewFrame.height - self.height)/2 - 60) / viewFrame.height
         let width = self.height / viewFrame.size.height
         let height = self.height / viewFrame.size.width
         
