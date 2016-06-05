@@ -363,8 +363,8 @@
 		D2C444A31BD6452B009348F7 /* lxh_zhuanfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */; };
 		D2C5058D1D03EAF100ABA297 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C5058C1D03EAF100ABA297 /* Welcome.storyboard */; };
 		D2C5058F1D03EB0600ABA297 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C5058E1D03EB0600ABA297 /* WelcomeViewController.swift */; };
-		D2C505911D03F61500ABA297 /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C505901D03F61500ABA297 /* NewFeatureViewController.swift */; };
 		D2C505931D03F61F00ABA297 /* NewFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C505921D03F61F00ABA297 /* NewFeature.storyboard */; };
+		D2C505971D040E5C00ABA297 /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C505961D040E5C00ABA297 /* NewFeatureViewController.swift */; };
 		D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */; };
 		D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */; };
 		D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */; };
@@ -790,8 +790,8 @@
 		D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lxh_zhuanfa@2x.png"; sourceTree = "<group>"; };
 		D2C5058C1D03EAF100ABA297 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		D2C5058E1D03EB0600ABA297 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		D2C505901D03F61500ABA297 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		D2C505921D03F61F00ABA297 /* NewFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewFeature.storyboard; sourceTree = "<group>"; };
+		D2C505961D040E5C00ABA297 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
@@ -1328,7 +1328,7 @@
 			children = (
 				D2C5058E1D03EB0600ABA297 /* WelcomeViewController.swift */,
 				D2C5058C1D03EAF100ABA297 /* Welcome.storyboard */,
-				D2C505901D03F61500ABA297 /* NewFeatureViewController.swift */,
+				D2C505961D040E5C00ABA297 /* NewFeatureViewController.swift */,
 				D2C505921D03F61F00ABA297 /* NewFeature.storyboard */,
 			);
 			path = NewFeature;
@@ -2069,6 +2069,7 @@
 				D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */,
 				D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */,
 				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
+				D2C505971D040E5C00ABA297 /* NewFeatureViewController.swift in Sources */,
 				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
 				D2F019F51D02F78300DCD16F /* QRCodeCreateViewController.swift in Sources */,
 				D2C5058F1D03EB0600ABA297 /* WelcomeViewController.swift in Sources */,
@@ -2089,7 +2090,6 @@
 				D2D0563E1D01B6DA00A68656 /* QRCodeViewController.swift in Sources */,
 				D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */,
 				D2F019FA1D0306AB00DCD16F /* OAuthViewController.swift in Sources */,
-				D2C505911D03F61500ABA297 /* NewFeatureViewController.swift in Sources */,
 				D2D0562E1D016B6200A68656 /* TitileButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
