@@ -19,10 +19,12 @@ class HomeTableViewController: BaseTableViewController {
         manager.presentFrame = CGRectMake(size.width/4, 54, size.width/2, size.height*3/5)
         return manager
     }()
+    
     private lazy var titleBtn: TitileButton = { () -> TitileButton in
         // 添加 titleView
         let btn = TitileButton()
-        btn.setTitle("秃萝卜", forState: .Normal)
+        let title = UserAccount.userAccount?.screen_name
+        btn.setTitle(title, forState: .Normal)
         btn.addTarget(self, action: #selector(titleBtnClick(_:)), forControlEvents: .TouchUpInside)
         return btn
     }()

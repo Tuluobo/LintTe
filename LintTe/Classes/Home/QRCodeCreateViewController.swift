@@ -15,7 +15,7 @@ class QRCodeCreateViewController: UIViewController {
         super.viewDidLoad()
 
         title = "我的名片"
-        
+        navigationController?.navigationBar.tintColor = UIColor.orangeColor()
         
         createQRCode()
     }

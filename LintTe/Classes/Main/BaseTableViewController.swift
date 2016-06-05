@@ -11,7 +11,7 @@ import UIKit
 class BaseTableViewController: UITableViewController {
 
     // 标记用户是否登录
-    var isLogin = true
+    var isLogin = UserAccount.isLogin()
 
     var visitorView: VisitorView?
     
@@ -41,7 +41,11 @@ class BaseTableViewController: UITableViewController {
     }
     
     @objc private func login() {
-        TTLog("")
+        // 1.创建登录界面
+        let sb = UIStoryboard(name: "OAuth", bundle: nil)
+        let vc = sb.instantiateInitialViewController()!
+        // 2.转到登录界面
+        presentViewController(vc, animated: true, completion: nil)
     }
     
 }

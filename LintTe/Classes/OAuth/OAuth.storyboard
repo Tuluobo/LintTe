@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="k1B-Pf-mBm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--微博登陆-->
+        <scene sceneID="6BJ-jl-tfD">
+            <objects>
+                <viewController id="WiE-SJ-4WB" customClass="OAuthViewController" customModule="LintTe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C4e-DU-cZI"/>
+                        <viewControllerLayoutGuide type="bottom" id="wcf-CR-Jnn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NIz-Bh-L6a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTv-Wf-uXp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WiE-SJ-4WB" id="Dbg-Wc-tat"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dTv-Wf-uXp" firstAttribute="top" secondItem="C4e-DU-cZI" secondAttribute="bottom" id="EU6-11-eWh"/>
+                            <constraint firstItem="dTv-Wf-uXp" firstAttribute="top" secondItem="NIz-Bh-L6a" secondAttribute="topMargin" id="Nh1-yj-atU"/>
+                            <constraint firstItem="dTv-Wf-uXp" firstAttribute="top" secondItem="NIz-Bh-L6a" secondAttribute="top" id="YPj-j9-tjG"/>
+                            <constraint firstItem="dTv-Wf-uXp" firstAttribute="leading" secondItem="NIz-Bh-L6a" secondAttribute="leading" id="bwJ-QS-J30"/>
+                            <constraint firstItem="dTv-Wf-uXp" firstAttribute="top" secondItem="C4e-DU-cZI" secondAttribute="bottom" id="t3e-nX-DqY"/>
+                            <constraint firstItem="dTv-Wf-uXp" firstAttribute="top" secondItem="NIz-Bh-L6a" secondAttribute="topMargin" id="uZf-IN-4SP"/>
+                            <constraint firstAttribute="trailing" secondItem="dTv-Wf-uXp" secondAttribute="trailing" id="vZF-vV-PT3"/>
+                            <constraint firstItem="wcf-CR-Jnn" firstAttribute="top" secondItem="dTv-Wf-uXp" secondAttribute="bottom" id="z8c-Um-EBj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EU6-11-eWh"/>
+                                <exclude reference="Nh1-yj-atU"/>
+                                <exclude reference="YPj-j9-tjG"/>
+                                <exclude reference="t3e-nX-DqY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="微博登陆" id="5Va-8L-rfY">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="daK-ls-FOt">
+                            <connections>
+                                <action selector="cancelBtnClick:" destination="WiE-SJ-4WB" id="j4U-bs-xud"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="注册" id="1wt-GX-P3U"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="oauthWebView" destination="dTv-Wf-uXp" id="bbF-6d-y9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6g9-HH-9BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="389"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PkE-jG-Qra">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k1B-Pf-mBm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mg1-SU-Lqr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.41152287710000002" blue="0.116378047" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WiE-SJ-4WB" kind="relationship" relationship="rootViewController" id="hwW-tG-KDj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYg-vD-IDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="389"/>
+        </scene>
+    </scenes>
+</document>

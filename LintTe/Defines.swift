@@ -32,8 +32,5 @@ struct Accounts {
     static let ExDate = "expirationDate"
 }
 
-struct StoryBoard {
-    static let WeiboCell = "WeiboTableViewCell"
-}
 
 

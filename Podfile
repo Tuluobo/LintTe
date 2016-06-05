@@ -7,7 +7,9 @@ target 'LintTe' do
 
   # Pods for LintTe
   # pod 'QorumLogs'
-
+  pod 'AFNetworking'
+  pod 'SVProgressHUD'
+  pod 'SDWebImage'
 
   target 'LintTeTests' do
     inherit! :search_paths
