@@ -61,7 +61,9 @@ extension NewFeatureViewController: UICollectionViewDataSource {
     }
     
     @objc private func startEnterWB() {
-        TTLog("")
+        let window = UIApplication.sharedApplication().keyWindow
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+        window?.rootViewController = vc
     }
 }
 

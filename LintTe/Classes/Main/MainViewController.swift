@@ -37,7 +37,7 @@ class MainViewController: UITabBarController {
         
         return btn;
     }()
-    
+    // 创建微博点击事件
     @objc private func composeAction() {
         TTLog("test")
     }

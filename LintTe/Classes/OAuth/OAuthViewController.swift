@@ -91,12 +91,17 @@ extension OAuthViewController: UIWebViewDelegate {
             TTLog(account)
             // 2. 获取用户信息
             account.loadUserInfo({ (userAccount, error) in
-                // 3. 归案当授权信息
+                // 3. 归案授权信息
                 if error != nil {
                     TTLog(error)
                     return
                 }
+                // 3.1保存授权信息
                 userAccount!.saveAccount()
+                // 3.2跳转到欢迎界面
+                let window = UIApplication.sharedApplication().keyWindow
+                let vc = UIStoryboard(name: "Welcome", bundle: nil).instantiateInitialViewController()!
+                window?.rootViewController = vc
             })
             
             }) { (_, error) in

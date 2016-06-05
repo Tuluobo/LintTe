@@ -42,8 +42,14 @@ class WelcomeViewController: UIViewController {
         UIView.animateWithDuration(2.0, animations: {
             self.view.layoutIfNeeded()
         }) { (flag) in
-            UIView.animateWithDuration(2.0, animations: {
+            UIView.animateWithDuration(2.0, animations: { 
                 self.welcomeLabelView.alpha = 1.0
+            }, completion: { (flag) in
+                sleep(2)
+                // 跳转到欢迎界面
+                let window = UIApplication.sharedApplication().keyWindow
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+                window?.rootViewController = vc
             })
         }
     }

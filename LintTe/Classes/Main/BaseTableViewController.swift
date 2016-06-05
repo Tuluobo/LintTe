@@ -22,7 +22,9 @@ class BaseTableViewController: UITableViewController {
         // 2. 没有登录，显示登录
         isLogin ? super.loadView() : setupVisitorView()
     }
+    
     // MARK: - 内部控制方法
+    
     private func setupVisitorView() {
 
         self.visitorView = VisitorView.visitorView()
