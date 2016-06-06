@@ -8,12 +8,6 @@
 
 import UIKit
 
-/// 自定义转场展现
-let TTPresentationManagerDidPresentedController = "TTPresentationManagerDidPresentedController"
-/// 自定义转场消失
-let TTPresentationManagerDidDismissedController = "TTPresentationManagerDidDismissedController"
-
-
 class TTPresentationManager: NSObject, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
     
     private var isPresent = false

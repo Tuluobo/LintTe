@@ -61,9 +61,7 @@ extension NewFeatureViewController: UICollectionViewDataSource {
     }
     
     @objc private func startEnterWB() {
-        let window = UIApplication.sharedApplication().keyWindow
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
-        window?.rootViewController = vc
+        NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
     }
 }
 

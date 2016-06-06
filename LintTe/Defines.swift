@@ -8,6 +8,15 @@
 
 import Foundation
 
+/// 通知消息定义的名称
+// 自定义转场展现
+let TTPresentationManagerDidPresentedController = "TTPresentationManagerDidPresentedController"
+// 自定义转场消失
+let TTPresentationManagerDidDismissedController = "TTPresentationManagerDidDismissedController"
+// 根界面跳转
+let TTSwitchRootViewController = "TTSwitchRootViewController"
+
+
 // 自定义Log
 func TTLog<T>(message: T, fileName: String = #file, function: String = #function, lineNumber: Int = #line) {
     #if DEBUG

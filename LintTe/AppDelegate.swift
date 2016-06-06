@@ -22,14 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 设置 tabbar 全局 tintColor 颜色
         UITabBar.appearance().tintColor = UIColor.orangeColor()
         
+        // 注册监听通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(changeRootViewController(_:)), name: TTSwitchRootViewController, object: nil)
         // 显示首界面
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = defaultViewController()
         window?.makeKeyAndVisible()
         
-        // 判断用户登录
-        
         return true
+    }
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 
     func applicationWillResignActive(application: UIApplication) { }
@@ -46,6 +49,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 // MARK: - 版本相关
 extension AppDelegate {
+    
+    // 切换根控制器
+    @objc private func changeRootViewController(notification: NSNotification) {
+        
+        var sbName: String?
+        let objc = notification.object
+        switch objc {
+        case is OAuthViewController:
+            sbName = "Welcome"
+        case is WelcomeViewController, is NewFeatureViewController:
+            sbName = "Main"
+        default:
+            break
+        }
+        if  let name = sbName {
+            let vc = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController()!
+            window?.rootViewController = vc
+        }
+    }
     
     // 返回默认界面
     private func defaultViewController() -> UIViewController {

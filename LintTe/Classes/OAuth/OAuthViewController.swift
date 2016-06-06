@@ -99,9 +99,9 @@ extension OAuthViewController: UIWebViewDelegate {
                 // 3.1保存授权信息
                 userAccount!.saveAccount()
                 // 3.2跳转到欢迎界面
-                let window = UIApplication.sharedApplication().keyWindow
-                let vc = UIStoryboard(name: "Welcome", bundle: nil).instantiateInitialViewController()!
-                window?.rootViewController = vc
+                NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
+                // 4.关闭认证界面
+                self.cancelBtnClick(UIBarButtonItem())
             })
             
             }) { (_, error) in
