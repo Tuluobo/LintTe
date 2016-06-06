@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SVProgressHUD
+
+let StatusCell = "StatusCell"
 
 class HomeTableViewController: BaseTableViewController {
 
-    var weibos = [NSDictionary]()
+    var statuses = [Status]()
     
     // MARK: - 懒加载
     private lazy var animationManager: TTPresentationManager = {
@@ -32,20 +35,45 @@ class HomeTableViewController: BaseTableViewController {
     // MARK: - 系统进程方法
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // 登陆判断
         if !isLogin {
             visitorView?.setupVisitorInfo(nil, title: "关注一些人，回这里看看有什么惊喜！")
             return
         }
+        
+        // 设置titleBtn
         navigationItem.titleView = titleBtn
         
         // 注册通知
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(titleChange), name: TTPresentationManagerDidPresentedController, object: animationManager)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(titleChange), name: TTPresentationManagerDidDismissedController, object: animationManager)
+        
+        // 加载微博数据
+        loadData()
+        
     }
     deinit {
         // 移除通知
         NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    /**
+     加载微博数据
+     */
+    private func loadData() {
+        NetworkManager.shareInstance.loadStatuses { (array, error) in
+            if error != nil {
+                SVProgressHUD.showWithStatus("获取微博数据失败")
+                SVProgressHUD.setDefaultMaskType(.Black)
+                return
+            }
+            
+            for item in array! {
+                self.statuses.append(Status(dict: item))
+            }
+            
+            self.tableView.reloadData()
+        }
     }
     
     // MARK: - 响应函数
@@ -84,58 +112,6 @@ class HomeTableViewController: BaseTableViewController {
         super.didReceiveMemoryWarning()
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return weibos.count
-    }
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-    }
-    
-
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     /*
     // MARK: - Navigation
 
@@ -145,4 +121,26 @@ class HomeTableViewController: BaseTableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
+
+// MARK: - Table view data source and delagate
+extension HomeTableViewController {
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return statuses.count
+    }
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell  = tableView.dequeueReusableCellWithIdentifier(StatusCell, forIndexPath: indexPath) as! TTStatusTableViewCell
+        cell.status = statuses[indexPath.row]
+        return cell
+    }
+
 }

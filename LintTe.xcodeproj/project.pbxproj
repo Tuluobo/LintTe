@@ -16,8 +16,7 @@
 		D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90EE1BD4CB43000B38D9 /* Defines.swift */; };
 		D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */; };
 		D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */; };
-		D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */; };
-		D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */; };
+		D24A90FD1BD4CBF0000B38D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90FC1BD4CBF0000B38D9 /* User.swift */; };
 		D24A91001BD4CF46000B38D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A90FF1BD4CF46000B38D9 /* QuartzCore.framework */; };
 		D24A91021BD4CF4E000B38D9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91011BD4CF4E000B38D9 /* ImageIO.framework */; };
 		D24A91041BD4CF5A000B38D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91031BD4CF5A000B38D9 /* SystemConfiguration.framework */; };
@@ -387,6 +386,8 @@
 		D2D056391D01A92300A68656 /* TTPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056381D01A92300A68656 /* TTPresentationManager.swift */; };
 		D2D0563C1D01B63100A68656 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D0563B1D01B63100A68656 /* QRCode.storyboard */; };
 		D2D0563E1D01B6DA00A68656 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0563D1D01B6DA00A68656 /* QRCodeViewController.swift */; };
+		D2D9A8FF1D0573130071FDE5 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9A8FE1D0573130071FDE5 /* Status.swift */; };
+		D2D9A9011D05878E0071FDE5 /* TTStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9A9001D05878E0071FDE5 /* TTStatusTableViewCell.swift */; };
 		D2F019F51D02F78300DCD16F /* QRCodeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019F41D02F78300DCD16F /* QRCodeCreateViewController.swift */; };
 		D2F019F71D02FAA000DCD16F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019F61D02FAA000DCD16F /* UIImage+Extension.swift */; };
 		D2F019FA1D0306AB00DCD16F /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019F91D0306AB00DCD16F /* OAuthViewController.swift */; };
@@ -443,8 +444,7 @@
 		D24A90EE1BD4CB43000B38D9 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Defines.swift; path = ../../Defines.swift; sourceTree = "<group>"; };
 		D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeiBoURL.swift; path = ../../WeiBoURL.swift; sourceTree = "<group>"; };
 		D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = ../../HomeTableViewController.swift; sourceTree = "<group>"; };
-		D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weibo.swift; path = ../Weibo.swift; sourceTree = "<group>"; };
-		D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeiboUser.swift; path = ../../WeiboUser.swift; sourceTree = "<group>"; };
+		D24A90FC1BD4CBF0000B38D9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../User.swift; sourceTree = "<group>"; };
 		D24A90FF1BD4CF46000B38D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D24A91011BD4CF4E000B38D9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D24A91031BD4CF5A000B38D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -814,6 +814,8 @@
 		D2D056381D01A92300A68656 /* TTPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationManager.swift; sourceTree = "<group>"; };
 		D2D0563B1D01B63100A68656 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		D2D0563D1D01B6DA00A68656 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		D2D9A8FE1D0573130071FDE5 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		D2D9A9001D05878E0071FDE5 /* TTStatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTStatusTableViewCell.swift; sourceTree = "<group>"; };
 		D2F019F41D02F78300DCD16F /* QRCodeCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCreateViewController.swift; sourceTree = "<group>"; };
 		D2F019F61D02FAA000DCD16F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		D2F019F91D0306AB00DCD16F /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
@@ -1337,7 +1339,6 @@
 		D2C860E21CFFB819001FC290 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */,
 				D2C5058B1D03EACE00ABA297 /* NewFeature */,
 				D2F019F81D03063B00DCD16F /* OAuth */,
 				D2C860E61CFFB819001FC290 /* Main */,
@@ -1375,7 +1376,10 @@
 				D2D0563A1D01B61100A68656 /* QRCode */,
 				D2D0562F1D017C3500A68656 /* Popover */,
 				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
+				D2D9A9001D05878E0071FDE5 /* TTStatusTableViewCell.swift */,
 				D2C860FE1D002178001FC290 /* Home.storyboard */,
+				D24A90FC1BD4CBF0000B38D9 /* User.swift */,
+				D2D9A8FE1D0573130071FDE5 /* Status.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1450,7 +1454,6 @@
 				D2F019F91D0306AB00DCD16F /* OAuthViewController.swift */,
 				D2F019FB1D0306B400DCD16F /* OAuth.storyboard */,
 				D2F019FF1D031F1600DCD16F /* UserAccount.swift */,
-				D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -2074,13 +2077,14 @@
 				D2F019F51D02F78300DCD16F /* QRCodeCreateViewController.swift in Sources */,
 				D2C5058F1D03EB0600ABA297 /* WelcomeViewController.swift in Sources */,
 				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
-				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
 				D2F01A001D031F1600DCD16F /* UserAccount.swift in Sources */,
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
 				D2D056391D01A92300A68656 /* TTPresentationManager.swift in Sources */,
 				D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */,
-				D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */,
+				D2D9A8FF1D0573130071FDE5 /* Status.swift in Sources */,
+				D24A90FD1BD4CBF0000B38D9 /* User.swift in Sources */,
 				D2D056351D018AE300A68656 /* PopoverViewController.swift in Sources */,
+				D2D9A9011D05878E0071FDE5 /* TTStatusTableViewCell.swift in Sources */,
 				D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */,
 				D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */,
 				D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */,

@@ -15,17 +15,17 @@ struct WeiBoURL {
     static let weiboAuthorize = "oauth2/authorize"
     static let weiboAccessToken = "oauth2/access_token"
     // 获取当前登录用户及其所关注用户的最新微博
-    static let weiboAllUrl = "2/statuses/home_timeline.json"
+    static let weiboHomeTimeLine = "2/statuses/home_timeline.json"
     // 根据用户ID获取用户信息
-    static let weiboUserUrl = "2/users/show.json"
+    static let weiboUserInfo = "2/users/show.json"
     // 根据微博ID获取单条微博内容
-    static let weiboDetailUrl = "2/statuses/show.json"
+    static let weiboStatusesShow = "2/statuses/show.json"
     // 获取某个用户最新发表的微博列表
-    static let myWeibolListUrl = "2/statuses/user_timeline.json"
+    static let weiboUserTimeLine = "2/statuses/user_timeline.json"
     
     // 对一条微博进行评论
-    static let commentWeiboUrl = "2/comments/create.json"
+    static let weiboCommentCreate = "2/comments/create.json"
     // 转发一条微博
-    static let forwardWeiboUrl = "2/statuses/repost.json"
+    static let weiboRepost = "2/statuses/repost.json"
 
 }
