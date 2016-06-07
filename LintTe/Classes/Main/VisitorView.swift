@@ -21,7 +21,7 @@ class VisitorView: UIView {
     @IBOutlet weak var loginBtn: UIButton!
     
     class func visitorView() -> VisitorView {
-        return NSBundle.mainBundle().loadNibNamed("VisitorView", owner: nil, options: nil).last as! VisitorView
+        return R.nib.visitorView.firstView(owner: nil, options: nil)!
     }
     
     func setupVisitorInfo(imageName: String?, title: String) {

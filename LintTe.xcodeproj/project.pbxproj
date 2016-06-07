@@ -48,6 +48,7 @@
 		D210FA081D0682FA004679A1 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9DF1D0682FA004679A1 /* UIImage+Extension.swift */; };
 		D210FA091D0682FA004679A1 /* WeiBoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9E01D0682FA004679A1 /* WeiBoURL.swift */; };
 		D210FA0A1D0682FA004679A1 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9E21D0682FA004679A1 /* StatusViewModel.swift */; };
+		D210FA0F1D06B02B004679A1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210FA0E1D06B02B004679A1 /* R.generated.swift */; };
 		D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90B61BD4C90A000B38D9 /* AppDelegate.swift */; };
 		D24A90C11BD4C90A000B38D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24A90C01BD4C90A000B38D9 /* Assets.xcassets */; };
 		D24A90C41BD4C90A000B38D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24A90C21BD4C90A000B38D9 /* LaunchScreen.storyboard */; };
@@ -396,24 +397,6 @@
 		D2C444A11BD6452B009348F7 /* lxh_zhuanfa.gif in Resources */ = {isa = PBXBuildFile; fileRef = D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */; };
 		D2C444A21BD6452B009348F7 /* lxh_zhuanfa.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */; };
 		D2C444A31BD6452B009348F7 /* lxh_zhuanfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */; };
-<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
-=======
-		D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */; };
-		D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */; };
-		D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */; };
-		D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */; };
-		D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F81CFFE411001FC290 /* NullTableViewController.swift */; };
-		D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */; };
-		D2C860FD1D001FE5001FC290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C860FC1D001FE5001FC290 /* Main.storyboard */; };
-		D2C860FF1D002178001FC290 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C860FE1D002178001FC290 /* Home.storyboard */; };
-		D2C861011D002189001FC290 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861001D002189001FC290 /* Message.storyboard */; };
-		D2C861031D002198001FC290 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861021D002198001FC290 /* Null.storyboard */; };
-		D2C861051D0021A4001FC290 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861041D0021A4001FC290 /* Discover.storyboard */; };
-		D2C861071D0021B6001FC290 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861061D0021B6001FC290 /* Profile.storyboard */; };
-		D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C861081D002684001FC290 /* BaseTableViewController.swift */; };
-		D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8610A1D00291F001FC290 /* VisitorView.swift */; };
-		D2C8610D1D002935001FC290 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C8610C1D002935001FC290 /* VisitorView.xib */; };
->>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -490,6 +473,7 @@
 		D210F9DF1D0682FA004679A1 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		D210F9E01D0682FA004679A1 /* WeiBoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoURL.swift; sourceTree = "<group>"; };
 		D210F9E21D0682FA004679A1 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		D210FA0E1D06B02B004679A1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		D24A90B31BD4C90A000B38D9 /* LintTe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LintTe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24A90B61BD4C90A000B38D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24A90C01BD4C90A000B38D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -844,24 +828,6 @@
 		D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lxh_zhuanfa.gif; sourceTree = "<group>"; };
 		D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lxh_zhuanfa.png; sourceTree = "<group>"; };
 		D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lxh_zhuanfa@2x.png"; sourceTree = "<group>"; };
-<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
-=======
-		D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
-		D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
-		D2C860F81CFFE411001FC290 /* NullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NullTableViewController.swift; path = ../Main/NullTableViewController.swift; sourceTree = "<group>"; };
-		D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
-		D2C860FC1D001FE5001FC290 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D2C860FE1D002178001FC290 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Main/Home.storyboard; sourceTree = "<group>"; };
-		D2C861001D002189001FC290 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../Main/Message.storyboard; sourceTree = "<group>"; };
-		D2C861021D002198001FC290 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Null.storyboard; path = ../Main/Null.storyboard; sourceTree = "<group>"; };
-		D2C861041D0021A4001FC290 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../Main/Discover.storyboard; sourceTree = "<group>"; };
-		D2C861061D0021B6001FC290 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
-		D2C861081D002684001FC290 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
-		D2C8610A1D00291F001FC290 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
-		D2C8610C1D002935001FC290 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
->>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -957,8 +923,8 @@
 			isa = PBXGroup;
 			children = (
 				D210F9B41D0682FA004679A1 /* HomeTableViewController.swift */,
-				D210F9B51D0682FA004679A1 /* Popover.storyboard */,
 				D210F9B61D0682FA004679A1 /* PopoverViewController.swift */,
+				D210F9B51D0682FA004679A1 /* Popover.storyboard */,
 				D210F9B71D0682FA004679A1 /* QRCode.storyboard */,
 				D210F9B81D0682FA004679A1 /* QRCodeCreateViewController.swift */,
 				D210F9B91D0682FA004679A1 /* QRCodeViewController.swift */,
@@ -973,10 +939,10 @@
 			isa = PBXGroup;
 			children = (
 				D210F9BE1D0682FA004679A1 /* BaseTableViewController.swift */,
+				D210F9C21D0682FA004679A1 /* MainViewController.swift */,
 				D210F9BF1D0682FA004679A1 /* Discover.storyboard */,
 				D210F9C01D0682FA004679A1 /* Home.storyboard */,
 				D210F9C11D0682FA004679A1 /* Main.storyboard */,
-				D210F9C21D0682FA004679A1 /* MainViewController.swift */,
 				D210F9C31D0682FA004679A1 /* Message.storyboard */,
 				D210F9C41D0682FA004679A1 /* Null.storyboard */,
 				D210F9C51D0682FA004679A1 /* NullTableViewController.swift */,
@@ -1008,10 +974,10 @@
 		D210F9CF1D0682FA004679A1 /* NewFeature */ = {
 			isa = PBXGroup;
 			children = (
-				D210F9D01D0682FA004679A1 /* NewFeature.storyboard */,
 				D210F9D11D0682FA004679A1 /* NewFeatureViewController.swift */,
-				D210F9D21D0682FA004679A1 /* Welcome.storyboard */,
+				D210F9D01D0682FA004679A1 /* NewFeature.storyboard */,
 				D210F9D31D0682FA004679A1 /* WelcomeViewController.swift */,
+				D210F9D21D0682FA004679A1 /* Welcome.storyboard */,
 			);
 			path = NewFeature;
 			sourceTree = "<group>";
@@ -1019,8 +985,8 @@
 		D210F9D41D0682FA004679A1 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
-				D210F9D51D0682FA004679A1 /* OAuth.storyboard */,
 				D210F9D61D0682FA004679A1 /* OAuthViewController.swift */,
+				D210F9D51D0682FA004679A1 /* OAuth.storyboard */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -1036,12 +1002,10 @@
 		D210F9D91D0682FA004679A1 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D210FA101D06BBD7004679A1 /* Extension */,
 				D210F9DA1D0682FA004679A1 /* Defines.swift */,
 				D210F9DB1D0682FA004679A1 /* NetworkManager.swift */,
-				D210F9DC1D0682FA004679A1 /* NSDate+Extension.swift */,
 				D210F9DD1D0682FA004679A1 /* TitileButton.swift */,
-				D210F9DE1D0682FA004679A1 /* UIButton+Extension.swift */,
-				D210F9DF1D0682FA004679A1 /* UIImage+Extension.swift */,
 				D210F9E01D0682FA004679A1 /* WeiBoURL.swift */,
 			);
 			path = Tools;
@@ -1053,6 +1017,16 @@
 				D210F9E21D0682FA004679A1 /* StatusViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D210FA101D06BBD7004679A1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9DF1D0682FA004679A1 /* UIImage+Extension.swift */,
+				D210F9DC1D0682FA004679A1 /* NSDate+Extension.swift */,
+				D210F9DE1D0682FA004679A1 /* UIButton+Extension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		D24A90AA1BD4C90A000B38D9 = {
@@ -1110,6 +1084,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C442021BD6452B009348F7 /* Emoticons */,
+				D210FA0E1D06B02B004679A1 /* R.generated.swift */,
 				D24A90C51BD4C90A000B38D9 /* Info.plist */,
 				D24A90C21BD4C90A000B38D9 /* LaunchScreen.storyboard */,
 			);
@@ -1500,74 +1475,6 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
-=======
-		D2C860E31CFFB819001FC290 /* Compose */ = {
-			isa = PBXGroup;
-			children = (
-				D2C860F81CFFE411001FC290 /* NullTableViewController.swift */,
-				D2C861021D002198001FC290 /* Null.storyboard */,
-			);
-			path = Compose;
-			sourceTree = "<group>";
-		};
-		D2C860E41CFFB819001FC290 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-				D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */,
-				D2C861041D0021A4001FC290 /* Discover.storyboard */,
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		D2C860E51CFFB819001FC290 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
-				D2C860FE1D002178001FC290 /* Home.storyboard */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		D2C860E61CFFB819001FC290 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */,
-				D2C860FC1D001FE5001FC290 /* Main.storyboard */,
-				D2C861081D002684001FC290 /* BaseTableViewController.swift */,
-				D2C8610A1D00291F001FC290 /* VisitorView.swift */,
-				D2C8610C1D002935001FC290 /* VisitorView.xib */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		D2C860E71CFFB819001FC290 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */,
-				D2C861001D002189001FC290 /* Message.storyboard */,
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		D2C860E81CFFB819001FC290 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */,
-				D2C861061D0021B6001FC290 /* Profile.storyboard */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		D2C860E91CFFB819001FC290 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
->>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1575,6 +1482,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D24A90DE1BD4C90A000B38D9 /* Build configuration list for PBXNativeTarget "LintTe" */;
 			buildPhases = (
+				D210FA0D1D06AEE5004679A1 /* ShellScript */,
 				30FBBC86908E9EF791D47079 /* 📦 Check Pods Manifest.lock */,
 				D24A90AF1BD4C90A000B38D9 /* Sources */,
 				D24A90B01BD4C90A000B38D9 /* Frameworks */,
@@ -1692,7 +1600,6 @@
 				D2C444501BD6452B009348F7 /* lxh_holdzhu@2x.png in Resources */,
 				D2C444931BD6452B009348F7 /* lxh_xuyuan.png in Resources */,
 				D2C4438E1BD6452B009348F7 /* d_kun@3x.png in Resources */,
-				D2C8610D1D002935001FC290 /* VisitorView.xib in Resources */,
 				D2C4437C1BD6452B009348F7 /* d_han@3x.png in Resources */,
 				D2C443691BD6452B009348F7 /* d_dalian@2x.png in Resources */,
 				D2C443981BD6452B009348F7 /* d_nanhaier@2x.png in Resources */,
@@ -2157,6 +2064,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		D210FA0D1D06AEE5004679A1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT/LintTe\"";
+		};
 		EAC28D56E6E1557D4BC967F0 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2179,7 +2099,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
 				D210FA051D0682FA004679A1 /* NSDate+Extension.swift in Sources */,
 				D210FA041D0682FA004679A1 /* NetworkManager.swift in Sources */,
 				D210FA021D0682FA004679A1 /* ProfileTableViewController.swift in Sources */,
@@ -2197,25 +2116,12 @@
 				D210F9E31D0682FA004679A1 /* DiscoverTableViewController.swift in Sources */,
 				D210FA061D0682FA004679A1 /* TitileButton.swift in Sources */,
 				D210FA071D0682FA004679A1 /* UIButton+Extension.swift in Sources */,
+				D210FA0F1D06B02B004679A1 /* R.generated.swift in Sources */,
 				D210FA031D0682FA004679A1 /* Defines.swift in Sources */,
 				D210F9FD1D0682FA004679A1 /* NewFeatureViewController.swift in Sources */,
 				D210FA091D0682FA004679A1 /* WeiBoURL.swift in Sources */,
 				D210F9F61D0682FA004679A1 /* VisitorView.swift in Sources */,
 				D210F9EB1D0682FA004679A1 /* TTPresentationManager.swift in Sources */,
-=======
-				D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */,
-				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
-				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
-				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
-				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
-				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
-				D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */,
-				D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */,
-				D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */,
-				D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */,
-				D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */,
-				D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */,
->>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
 				D210FA081D0682FA004679A1 /* UIImage+Extension.swift in Sources */,
 				D210F9F91D0682FA004679A1 /* Status.swift in Sources */,

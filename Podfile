@@ -10,6 +10,7 @@ target 'LintTe' do
   pod 'AFNetworking'
   pod 'SVProgressHUD'
   pod 'SDWebImage'
+  pod 'R.swift'
 
   target 'LintTeTests' do
     inherit! :search_paths

@@ -85,8 +85,7 @@ class HomeTableViewController: BaseTableViewController {
     @objc private func titleBtnClick(button: TitileButton) {
         // 2、显示菜单
         // 2.1 创建菜单
-        let sb = UIStoryboard(name: "Popover", bundle: nil)
-        guard let menuView = sb.instantiateInitialViewController() else {
+        guard let menuView = R.storyboard.popover.initialViewController() else {
             return
         }
         // 2.2自定义转场动画
@@ -102,8 +101,7 @@ class HomeTableViewController: BaseTableViewController {
         TTLog("")
     }
     @IBAction func rightBarBtnClick() {
-        let sb = UIStoryboard(name: "QRCode", bundle: nil)
-        let vc = sb.instantiateInitialViewController()
+        let vc = R.storyboard.qRCode.initialViewController()
         self.presentViewController(vc!, animated: true, completion: nil)
     }
 

@@ -45,7 +45,7 @@ class TTStatusTableViewCell: UITableViewCell {
      */
     private func setupUI() {
         // 初始化
-        avatarImageView.image = UIImage(named: "avatar_default")
+        avatarImageView.image = UIImage(resource: R.image.avatar_default)
         verifiedImageView.image = nil
         vipImageView.image = nil
         nickNameLabel.textColor = UIColor.blackColor()

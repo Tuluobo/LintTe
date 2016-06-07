@@ -47,9 +47,6 @@ class WelcomeViewController: UIViewController {
             }, completion: { (flag) in
                 sleep(2)
                 // 跳转到欢迎界面
-//                let window = UIApplication.sharedApplication().keyWindow
-//                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
-//                window?.rootViewController = vc
                 NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
             })
         }
