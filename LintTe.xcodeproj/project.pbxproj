@@ -419,7 +419,12 @@
 		D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056321D0181AF00A68656 /* TTPresentationController.swift */; };
 		D2D056351D018AE300A68656 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056341D018AE300A68656 /* PopoverViewController.swift */; };
 		D2D056391D01A92300A68656 /* TTPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056381D01A92300A68656 /* TTPresentationManager.swift */; };
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
 >>>>>>> 完善导航栏中间title 弹出菜单动画
+=======
+		D2D0563C1D01B63100A68656 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D0563B1D01B63100A68656 /* QRCode.storyboard */; };
+		D2D0563E1D01B6DA00A68656 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0563D1D01B6DA00A68656 /* QRCodeViewController.swift */; };
+>>>>>>> 完善二维码扫描
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -873,7 +878,12 @@
 		D2D056321D0181AF00A68656 /* TTPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationController.swift; sourceTree = "<group>"; };
 		D2D056341D018AE300A68656 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		D2D056381D01A92300A68656 /* TTPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationManager.swift; sourceTree = "<group>"; };
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
 >>>>>>> 完善导航栏中间title 弹出菜单动画
+=======
+		D2D0563B1D01B63100A68656 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		D2D0563D1D01B6DA00A68656 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 完善二维码扫描
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1560,6 +1570,7 @@
 		D2C860E51CFFB819001FC290 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D2D0563A1D01B61100A68656 /* QRCode */,
 				D2D0562F1D017C3500A68656 /* Popover */,
 				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
 				D2C860FE1D002178001FC290 /* Home.storyboard */,
@@ -1617,7 +1628,19 @@
 			name = Popover;
 			sourceTree = "<group>";
 		};
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
 >>>>>>> 完善导航栏中间title 弹出菜单动画
+=======
+		D2D0563A1D01B61100A68656 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				D2D0563D1D01B6DA00A68656 /* QRCodeViewController.swift */,
+				D2D0563B1D01B63100A68656 /* QRCode.storyboard */,
+			);
+			name = QRCode;
+			sourceTree = "<group>";
+		};
+>>>>>>> 完善二维码扫描
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1952,6 +1975,7 @@
 				D2C444621BD6452B009348F7 /* lxh_leifeng@2x.png in Resources */,
 				D2C443B81BD6452B009348F7 /* d_tu@3x.png in Resources */,
 				D2C4449C1BD6452B009348F7 /* lxh_zaokuangzheng.png in Resources */,
+				D2D0563C1D01B63100A68656 /* QRCode.storyboard in Resources */,
 				D2C444241BD6452B009348F7 /* w_xiayu@3x.png in Resources */,
 				D2C443B31BD6452B009348F7 /* d_taikaixin@3x.png in Resources */,
 				D2C443AC1BD6452B009348F7 /* d_shuai@2x.png in Resources */,
@@ -2285,11 +2309,17 @@
 				D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */,
 >>>>>>> 完善导航栏中间title 弹出菜单动画
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
 				D210FA081D0682FA004679A1 /* UIImage+Extension.swift in Sources */,
 				D210F9F91D0682FA004679A1 /* Status.swift in Sources */,
 				D210F9EC1D0682FA004679A1 /* TTStatusTableViewCell.swift in Sources */,
 				D210F9E81D0682FA004679A1 /* QRCodeCreateViewController.swift in Sources */,
 				D210F9FF1D0682FA004679A1 /* WelcomeViewController.swift in Sources */,
+=======
+				D2D0563E1D01B6DA00A68656 /* QRCodeViewController.swift in Sources */,
+				D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */,
+				D2D0562E1D016B6200A68656 /* TitileButton.swift in Sources */,
+>>>>>>> 完善二维码扫描
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

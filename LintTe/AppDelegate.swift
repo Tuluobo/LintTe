@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         // 设置 tabbar 全局 tintColor 颜色
         UITabBar.appearance().tintColor = UIColor.orangeColor()
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
         
         // 注册监听通知
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(changeRootViewController(_:)), name: TTSwitchRootViewController, object: nil)
@@ -29,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = defaultViewController()
         window?.makeKeyAndVisible()
         
+=======
+>>>>>>> 完善二维码扫描
         return true
     }
     deinit {

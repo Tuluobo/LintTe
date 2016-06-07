@@ -14,7 +14,10 @@ class QRCodeViewController: UIViewController {
     var height: CGFloat!
     // 底部工具条
     @IBOutlet weak var customTabbar: UITabBar!
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
     @IBOutlet weak var customLabel: UILabel!
+=======
+>>>>>>> 完善二维码扫描
     // 扫描条图片
     @IBOutlet weak var scanLineImageView: UIImageView!
     // 扫描顶部约束
@@ -22,13 +25,18 @@ class QRCodeViewController: UIViewController {
     // 扫描线高度约束
     @IBOutlet weak var scanLineHeightCons: NSLayoutConstraint!
     // MARK: - 懒加载
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
     /// 输入对象， 竖向为
+=======
+    /// 输入对象
+>>>>>>> 完善二维码扫描
     private lazy var input: AVCaptureDeviceInput? = {
         let capture = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         return try? AVCaptureDeviceInput(device: capture)
     }()
     /// 会话
     private lazy var session: AVCaptureSession = AVCaptureSession()
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
     /// 输出对象
     private lazy var output: AVCaptureMetadataOutput =  {
         let op = AVCaptureMetadataOutput()
@@ -57,11 +65,21 @@ class QRCodeViewController: UIViewController {
         layer.fillColor = UIColor.clearColor().CGColor
         return layer
     }()
+=======
+    /// 输入对象
+    private lazy var output: AVCaptureMetadataOutput =  AVCaptureMetadataOutput()
+    ///  预览图层
+    private lazy var preview: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer()
+>>>>>>> 完善二维码扫描
     
     // MARK: - 生命周期方法
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
         
+=======
+
+>>>>>>> 完善二维码扫描
         // 设置默认选择二维码
         customTabbar.selectedItem = customTabbar.items?.first
         height = scanLineHeightCons.constant
@@ -81,7 +99,11 @@ class QRCodeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
     // MARK: - 内部控制方法
+=======
+    
+>>>>>>> 完善二维码扫描
     private func scanQRCode() {
         // 1.判断输入能否添加到会话中
         if !session.canAddInput(input) { return }
@@ -94,6 +116,7 @@ class QRCodeViewController: UIViewController {
         output.metadataObjectTypes = output.availableMetadataObjectTypes
         // 5.设置监听输出解析的数据
         output.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
         // 6.添加预览图层
         previewLayer.frame = view.frame
         view.layer.insertSublayer(previewLayer, atIndex: 0)
@@ -103,6 +126,20 @@ class QRCodeViewController: UIViewController {
         session.startRunning()
     }
     
+=======
+        // 6.开始扫描
+        session.startRunning()
+    }
+    
+    @IBAction func openGallery() {
+        TTLog("")
+    }
+
+    @IBAction func closeQRcodeViewController() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+>>>>>>> 完善二维码扫描
     private func scanLineViewAnimation() {
         // 设置扫描波约束
         scanLineTopCons.constant = 0 - scanLineHeightCons.constant
@@ -115,6 +152,7 @@ class QRCodeViewController: UIViewController {
         }
         
     }
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
     // MARK: - 按钮操作
     /**
      打开相册
@@ -163,6 +201,10 @@ extension QRCodeViewController: UINavigationControllerDelegate, UIImagePickerCon
     }
 }
 
+=======
+    
+}
+>>>>>>> 完善二维码扫描
 // MARK: - UITabBarDelegate
 extension QRCodeViewController: UITabBarDelegate {
     
@@ -186,6 +228,7 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
      只要扫描到信息都会处理
      */
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
         // 清空 cornerLayer 上的信息
         cornerLayer.path = UIBezierPath().CGPath
         // 处理扫描信息
@@ -242,5 +285,8 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
         // 4. 关闭路径
         path.closePath()
         cornerLayer.path = path.CGPath
+=======
+        metadataObjects.last
+>>>>>>> 完善二维码扫描
     }
 }
