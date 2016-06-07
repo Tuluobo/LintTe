@@ -10,15 +10,19 @@ import UIKit
 
 extension UIButton {
     
-    convenience init(imageName: String, backgroundImageName: String) {
+    convenience init(imageName: String?, backgroundImageName: String?) {
         
         self.init()
         // 2、设置图片
-        self.setImage(UIImage(named: imageName), forState: .Normal)
-        self.setImage(UIImage(named: "\(imageName)_highlighted"), forState: .Highlighted)
+        if let iName = imageName {
+            self.setImage(UIImage(named: iName), forState: .Normal)
+            self.setImage(UIImage(named: "\(iName)_highlighted"), forState: .Highlighted)
+        }
         // 3、设置背景
-        self.setBackgroundImage(UIImage(named: backgroundImageName), forState: .Normal)
-        self.setBackgroundImage(UIImage(named: "\(backgroundImageName)_highlighted"), forState: .Highlighted)
+        if let bIName = backgroundImageName {
+            self.setBackgroundImage(UIImage(named: bIName), forState: .Normal)
+            self.setBackgroundImage(UIImage(named: "\(bIName)_highlighted"), forState: .Highlighted)
+        }
         // 4、设置frame
         self.sizeToFit()
     }

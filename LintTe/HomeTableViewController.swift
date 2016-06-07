@@ -12,7 +12,7 @@ enum Direction {
     case UP, DOWN, START
 }
 
-class HomeTableViewController: UITableViewController {
+class HomeTableViewController: BaseTableViewController {
 
     var weibos = [NSDictionary]()
     var since_id: Int64 = 0         //则返回ID比since_id大的微博
@@ -20,11 +20,11 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cellNib = UINib(nibName: StoryBoard.WeiboCell, bundle: nil)
-        self.tableView.registerNib(cellNib, forCellReuseIdentifier: StoryBoard.WeiboCell)
-        //cell自适应高度
-        self.tableView.estimatedRowHeight = tableView.rowHeight
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        
+        if !isLogin {
+            visitorView?.setupVisitorInfo(nil, title: "关注一些人，回这里看看有什么惊喜！")
+            return
+        }
     }
     
     

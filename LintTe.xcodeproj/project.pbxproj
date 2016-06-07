@@ -8,16 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		CB119BA59E801518DBD1EB93 /* Pods_LintTeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4272B1CD7DAB42EC4F5897A /* Pods_LintTeUITests.framework */; };
+		D210F9E31D0682FA004679A1 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9B21D0682FA004679A1 /* DiscoverTableViewController.swift */; };
+		D210F9E41D0682FA004679A1 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9B41D0682FA004679A1 /* HomeTableViewController.swift */; };
+		D210F9E51D0682FA004679A1 /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9B51D0682FA004679A1 /* Popover.storyboard */; };
+		D210F9E61D0682FA004679A1 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9B61D0682FA004679A1 /* PopoverViewController.swift */; };
+		D210F9E71D0682FA004679A1 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9B71D0682FA004679A1 /* QRCode.storyboard */; };
+		D210F9E81D0682FA004679A1 /* QRCodeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9B81D0682FA004679A1 /* QRCodeCreateViewController.swift */; };
+		D210F9E91D0682FA004679A1 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9B91D0682FA004679A1 /* QRCodeViewController.swift */; };
+		D210F9EA1D0682FA004679A1 /* TTPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9BA1D0682FA004679A1 /* TTPresentationController.swift */; };
+		D210F9EB1D0682FA004679A1 /* TTPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9BB1D0682FA004679A1 /* TTPresentationManager.swift */; };
+		D210F9EC1D0682FA004679A1 /* TTStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9BC1D0682FA004679A1 /* TTStatusTableViewCell.swift */; };
+		D210F9ED1D0682FA004679A1 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9BE1D0682FA004679A1 /* BaseTableViewController.swift */; };
+		D210F9EE1D0682FA004679A1 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9BF1D0682FA004679A1 /* Discover.storyboard */; };
+		D210F9EF1D0682FA004679A1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9C01D0682FA004679A1 /* Home.storyboard */; };
+		D210F9F01D0682FA004679A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9C11D0682FA004679A1 /* Main.storyboard */; };
+		D210F9F11D0682FA004679A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9C21D0682FA004679A1 /* MainViewController.swift */; };
+		D210F9F21D0682FA004679A1 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9C31D0682FA004679A1 /* Message.storyboard */; };
+		D210F9F31D0682FA004679A1 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9C41D0682FA004679A1 /* Null.storyboard */; };
+		D210F9F41D0682FA004679A1 /* NullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9C51D0682FA004679A1 /* NullTableViewController.swift */; };
+		D210F9F51D0682FA004679A1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9C61D0682FA004679A1 /* Profile.storyboard */; };
+		D210F9F61D0682FA004679A1 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9C71D0682FA004679A1 /* VisitorView.swift */; };
+		D210F9F71D0682FA004679A1 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D210F9C81D0682FA004679A1 /* VisitorView.xib */; };
+		D210F9F81D0682FA004679A1 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9CA1D0682FA004679A1 /* MessageTableViewController.swift */; };
+		D210F9F91D0682FA004679A1 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9CC1D0682FA004679A1 /* Status.swift */; };
+		D210F9FA1D0682FA004679A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9CD1D0682FA004679A1 /* User.swift */; };
+		D210F9FB1D0682FA004679A1 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9CE1D0682FA004679A1 /* UserAccount.swift */; };
+		D210F9FC1D0682FA004679A1 /* NewFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9D01D0682FA004679A1 /* NewFeature.storyboard */; };
+		D210F9FD1D0682FA004679A1 /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9D11D0682FA004679A1 /* NewFeatureViewController.swift */; };
+		D210F9FE1D0682FA004679A1 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9D21D0682FA004679A1 /* Welcome.storyboard */; };
+		D210F9FF1D0682FA004679A1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9D31D0682FA004679A1 /* WelcomeViewController.swift */; };
+		D210FA001D0682FA004679A1 /* OAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D210F9D51D0682FA004679A1 /* OAuth.storyboard */; };
+		D210FA011D0682FA004679A1 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9D61D0682FA004679A1 /* OAuthViewController.swift */; };
+		D210FA021D0682FA004679A1 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9D81D0682FA004679A1 /* ProfileTableViewController.swift */; };
+		D210FA031D0682FA004679A1 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9DA1D0682FA004679A1 /* Defines.swift */; };
+		D210FA041D0682FA004679A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9DB1D0682FA004679A1 /* NetworkManager.swift */; };
+		D210FA051D0682FA004679A1 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9DC1D0682FA004679A1 /* NSDate+Extension.swift */; };
+		D210FA061D0682FA004679A1 /* TitileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9DD1D0682FA004679A1 /* TitileButton.swift */; };
+		D210FA071D0682FA004679A1 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9DE1D0682FA004679A1 /* UIButton+Extension.swift */; };
+		D210FA081D0682FA004679A1 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9DF1D0682FA004679A1 /* UIImage+Extension.swift */; };
+		D210FA091D0682FA004679A1 /* WeiBoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9E01D0682FA004679A1 /* WeiBoURL.swift */; };
+		D210FA0A1D0682FA004679A1 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9E21D0682FA004679A1 /* StatusViewModel.swift */; };
 		D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90B61BD4C90A000B38D9 /* AppDelegate.swift */; };
 		D24A90C11BD4C90A000B38D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24A90C01BD4C90A000B38D9 /* Assets.xcassets */; };
 		D24A90C41BD4C90A000B38D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24A90C21BD4C90A000B38D9 /* LaunchScreen.storyboard */; };
 		D24A90CF1BD4C90A000B38D9 /* LintTeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90CE1BD4C90A000B38D9 /* LintTeTests.swift */; };
 		D24A90DA1BD4C90A000B38D9 /* LintTeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90D91BD4C90A000B38D9 /* LintTeUITests.swift */; };
-		D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90EE1BD4CB43000B38D9 /* Defines.swift */; };
-		D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */; };
-		D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */; };
-		D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */; };
-		D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */; };
 		D24A91001BD4CF46000B38D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A90FF1BD4CF46000B38D9 /* QuartzCore.framework */; };
 		D24A91021BD4CF4E000B38D9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91011BD4CF4E000B38D9 /* ImageIO.framework */; };
 		D24A91041BD4CF5A000B38D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91031BD4CF5A000B38D9 /* SystemConfiguration.framework */; };
@@ -361,12 +396,24 @@
 		D2C444A11BD6452B009348F7 /* lxh_zhuanfa.gif in Resources */ = {isa = PBXBuildFile; fileRef = D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */; };
 		D2C444A21BD6452B009348F7 /* lxh_zhuanfa.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */; };
 		D2C444A31BD6452B009348F7 /* lxh_zhuanfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */; };
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
+=======
 		D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */; };
 		D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */; };
 		D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */; };
 		D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */; };
 		D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F81CFFE411001FC290 /* NullTableViewController.swift */; };
 		D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */; };
+		D2C860FD1D001FE5001FC290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C860FC1D001FE5001FC290 /* Main.storyboard */; };
+		D2C860FF1D002178001FC290 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C860FE1D002178001FC290 /* Home.storyboard */; };
+		D2C861011D002189001FC290 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861001D002189001FC290 /* Message.storyboard */; };
+		D2C861031D002198001FC290 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861021D002198001FC290 /* Null.storyboard */; };
+		D2C861051D0021A4001FC290 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861041D0021A4001FC290 /* Discover.storyboard */; };
+		D2C861071D0021B6001FC290 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861061D0021B6001FC290 /* Profile.storyboard */; };
+		D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C861081D002684001FC290 /* BaseTableViewController.swift */; };
+		D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8610A1D00291F001FC290 /* VisitorView.swift */; };
+		D2C8610D1D002935001FC290 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C8610C1D002935001FC290 /* VisitorView.xib */; };
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -403,6 +450,46 @@
 		C4272B1CD7DAB42EC4F5897A /* Pods_LintTeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LintTeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46990007326BC7BCC72D882 /* Pods-LintTeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeUITests/Pods-LintTeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C907F7125586EBB8F82AC0D1 /* Pods-LintTeTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.appstore.xcconfig"; sourceTree = "<group>"; };
+		D210F9B21D0682FA004679A1 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		D210F9B41D0682FA004679A1 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		D210F9B51D0682FA004679A1 /* Popover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
+		D210F9B61D0682FA004679A1 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		D210F9B71D0682FA004679A1 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		D210F9B81D0682FA004679A1 /* QRCodeCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCreateViewController.swift; sourceTree = "<group>"; };
+		D210F9B91D0682FA004679A1 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		D210F9BA1D0682FA004679A1 /* TTPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationController.swift; sourceTree = "<group>"; };
+		D210F9BB1D0682FA004679A1 /* TTPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationManager.swift; sourceTree = "<group>"; };
+		D210F9BC1D0682FA004679A1 /* TTStatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTStatusTableViewCell.swift; sourceTree = "<group>"; };
+		D210F9BE1D0682FA004679A1 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		D210F9BF1D0682FA004679A1 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		D210F9C01D0682FA004679A1 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D210F9C11D0682FA004679A1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D210F9C21D0682FA004679A1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D210F9C31D0682FA004679A1 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		D210F9C41D0682FA004679A1 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
+		D210F9C51D0682FA004679A1 /* NullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullTableViewController.swift; sourceTree = "<group>"; };
+		D210F9C61D0682FA004679A1 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D210F9C71D0682FA004679A1 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		D210F9C81D0682FA004679A1 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		D210F9CA1D0682FA004679A1 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		D210F9CC1D0682FA004679A1 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		D210F9CD1D0682FA004679A1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D210F9CE1D0682FA004679A1 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		D210F9D01D0682FA004679A1 /* NewFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewFeature.storyboard; sourceTree = "<group>"; };
+		D210F9D11D0682FA004679A1 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
+		D210F9D21D0682FA004679A1 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		D210F9D31D0682FA004679A1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D210F9D51D0682FA004679A1 /* OAuth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAuth.storyboard; sourceTree = "<group>"; };
+		D210F9D61D0682FA004679A1 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		D210F9D81D0682FA004679A1 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		D210F9DA1D0682FA004679A1 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		D210F9DB1D0682FA004679A1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D210F9DC1D0682FA004679A1 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		D210F9DD1D0682FA004679A1 /* TitileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitileButton.swift; sourceTree = "<group>"; };
+		D210F9DE1D0682FA004679A1 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D210F9DF1D0682FA004679A1 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D210F9E01D0682FA004679A1 /* WeiBoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoURL.swift; sourceTree = "<group>"; };
+		D210F9E21D0682FA004679A1 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		D24A90B31BD4C90A000B38D9 /* LintTe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LintTe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24A90B61BD4C90A000B38D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24A90C01BD4C90A000B38D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -414,12 +501,6 @@
 		D24A90D51BD4C90A000B38D9 /* LintTeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LintTeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24A90D91BD4C90A000B38D9 /* LintTeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintTeUITests.swift; sourceTree = "<group>"; };
 		D24A90DB1BD4C90A000B38D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D24A90EE1BD4CB43000B38D9 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Defines.swift; path = ../Defines.swift; sourceTree = "<group>"; };
-		D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeiBoURL.swift; path = ../WeiBoURL.swift; sourceTree = "<group>"; };
-		D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = ../../HomeTableViewController.swift; sourceTree = "<group>"; };
-		D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weibo.swift; path = ../Weibo.swift; sourceTree = "<group>"; };
-		D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeiboUser.swift; path = ../WeiboUser.swift; sourceTree = "<group>"; };
-		D24A90FE1BD4CDF7000B38D9 /* LintTe-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LintTe-bridging-Header.h"; sourceTree = "<group>"; };
 		D24A90FF1BD4CF46000B38D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D24A91011BD4CF4E000B38D9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D24A91031BD4CF5A000B38D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -763,12 +844,24 @@
 		D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lxh_zhuanfa.gif; sourceTree = "<group>"; };
 		D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lxh_zhuanfa.png; sourceTree = "<group>"; };
 		D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lxh_zhuanfa@2x.png"; sourceTree = "<group>"; };
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
+=======
 		D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
-		D2C860F81CFFE411001FC290 /* NullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullTableViewController.swift; sourceTree = "<group>"; };
+		D2C860F81CFFE411001FC290 /* NullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NullTableViewController.swift; path = ../Main/NullTableViewController.swift; sourceTree = "<group>"; };
 		D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D2C860FC1D001FE5001FC290 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2C860FE1D002178001FC290 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Main/Home.storyboard; sourceTree = "<group>"; };
+		D2C861001D002189001FC290 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../Main/Message.storyboard; sourceTree = "<group>"; };
+		D2C861021D002198001FC290 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Null.storyboard; path = ../Main/Null.storyboard; sourceTree = "<group>"; };
+		D2C861041D0021A4001FC290 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../Main/Discover.storyboard; sourceTree = "<group>"; };
+		D2C861061D0021B6001FC290 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
+		D2C861081D002684001FC290 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		D2C8610A1D00291F001FC290 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		D2C8610C1D002935001FC290 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -845,6 +938,123 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D210F9B01D0682FA004679A1 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		D210F9B11D0682FA004679A1 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9B21D0682FA004679A1 /* DiscoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		D210F9B31D0682FA004679A1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9B41D0682FA004679A1 /* HomeTableViewController.swift */,
+				D210F9B51D0682FA004679A1 /* Popover.storyboard */,
+				D210F9B61D0682FA004679A1 /* PopoverViewController.swift */,
+				D210F9B71D0682FA004679A1 /* QRCode.storyboard */,
+				D210F9B81D0682FA004679A1 /* QRCodeCreateViewController.swift */,
+				D210F9B91D0682FA004679A1 /* QRCodeViewController.swift */,
+				D210F9BA1D0682FA004679A1 /* TTPresentationController.swift */,
+				D210F9BB1D0682FA004679A1 /* TTPresentationManager.swift */,
+				D210F9BC1D0682FA004679A1 /* TTStatusTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D210F9BD1D0682FA004679A1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9BE1D0682FA004679A1 /* BaseTableViewController.swift */,
+				D210F9BF1D0682FA004679A1 /* Discover.storyboard */,
+				D210F9C01D0682FA004679A1 /* Home.storyboard */,
+				D210F9C11D0682FA004679A1 /* Main.storyboard */,
+				D210F9C21D0682FA004679A1 /* MainViewController.swift */,
+				D210F9C31D0682FA004679A1 /* Message.storyboard */,
+				D210F9C41D0682FA004679A1 /* Null.storyboard */,
+				D210F9C51D0682FA004679A1 /* NullTableViewController.swift */,
+				D210F9C61D0682FA004679A1 /* Profile.storyboard */,
+				D210F9C71D0682FA004679A1 /* VisitorView.swift */,
+				D210F9C81D0682FA004679A1 /* VisitorView.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D210F9C91D0682FA004679A1 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9CA1D0682FA004679A1 /* MessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		D210F9CB1D0682FA004679A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9CC1D0682FA004679A1 /* Status.swift */,
+				D210F9CD1D0682FA004679A1 /* User.swift */,
+				D210F9CE1D0682FA004679A1 /* UserAccount.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D210F9CF1D0682FA004679A1 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9D01D0682FA004679A1 /* NewFeature.storyboard */,
+				D210F9D11D0682FA004679A1 /* NewFeatureViewController.swift */,
+				D210F9D21D0682FA004679A1 /* Welcome.storyboard */,
+				D210F9D31D0682FA004679A1 /* WelcomeViewController.swift */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		D210F9D41D0682FA004679A1 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9D51D0682FA004679A1 /* OAuth.storyboard */,
+				D210F9D61D0682FA004679A1 /* OAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		D210F9D71D0682FA004679A1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9D81D0682FA004679A1 /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D210F9D91D0682FA004679A1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9DA1D0682FA004679A1 /* Defines.swift */,
+				D210F9DB1D0682FA004679A1 /* NetworkManager.swift */,
+				D210F9DC1D0682FA004679A1 /* NSDate+Extension.swift */,
+				D210F9DD1D0682FA004679A1 /* TitileButton.swift */,
+				D210F9DE1D0682FA004679A1 /* UIButton+Extension.swift */,
+				D210F9DF1D0682FA004679A1 /* UIImage+Extension.swift */,
+				D210F9E01D0682FA004679A1 /* WeiBoURL.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D210F9E11D0682FA004679A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D210F9E21D0682FA004679A1 /* StatusViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D24A90AA1BD4C90A000B38D9 = {
 			isa = PBXGroup;
 			children = (
@@ -902,7 +1112,6 @@
 				D2C442021BD6452B009348F7 /* Emoticons */,
 				D24A90C51BD4C90A000B38D9 /* Info.plist */,
 				D24A90C21BD4C90A000B38D9 /* LaunchScreen.storyboard */,
-				D24A90FE1BD4CDF7000B38D9 /* LintTe-bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1276,24 +1485,28 @@
 		D2C860E21CFFB819001FC290 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D24A90EE1BD4CB43000B38D9 /* Defines.swift */,
-				D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */,
-				D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */,
-				D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */,
-				D2C860E31CFFB819001FC290 /* Compose */,
-				D2C860E41CFFB819001FC290 /* Discover */,
-				D2C860E51CFFB819001FC290 /* Home */,
-				D2C860E61CFFB819001FC290 /* Main */,
-				D2C860E71CFFB819001FC290 /* Message */,
-				D2C860E81CFFB819001FC290 /* Profile */,
-				D2C860E91CFFB819001FC290 /* Tools */,
+				D210F9D91D0682FA004679A1 /* Tools */,
+				D210F9CB1D0682FA004679A1 /* Models */,
+				D210F9E11D0682FA004679A1 /* ViewModels */,
+				D210F9D41D0682FA004679A1 /* OAuth */,
+				D210F9BD1D0682FA004679A1 /* Main */,
+				D210F9CF1D0682FA004679A1 /* NewFeature */,
+				D210F9B31D0682FA004679A1 /* Home */,
+				D210F9C91D0682FA004679A1 /* Message */,
+				D210F9B01D0682FA004679A1 /* Compose */,
+				D210F9B11D0682FA004679A1 /* Discover */,
+				D210F9D71D0682FA004679A1 /* Profile */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
+=======
 		D2C860E31CFFB819001FC290 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
+				D2C860F81CFFE411001FC290 /* NullTableViewController.swift */,
+				D2C861021D002198001FC290 /* Null.storyboard */,
 			);
 			path = Compose;
 			sourceTree = "<group>";
@@ -1302,6 +1515,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */,
+				D2C861041D0021A4001FC290 /* Discover.storyboard */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -1310,6 +1524,7 @@
 			isa = PBXGroup;
 			children = (
 				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
+				D2C860FE1D002178001FC290 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1317,8 +1532,11 @@
 		D2C860E61CFFB819001FC290 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				D2C860F81CFFE411001FC290 /* NullTableViewController.swift */,
 				D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */,
+				D2C860FC1D001FE5001FC290 /* Main.storyboard */,
+				D2C861081D002684001FC290 /* BaseTableViewController.swift */,
+				D2C8610A1D00291F001FC290 /* VisitorView.swift */,
+				D2C8610C1D002935001FC290 /* VisitorView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1327,6 +1545,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */,
+				D2C861001D002189001FC290 /* Message.storyboard */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -1335,6 +1554,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */,
+				D2C861061D0021B6001FC290 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1347,6 +1567,7 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1471,6 +1692,7 @@
 				D2C444501BD6452B009348F7 /* lxh_holdzhu@2x.png in Resources */,
 				D2C444931BD6452B009348F7 /* lxh_xuyuan.png in Resources */,
 				D2C4438E1BD6452B009348F7 /* d_kun@3x.png in Resources */,
+				D2C8610D1D002935001FC290 /* VisitorView.xib in Resources */,
 				D2C4437C1BD6452B009348F7 /* d_han@3x.png in Resources */,
 				D2C443691BD6452B009348F7 /* d_dalian@2x.png in Resources */,
 				D2C443981BD6452B009348F7 /* d_nanhaier@2x.png in Resources */,
@@ -1523,8 +1745,10 @@
 				D2C443E61BD6452B009348F7 /* f_xi@3x.png in Resources */,
 				D2C443E81BD6452B009348F7 /* f_zhi@3x.png in Resources */,
 				D2C443911BD6452B009348F7 /* d_lang@2x.png in Resources */,
+				D210F9FC1D0682FA004679A1 /* NewFeature.storyboard in Resources */,
 				D2C443C31BD6452B009348F7 /* d_xixi@2x.png in Resources */,
 				D2C4440C1BD6452B009348F7 /* o_liwu@3x.png in Resources */,
+				D210F9FE1D0682FA004679A1 /* Welcome.storyboard in Resources */,
 				D2C444881BD6452B009348F7 /* lxh_xianghumobai@2x.png in Resources */,
 				D2C443F91BD6452B009348F7 /* h_zan@2x.png in Resources */,
 				D2C443F51BD6452B009348F7 /* h_woshou@2x.png in Resources */,
@@ -1537,6 +1761,7 @@
 				D2C443751BD6452B009348F7 /* d_guzhang@2x.png in Resources */,
 				D2C443D91BD6452B009348F7 /* f_geili@2x.png in Resources */,
 				D2C443A21BD6452B009348F7 /* d_qinqin@2x.png in Resources */,
+				D210F9E71D0682FA004679A1 /* QRCode.storyboard in Resources */,
 				D2C444121BD6452B009348F7 /* o_weiguan@3x.png in Resources */,
 				D2C443AA1BD6452B009348F7 /* d_shiwang@2x.png in Resources */,
 				D2C444541BD6452B009348F7 /* lxh_jiujie.gif in Resources */,
@@ -1605,6 +1830,7 @@
 				D2C444591BD6452B009348F7 /* lxh_juhan@2x.png in Resources */,
 				D2C443DA1BD6452B009348F7 /* f_geili@3x.png in Resources */,
 				D2C4445B1BD6452B009348F7 /* lxh_koubishi.png in Resources */,
+				D210F9E51D0682FA004679A1 /* Popover.storyboard in Resources */,
 				D2C444041BD6452B009348F7 /* o_feiji@3x.png in Resources */,
 				D2C443641BD6452B009348F7 /* d_chijing@3x.png in Resources */,
 				D2C443711BD6452B009348F7 /* d_feizao@2x.png in Resources */,
@@ -1667,7 +1893,9 @@
 				D2C444461BD6452B009348F7 /* lxh_haobang.png in Resources */,
 				D2C443CE1BD6452B009348F7 /* d_yun@3x.png in Resources */,
 				D2C443DF1BD6452B009348F7 /* f_meng@2x.png in Resources */,
+				D210FA001D0682FA004679A1 /* OAuth.storyboard in Resources */,
 				D2C4442B1BD6452B009348F7 /* lxh_beicui.png in Resources */,
+				D210F9F21D0682FA004679A1 /* Message.storyboard in Resources */,
 				D2C443861BD6452B009348F7 /* d_jiyan@3x.png in Resources */,
 				D2C444621BD6452B009348F7 /* lxh_leifeng@2x.png in Resources */,
 				D2C443B81BD6452B009348F7 /* d_tu@3x.png in Resources */,
@@ -1675,11 +1903,13 @@
 				D2C444241BD6452B009348F7 /* w_xiayu@3x.png in Resources */,
 				D2C443B31BD6452B009348F7 /* d_taikaixin@3x.png in Resources */,
 				D2C443AC1BD6452B009348F7 /* d_shuai@2x.png in Resources */,
+				D210F9F71D0682FA004679A1 /* VisitorView.xib in Resources */,
 				D2C444371BD6452B009348F7 /* lxh_buhaoyisi.png in Resources */,
 				D2C444971BD6452B009348F7 /* lxh_youyali@2x.png in Resources */,
 				D2C4439C1BD6452B009348F7 /* d_numa@2x.png in Resources */,
 				D2C4436E1BD6452B009348F7 /* d_doge@3x.png in Resources */,
 				D2C443921BD6452B009348F7 /* d_lang@3x.png in Resources */,
+				D210F9EF1D0682FA004679A1 /* Home.storyboard in Resources */,
 				D2C4448F1BD6452B009348F7 /* lxh_xiudada.gif in Resources */,
 				D2C443B11BD6452B009348F7 /* d_sikao@3x.png in Resources */,
 				D2C443741BD6452B009348F7 /* d_ganmao@3x.png in Resources */,
@@ -1694,6 +1924,7 @@
 				D2C4447F1BD6452B009348F7 /* lxh_shuaishuaishou@2x.png in Resources */,
 				D2C444001BD6452B009348F7 /* l_xin@3x.png in Resources */,
 				D2C4440F1BD6452B009348F7 /* o_weibo@2x.png in Resources */,
+				D210F9F51D0682FA004679A1 /* Profile.storyboard in Resources */,
 				D2C4440A1BD6452B009348F7 /* o_lazhu@3x.png in Resources */,
 				D2C443601BD6452B009348F7 /* d_bizui@3x.png in Resources */,
 				D2C443EE1BD6452B009348F7 /* h_haha@3x.png in Resources */,
@@ -1756,6 +1987,7 @@
 				D2C4445A1BD6452B009348F7 /* lxh_koubishi.gif in Resources */,
 				D2C444941BD6452B009348F7 /* lxh_xuyuan@2x.png in Resources */,
 				D2C444031BD6452B009348F7 /* o_feiji@2x.png in Resources */,
+				D210F9EE1D0682FA004679A1 /* Discover.storyboard in Resources */,
 				D2C444131BD6452B009348F7 /* o_yinyue@2x.png in Resources */,
 				D2C444201BD6452B009348F7 /* w_weifeng@3x.png in Resources */,
 				D2C4442D1BD6452B009348F7 /* lxh_beidian.gif in Resources */,
@@ -1769,6 +2001,7 @@
 				D2C4441C1BD6452B009348F7 /* w_shachenbao@3x.png in Resources */,
 				D2C444341BD6452B009348F7 /* lxh_biefanwo.png in Resources */,
 				D2C4448E1BD6452B009348F7 /* lxh_xiaohaha@2x.png in Resources */,
+				D210F9F31D0682FA004679A1 /* Null.storyboard in Resources */,
 				D2C444361BD6452B009348F7 /* lxh_buhaoyisi.gif in Resources */,
 				D2C4438A1BD6452B009348F7 /* d_kelian@3x.png in Resources */,
 				D2C444A01BD6452B009348F7 /* lxh_zhenjing@2x.png in Resources */,
@@ -1778,6 +2011,7 @@
 				D2C443C91BD6452B009348F7 /* d_yiwen@2x.png in Resources */,
 				D2C444051BD6452B009348F7 /* o_ganbei@2x.png in Resources */,
 				D2C443BE1BD6452B009348F7 /* d_weiqu@3x.png in Resources */,
+				D210F9F01D0682FA004679A1 /* Main.storyboard in Resources */,
 				D2C4442A1BD6452B009348F7 /* lxh_beicui.gif in Resources */,
 				D2C443C61BD6452B009348F7 /* d_xu@3x.png in Resources */,
 				D2C444391BD6452B009348F7 /* lxh_buxiangshangban.gif in Resources */,
@@ -1945,8 +2179,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
+				D210FA051D0682FA004679A1 /* NSDate+Extension.swift in Sources */,
+				D210FA041D0682FA004679A1 /* NetworkManager.swift in Sources */,
+				D210FA021D0682FA004679A1 /* ProfileTableViewController.swift in Sources */,
+				D210F9E91D0682FA004679A1 /* QRCodeViewController.swift in Sources */,
+				D210FA0A1D0682FA004679A1 /* StatusViewModel.swift in Sources */,
+				D210F9F11D0682FA004679A1 /* MainViewController.swift in Sources */,
+				D210F9E61D0682FA004679A1 /* PopoverViewController.swift in Sources */,
+				D210F9ED1D0682FA004679A1 /* BaseTableViewController.swift in Sources */,
+				D210FA011D0682FA004679A1 /* OAuthViewController.swift in Sources */,
+				D210F9FA1D0682FA004679A1 /* User.swift in Sources */,
+				D210F9EA1D0682FA004679A1 /* TTPresentationController.swift in Sources */,
+				D210F9E41D0682FA004679A1 /* HomeTableViewController.swift in Sources */,
+				D210F9F81D0682FA004679A1 /* MessageTableViewController.swift in Sources */,
+				D210F9FB1D0682FA004679A1 /* UserAccount.swift in Sources */,
+				D210F9E31D0682FA004679A1 /* DiscoverTableViewController.swift in Sources */,
+				D210FA061D0682FA004679A1 /* TitileButton.swift in Sources */,
+				D210FA071D0682FA004679A1 /* UIButton+Extension.swift in Sources */,
+				D210FA031D0682FA004679A1 /* Defines.swift in Sources */,
+				D210F9FD1D0682FA004679A1 /* NewFeatureViewController.swift in Sources */,
+				D210FA091D0682FA004679A1 /* WeiBoURL.swift in Sources */,
+				D210F9F61D0682FA004679A1 /* VisitorView.swift in Sources */,
+				D210F9EB1D0682FA004679A1 /* TTPresentationManager.swift in Sources */,
+=======
 				D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */,
 				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
+				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
 				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
 				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
@@ -1955,8 +2214,15 @@
 				D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */,
 				D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */,
 				D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */,
+				D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */,
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
-				D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */,
+				D210FA081D0682FA004679A1 /* UIImage+Extension.swift in Sources */,
+				D210F9F91D0682FA004679A1 /* Status.swift in Sources */,
+				D210F9EC1D0682FA004679A1 /* TTStatusTableViewCell.swift in Sources */,
+				D210F9F41D0682FA004679A1 /* NullTableViewController.swift in Sources */,
+				D210F9E81D0682FA004679A1 /* QRCodeCreateViewController.swift in Sources */,
+				D210F9FF1D0682FA004679A1 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2039,7 +2305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2078,7 +2344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2093,12 +2359,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LintTe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LintTe/LintTe-bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2110,11 +2376,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LintTe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuluobo.LintTe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LintTe/LintTe-bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

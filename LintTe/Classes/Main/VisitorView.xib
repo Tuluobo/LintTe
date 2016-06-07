@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VisitorView" customModule="LintTe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="visitordiscover_feed_image_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-t7-Wef">
+=======
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-t7-Wef">
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
+                    <rect key="frame" x="213" y="180.5" width="175" height="175"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="visitordiscover_feed_mask_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="EIu-MU-Mij">
+                    <rect key="frame" x="212" y="180.5" width="175" height="175"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="QvE-IK-lyt">
+                    <rect key="frame" x="253" y="243" width="94" height="90"/>
+                </imageView>
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73F-mC-V3A">
+=======
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73F-mC-V3A">
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
+                    <rect key="frame" x="192" y="363.5" width="216" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="216" id="HUE-1R-4eN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUE-Bc-y9W">
+                    <rect key="frame" x="328" y="380" width="60" height="34"/>
+                    <state key="normal" title="登陆" backgroundImage="common_button_white_disable"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04c-e6-5mb">
+=======
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUE-Bc-y9W">
+                    <rect key="frame" x="328" y="380" width="60" height="34"/>
+                    <state key="normal" title="登陆" backgroundImage="common_button_white_disable"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04c-e6-5mb">
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
+                    <rect key="frame" x="213" y="380" width="60" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="7jl-Fq-HoE"/>
+                    </constraints>
+                    <state key="normal" title="注册" backgroundImage="common_button_white_disable">
+                        <color key="titleColor" red="1" green="0.41152287710000002" blue="0.116378047" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92131033644604154" green="0.9304322209653092" blue="0.9304322209653092" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="04c-e6-5mb" firstAttribute="top" secondItem="73F-mC-V3A" secondAttribute="bottom" constant="16" id="3f6-62-VbR"/>
+                <constraint firstItem="73F-mC-V3A" firstAttribute="top" secondItem="QvE-IK-lyt" secondAttribute="bottom" constant="30" id="9tS-gd-0nw"/>
+                <constraint firstItem="73F-mC-V3A" firstAttribute="top" secondItem="W2t-t7-Wef" secondAttribute="bottom" constant="8" id="Jjv-4u-xCC"/>
+                <constraint firstItem="EIu-MU-Mij" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Mn5-Zy-ouc"/>
+                <constraint firstItem="04c-e6-5mb" firstAttribute="leading" secondItem="W2t-t7-Wef" secondAttribute="leading" id="YfP-E7-3tl"/>
+                <constraint firstItem="aUE-Bc-y9W" firstAttribute="trailing" secondItem="W2t-t7-Wef" secondAttribute="trailing" id="Yhz-8J-slx"/>
+                <constraint firstItem="EIu-MU-Mij" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-32" id="bxd-RP-erP"/>
+                <constraint firstItem="aUE-Bc-y9W" firstAttribute="width" secondItem="04c-e6-5mb" secondAttribute="width" id="cEZ-am-FRJ"/>
+                <constraint firstItem="W2t-t7-Wef" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-32" id="dga-CJ-U9r"/>
+                <constraint firstItem="73F-mC-V3A" firstAttribute="centerX" secondItem="W2t-t7-Wef" secondAttribute="centerX" id="k8G-kP-nUy"/>
+                <constraint firstItem="QvE-IK-lyt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mm2-Jt-pvJ"/>
+                <constraint firstItem="QvE-IK-lyt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-12" id="oMh-7N-f6g"/>
+                <constraint firstItem="73F-mC-V3A" firstAttribute="top" secondItem="W2t-t7-Wef" secondAttribute="bottom" constant="8" id="owv-9d-97A"/>
+                <constraint firstItem="aUE-Bc-y9W" firstAttribute="top" secondItem="73F-mC-V3A" secondAttribute="bottom" constant="16" id="rQP-DJ-qZF"/>
+                <constraint firstItem="W2t-t7-Wef" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xTD-0z-ex0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9tS-gd-0nw"/>
+                    <exclude reference="Jjv-4u-xCC"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="iconImageView" destination="QvE-IK-lyt" id="gzF-mj-24o"/>
+                <outlet property="loginBtn" destination="aUE-Bc-y9W" id="uK0-FC-FVm"/>
+                <outlet property="registerBtn" destination="04c-e6-5mb" id="BWV-3I-9jE"/>
+                <outlet property="rotationImageView" destination="W2t-t7-Wef" id="b89-Wd-0hc"/>
+                <outlet property="titleLabel" destination="73F-mC-V3A" id="vXk-h0-Jau"/>
+            </connections>
+            <point key="canvasLocation" x="500" y="344"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_button_white_disable" width="11" height="34"/>
+        <image name="visitordiscover_feed_image_house" width="94" height="90"/>
+        <image name="visitordiscover_feed_image_smallicon" width="175" height="175"/>
+        <image name="visitordiscover_feed_mask_smallicon" width="175" height="175"/>
+    </resources>
+</document>
