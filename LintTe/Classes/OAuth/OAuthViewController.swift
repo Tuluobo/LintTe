@@ -91,15 +91,20 @@ extension OAuthViewController: UIWebViewDelegate {
             TTLog(account)
             // 2. 获取用户信息
             account.loadUserInfo({ (userAccount, error) in
+<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
 <<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
                 // 3. 归案授权信息
 =======
                 // 3. 归案当授权信息
 >>>>>>> access_token 获取
+=======
+                // 3. 归案授权信息
+>>>>>>> 打通登陆 判断新版本 欢迎界面 显示
                 if error != nil {
                     TTLog(error)
                     return
                 }
+<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
 <<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
                 // 3.1保存授权信息
                 userAccount!.saveAccount()
@@ -110,6 +115,14 @@ extension OAuthViewController: UIWebViewDelegate {
 =======
                 userAccount!.saveAccount()
 >>>>>>> access_token 获取
+=======
+                // 3.1保存授权信息
+                userAccount!.saveAccount()
+                // 3.2跳转到欢迎界面
+                let window = UIApplication.sharedApplication().keyWindow
+                let vc = UIStoryboard(name: "Welcome", bundle: nil).instantiateInitialViewController()!
+                window?.rootViewController = vc
+>>>>>>> 打通登陆 判断新版本 欢迎界面 显示
             })
             
             }) { (_, error) in

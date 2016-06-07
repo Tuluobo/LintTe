@@ -35,7 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 >>>>>>> 完善二维码扫描
 =======
         
-        TTLog(UserAccount.loadUserAccount())
+        // 显示首界面
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = defaultViewController()
+        window?.makeKeyAndVisible()
+        
+        // 判断用户登录
         
 >>>>>>> access_token 获取
         return true
@@ -59,6 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // MARK: - 版本相关
 extension AppDelegate {
     
+<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
     // 切换根控制器
     @objc private func changeRootViewController(notification: NSNotification) {
         
@@ -87,6 +93,20 @@ extension AppDelegate {
             initVC = isNewVersion() ? R.storyboard.newFeature.initialViewController()! : R.storyboard.welcome.initialViewController()!
         }
         return initVC
+=======
+    // 返回默认界面
+    private func defaultViewController() -> UIViewController {
+        
+        var sbName = "Main"
+        // 1.判断是否登录
+        if UserAccount.isLogin() {
+            // 2.判断是否有新版本
+            sbName = isNewVersion() ? "NewFeature" : "Welcome"
+        }
+        let sb = UIStoryboard(name: sbName, bundle: nil)
+        let vc = sb.instantiateInitialViewController()!
+        return vc
+>>>>>>> 打通登陆 判断新版本 欢迎界面 显示
     }
     
     // 判断是否刚刚更新了版本

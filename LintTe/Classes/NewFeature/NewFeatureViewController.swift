@@ -99,11 +99,17 @@ extension NewFeatureViewController: UICollectionViewDataSource {
     }
     
     @objc private func startEnterWB() {
+<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
 <<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
         NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
 =======
         TTLog("")
 >>>>>>> 完成新特性 页面显示
+=======
+        let window = UIApplication.sharedApplication().keyWindow
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+        window?.rootViewController = vc
+>>>>>>> 打通登陆 判断新版本 欢迎界面 显示
     }
 }
 

@@ -76,6 +76,7 @@ class UserAccount: NSObject, NSCoding {
      */
     func saveAccount() -> Bool {
         // 归档对象
+        UserAccount.userAccount = self
         return NSKeyedArchiver.archiveRootObject(self, toFile: UserAccount.accountFilePath)
     }
     
@@ -97,12 +98,9 @@ class UserAccount: NSObject, NSCoding {
             
             let userDict = data as! [String:AnyObject]
             
-            TTLog(userDict)
             self.screen_name = userDict["screen_name"] as? String
             self.avatar_large = userDict["avatar_large"] as? String
             
-            TTLog(userDict["screen_name"])
-            TTLog(userDict["name"])
             finished(userAccount: self, error: nil)
             
             }) { (_, error) in

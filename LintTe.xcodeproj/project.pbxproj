@@ -1657,9 +1657,9 @@
 		D2C860E61CFFB819001FC290 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D2C861081D002684001FC290 /* BaseTableViewController.swift */,
 				D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */,
 				D2C860FC1D001FE5001FC290 /* Main.storyboard */,
-				D2C861081D002684001FC290 /* BaseTableViewController.swift */,
 				D2C8610A1D00291F001FC290 /* VisitorView.swift */,
 				D2C8610C1D002935001FC290 /* VisitorView.xib */,
 			);
