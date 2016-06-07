@@ -26,97 +26,63 @@ class TTStatusTableViewCell: UITableViewCell {
     @IBOutlet weak var statusTextLabel: UILabel!
     
     // 模型数据
-    var status: Status? {
+    var data: StatusViewModel? {
         didSet {
-           setupUI()
+            setupUI()
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2.0
+        verifiedImageView.layer.cornerRadius = verifiedImageView.bounds.width / 2.0
+        verifiedImageView.layer.borderWidth = 2.0
+        verifiedImageView.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
     /**
      更新UI
      */
     private func setupUI() {
-        
+        // 初始化
         avatarImageView.image = UIImage(named: "avatar_default")
+        verifiedImageView.image = nil
+        vipImageView.image = nil
+        nickNameLabel.textColor = UIColor.blackColor()
+        sourceLabel.text = nil
+        statusTextLabel.text = nil
         
-        sourceLabel.text = ""
-        statusTextLabel.text = ""
-        
-        guard let sts = status else {
+        // 守护数据
+        guard let statusVM = data else {
             return
         }
         
-        // 微博发表时间
-        formatSendDate(sts.created_at)
+        // 正常设置微博
+        // 发布时间
+        sendTimeLabel.text = statusVM.sendTimeStr
         // 微博来源
-        if var source: NSString = sts.source where source != "" {
-            let fromIndex = source.rangeOfString(">").location + 1
-            source = source.substringFromIndex(fromIndex)
-            let endIndex = source.rangeOfString("<").location
-            source = source.substringToIndex(endIndex)
-            sourceLabel.text = "来自 \(source)"
-        }
+        sourceLabel.text = statusVM.sourceStr
         // 微博正文
-        statusTextLabel.text = sts.text
+        statusTextLabel.text = statusVM.status.text
         
+        // 用户设置
         // 用户昵称
-        nickNameLabel.text = sts.user.screen_name
+        nickNameLabel.text = statusVM.status.user.screen_name
+        
         // 头像
-        if let urlStr = sts.user.profile_image_url {
-            avatarImageView.sd_setImageWithURL(NSURL(string: urlStr))
+        if let avatarUrl = statusVM.avatarURL {
+            avatarImageView.sd_setImageWithURL(avatarUrl)
         }
         // 认证
-        verified(sts.user.verified_type)
-        // 会员
-        vip(sts.user.mbrank)
-    }
-    
-    // 发布时间
-    private func formatSendDate(timeStr: String) {
-        // 1.将服务器获得的时间格式化为NSDate
-        TTLog(timeStr)
-        let formatter = NSDateFormatter()
-        formatter.locale = NSLocale(localeIdentifier: "en")
-        formatter.dateFormat = "EE MM dd HH:mm:ss Z yyyy"
-        let createDate = formatter.dateFromString(timeStr)
-        TTLog(createDate)
-        // 2.拿到当前时间
-        // 3.对比设置
-        let interval = NSDate().timeIntervalSinceDate(createDate!)
-        TTLog(interval)
-    }
-    
-    // 认证
-    private func verified(vCode: Int) {
-        // 先显示
-        verifiedImageView.hidden = false
-        switch vCode {
-        case 0:
-            verifiedImageView.image = UIImage(named: "avatar_vip")
-        case 2, 3, 5:
-            verifiedImageView.image = UIImage(named: "avatar_enterprise_vip")
-        case 220:
-            verifiedImageView.image = UIImage(named: "avatar_grassroot")
-        default:
-            verifiedImageView.hidden = true
-        }
-    }
-    
-    // 会员
-    private func vip(rank: Int) {
-        vipImageView.hidden = false
-        if (rank > 0 && rank < 7) {
-            vipImageView.image = UIImage(named: "common_icon_membership_level\(rank)")
+        verifiedImageView.image = statusVM.verifiedImage
+        // vip
+        vipImageView.image = statusVM.mbrankImage
+        // 设置昵称颜色
+        if let _ = statusVM.mbrankImage {
             nickNameLabel.textColor = UIColor.orangeColor()
-        } else {
-            vipImageView.hidden = true
         }
     }
+    
+
     
 }

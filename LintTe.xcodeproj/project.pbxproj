@@ -25,6 +25,8 @@
 		D24A910A1BD4CF72000B38D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */; };
 		D24A910C1BD4CF9E000B38D9 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */; };
 		D24A910E1BD4CFC1000B38D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */; };
+		D26FE12A1D06660A0087EA35 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26FE1291D06660A0087EA35 /* NSDate+Extension.swift */; };
+		D26FE12C1D066A980087EA35 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26FE12B1D066A980087EA35 /* StatusViewModel.swift */; };
 		D2C443551BD6452B009348F7 /* d_aini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C442041BD6452B009348F7 /* d_aini@2x.png */; };
 		D2C443561BD6452B009348F7 /* d_aini@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C442051BD6452B009348F7 /* d_aini@3x.png */; };
 		D2C443571BD6452B009348F7 /* d_aoteman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C442061BD6452B009348F7 /* d_aoteman@2x.png */; };
@@ -453,6 +455,8 @@
 		D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		D26FE1291D06660A0087EA35 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		D26FE12B1D066A980087EA35 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		D2C442041BD6452B009348F7 /* d_aini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aini@2x.png"; sourceTree = "<group>"; };
 		D2C442051BD6452B009348F7 /* d_aini@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aini@3x.png"; sourceTree = "<group>"; };
 		D2C442061BD6452B009348F7 /* d_aoteman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aoteman@2x.png"; sourceTree = "<group>"; };
@@ -1380,6 +1384,7 @@
 				D2C860FE1D002178001FC290 /* Home.storyboard */,
 				D24A90FC1BD4CBF0000B38D9 /* User.swift */,
 				D2D9A8FE1D0573130071FDE5 /* Status.swift */,
+				D26FE12B1D066A980087EA35 /* StatusViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1423,6 +1428,7 @@
 				D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */,
 				D2D0562D1D016B6200A68656 /* TitileButton.swift */,
 				D2F019FD1D03147A00DCD16F /* NetworkManager.swift */,
+				D26FE1291D06660A0087EA35 /* NSDate+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -2072,6 +2078,7 @@
 				D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */,
 				D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */,
 				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
+				D26FE12C1D066A980087EA35 /* StatusViewModel.swift in Sources */,
 				D2C505971D040E5C00ABA297 /* NewFeatureViewController.swift in Sources */,
 				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
 				D2F019F51D02F78300DCD16F /* QRCodeCreateViewController.swift in Sources */,
@@ -2088,6 +2095,7 @@
 				D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */,
 				D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */,
 				D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */,
+				D26FE12A1D06660A0087EA35 /* NSDate+Extension.swift in Sources */,
 				D2F019F71D02FAA000DCD16F /* UIImage+Extension.swift in Sources */,
 				D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */,
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
