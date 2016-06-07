@@ -11,7 +11,11 @@ import UIKit
 class BaseTableViewController: UITableViewController {
 
     // 标记用户是否登录
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
     var isLogin = UserAccount.isLogin()
+=======
+    var isLogin = true
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
 
     var visitorView: VisitorView?
     
@@ -22,9 +26,13 @@ class BaseTableViewController: UITableViewController {
         // 2. 没有登录，显示登录
         isLogin ? super.loadView() : setupVisitorView()
     }
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
     
     // MARK: - 内部控制方法
     
+=======
+    // MARK: - 内部控制方法
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
     private func setupVisitorView() {
 
         self.visitorView = VisitorView.visitorView()
@@ -43,11 +51,15 @@ class BaseTableViewController: UITableViewController {
     }
     
     @objc private func login() {
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
         // 1.创建登录界面
         let sb = UIStoryboard(name: "OAuth", bundle: nil)
         let vc = sb.instantiateInitialViewController()!
         // 2.转到登录界面
         presentViewController(vc, animated: true, completion: nil)
+=======
+        TTLog("")
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
     }
     
 }

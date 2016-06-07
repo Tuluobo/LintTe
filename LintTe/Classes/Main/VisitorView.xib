@@ -10,7 +10,11 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="visitordiscover_feed_image_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-t7-Wef">
+=======
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-t7-Wef">
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
                     <rect key="frame" x="213" y="180.5" width="175" height="175"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="visitordiscover_feed_mask_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="EIu-MU-Mij">
@@ -19,7 +23,11 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="QvE-IK-lyt">
                     <rect key="frame" x="253" y="243" width="94" height="90"/>
                 </imageView>
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73F-mC-V3A">
+=======
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73F-mC-V3A">
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
                     <rect key="frame" x="192" y="363.5" width="216" height="0.0"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="216" id="HUE-1R-4eN"/>
@@ -28,11 +36,19 @@
                     <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUE-Bc-y9W">
                     <rect key="frame" x="328" y="380" width="60" height="34"/>
                     <state key="normal" title="登陆" backgroundImage="common_button_white_disable"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04c-e6-5mb">
+=======
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUE-Bc-y9W">
+                    <rect key="frame" x="328" y="380" width="60" height="34"/>
+                    <state key="normal" title="登陆" backgroundImage="common_button_white_disable"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04c-e6-5mb">
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
                     <rect key="frame" x="213" y="380" width="60" height="34"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="7jl-Fq-HoE"/>

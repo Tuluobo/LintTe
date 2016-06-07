@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 一般设置全局型的属性，最好放在AppDelagate中设置，这样可以保证后续的操作都在设置之后
         // 设置整体外观颜色
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
+<<<<<<< 90d35e9a5f8eaddf2571c9ab14211e01c465262a
         // 设置 tabbar 全局 tintColor 颜色
         UITabBar.appearance().tintColor = UIColor.orangeColor()
         
@@ -28,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = defaultViewController()
         window?.makeKeyAndVisible()
+=======
+>>>>>>> 添加一些图片，完成Visitor页面布局，绑定登陆注册按钮
         
         return true
     }
