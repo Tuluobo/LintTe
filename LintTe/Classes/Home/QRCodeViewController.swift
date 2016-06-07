@@ -56,11 +56,15 @@ class QRCodeViewController: UIViewController {
         // 在这里，右上角为原点，主要是将iPhone 左转90度，转为横屏
         let viewFrame = self.view.frame
         let y = ((viewFrame.width - self.height)/2) / viewFrame.width
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 <<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
         let x = ((viewFrame.height - self.height)/2 - 60) / viewFrame.height
 =======
         let x = ((viewFrame.height - self.height)/2 - 40) / viewFrame.height
 >>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
+=======
+        let x = ((viewFrame.height - self.height)/2 - 60) / viewFrame.height
+>>>>>>> 生成二维码 完成
         let width = self.height / viewFrame.size.height
         let height = self.height / viewFrame.size.width
         

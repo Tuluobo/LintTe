@@ -424,7 +424,12 @@
 =======
 		D2D0563C1D01B63100A68656 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D0563B1D01B63100A68656 /* QRCode.storyboard */; };
 		D2D0563E1D01B6DA00A68656 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0563D1D01B6DA00A68656 /* QRCodeViewController.swift */; };
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 >>>>>>> 完善二维码扫描
+=======
+		D2F019F51D02F78300DCD16F /* QRCodeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019F41D02F78300DCD16F /* QRCodeCreateViewController.swift */; };
+		D2F019F71D02FAA000DCD16F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019F61D02FAA000DCD16F /* UIImage+Extension.swift */; };
+>>>>>>> 生成二维码 完成
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -883,7 +888,12 @@
 =======
 		D2D0563B1D01B63100A68656 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		D2D0563D1D01B6DA00A68656 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 >>>>>>> 完善二维码扫描
+=======
+		D2F019F41D02F78300DCD16F /* QRCodeCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCreateViewController.swift; sourceTree = "<group>"; };
+		D2F019F61D02FAA000DCD16F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+>>>>>>> 生成二维码 完成
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1611,6 +1621,7 @@
 		D2C860E91CFFB819001FC290 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D2F019F61D02FAA000DCD16F /* UIImage+Extension.swift */,
 				D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */,
 				D2D0562D1D016B6200A68656 /* TitileButton.swift */,
 			);
@@ -1635,6 +1646,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D0563D1D01B6DA00A68656 /* QRCodeViewController.swift */,
+				D2F019F41D02F78300DCD16F /* QRCodeCreateViewController.swift */,
 				D2D0563B1D01B63100A68656 /* QRCode.storyboard */,
 			);
 			name = QRCode;
@@ -2296,6 +2308,7 @@
 				D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */,
 				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
 				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
+				D2F019F51D02F78300DCD16F /* QRCodeCreateViewController.swift in Sources */,
 				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
 				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
@@ -2306,6 +2319,7 @@
 				D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */,
 				D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */,
 				D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */,
+				D2F019F71D02FAA000DCD16F /* UIImage+Extension.swift in Sources */,
 				D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */,
 >>>>>>> 完善导航栏中间title 弹出菜单动画
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,

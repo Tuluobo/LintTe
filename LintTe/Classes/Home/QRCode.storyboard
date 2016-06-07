@@ -32,7 +32,10 @@
             </objects>
             <point key="canvasLocation" x="91" y="429"/>
         </scene>
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
+=======
+>>>>>>> 生成二维码 完成
         <!--Code Create View Controller-->
         <scene sceneID="KMk-Vc-KXt">
             <objects>
@@ -67,8 +70,11 @@
             </objects>
             <point key="canvasLocation" x="1518" y="429"/>
         </scene>
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 =======
 >>>>>>> 完善二维码扫描
+=======
+>>>>>>> 生成二维码 完成
         <!--扫一扫-->
         <scene sceneID="hpb-oe-K3Q">
             <objects>
@@ -102,6 +108,7 @@
                                 <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </tabBar>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moG-8a-GX6">
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 <<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
                                 <rect key="frame" x="200" y="140" width="200" height="200"/>
@@ -123,6 +130,9 @@
 =======
                                 <rect key="frame" x="200" y="160" width="200" height="200"/>
 >>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
+=======
+                                <rect key="frame" x="200" y="140" width="200" height="200"/>
+>>>>>>> 生成二维码 完成
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border" translatesAutoresizingMaskIntoConstraints="NO" id="h2l-3Z-iXJ">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -158,6 +168,7 @@
                                     <constraint firstAttribute="trailing" secondItem="h2l-3Z-iXJ" secondAttribute="trailing" id="qCe-9K-4GO"/>
                                 </constraints>
                             </view>
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 <<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将二维码/条形码放入框内，即可自动扫描" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-TJ-uP9">
@@ -166,11 +177,18 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="将二维码/条形码放入框内，即可自动扫描" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-TJ-uP9">
                                 <rect key="frame" x="200" y="352" width="200" height="31.5"/>
 >>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将二维码/条形码放入框内，即可自动扫描" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ir-TJ-uP9">
+                                <rect key="frame" x="200" y="352" width="200" height="29"/>
+>>>>>>> 生成二维码 完成
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 <<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
+=======
+>>>>>>> 生成二维码 完成
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDo-cr-hiQ">
                                 <rect key="frame" x="264" y="479" width="72" height="32"/>
                                 <constraints>
@@ -184,6 +202,7 @@
                                     <segue destination="5fb-2r-U5g" kind="show" id="dPF-bu-Brf"/>
                                 </connections>
                             </button>
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -207,19 +226,32 @@
 =======
 =======
 >>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
+=======
+>>>>>>> 生成二维码 完成
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kaJ-Oi-Zjt" firstAttribute="top" secondItem="sUN-r8-ALC" secondAttribute="bottom" id="2ye-GN-GmD"/>
+                            <constraint firstItem="FDo-cr-hiQ" firstAttribute="centerX" secondItem="e2W-t0-ays" secondAttribute="centerX" id="3QY-tn-adW"/>
+                            <constraint firstItem="sUN-r8-ALC" firstAttribute="top" secondItem="FDo-cr-hiQ" secondAttribute="bottom" constant="40" id="Fz5-kq-qwo"/>
                             <constraint firstItem="sUN-r8-ALC" firstAttribute="leading" secondItem="e2W-t0-ays" secondAttribute="leading" id="Nbn-EB-aCj"/>
                             <constraint firstItem="moG-8a-GX6" firstAttribute="centerX" secondItem="e2W-t0-ays" secondAttribute="centerX" id="Vpf-QY-L2I"/>
                             <constraint firstItem="1ir-TJ-uP9" firstAttribute="top" secondItem="moG-8a-GX6" secondAttribute="bottom" constant="12" id="aej-qw-pXW"/>
                             <constraint firstItem="1ir-TJ-uP9" firstAttribute="leading" secondItem="moG-8a-GX6" secondAttribute="leading" id="dsK-zY-th8"/>
+                            <constraint firstItem="FDo-cr-hiQ" firstAttribute="top" secondItem="1ir-TJ-uP9" secondAttribute="bottom" constant="40" id="i2e-bH-p4g"/>
                             <constraint firstAttribute="trailing" secondItem="sUN-r8-ALC" secondAttribute="trailing" id="kgj-uw-b9h"/>
                             <constraint firstItem="1ir-TJ-uP9" firstAttribute="trailing" secondItem="moG-8a-GX6" secondAttribute="trailing" id="q76-dz-QzA"/>
-                            <constraint firstItem="moG-8a-GX6" firstAttribute="centerY" secondItem="e2W-t0-ays" secondAttribute="centerY" constant="-40" id="tu2-lX-0I4"/>
+                            <constraint firstItem="moG-8a-GX6" firstAttribute="centerY" secondItem="e2W-t0-ays" secondAttribute="centerY" constant="-60" id="tu2-lX-0I4"/>
                         </constraints>
+<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
 >>>>>>> 完善二维码扫描
+=======
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="i2e-bH-p4g"/>
+                            </mask>
+                        </variation>
+>>>>>>> 生成二维码 完成
                     </view>
                     <navigationItem key="navigationItem" title="扫一扫" id="bLP-kF-wL6">
                         <barButtonItem key="leftBarButtonItem" title="关闭" id="dQV-Rq-FKR">
