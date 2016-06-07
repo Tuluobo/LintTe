@@ -14,10 +14,14 @@ class QRCodeViewController: UIViewController {
     var height: CGFloat!
     // 底部工具条
     @IBOutlet weak var customTabbar: UITabBar!
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
     @IBOutlet weak var customLabel: UILabel!
 =======
 >>>>>>> 完善二维码扫描
+=======
+    @IBOutlet weak var customLabel: UILabel!
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
     // 扫描条图片
     @IBOutlet weak var scanLineImageView: UIImageView!
     // 扫描顶部约束
@@ -25,18 +29,25 @@ class QRCodeViewController: UIViewController {
     // 扫描线高度约束
     @IBOutlet weak var scanLineHeightCons: NSLayoutConstraint!
     // MARK: - 懒加载
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
     /// 输入对象， 竖向为
 =======
     /// 输入对象
 >>>>>>> 完善二维码扫描
+=======
+    /// 输入对象， 竖向为
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
     private lazy var input: AVCaptureDeviceInput? = {
         let capture = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         return try? AVCaptureDeviceInput(device: capture)
     }()
     /// 会话
     private lazy var session: AVCaptureSession = AVCaptureSession()
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
+=======
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
     /// 输出对象
     private lazy var output: AVCaptureMetadataOutput =  {
         let op = AVCaptureMetadataOutput()
@@ -45,7 +56,11 @@ class QRCodeViewController: UIViewController {
         // 在这里，右上角为原点，主要是将iPhone 左转90度，转为横屏
         let viewFrame = self.view.frame
         let y = ((viewFrame.width - self.height)/2) / viewFrame.width
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
         let x = ((viewFrame.height - self.height)/2 - 60) / viewFrame.height
+=======
+        let x = ((viewFrame.height - self.height)/2 - 40) / viewFrame.height
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
         let width = self.height / viewFrame.size.height
         let height = self.height / viewFrame.size.width
         
@@ -65,21 +80,28 @@ class QRCodeViewController: UIViewController {
         layer.fillColor = UIColor.clearColor().CGColor
         return layer
     }()
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 =======
     /// 输入对象
     private lazy var output: AVCaptureMetadataOutput =  AVCaptureMetadataOutput()
     ///  预览图层
     private lazy var preview: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer()
 >>>>>>> 完善二维码扫描
+=======
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
     
     // MARK: - 生命周期方法
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
         
 =======
 
 >>>>>>> 完善二维码扫描
+=======
+        
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
         // 设置默认选择二维码
         customTabbar.selectedItem = customTabbar.items?.first
         height = scanLineHeightCons.constant
@@ -99,11 +121,15 @@ class QRCodeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
     // MARK: - 内部控制方法
 =======
     
 >>>>>>> 完善二维码扫描
+=======
+    // MARK: - 内部控制方法
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
     private func scanQRCode() {
         // 1.判断输入能否添加到会话中
         if !session.canAddInput(input) { return }
@@ -116,13 +142,17 @@ class QRCodeViewController: UIViewController {
         output.metadataObjectTypes = output.availableMetadataObjectTypes
         // 5.设置监听输出解析的数据
         output.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
+=======
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
         // 6.添加预览图层
         previewLayer.frame = view.frame
         view.layer.insertSublayer(previewLayer, atIndex: 0)
         // 7. 将用于保存举行的图层添加到界面上
         view.layer.addSublayer(cornerLayer)
         // 8.开始扫描
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
         session.startRunning()
     }
     
@@ -140,6 +170,11 @@ class QRCodeViewController: UIViewController {
     }
     
 >>>>>>> 完善二维码扫描
+=======
+        session.startRunning()
+    }
+    
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
     private func scanLineViewAnimation() {
         // 设置扫描波约束
         scanLineTopCons.constant = 0 - scanLineHeightCons.constant
@@ -152,7 +187,10 @@ class QRCodeViewController: UIViewController {
         }
         
     }
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
+=======
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
     // MARK: - 按钮操作
     /**
      打开相册
@@ -179,8 +217,37 @@ class QRCodeViewController: UIViewController {
     }
     
 
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
     
 }
+// MARK: - UIImagePickerControllerDelegate
+extension QRCodeViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+=======
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        // 取出选中的图片
+        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
+        // 识别二维码
+        // 1.创建一个探测器
+        let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy:CIDetectorAccuracyHigh])
+        // 2.利用这个探测器探测数据
+        let features = detector.featuresInImage(CIImage(image: image)!)
+        // 3.去除探测数据
+        TTLog(features)
+        guard let urlStr = (features.last as? CIQRCodeFeature)?.messageString else { return }
+        self.customLabel.text = urlStr
+        // 注意：如果实现了这个方法，系统将不会自动关闭相册，需要我们执行下面的程序关闭相册
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+}
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
+
+=======
+    
+}
+>>>>>>> 完善二维码扫描
+=======
 // MARK: - UIImagePickerControllerDelegate
 extension QRCodeViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
@@ -201,10 +268,7 @@ extension QRCodeViewController: UINavigationControllerDelegate, UIImagePickerCon
     }
 }
 
-=======
-    
-}
->>>>>>> 完善二维码扫描
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
 // MARK: - UITabBarDelegate
 extension QRCodeViewController: UITabBarDelegate {
     
@@ -228,7 +292,10 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
      只要扫描到信息都会处理
      */
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
+=======
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
         // 清空 cornerLayer 上的信息
         cornerLayer.path = UIBezierPath().CGPath
         // 处理扫描信息
@@ -285,8 +352,11 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
         // 4. 关闭路径
         path.closePath()
         cornerLayer.path = path.CGPath
+<<<<<<< d5bfd0aca5308e9d20d6cc3a5f5270b45989fc25
 =======
         metadataObjects.last
 >>>>>>> 完善二维码扫描
+=======
+>>>>>>> 完成 二维码、条形码扫描 和相册二维码识别
     }
 }
