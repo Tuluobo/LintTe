@@ -51,11 +51,11 @@ class StatusViewModel: NSObject {
         // 认证
         switch self.status.user.verified_type {
             case 0:
-            verifiedImage = UIImage(named: "avatar_vip")
+            verifiedImage = UIImage(resource: R.image.avatar_vip)
             case 2, 3, 5:
-            verifiedImage = UIImage(named: "avatar_enterprise_vip")
+            verifiedImage = UIImage(resource: R.image.avatar_enterprise_vip)
             case 220:
-            verifiedImage = UIImage(named: "avatar_grassroot")
+            verifiedImage = UIImage(resource: R.image.avatar_grassroot)
             default:
             verifiedImage = nil
         }

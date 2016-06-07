@@ -9,8 +9,6 @@
 import UIKit
 import SVProgressHUD
 
-let StatusCell = "StatusCell"
-
 class HomeTableViewController: BaseTableViewController {
 
     var statuses = [StatusViewModel]()
@@ -135,9 +133,9 @@ extension HomeTableViewController {
         return 1
     }
     
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell  = tableView.dequeueReusableCellWithIdentifier(StatusCell, forIndexPath: indexPath) as! TTStatusTableViewCell
+        
+        let cell  = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statusCell, forIndexPath: indexPath)!
         // 设置数据源
         cell.data = statuses[indexPath.section]
         return cell
