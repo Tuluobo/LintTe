@@ -74,13 +74,13 @@ class TTStatusTableViewCell: UITableViewCell {
         // 1.将服务器获得的时间格式化为NSDate
         TTLog(timeStr)
         let formatter = NSDateFormatter()
-        formatter.locale = NSLocale(localeIdentifier: "zh")
+        formatter.locale = NSLocale(localeIdentifier: "en")
         formatter.dateFormat = "EE MM dd HH:mm:ss Z yyyy"
         let createDate = formatter.dateFromString(timeStr)
         TTLog(createDate)
         // 2.拿到当前时间
         // 3.对比设置
-        let interval = createDate?.timeIntervalSinceNow
+        let interval = NSDate().timeIntervalSinceDate(createDate!)
         TTLog(interval)
     }
     
