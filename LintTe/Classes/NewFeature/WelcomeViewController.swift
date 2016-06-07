@@ -42,12 +42,17 @@ class WelcomeViewController: UIViewController {
         UIView.animateWithDuration(2.0, animations: {
             self.view.layoutIfNeeded()
         }) { (flag) in
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
             UIView.animateWithDuration(2.0, animations: { 
                 self.welcomeLabelView.alpha = 1.0
             }, completion: { (flag) in
                 sleep(2)
                 // 跳转到欢迎界面
                 NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
+=======
+            UIView.animateWithDuration(2.0, animations: {
+                self.welcomeLabelView.alpha = 1.0
+>>>>>>> access_token 获取
             })
         }
     }

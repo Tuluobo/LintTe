@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         // 设置 tabbar 全局 tintColor 颜色
         UITabBar.appearance().tintColor = UIColor.orangeColor()
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 <<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
         
         // 注册监听通知
@@ -32,6 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 =======
 >>>>>>> 完善二维码扫描
+=======
+        
+        TTLog(UserAccount.loadUserAccount())
+        
+>>>>>>> access_token 获取
         return true
     }
     deinit {

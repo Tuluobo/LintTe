@@ -44,9 +44,16 @@ class BaseTableViewController: UITableViewController {
     
     @objc private func login() {
         // 1.创建登录界面
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
         let vc = R.storyboard.oAuth.initialViewController()
         // 2.转到登录界面
         presentViewController(vc!, animated: true, completion: nil)
+=======
+        let sb = UIStoryboard(name: "OAuth", bundle: nil)
+        let vc = sb.instantiateInitialViewController()!
+        // 2.转到登录界面
+        presentViewController(vc, animated: true, completion: nil)
+>>>>>>> access_token 获取
     }
     
 }

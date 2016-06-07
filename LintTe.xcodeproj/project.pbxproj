@@ -397,8 +397,15 @@
 		D2C444A11BD6452B009348F7 /* lxh_zhuanfa.gif in Resources */ = {isa = PBXBuildFile; fileRef = D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */; };
 		D2C444A21BD6452B009348F7 /* lxh_zhuanfa.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */; };
 		D2C444A31BD6452B009348F7 /* lxh_zhuanfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */; };
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 <<<<<<< d1d27e5b80cbece5931d53b803aedc96e4f39a5a
 =======
+=======
+		D2C5058D1D03EAF100ABA297 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C5058C1D03EAF100ABA297 /* Welcome.storyboard */; };
+		D2C5058F1D03EB0600ABA297 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C5058E1D03EB0600ABA297 /* WelcomeViewController.swift */; };
+		D2C505911D03F61500ABA297 /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C505901D03F61500ABA297 /* NewFeatureViewController.swift */; };
+		D2C505931D03F61F00ABA297 /* NewFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C505921D03F61F00ABA297 /* NewFeature.storyboard */; };
+>>>>>>> access_token 获取
 		D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */; };
 		D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */; };
 		D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */; };
@@ -429,7 +436,14 @@
 =======
 		D2F019F51D02F78300DCD16F /* QRCodeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019F41D02F78300DCD16F /* QRCodeCreateViewController.swift */; };
 		D2F019F71D02FAA000DCD16F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019F61D02FAA000DCD16F /* UIImage+Extension.swift */; };
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 >>>>>>> 生成二维码 完成
+=======
+		D2F019FA1D0306AB00DCD16F /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019F91D0306AB00DCD16F /* OAuthViewController.swift */; };
+		D2F019FC1D0306B400DCD16F /* OAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F019FB1D0306B400DCD16F /* OAuth.storyboard */; };
+		D2F019FE1D03147A00DCD16F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019FD1D03147A00DCD16F /* NetworkManager.swift */; };
+		D2F01A001D031F1600DCD16F /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F019FF1D031F1600DCD16F /* UserAccount.swift */; };
+>>>>>>> access_token 获取
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -518,6 +532,14 @@
 		D24A90D51BD4C90A000B38D9 /* LintTeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LintTeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24A90D91BD4C90A000B38D9 /* LintTeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintTeUITests.swift; sourceTree = "<group>"; };
 		D24A90DB1BD4C90A000B38D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
+=======
+		D24A90EE1BD4CB43000B38D9 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Defines.swift; path = ../../Defines.swift; sourceTree = "<group>"; };
+		D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeiBoURL.swift; path = ../../WeiBoURL.swift; sourceTree = "<group>"; };
+		D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = ../../HomeTableViewController.swift; sourceTree = "<group>"; };
+		D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weibo.swift; path = ../Weibo.swift; sourceTree = "<group>"; };
+		D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeiboUser.swift; path = ../../WeiboUser.swift; sourceTree = "<group>"; };
+>>>>>>> access_token 获取
 		D24A90FF1BD4CF46000B38D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D24A91011BD4CF4E000B38D9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D24A91031BD4CF5A000B38D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -861,8 +883,15 @@
 		D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lxh_zhuanfa.gif; sourceTree = "<group>"; };
 		D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lxh_zhuanfa.png; sourceTree = "<group>"; };
 		D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lxh_zhuanfa@2x.png"; sourceTree = "<group>"; };
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 <<<<<<< d1d27e5b80cbece5931d53b803aedc96e4f39a5a
 =======
+=======
+		D2C5058C1D03EAF100ABA297 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		D2C5058E1D03EB0600ABA297 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D2C505901D03F61500ABA297 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
+		D2C505921D03F61F00ABA297 /* NewFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewFeature.storyboard; sourceTree = "<group>"; };
+>>>>>>> access_token 获取
 		D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
@@ -893,7 +922,14 @@
 =======
 		D2F019F41D02F78300DCD16F /* QRCodeCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCreateViewController.swift; sourceTree = "<group>"; };
 		D2F019F61D02FAA000DCD16F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 >>>>>>> 生成二维码 完成
+=======
+		D2F019F91D0306AB00DCD16F /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		D2F019FB1D0306B400DCD16F /* OAuth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAuth.storyboard; sourceTree = "<group>"; };
+		D2F019FD1D03147A00DCD16F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D2F019FF1D031F1600DCD16F /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+>>>>>>> access_token 获取
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1539,9 +1575,21 @@
 			path = lxh;
 			sourceTree = "<group>";
 		};
+		D2C5058B1D03EACE00ABA297 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				D2C5058E1D03EB0600ABA297 /* WelcomeViewController.swift */,
+				D2C5058C1D03EAF100ABA297 /* Welcome.storyboard */,
+				D2C505901D03F61500ABA297 /* NewFeatureViewController.swift */,
+				D2C505921D03F61F00ABA297 /* NewFeature.storyboard */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
 		D2C860E21CFFB819001FC290 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 				D210F9D91D0682FA004679A1 /* Tools */,
 				D210F9CB1D0682FA004679A1 /* Models */,
 				D210F9E11D0682FA004679A1 /* ViewModels */,
@@ -1553,6 +1601,18 @@
 				D210F9B01D0682FA004679A1 /* Compose */,
 				D210F9B11D0682FA004679A1 /* Discover */,
 				D210F9D71D0682FA004679A1 /* Profile */,
+=======
+				D24A90FA1BD4CBDF000B38D9 /* Weibo.swift */,
+				D2C5058B1D03EACE00ABA297 /* NewFeature */,
+				D2F019F81D03063B00DCD16F /* OAuth */,
+				D2C860E61CFFB819001FC290 /* Main */,
+				D2C860E51CFFB819001FC290 /* Home */,
+				D2C860E71CFFB819001FC290 /* Message */,
+				D2C860E31CFFB819001FC290 /* Compose */,
+				D2C860E41CFFB819001FC290 /* Discover */,
+				D2C860E81CFFB819001FC290 /* Profile */,
+				D2C860E91CFFB819001FC290 /* Tools */,
+>>>>>>> access_token 获取
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1621,9 +1681,12 @@
 		D2C860E91CFFB819001FC290 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D24A90F01BD4CB57000B38D9 /* WeiBoURL.swift */,
+				D24A90EE1BD4CB43000B38D9 /* Defines.swift */,
 				D2F019F61D02FAA000DCD16F /* UIImage+Extension.swift */,
 				D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */,
 				D2D0562D1D016B6200A68656 /* TitileButton.swift */,
+				D2F019FD1D03147A00DCD16F /* NetworkManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1652,7 +1715,21 @@
 			name = QRCode;
 			sourceTree = "<group>";
 		};
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 >>>>>>> 完善二维码扫描
+=======
+		D2F019F81D03063B00DCD16F /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				D2F019F91D0306AB00DCD16F /* OAuthViewController.swift */,
+				D2F019FB1D0306B400DCD16F /* OAuth.storyboard */,
+				D2F019FF1D031F1600DCD16F /* UserAccount.swift */,
+				D24A90FC1BD4CBF0000B38D9 /* WeiboUser.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+>>>>>>> access_token 获取
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1806,6 +1883,7 @@
 				D2C4449D1BD6452B009348F7 /* lxh_zaokuangzheng@2x.png in Resources */,
 				D24A90C41BD4C90A000B38D9 /* LaunchScreen.storyboard in Resources */,
 				D2C4447C1BD6452B009348F7 /* lxh_quntiweiguan@2x.png in Resources */,
+				D2F019FC1D0306B400DCD16F /* OAuth.storyboard in Resources */,
 				D2C443D51BD6452B009348F7 /* d_zuiyou@3x.png in Resources */,
 				D2C443D21BD6452B009348F7 /* d_zhutou@2x.png in Resources */,
 				D2C4449B1BD6452B009348F7 /* lxh_zaokuangzheng.gif in Resources */,
@@ -1832,6 +1910,7 @@
 				D2C444741BD6452B009348F7 /* lxh_qiubite.gif in Resources */,
 				D2C443E61BD6452B009348F7 /* f_xi@3x.png in Resources */,
 				D2C443E81BD6452B009348F7 /* f_zhi@3x.png in Resources */,
+				D2C5058D1D03EAF100ABA297 /* Welcome.storyboard in Resources */,
 				D2C443911BD6452B009348F7 /* d_lang@2x.png in Resources */,
 				D210F9FC1D0682FA004679A1 /* NewFeature.storyboard in Resources */,
 				D2C443C31BD6452B009348F7 /* d_xixi@2x.png in Resources */,
@@ -1857,6 +1936,7 @@
 				D2C444191BD6452B009348F7 /* w_fuyun@2x.png in Resources */,
 				D2C4437B1BD6452B009348F7 /* d_han@2x.png in Resources */,
 				D2C4446C1BD6452B009348F7 /* lxh_oye@2x.png in Resources */,
+				D2C505931D03F61F00ABA297 /* NewFeature.storyboard in Resources */,
 				D2C4435F1BD6452B009348F7 /* d_bizui@2x.png in Resources */,
 				D2C444451BD6452B009348F7 /* lxh_haobang.gif in Resources */,
 				D2C444061BD6452B009348F7 /* o_ganbei@3x.png in Resources */,
@@ -2278,6 +2358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 <<<<<<< d1d27e5b80cbece5931d53b803aedc96e4f39a5a
 				D210FA051D0682FA004679A1 /* NSDate+Extension.swift in Sources */,
 				D210FA041D0682FA004679A1 /* NetworkManager.swift in Sources */,
@@ -2304,13 +2385,18 @@
 				D210F9F61D0682FA004679A1 /* VisitorView.swift in Sources */,
 				D210F9EB1D0682FA004679A1 /* TTPresentationManager.swift in Sources */,
 =======
+=======
+				D2F019FE1D03147A00DCD16F /* NetworkManager.swift in Sources */,
+>>>>>>> access_token 获取
 				D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */,
 				D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */,
 				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
 				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
 				D2F019F51D02F78300DCD16F /* QRCodeCreateViewController.swift in Sources */,
+				D2C5058F1D03EB0600ABA297 /* WelcomeViewController.swift in Sources */,
 				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
 				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
+				D2F01A001D031F1600DCD16F /* UserAccount.swift in Sources */,
 				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
 				D2D056391D01A92300A68656 /* TTPresentationManager.swift in Sources */,
 				D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */,
@@ -2332,6 +2418,8 @@
 =======
 				D2D0563E1D01B6DA00A68656 /* QRCodeViewController.swift in Sources */,
 				D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */,
+				D2F019FA1D0306AB00DCD16F /* OAuthViewController.swift in Sources */,
+				D2C505911D03F61500ABA297 /* NewFeatureViewController.swift in Sources */,
 				D2D0562E1D016B6200A68656 /* TitileButton.swift in Sources */,
 >>>>>>> 完善二维码扫描
 			);

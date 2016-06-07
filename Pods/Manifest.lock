@@ -14,9 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
   - R.swift (2.3.0):
     - R.swift.Library (~> 2.1.0)
   - R.swift.Library (2.1.0)
+=======
+>>>>>>> access_token 获取
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
@@ -24,17 +27,27 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
   - R.swift
+=======
+>>>>>>> access_token 获取
   - SDWebImage
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
   R.swift: 38b2191a603c3d491a09baddfb4ccc7aa9be4d9d
   R.swift.Library: e5e077ed04f6867a95676af491650091b23518e9
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
 PODFILE CHECKSUM: ba0ffa1a51775bb59bee7e73d0285e3e16e9d463
+=======
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: 47847494972d82f64db6f14d746cd04b7e0d42a0
+>>>>>>> access_token 获取
 
 COCOAPODS: 1.0.0

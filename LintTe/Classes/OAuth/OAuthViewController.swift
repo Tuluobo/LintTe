@@ -91,17 +91,25 @@ extension OAuthViewController: UIWebViewDelegate {
             TTLog(account)
             // 2. 获取用户信息
             account.loadUserInfo({ (userAccount, error) in
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
                 // 3. 归案授权信息
+=======
+                // 3. 归案当授权信息
+>>>>>>> access_token 获取
                 if error != nil {
                     TTLog(error)
                     return
                 }
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
                 // 3.1保存授权信息
                 userAccount!.saveAccount()
                 // 3.2跳转到欢迎界面
                 NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
                 // 4.关闭认证界面
                 self.cancelBtnClick(UIBarButtonItem())
+=======
+                userAccount!.saveAccount()
+>>>>>>> access_token 获取
             })
             
             }) { (_, error) in

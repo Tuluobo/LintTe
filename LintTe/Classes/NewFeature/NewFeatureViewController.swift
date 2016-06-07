@@ -1,5 +1,9 @@
 //
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 //  NewFeatureViewController.swift
+=======
+//  NewFeatureCollectionViewController.swift
+>>>>>>> access_token 获取
 //  LintTe
 //
 //  Created by WangHao on 16/6/5.
@@ -8,6 +12,7 @@
 
 import UIKit
 
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 let cellID = "NewFeatureImageCell"
 
 class NewFeatureViewController: UIViewController {
@@ -24,6 +29,13 @@ class NewFeatureViewController: UIViewController {
             newFeatureImages.append(image)
         }
         imageControl.numberOfPages = 4
+=======
+class NewFeatureCollectionViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+>>>>>>> access_token 获取
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +43,7 @@ class NewFeatureViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 }
 
 extension NewFeatureViewController: UICollectionViewDataSource {
@@ -130,3 +143,8 @@ class TTNewFeatureLayout: UICollectionViewFlowLayout {
 }
 
 
+=======
+
+
+}
+>>>>>>> access_token 获取
