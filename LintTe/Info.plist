@@ -50,8 +50,12 @@
 <<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 =======
 	<key>UIMainStoryboardFile</key>
+<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
 	<string>Welcome</string>
 >>>>>>> access_token 获取
+=======
+	<string>NewFeature</string>
+>>>>>>> 完成新特性 页面显示
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
