@@ -92,10 +92,18 @@ class TTStatusTableViewCell: UITableViewCell {
         }
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2.0
+    }
+    
+    /**
+     更新UI
+     */
     private func setupUI() {
         
         avatarImageView.image = UIImage(named: "avatar_default")
-        avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2.0
         
         sourceLabel.text = ""
         statusTextLabel.text = ""
