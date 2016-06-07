@@ -397,6 +397,29 @@
 		D2C444A11BD6452B009348F7 /* lxh_zhuanfa.gif in Resources */ = {isa = PBXBuildFile; fileRef = D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */; };
 		D2C444A21BD6452B009348F7 /* lxh_zhuanfa.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */; };
 		D2C444A31BD6452B009348F7 /* lxh_zhuanfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */; };
+<<<<<<< d1d27e5b80cbece5931d53b803aedc96e4f39a5a
+=======
+		D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */; };
+		D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */; };
+		D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */; };
+		D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */; };
+		D2C860F91CFFE411001FC290 /* NullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860F81CFFE411001FC290 /* NullTableViewController.swift */; };
+		D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */; };
+		D2C860FD1D001FE5001FC290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C860FC1D001FE5001FC290 /* Main.storyboard */; };
+		D2C860FF1D002178001FC290 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C860FE1D002178001FC290 /* Home.storyboard */; };
+		D2C861011D002189001FC290 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861001D002189001FC290 /* Message.storyboard */; };
+		D2C861031D002198001FC290 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861021D002198001FC290 /* Null.storyboard */; };
+		D2C861051D0021A4001FC290 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861041D0021A4001FC290 /* Discover.storyboard */; };
+		D2C861071D0021B6001FC290 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C861061D0021B6001FC290 /* Profile.storyboard */; };
+		D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C861081D002684001FC290 /* BaseTableViewController.swift */; };
+		D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8610A1D00291F001FC290 /* VisitorView.swift */; };
+		D2C8610D1D002935001FC290 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C8610C1D002935001FC290 /* VisitorView.xib */; };
+		D2D0562E1D016B6200A68656 /* TitileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0562D1D016B6200A68656 /* TitileButton.swift */; };
+		D2D056311D017C7500A68656 /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D056301D017C7500A68656 /* Popover.storyboard */; };
+		D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056321D0181AF00A68656 /* TTPresentationController.swift */; };
+		D2D056351D018AE300A68656 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056341D018AE300A68656 /* PopoverViewController.swift */; };
+		D2D056391D01A92300A68656 /* TTPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D056381D01A92300A68656 /* TTPresentationManager.swift */; };
+>>>>>>> 完善导航栏中间title 弹出菜单动画
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -828,6 +851,29 @@
 		D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lxh_zhuanfa.gif; sourceTree = "<group>"; };
 		D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lxh_zhuanfa.png; sourceTree = "<group>"; };
 		D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lxh_zhuanfa@2x.png"; sourceTree = "<group>"; };
+<<<<<<< d1d27e5b80cbece5931d53b803aedc96e4f39a5a
+=======
+		D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		D2C860F81CFFE411001FC290 /* NullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NullTableViewController.swift; path = ../Main/NullTableViewController.swift; sourceTree = "<group>"; };
+		D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D2C860FC1D001FE5001FC290 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2C860FE1D002178001FC290 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Main/Home.storyboard; sourceTree = "<group>"; };
+		D2C861001D002189001FC290 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../Main/Message.storyboard; sourceTree = "<group>"; };
+		D2C861021D002198001FC290 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Null.storyboard; path = ../Main/Null.storyboard; sourceTree = "<group>"; };
+		D2C861041D0021A4001FC290 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../Main/Discover.storyboard; sourceTree = "<group>"; };
+		D2C861061D0021B6001FC290 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
+		D2C861081D002684001FC290 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		D2C8610A1D00291F001FC290 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		D2C8610C1D002935001FC290 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		D2D0562D1D016B6200A68656 /* TitileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitileButton.swift; sourceTree = "<group>"; };
+		D2D056301D017C7500A68656 /* Popover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
+		D2D056321D0181AF00A68656 /* TTPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationController.swift; sourceTree = "<group>"; };
+		D2D056341D018AE300A68656 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		D2D056381D01A92300A68656 /* TTPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPresentationManager.swift; sourceTree = "<group>"; };
+>>>>>>> 完善导航栏中间title 弹出菜单动画
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1491,6 +1537,87 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+<<<<<<< d1d27e5b80cbece5931d53b803aedc96e4f39a5a
+=======
+		D2C860E31CFFB819001FC290 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				D2C860F81CFFE411001FC290 /* NullTableViewController.swift */,
+				D2C861021D002198001FC290 /* Null.storyboard */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		D2C860E41CFFB819001FC290 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				D2C860F61CFFC6B0001FC290 /* DiscoverTableViewController.swift */,
+				D2C861041D0021A4001FC290 /* Discover.storyboard */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		D2C860E51CFFB819001FC290 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2D0562F1D017C3500A68656 /* Popover */,
+				D24A90F61BD4CBC4000B38D9 /* HomeTableViewController.swift */,
+				D2C860FE1D002178001FC290 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D2C860E61CFFB819001FC290 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D2C860EA1CFFBCF1001FC290 /* MainViewController.swift */,
+				D2C860FC1D001FE5001FC290 /* Main.storyboard */,
+				D2C861081D002684001FC290 /* BaseTableViewController.swift */,
+				D2C8610A1D00291F001FC290 /* VisitorView.swift */,
+				D2C8610C1D002935001FC290 /* VisitorView.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D2C860E71CFFB819001FC290 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D2C860F41CFFC6A1001FC290 /* MessageTableViewController.swift */,
+				D2C861001D002189001FC290 /* Message.storyboard */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		D2C860E81CFFB819001FC290 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D2C860F21CFFC68C001FC290 /* ProfileTableViewController.swift */,
+				D2C861061D0021B6001FC290 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D2C860E91CFFB819001FC290 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D2C860FA1D00165A001FC290 /* UIButton+Extension.swift */,
+				D2D0562D1D016B6200A68656 /* TitileButton.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D2D0562F1D017C3500A68656 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				D2D056381D01A92300A68656 /* TTPresentationManager.swift */,
+				D2D056321D0181AF00A68656 /* TTPresentationController.swift */,
+				D2D056341D018AE300A68656 /* PopoverViewController.swift */,
+				D2D056301D017C7500A68656 /* Popover.storyboard */,
+			);
+			name = Popover;
+			sourceTree = "<group>";
+		};
+>>>>>>> 完善导航栏中间title 弹出菜单动画
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2115,6 +2242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< d1d27e5b80cbece5931d53b803aedc96e4f39a5a
 				D210FA051D0682FA004679A1 /* NSDate+Extension.swift in Sources */,
 				D210FA041D0682FA004679A1 /* NetworkManager.swift in Sources */,
 				D210FA021D0682FA004679A1 /* ProfileTableViewController.swift in Sources */,
@@ -2139,6 +2267,23 @@
 				D210FA091D0682FA004679A1 /* WeiBoURL.swift in Sources */,
 				D210F9F61D0682FA004679A1 /* VisitorView.swift in Sources */,
 				D210F9EB1D0682FA004679A1 /* TTPresentationManager.swift in Sources */,
+=======
+				D2C860EB1CFFBCF1001FC290 /* MainViewController.swift in Sources */,
+				D2D056331D0181AF00A68656 /* TTPresentationController.swift in Sources */,
+				D24A90F71BD4CBC4000B38D9 /* HomeTableViewController.swift in Sources */,
+				D2C861091D002684001FC290 /* BaseTableViewController.swift in Sources */,
+				D24A90F11BD4CB57000B38D9 /* WeiBoURL.swift in Sources */,
+				D24A90FB1BD4CBDF000B38D9 /* Weibo.swift in Sources */,
+				D24A90EF1BD4CB43000B38D9 /* Defines.swift in Sources */,
+				D2D056391D01A92300A68656 /* TTPresentationManager.swift in Sources */,
+				D2C860FB1D00165A001FC290 /* UIButton+Extension.swift in Sources */,
+				D24A90FD1BD4CBF0000B38D9 /* WeiboUser.swift in Sources */,
+				D2D056351D018AE300A68656 /* PopoverViewController.swift in Sources */,
+				D2C860F31CFFC68C001FC290 /* ProfileTableViewController.swift in Sources */,
+				D2C860F51CFFC6A1001FC290 /* MessageTableViewController.swift in Sources */,
+				D2C860F71CFFC6B0001FC290 /* DiscoverTableViewController.swift in Sources */,
+				D2C8610B1D00291F001FC290 /* VisitorView.swift in Sources */,
+>>>>>>> 完善导航栏中间title 弹出菜单动画
 				D24A90B71BD4C90A000B38D9 /* AppDelegate.swift in Sources */,
 				D210FA081D0682FA004679A1 /* UIImage+Extension.swift in Sources */,
 				D210F9F91D0682FA004679A1 /* Status.swift in Sources */,

@@ -8,6 +8,15 @@
 
 import UIKit
 
+<<<<<<< d1d27e5b80cbece5931d53b803aedc96e4f39a5a
+=======
+/// 自定义转场展现
+let TTPresentationManagerDidPresentedController = "TTPresentationManagerDidPresentedController"
+/// 自定义转场消失
+let TTPresentationManagerDidDismissedController = "TTPresentationManagerDidDismissedController"
+
+
+>>>>>>> 完善导航栏中间title 弹出菜单动画
 class TTPresentationManager: NSObject, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
     
     private var isPresent = false
