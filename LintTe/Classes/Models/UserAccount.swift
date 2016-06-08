@@ -120,7 +120,6 @@ class UserAccount: NSObject, NSCoding {
         TTLog(filePath)
         return filePath
     }
-    
     /**
      加载归档模型
      

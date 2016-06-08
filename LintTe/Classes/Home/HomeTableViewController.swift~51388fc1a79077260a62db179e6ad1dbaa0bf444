@@ -9,8 +9,6 @@
 import UIKit
 import SVProgressHUD
 
-let StatusCell = "StatusCell"
-
 class HomeTableViewController: BaseTableViewController {
 
     var statuses = [StatusViewModel]()
@@ -85,8 +83,7 @@ class HomeTableViewController: BaseTableViewController {
     @objc private func titleBtnClick(button: TitileButton) {
         // 2、显示菜单
         // 2.1 创建菜单
-        let sb = UIStoryboard(name: "Popover", bundle: nil)
-        guard let menuView = sb.instantiateInitialViewController() else {
+        guard let menuView = R.storyboard.popover.initialViewController() else {
             return
         }
         // 2.2自定义转场动画
@@ -102,8 +99,7 @@ class HomeTableViewController: BaseTableViewController {
         TTLog("")
     }
     @IBAction func rightBarBtnClick() {
-        let sb = UIStoryboard(name: "QRCode", bundle: nil)
-        let vc = sb.instantiateInitialViewController()
+        let vc = R.storyboard.qRCode.initialViewController()
         self.presentViewController(vc!, animated: true, completion: nil)
     }
 
@@ -137,9 +133,9 @@ extension HomeTableViewController {
         return 1
     }
     
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell  = tableView.dequeueReusableCellWithIdentifier(StatusCell, forIndexPath: indexPath) as! TTStatusTableViewCell
+        
+        let cell  = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statusCell, forIndexPath: indexPath)!
         // 设置数据源
         cell.data = statuses[indexPath.section]
         return cell
