@@ -35,14 +35,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 >>>>>>> 完善二维码扫描
 =======
         
+        // 注册监听通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(changeRootViewController(_:)), name: TTSwitchRootViewController, object: nil)
         // 显示首界面
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = defaultViewController()
         window?.makeKeyAndVisible()
         
+<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
         // 判断用户登录
         
 >>>>>>> access_token 获取
+=======
+>>>>>>> 完善 跳转逻辑
         return true
     }
     deinit {
@@ -64,6 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // MARK: - 版本相关
 extension AppDelegate {
     
+<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
 <<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
     // 切换根控制器
     @objc private func changeRootViewController(notification: NSNotification) {
@@ -79,10 +85,28 @@ extension AppDelegate {
             break
         }
         if  let vc = initVC {
+=======
+    // 切换根控制器
+    @objc private func changeRootViewController(notification: NSNotification) {
+        
+        var sbName: String?
+        let objc = notification.object
+        switch objc {
+        case is OAuthViewController:
+            sbName = "Welcome"
+        case is WelcomeViewController, is NewFeatureViewController:
+            sbName = "Main"
+        default:
+            break
+        }
+        if  let name = sbName {
+            let vc = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController()!
+>>>>>>> 完善 跳转逻辑
             window?.rootViewController = vc
         }
     }
     
+<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
     // 返回默认界面
     private func defaultViewController() -> UIViewController {
         
@@ -94,6 +118,8 @@ extension AppDelegate {
         }
         return initVC
 =======
+=======
+>>>>>>> 完善 跳转逻辑
     // 返回默认界面
     private func defaultViewController() -> UIViewController {
         

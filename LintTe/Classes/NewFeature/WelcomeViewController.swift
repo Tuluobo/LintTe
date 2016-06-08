@@ -60,10 +60,17 @@ class WelcomeViewController: UIViewController {
             }, completion: { (flag) in
                 sleep(2)
                 // 跳转到欢迎界面
+<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
                 let window = UIApplication.sharedApplication().keyWindow
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
                 window?.rootViewController = vc
 >>>>>>> 打通登陆 判断新版本 欢迎界面 显示
+=======
+//                let window = UIApplication.sharedApplication().keyWindow
+//                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+//                window?.rootViewController = vc
+                NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
+>>>>>>> 完善 跳转逻辑
             })
         }
     }

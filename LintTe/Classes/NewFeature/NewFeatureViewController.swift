@@ -99,6 +99,7 @@ extension NewFeatureViewController: UICollectionViewDataSource {
     }
     
     @objc private func startEnterWB() {
+<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
 <<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
 <<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
         NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
@@ -110,6 +111,9 @@ extension NewFeatureViewController: UICollectionViewDataSource {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
         window?.rootViewController = vc
 >>>>>>> 打通登陆 判断新版本 欢迎界面 显示
+=======
+        NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
+>>>>>>> 完善 跳转逻辑
     }
 }
 
