@@ -13,7 +13,7 @@ let StatusCell = "StatusCell"
 
 class HomeTableViewController: BaseTableViewController {
 
-    var statuses = [Status]()
+    var statuses = [StatusViewModel]()
     
     // MARK: - 懒加载
     private lazy var animationManager: TTPresentationManager = {
@@ -69,7 +69,8 @@ class HomeTableViewController: BaseTableViewController {
             }
             
             for item in array! {
-                self.statuses.append(Status(dict: item))
+                let statusVM = StatusViewModel(status: Status(dict: item))
+                self.statuses.append(statusVM)
             }
             
             self.tableView.reloadData()
@@ -128,19 +129,24 @@ extension HomeTableViewController {
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return statuses.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return statuses.count
+        return 1
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCellWithIdentifier(StatusCell, forIndexPath: indexPath) as! TTStatusTableViewCell
-        cell.status = statuses[indexPath.row]
+        // 设置数据源
+        cell.data = statuses[indexPath.section]
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 8
     }
 
 }

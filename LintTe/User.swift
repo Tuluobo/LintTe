@@ -72,7 +72,7 @@ class User: NSObject {
     override func setValue(value: AnyObject?, forUndefinedKey key: String) { }
     
     override var description: String {
-        let keys = ["idstr", "screen_name", "verified_type", "verified_reason", "followers_count", "friends_count", "statuses_count"]
+        let keys = ["idstr", "screen_name", "profile_image_url", "verified_type", "verified_reason", "followers_count", "friends_count", "statuses_count"]
         let dict = dictionaryWithValuesForKeys(keys)
         return "\(dict)"
     }
