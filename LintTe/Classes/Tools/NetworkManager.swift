@@ -25,7 +25,10 @@ class NetworkManager: AFHTTPSessionManager {
     }()
     
     
+<<<<<<< 0724249948953689caa8fd588075a31c9cd0e445
 <<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
+=======
+>>>>>>> 首页 请求微博
     func loadStatuses(finished: (array: [[String: AnyObject]]?, error: NSError?) -> ()) {
         // 断言
         assert(UserAccount.userAccount != nil, "此方法必须授权调用")
@@ -48,6 +51,9 @@ class NetworkManager: AFHTTPSessionManager {
     }
     
     
+<<<<<<< 0724249948953689caa8fd588075a31c9cd0e445
 =======
 >>>>>>> access_token 获取
+=======
+>>>>>>> 首页 请求微博
 }

@@ -93,7 +93,7 @@ class UserAccount: NSObject, NSCoding {
             "uid": uid!,
         ]
         // 发送请求获取Access_token
-        NetworkManager.shareInstance.GET(WeiBoURL.weiboUserUrl, parameters: parameters, success: { (_, data) in
+        NetworkManager.shareInstance.GET(WeiBoURL.weiboUserInfo, parameters: parameters, success: { (_, data) in
             // 成功请求后处理
             
             let userDict = data as! [String:AnyObject]
