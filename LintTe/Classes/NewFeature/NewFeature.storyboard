@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Rs-no-YzU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -62,74 +60,4 @@
             <point key="canvasLocation" x="616" y="422"/>
         </scene>
     </scenes>
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Rs-no-YzU">
->>>>>>> 完成新特性 页面显示
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-    </dependencies>
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
-    <scenes/>
->>>>>>> access_token 获取
-=======
-    <scenes>
-        <!--New Feature View Controller-->
-        <scene sceneID="rOG-qA-qWd">
-            <objects>
-                <viewController id="1Rs-no-YzU" customClass="NewFeatureViewController" customModule="LintTe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TJg-IE-0Bj"/>
-                        <viewControllerLayoutGuide type="bottom" id="jhb-eq-I1I"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Knz-2U-tDj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="14E-L9-rDY">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <collectionViewLayout key="collectionViewLayout" id="XAN-Ml-7CK" customClass="TTNewFeatureLayout" customModule="LintTe" customModuleProvider="target"/>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewFeatureImageCell" id="uak-V3-Hjh">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="1Rs-no-YzU" id="chn-AB-xcA"/>
-                                    <outlet property="delegate" destination="1Rs-no-YzU" id="cNL-I2-B9Z"/>
-                                </connections>
-                            </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DF3-4U-qA1">
-                                <rect key="frame" x="281" y="555" width="39" height="37"/>
-                                <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" red="1" green="0.41152287710000002" blue="0.116378047" alpha="1" colorSpace="calibratedRGB"/>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="14E-L9-rDY" secondAttribute="trailing" id="5cm-Uw-ydm"/>
-                            <constraint firstItem="14E-L9-rDY" firstAttribute="leading" secondItem="Knz-2U-tDj" secondAttribute="leading" id="CoN-Bd-HxL"/>
-                            <constraint firstItem="jhb-eq-I1I" firstAttribute="top" secondItem="14E-L9-rDY" secondAttribute="bottom" id="hec-g3-ouX"/>
-                            <constraint firstItem="DF3-4U-qA1" firstAttribute="centerX" secondItem="Knz-2U-tDj" secondAttribute="centerX" id="jW6-6c-JjZ"/>
-                            <constraint firstItem="jhb-eq-I1I" firstAttribute="top" secondItem="DF3-4U-qA1" secondAttribute="bottom" constant="8" id="l2k-e6-dGL"/>
-                            <constraint firstItem="14E-L9-rDY" firstAttribute="top" secondItem="Knz-2U-tDj" secondAttribute="top" id="orI-Mu-cMd"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageControl" destination="DF3-4U-qA1" id="R5e-Qx-L4j"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="abe-DS-RM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="616" y="422"/>
-        </scene>
-    </scenes>
->>>>>>> 完成新特性 页面显示
 </document>

@@ -1,13 +1,5 @@
 //
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 //  NewFeatureViewController.swift
-=======
-//  NewFeatureCollectionViewController.swift
->>>>>>> access_token 获取
-=======
-//  NewFeatureViewController.swift
->>>>>>> 完成新特性 页面显示
 //  LintTe
 //
 //  Created by WangHao on 16/6/5.
@@ -16,8 +8,6 @@
 
 import UIKit
 
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 let cellID = "NewFeatureImageCell"
 
 class NewFeatureViewController: UIViewController {
@@ -34,30 +24,6 @@ class NewFeatureViewController: UIViewController {
             newFeatureImages.append(image)
         }
         imageControl.numberOfPages = 4
-=======
-class NewFeatureCollectionViewController: UIViewController {
-=======
-let cellID = "NewFeatureImageCell"
->>>>>>> 完成新特性 页面显示
-
-class NewFeatureViewController: UIViewController {
-
-    var newFeatureImages = [UIImage]()
-    // 页面控制
-    @IBOutlet weak var imageControl: UIPageControl!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
->>>>>>> access_token 获取
-=======
-        // Do any additional setup after loading the view.
-        for i in 1...4 {
-            let image = UIImage(named: "new_feature_\(i)")!
-            newFeatureImages.append(image)
-        }
-        imageControl.numberOfPages = 4
->>>>>>> 完成新特性 页面显示
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,10 +31,6 @@ class NewFeatureViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
-=======
->>>>>>> 完成新特性 页面显示
 }
 
 extension NewFeatureViewController: UICollectionViewDataSource {
@@ -99,21 +61,7 @@ extension NewFeatureViewController: UICollectionViewDataSource {
     }
     
     @objc private func startEnterWB() {
-<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
-<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
         NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
-=======
-        TTLog("")
->>>>>>> 完成新特性 页面显示
-=======
-        let window = UIApplication.sharedApplication().keyWindow
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
-        window?.rootViewController = vc
->>>>>>> 打通登陆 判断新版本 欢迎界面 显示
-=======
-        NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
->>>>>>> 完善 跳转逻辑
     }
 }
 
@@ -156,7 +104,6 @@ extension NewFeatureViewController: UICollectionViewDelegate {
 
     }
 }
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
 
 // MARK: - 自定义布局
 class TTNewFeatureLayout: UICollectionViewFlowLayout {
@@ -183,36 +130,3 @@ class TTNewFeatureLayout: UICollectionViewFlowLayout {
 }
 
 
-=======
-=======
->>>>>>> 完成新特性 页面显示
-
-// MARK: - 自定义布局
-class TTNewFeatureLayout: UICollectionViewFlowLayout {
-    // 准备布局
-    override func prepareLayout() {
-        // 1.设置每一个 cell 的尺寸
-        itemSize = UIScreen.mainScreen().bounds.size
-        // 2.设置cell之间的间隙
-        minimumLineSpacing = 0
-        minimumInteritemSpacing = 0
-        // 3.设置滚动方向
-        scrollDirection = .Horizontal
-        // 4.设置分页
-        collectionView?.pagingEnabled = true
-        // 5.禁用回弹
-        collectionView?.bounces = false
-        // 6.去除滚动条
-        collectionView?.showsVerticalScrollIndicator = false
-        collectionView?.showsHorizontalScrollIndicator = false
-        // 7.显示分页原点
-    }
-    
-
-}
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
->>>>>>> access_token 获取
-=======
-
-
->>>>>>> 完成新特性 页面显示

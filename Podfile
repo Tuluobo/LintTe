@@ -10,10 +10,7 @@ target 'LintTe' do
   pod 'AFNetworking'
   pod 'SVProgressHUD'
   pod 'SDWebImage'
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
   pod 'R.swift'
-=======
->>>>>>> access_token 获取
 
   target 'LintTeTests' do
     inherit! :search_paths

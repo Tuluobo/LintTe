@@ -26,8 +26,6 @@ class TTStatusTableViewCell: UITableViewCell {
     @IBOutlet weak var statusTextLabel: UILabel!
     
     // 模型数据
-<<<<<<< 67e79842fbbe0a445b100c94194b899502c8182c
-<<<<<<< 0724249948953689caa8fd588075a31c9cd0e445
     var data: StatusViewModel? {
         didSet {
             setupUI()
@@ -84,69 +82,6 @@ class TTStatusTableViewCell: UITableViewCell {
             nickNameLabel.textColor = UIColor.orangeColor()
         }
     }
-    
-
-=======
-    var status: Status? {
-=======
-    var data: StatusViewModel? {
->>>>>>> 将 微博首页 效果展示改为 MVVM 完成
-        didSet {
-            setupUI()
-        }
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2.0
-        verifiedImageView.layer.cornerRadius = verifiedImageView.bounds.width / 2.0
-        verifiedImageView.layer.borderWidth = 2.0
-        verifiedImageView.layer.borderColor = UIColor.whiteColor().CGColor
-    }
-    
-    /**
-     更新UI
-     */
-    private func setupUI() {
-        // 初始化
-        avatarImageView.image = UIImage(named: "avatar_default")
-        verifiedImageView.image = nil
-        vipImageView.image = nil
-        nickNameLabel.textColor = UIColor.blackColor()
-        sourceLabel.text = nil
-        statusTextLabel.text = nil
-        
-        // 守护数据
-        guard let statusVM = data else {
-            return
-        }
-        
-        // 正常设置微博
-        // 发布时间
-        sendTimeLabel.text = statusVM.sendTimeStr
-        // 微博来源
-        sourceLabel.text = statusVM.sourceStr
-        // 微博正文
-        statusTextLabel.text = statusVM.status.text
-        
-        // 用户设置
-        // 用户昵称
-        nickNameLabel.text = statusVM.status.user.screen_name
-        
-        // 头像
-        if let avatarUrl = statusVM.avatarURL {
-            avatarImageView.sd_setImageWithURL(avatarUrl)
-        }
-        // 认证
-        verifiedImageView.image = statusVM.verifiedImage
-        // vip
-        vipImageView.image = statusVM.mbrankImage
-        // 设置昵称颜色
-        if let _ = statusVM.mbrankImage {
-            nickNameLabel.textColor = UIColor.orangeColor()
-        }
-    }
->>>>>>> 首页 请求微博
     
 
     

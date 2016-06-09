@@ -15,11 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
 	<string>1.1</string>
-=======
-	<string>1.2</string>
->>>>>>> 打通登陆 判断新版本 欢迎界面 显示
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -51,18 +47,6 @@
 	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
-=======
-	<key>UIMainStoryboardFile</key>
-<<<<<<< bbdd0cabd30d6854f52e83712e662cffe6f49d4a
-	<string>Welcome</string>
->>>>>>> access_token 获取
-=======
-	<string>NewFeature</string>
->>>>>>> 完成新特性 页面显示
-=======
->>>>>>> 打通登陆 判断新版本 欢迎界面 显示
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

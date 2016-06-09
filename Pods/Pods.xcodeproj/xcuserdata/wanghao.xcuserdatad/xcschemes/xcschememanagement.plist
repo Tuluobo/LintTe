@@ -24,14 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 		<key>R.swift.Library.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-=======
->>>>>>> access_token 获取
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -45,61 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>4E5A5767891F03FDC96BA4BF9CBEBDF9</key>
-=======
-		<key>0356728FAAC524386595D21C1FD85BD9</key>
->>>>>>> access_token 获取
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 		<key>9257C3541A94A5406B9D9814C2786FB0</key>
-=======
-		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
->>>>>>> access_token 获取
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 		<key>92E884CB234AA270DEA8F8F74C7A7014</key>
-=======
-		<key>4E5A5767891F03FDC96BA4BF9CBEBDF9</key>
->>>>>>> access_token 获取
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 		<key>959D1351FAE5B347078DE43EE197CCB6</key>
-=======
-		<key>6C9B9F8CE137932791F90D4571BA618A</key>
->>>>>>> access_token 获取
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 		<key>A9459307B2A11ECEE3EC9BA3BF9FC4A3</key>
-=======
-		<key>959D1351FAE5B347078DE43EE197CCB6</key>
->>>>>>> access_token 获取
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
 		<key>E08992E462B4BCF66FEE1C1DA41461C6</key>
-=======
-		<key>DAFB6A1C5C8BBA4D10D64D85EFEBC22B</key>
->>>>>>> access_token 获取
 		<dict>
 			<key>primary</key>
 			<true/>

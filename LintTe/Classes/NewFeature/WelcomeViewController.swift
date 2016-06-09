@@ -42,35 +42,12 @@ class WelcomeViewController: UIViewController {
         UIView.animateWithDuration(2.0, animations: {
             self.view.layoutIfNeeded()
         }) { (flag) in
-<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
             UIView.animateWithDuration(2.0, animations: { 
                 self.welcomeLabelView.alpha = 1.0
             }, completion: { (flag) in
                 sleep(2)
                 // 跳转到欢迎界面
                 NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
-=======
-            UIView.animateWithDuration(2.0, animations: {
-                self.welcomeLabelView.alpha = 1.0
->>>>>>> access_token 获取
-=======
-            UIView.animateWithDuration(2.0, animations: { 
-                self.welcomeLabelView.alpha = 1.0
-            }, completion: { (flag) in
-                sleep(2)
-                // 跳转到欢迎界面
-<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
-                let window = UIApplication.sharedApplication().keyWindow
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
-                window?.rootViewController = vc
->>>>>>> 打通登陆 判断新版本 欢迎界面 显示
-=======
-//                let window = UIApplication.sharedApplication().keyWindow
-//                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
-//                window?.rootViewController = vc
-                NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
->>>>>>> 完善 跳转逻辑
             })
         }
     }

@@ -15,15 +15,7 @@ class QRCodeCreateViewController: UIViewController {
         super.viewDidLoad()
 
         title = "我的名片"
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
-<<<<<<< 79cbabdfe3e6bad09fbbf6452540a620c0408bdd
         navigationController?.navigationBar.tintColor = UIColor.orangeColor()
-=======
-        
->>>>>>> 生成二维码 完成
-=======
-        navigationController?.navigationBar.tintColor = UIColor.orangeColor()
->>>>>>> access_token 获取
         
         createQRCode()
     }

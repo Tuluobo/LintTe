@@ -91,44 +91,17 @@ extension OAuthViewController: UIWebViewDelegate {
             TTLog(account)
             // 2. 获取用户信息
             account.loadUserInfo({ (userAccount, error) in
-<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
                 // 3. 归案授权信息
-=======
-                // 3. 归案当授权信息
->>>>>>> access_token 获取
-=======
-                // 3. 归案授权信息
->>>>>>> 打通登陆 判断新版本 欢迎界面 显示
                 if error != nil {
                     TTLog(error)
                     return
                 }
-<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
                 // 3.1保存授权信息
                 userAccount!.saveAccount()
                 // 3.2跳转到欢迎界面
                 NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
                 // 4.关闭认证界面
                 self.cancelBtnClick(UIBarButtonItem())
-=======
-                userAccount!.saveAccount()
->>>>>>> access_token 获取
-=======
-                // 3.1保存授权信息
-                userAccount!.saveAccount()
-                // 3.2跳转到欢迎界面
-<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
-                let window = UIApplication.sharedApplication().keyWindow
-                let vc = UIStoryboard(name: "Welcome", bundle: nil).instantiateInitialViewController()!
-                window?.rootViewController = vc
->>>>>>> 打通登陆 判断新版本 欢迎界面 显示
-=======
-                NSNotificationCenter.defaultCenter().postNotificationName(TTSwitchRootViewController, object: self)
-                // 4.关闭认证界面
-                self.cancelBtnClick(UIBarButtonItem())
->>>>>>> 完善 跳转逻辑
             })
             
             }) { (_, error) in

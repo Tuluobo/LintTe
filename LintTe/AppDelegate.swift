@@ -21,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         // 设置 tabbar 全局 tintColor 颜色
         UITabBar.appearance().tintColor = UIColor.orangeColor()
-<<<<<<< 4b99738d24d8f79552df0780ce41942457eead4f
-<<<<<<< 660485a20af690395469bf0bc213aee201b2bce2
         
         // 注册监听通知
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(changeRootViewController(_:)), name: TTSwitchRootViewController, object: nil)
@@ -31,23 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = defaultViewController()
         window?.makeKeyAndVisible()
         
-=======
->>>>>>> 完善二维码扫描
-=======
-        
-        // 注册监听通知
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(changeRootViewController(_:)), name: TTSwitchRootViewController, object: nil)
-        // 显示首界面
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = defaultViewController()
-        window?.makeKeyAndVisible()
-        
-<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
-        // 判断用户登录
-        
->>>>>>> access_token 获取
-=======
->>>>>>> 完善 跳转逻辑
         return true
     }
     deinit {
@@ -69,8 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // MARK: - 版本相关
 extension AppDelegate {
     
-<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
-<<<<<<< a2c6632c6d4353355985fde872e29ff5e2e7589b
     // 切换根控制器
     @objc private func changeRootViewController(notification: NSNotification) {
         
@@ -85,28 +64,10 @@ extension AppDelegate {
             break
         }
         if  let vc = initVC {
-=======
-    // 切换根控制器
-    @objc private func changeRootViewController(notification: NSNotification) {
-        
-        var sbName: String?
-        let objc = notification.object
-        switch objc {
-        case is OAuthViewController:
-            sbName = "Welcome"
-        case is WelcomeViewController, is NewFeatureViewController:
-            sbName = "Main"
-        default:
-            break
-        }
-        if  let name = sbName {
-            let vc = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController()!
->>>>>>> 完善 跳转逻辑
             window?.rootViewController = vc
         }
     }
     
-<<<<<<< 794ac6404a43dc5ba91e472e2d842c9dc8f39e8e
     // 返回默认界面
     private func defaultViewController() -> UIViewController {
         
@@ -117,22 +78,6 @@ extension AppDelegate {
             initVC = isNewVersion() ? R.storyboard.newFeature.initialViewController()! : R.storyboard.welcome.initialViewController()!
         }
         return initVC
-=======
-=======
->>>>>>> 完善 跳转逻辑
-    // 返回默认界面
-    private func defaultViewController() -> UIViewController {
-        
-        var sbName = "Main"
-        // 1.判断是否登录
-        if UserAccount.isLogin() {
-            // 2.判断是否有新版本
-            sbName = isNewVersion() ? "NewFeature" : "Welcome"
-        }
-        let sb = UIStoryboard(name: sbName, bundle: nil)
-        let vc = sb.instantiateInitialViewController()!
-        return vc
->>>>>>> 打通登陆 判断新版本 欢迎界面 显示
     }
     
     // 判断是否刚刚更新了版本
