@@ -1498,8 +1498,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D24A90DE1BD4C90A000B38D9 /* Build configuration list for PBXNativeTarget "LintTe" */;
 			buildPhases = (
-				D210FA0D1D06AEE5004679A1 /* ShellScript */,
 				30FBBC86908E9EF791D47079 /* 📦 Check Pods Manifest.lock */,
+				D210FA0D1D06AEE5004679A1 /* ShellScript */,
 				D24A90AF1BD4C90A000B38D9 /* Sources */,
 				D24A90B01BD4C90A000B38D9 /* Frameworks */,
 				D24A90B11BD4C90A000B38D9 /* Resources */,

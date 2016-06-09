@@ -4995,13 +4995,17 @@ struct _R: Rswift.Validatable {
       let name = "Home"
       
       static func validate() throws {
+        if UIImage(named: "tabbar_home") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_home' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_home_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_home_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "avatar_vip") == nil { throw ValidationError(description: "[R.swift] Image named 'avatar_vip' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "avatar_default") == nil { throw ValidationError(description: "[R.swift] Image named 'avatar_default' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "timeline_icon_retweet") == nil { throw ValidationError(description: "[R.swift] Image named 'timeline_icon_retweet' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "timeline_card_bottom_background") == nil { throw ValidationError(description: "[R.swift] Image named 'timeline_card_bottom_background' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "timeline_icon_comment") == nil { throw ValidationError(description: "[R.swift] Image named 'timeline_icon_comment' is used in storyboard 'Home', but couldn't be loaded.") }
         if UIImage(named: "navigationbar_friendattention_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'navigationbar_friendattention_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
         if UIImage(named: "navigationbar_pop") == nil { throw ValidationError(description: "[R.swift] Image named 'navigationbar_pop' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "tabbar_home") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_home' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "avatar_vip") == nil { throw ValidationError(description: "[R.swift] Image named 'avatar_vip' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "timeline_icon_unlike") == nil { throw ValidationError(description: "[R.swift] Image named 'timeline_icon_unlike' is used in storyboard 'Home', but couldn't be loaded.") }
         if UIImage(named: "navigationbar_friendattention") == nil { throw ValidationError(description: "[R.swift] Image named 'navigationbar_friendattention' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "tabbar_home_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_home_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "avatar_default") == nil { throw ValidationError(description: "[R.swift] Image named 'avatar_default' is used in storyboard 'Home', but couldn't be loaded.") }
         if UIImage(named: "common_icon_membership") == nil { throw ValidationError(description: "[R.swift] Image named 'common_icon_membership' is used in storyboard 'Home', but couldn't be loaded.") }
         if UIImage(named: "navigationbar_pop_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'navigationbar_pop_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
       }

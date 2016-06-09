@@ -25,6 +25,9 @@ class TTStatusTableViewCell: UITableViewCell {
     // 正文
     @IBOutlet weak var statusTextLabel: UILabel!
     
+    @IBOutlet weak var retweetBtn: UIButton!
+    @IBOutlet weak var commitBtn: UIButton!
+    @IBOutlet weak var likeBtn: UIButton!
     // 模型数据
     var data: StatusViewModel? {
         didSet {
@@ -83,6 +86,14 @@ class TTStatusTableViewCell: UITableViewCell {
         }
     }
     
-
+    @IBAction func retweetBtnClick() {
+        TTLog("")
+    }
+    @IBAction func commitBtnClick() {
+        TTLog("")
+    }
+    @IBAction func likeBtnClick() {
+        TTLog("")
+    }
     
 }
