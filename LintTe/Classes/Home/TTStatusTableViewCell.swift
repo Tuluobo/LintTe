@@ -25,6 +25,14 @@ class TTStatusTableViewCell: UITableViewCell {
     @IBOutlet weak var sourceLabel: UILabel!
     // 正文
     @IBOutlet weak var statusTextLabel: UILabel!
+    // 配图collectionView
+    @IBOutlet weak var pictureCollection: UICollectionView!
+    // collection 流式布局
+    @IBOutlet weak var pictureCollectionFlowLayout: UICollectionViewFlowLayout!
+    // 自动布局高约束
+    @IBOutlet weak var pictureCellHeightCons: NSLayoutConstraint!
+    // 自动布局宽约束
+    @IBOutlet weak var pictureCellWidthCons: NSLayoutConstraint!
     
     @IBOutlet weak var retweetBtn: UIButton!
     @IBOutlet weak var commitBtn: UIButton!
@@ -42,6 +50,17 @@ class TTStatusTableViewCell: UITableViewCell {
         verifiedImageView.layer.cornerRadius = verifiedImageView.bounds.width / 2.0
         verifiedImageView.layer.borderWidth = 2.0
         verifiedImageView.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        // 1.设置不可选择
+        pictureCollection.allowsSelection = false
+        // 2.设置隐藏滚动条
+        pictureCollection.scrollEnabled = false
+        // 3.禁用回弹
+        pictureCollection.bounces = false
+        // 4.设置cell之间的间隙
+        pictureCollectionFlowLayout.minimumLineSpacing = imageMargin
+        pictureCollectionFlowLayout.minimumInteritemSpacing = imageMargin
+
     }
     
     // MARK: - 内部控制方法
@@ -56,7 +75,6 @@ class TTStatusTableViewCell: UITableViewCell {
         nickNameLabel.textColor = UIColor.blackColor()
         sourceLabel.text = nil
         statusTextLabel.text = nil
-        
         // 守护数据
         guard let statusVM = data else {
             return
@@ -69,6 +87,14 @@ class TTStatusTableViewCell: UITableViewCell {
         sourceLabel.text = statusVM.sourceStr
         // 微博正文
         statusTextLabel.text = statusVM.status.text
+        
+        // 更新collection 尺寸
+        let (cellSize, collectionSize) = calculateSize()
+        pictureCollectionFlowLayout.itemSize = cellSize
+        pictureCellWidthCons.constant = collectionSize.width
+        pictureCellHeightCons.constant = collectionSize.height
+        // 更新 collection 数据源
+        pictureCollection.reloadData()
         
         // 用户设置
         // 用户昵称
@@ -152,15 +178,29 @@ class TTStatusTableViewCell: UITableViewCell {
     
 }
 
-extension TTStatusTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+extension TTStatusTableViewCell: UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data?.thumbnail_pics.count ?? 0
+        let number = data?.thumbnail_pics.count ?? 0
+        TTLog(number)
+        return number
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("pictureCell", forIndexPath: indexPath)
-        cell.backgroundColor = UIColor.grayColor()
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("pictureCell", forIndexPath: indexPath) as! TTStatusPictureCell
+        cell.url = data!.thumbnail_pics[indexPath.item]
         return cell
     }
+}
+
+class TTStatusPictureCell: UICollectionViewCell {
+    
+    var url: NSURL? {
+        didSet {
+            pictureView.sd_setImageWithURL(url)
+        }
+    }
+    
+    @IBOutlet weak var pictureView: UIImageView!
+   
 }

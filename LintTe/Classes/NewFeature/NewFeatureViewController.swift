@@ -123,7 +123,6 @@ class TTNewFeatureLayout: UICollectionViewFlowLayout {
         // 6.去除滚动条
         collectionView?.showsVerticalScrollIndicator = false
         collectionView?.showsHorizontalScrollIndicator = false
-        // 7.显示分页原点
     }
     
 

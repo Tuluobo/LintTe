@@ -4832,7 +4832,7 @@ struct R: Rswift.Validatable {
     /// Reuse identifier `NewFeatureImageCell`.
     static let newFeatureImageCell: ReuseIdentifier<UIView> = ReuseIdentifier(identifier: "NewFeatureImageCell")
     /// Reuse identifier `pictureCell`.
-    static let pictureCell: ReuseIdentifier<UIView> = ReuseIdentifier(identifier: "pictureCell")
+    static let pictureCell: ReuseIdentifier<TTStatusPictureCell> = ReuseIdentifier(identifier: "pictureCell")
     /// Reuse identifier `StatusCell`.
     static let statusCell: ReuseIdentifier<TTStatusTableViewCell> = ReuseIdentifier(identifier: "StatusCell")
     
