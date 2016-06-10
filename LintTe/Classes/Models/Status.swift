@@ -27,6 +27,9 @@ class Status: NSObject {
     var comments_count = 0
     // 表态数
     var attitudes_count = 0
+    // 配图数组字典
+    var pic_urls: [[String: AnyObject]]?
+    
     
 //    var favorited: Bool = false              //是否已收藏，true：是，false：否
 //    var truncated: Bool = false              //是否被截断，true：是，false：否

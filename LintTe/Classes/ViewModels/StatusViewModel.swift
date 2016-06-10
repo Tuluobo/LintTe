@@ -24,6 +24,7 @@ class StatusViewModel: NSObject {
     // 微博
     var sendTimeStr: String
     var sourceStr: String?
+    var thumbnail_pics = [NSURL]()
     // 用户
     var verifiedImage: UIImage?
     var mbrankImage: UIImage?
@@ -63,6 +64,18 @@ class StatusViewModel: NSObject {
         let rank = self.status.user.mbrank
         if (rank > 0 && rank < 7) {
             mbrankImage = UIImage(named: "common_icon_membership_level\(rank)")
+        }
+        
+        if let pic_urls = self.status.pic_urls {
+            // 1.遍历数组下载图片
+            for picDict in pic_urls {
+                // 2 取出图片的url字符串
+                guard let urlStr = picDict["thumbnail_pic"] as? String else {
+                    continue
+                }
+                // 3 创建URL
+                thumbnail_pics.append(NSURL(string: urlStr)!)
+            }
         }
     }
 
