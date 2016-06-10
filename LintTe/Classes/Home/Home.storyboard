@@ -69,6 +69,56 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VJS-cM-tqX">
+                                            <rect key="frame" x="12" y="98" width="290" height="90"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="BAT-QB-WtL"/>
+                                                <constraint firstAttribute="width" constant="290" id="FrV-co-lIt"/>
+                                                <constraint firstAttribute="height" constant="90" id="ml6-e3-Xj4"/>
+                                                <constraint firstAttribute="width" constant="290" id="wFM-sr-YEx"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mMd-Qc-fX5">
+                                                <size key="itemSize" width="79" height="77"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pictureCell" id="WxD-7K-xx6" customClass="TTStatusPictureCell" customModule="LintTe" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="79" height="77"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9c-DS-jAD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="79" height="77"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="s9c-DS-jAD" secondAttribute="bottom" id="1vT-YJ-Px2"/>
+                                                        <constraint firstItem="s9c-DS-jAD" firstAttribute="leading" secondItem="WxD-7K-xx6" secondAttribute="leading" id="AaX-Bb-k6I"/>
+                                                        <constraint firstItem="s9c-DS-jAD" firstAttribute="top" secondItem="WxD-7K-xx6" secondAttribute="top" id="d96-Bv-Vcu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="s9c-DS-jAD" secondAttribute="trailing" id="qpt-cS-GfL"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="pictureView" destination="s9c-DS-jAD" id="7WL-7A-6rw"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="ml6-e3-Xj4"/>
+                                                    <exclude reference="wFM-sr-YEx"/>
+                                                </mask>
+                                            </variation>
+                                            <connections>
+                                                <outlet property="dataSource" destination="tiO-HZ-SKp" id="pc1-DY-d2z"/>
+                                            </connections>
+                                        </collectionView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-cU-87V">
                                             <rect key="frame" x="0.0" y="198" width="600" height="40"/>
                                             <subviews>
@@ -122,55 +172,6 @@
                                                 <constraint firstAttribute="bottom" secondItem="Yw1-Fk-5Kh" secondAttribute="bottom" id="u9f-Vo-wMh"/>
                                             </constraints>
                                         </view>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VJS-cM-tqX">
-                                            <rect key="frame" x="12" y="98" width="290" height="90"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="90" id="BAT-QB-WtL"/>
-                                                <constraint firstAttribute="width" constant="290" id="FrV-co-lIt"/>
-                                                <constraint firstAttribute="height" constant="90" id="ml6-e3-Xj4"/>
-                                                <constraint firstAttribute="width" constant="290" id="wFM-sr-YEx"/>
-                                            </constraints>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mMd-Qc-fX5">
-                                                <size key="itemSize" width="79" height="77"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                            <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pictureCell" id="WxD-7K-xx6" customClass="TTStatusPictureCell" customModule="LintTe" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="77"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                        <rect key="frame" x="0.0" y="0.0" width="79" height="77"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9c-DS-jAD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="79" height="77"/>
-                                                            </imageView>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    </view>
-                                                    <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="s9c-DS-jAD" secondAttribute="bottom" id="1vT-YJ-Px2"/>
-                                                        <constraint firstItem="s9c-DS-jAD" firstAttribute="leading" secondItem="WxD-7K-xx6" secondAttribute="leading" id="AaX-Bb-k6I"/>
-                                                        <constraint firstItem="s9c-DS-jAD" firstAttribute="top" secondItem="WxD-7K-xx6" secondAttribute="top" id="d96-Bv-Vcu"/>
-                                                        <constraint firstAttribute="trailing" secondItem="s9c-DS-jAD" secondAttribute="trailing" id="qpt-cS-GfL"/>
-                                                    </constraints>
-                                                    <connections>
-                                                        <outlet property="pictureView" destination="s9c-DS-jAD" id="7WL-7A-6rw"/>
-                                                    </connections>
-                                                </collectionViewCell>
-                                            </cells>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="ml6-e3-Xj4"/>
-                                                    <exclude reference="wFM-sr-YEx"/>
-                                                </mask>
-                                            </variation>
-                                            <connections>
-                                                <outlet property="dataSource" destination="tiO-HZ-SKp" id="pc1-DY-d2z"/>
-                                            </connections>
-                                        </collectionView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="8iQ-wj-GVJ" firstAttribute="leading" secondItem="2ga-eg-i1e" secondAttribute="trailing" constant="10" id="1wm-zC-VnT"/>

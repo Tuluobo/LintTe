@@ -90,7 +90,9 @@ class TTStatusTableViewCell: UITableViewCell {
         
         // 更新collection 尺寸
         let (cellSize, collectionSize) = calculateSize()
-        pictureCollectionFlowLayout.itemSize = cellSize
+        if cellSize != CGSizeZero {
+            pictureCollectionFlowLayout.itemSize = cellSize
+        }
         pictureCellWidthCons.constant = collectionSize.width
         pictureCellHeightCons.constant = collectionSize.height
         // 更新 collection 数据源
@@ -119,7 +121,7 @@ class TTStatusTableViewCell: UITableViewCell {
      
      - returns:
      */
-    private let imageMargin: CGFloat = 10
+    private let imageMargin: CGFloat = 4
     private var imageWH: CGFloat = 90
     private func calculateSize() -> (CGSize, CGSize) {
         /*
@@ -154,10 +156,10 @@ class TTStatusTableViewCell: UITableViewCell {
         }
         // 5-9张配图
         let col = 3
-        let row = floor(CGFloat(count/4))
-        imageWH = (self.bounds.width - 12*2 + imageMargin)/CGFloat(col) - imageMargin
+        let row = (count - 1)/3 + 1
+        imageWH = (UIScreen.mainScreen().bounds.width - 12*2 + imageMargin)/CGFloat(col) - imageMargin
         let collectionW = calculateCollectionWH(col)
-        let collectionH = calculateCollectionWH(Int(row))
+        let collectionH = calculateCollectionWH(row)
         return (CGSizeMake(imageWH, imageWH), CGSizeMake(collectionW, collectionH))
     }
     
