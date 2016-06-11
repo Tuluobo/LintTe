@@ -12,7 +12,10 @@ import SDWebImage
 
 class HomeTableViewController: BaseTableViewController {
 
+    // 数据源
     var statuses = [StatusViewModel]()
+    // 行高缓存
+    private var rowHeightCaches = [String: CGFloat]()
     
     // MARK: - 懒加载
     private lazy var animationManager: TTPresentationManager = {
@@ -49,9 +52,9 @@ class HomeTableViewController: BaseTableViewController {
         
         // 加载微博数据
         loadData()
-        // 预估行高，自动调整
-        tableView.estimatedRowHeight = 200
-        tableView.rowHeight = UITableViewAutomaticDimension
+        // 预估行高
+        tableView.estimatedRowHeight = 800
+        //tableView.rowHeight = UITableViewAutomaticDimension
         
     }
     deinit {
@@ -178,6 +181,20 @@ extension HomeTableViewController {
         // 设置数据源
         cell.data = statuses[indexPath.section]
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let statusVM = statuses[indexPath.section]
+        var y = rowHeightCaches[statusVM.status.idstr] ?? 0
+        if y == 0 {
+            // 1.获取当前行对应的cell
+            let currentCell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statusCell)!
+            // 2.获取当前cell底部视图最大的Y值
+            y = currentCell.calcRowHeight(statusVM)
+        }
+        TTLog(y)
+        // 4.返回cell的高度
+        return y
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

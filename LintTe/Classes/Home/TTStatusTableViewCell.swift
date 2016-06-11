@@ -33,6 +33,8 @@ class TTStatusTableViewCell: UITableViewCell {
     @IBOutlet weak var pictureCellHeightCons: NSLayoutConstraint!
     // 自动布局宽约束
     @IBOutlet weak var pictureCellWidthCons: NSLayoutConstraint!
+    // 底部视图
+    @IBOutlet weak var footerToolView: UIView!
     
     @IBOutlet weak var retweetBtn: UIButton!
     @IBOutlet weak var commitBtn: UIButton!
@@ -167,6 +169,17 @@ class TTStatusTableViewCell: UITableViewCell {
         return imageWH*CGFloat(num) + imageMargin*CGFloat(num-1)
     }
     
+    // MARK: - 外部方法
+    func calcRowHeight(viewModel: StatusViewModel) -> CGFloat {
+        // 1.设置数据
+        self.data = viewModel
+        // 2.更新UI
+        self.layoutIfNeeded()
+        // 3.返回底部视图Y值
+        let y = CGRectGetMaxY(footerToolView.frame)
+        return y
+    }
+    
     // MARK: - 点击响应方法
     @IBAction func retweetBtnClick() {
         TTLog("")
@@ -184,7 +197,6 @@ extension TTStatusTableViewCell: UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let number = data?.thumbnail_pics.count ?? 0
-        TTLog(number)
         return number
     }
     
