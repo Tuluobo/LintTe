@@ -149,6 +149,7 @@ class HomeTableViewController: BaseTableViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        rowHeightCaches.removeAll()
     }
 
     /*
@@ -176,25 +177,34 @@ extension HomeTableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell  = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statusCell, forIndexPath: indexPath)!
+        let statusVM = statuses[indexPath.section]
+        var ID = R.reuseIdentifier.statusCell
+        if statusVM.retweetText != nil {
+            ID = R.reuseIdentifier.forwardStatusCell
+        }
+        let cell  = tableView.dequeueReusableCellWithIdentifier(ID, forIndexPath: indexPath)!
         // 设置数据源
-        cell.data = statuses[indexPath.section]
+        cell.data = statusVM
         return cell
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let statusVM = statuses[indexPath.section]
-        var y = rowHeightCaches[statusVM.status.idstr] ?? 0
-        if y == 0 {
-            // 1.获取当前行对应的cell
-            let currentCell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statusCell)!
-            // 2.获取当前cell底部视图最大的Y值
-            y = currentCell.calcRowHeight(statusVM)
+        var ID = R.reuseIdentifier.statusCell
+        if statusVM.retweetText != nil {
+            ID = R.reuseIdentifier.forwardStatusCell
         }
-        TTLog(y)
+        var height = rowHeightCaches[statusVM.status.idstr] ?? 0
+        if height == 0 {
+            // 1.获取当前行对应的cell
+            let currentCell = tableView.dequeueReusableCellWithIdentifier(ID)!
+            // 2.获取当前cell底部视图最大的Y值
+            height = currentCell.calcRowHeight(statusVM)
+            rowHeightCaches[statusVM.status.idstr] = height
+            TTLog(height)
+        }
         // 4.返回cell的高度
-        return y
+        return height
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

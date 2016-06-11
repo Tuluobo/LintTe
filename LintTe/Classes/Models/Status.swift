@@ -29,7 +29,8 @@ class Status: NSObject {
     var attitudes_count = 0
     // 配图数组字典
     var pic_urls: [[String: AnyObject]]?
-    
+    //被转发的原微博信息字段，当该微博为转发微博时
+    var retweeted_status: Status?
     
 //    var favorited: Bool = false              //是否已收藏，true：是，false：否
 //    var truncated: Bool = false              //是否被截断，true：是，false：否
@@ -40,7 +41,7 @@ class Status: NSObject {
 //    var bmiddle_pic: NSURL?                  //中等尺寸图片地址，没有时不返回此字段
 //    var original_pic: NSURL?                 //原始图片地址，没有时不返回此字段
 //    var geo: AnyObject? = nil                //地理信息字段 详细
-//    var retweeted_status: Status? = nil      //被转发的原微博信息字段，当该微博为转发微博时
+
 //    var mlevel: Int = 0                      //暂未支持
 //    var visible: AnyObject?                  //微博的可见性及指定可见分组信息。该object中type取值，0：普通微博，1：私密微博，3：指定分组微博，4：密友微博；list_id为分组的组号
 //    var pic_ids: AnyObject?                  //微博配图ID。多图时返回多图ID，用来拼接图片url。用返回字段thumbnail_pic的地址配上该返回字段的图片ID，即可得到多个图片url。
@@ -61,6 +62,11 @@ class Status: NSObject {
             user = User(dict: value as! [String: AnyObject])
             return
         }
+        if key == "retweeted_status" {
+            retweeted_status = Status(dict: value as! [String: AnyObject])
+            return
+        }
+        
         // 2.其他的继续父类方法
         super.setValue(value, forKey: key)
     }

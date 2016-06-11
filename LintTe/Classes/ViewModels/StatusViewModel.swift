@@ -25,6 +25,7 @@ class StatusViewModel: NSObject {
     var sendTimeStr: String
     var sourceStr: String?
     var thumbnail_pics = [NSURL]()
+    var retweetText: String?
     // 用户
     var verifiedImage: UIImage?
     var mbrankImage: UIImage?
@@ -46,6 +47,7 @@ class StatusViewModel: NSObject {
             source = source.substringToIndex(endIndex)
             sourceStr = "来自\(source)"
         }
+        
         /// 用户
         // 头像
         avatarURL = NSURL(string: self.status.user.profile_image_url ?? "")
@@ -65,8 +67,15 @@ class StatusViewModel: NSObject {
         if (rank > 0 && rank < 7) {
             mbrankImage = UIImage(named: "common_icon_membership_level\(rank)")
         }
-        
-        if let pic_urls = self.status.pic_urls {
+        // 配图选择
+        var picUrls = self.status.pic_urls
+        // 转发微博
+        if let retweetStatus = self.status.retweeted_status {
+            retweetText = "@\(retweetStatus.user.screen_name!):\(retweetStatus.text!)"
+            picUrls = self.status.retweeted_status?.pic_urls
+        }
+        // 配图处理
+        if let pic_urls = picUrls {
             // 1.遍历数组下载图片
             for picDict in pic_urls {
                 // 2 取出图片的url字符串

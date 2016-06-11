@@ -25,8 +25,11 @@ class TTStatusTableViewCell: UITableViewCell {
     @IBOutlet weak var sourceLabel: UILabel!
     // 正文
     @IBOutlet weak var statusTextLabel: UILabel!
+    // 转发微博正文
+    @IBOutlet weak var forwardStatusLabel: UILabel?
     // 配图collectionView
     @IBOutlet weak var pictureCollection: UICollectionView!
+    
     // collection 流式布局
     @IBOutlet weak var pictureCollectionFlowLayout: UICollectionViewFlowLayout!
     // 自动布局高约束
@@ -48,10 +51,13 @@ class TTStatusTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        let labelWidth = UIScreen.mainScreen().bounds.width - 12.0*2
+        statusTextLabel.preferredMaxLayoutWidth = labelWidth
         avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2.0
         verifiedImageView.layer.cornerRadius = verifiedImageView.bounds.width / 2.0
         verifiedImageView.layer.borderWidth = 2.0
         verifiedImageView.layer.borderColor = UIColor.whiteColor().CGColor
+        forwardStatusLabel?.preferredMaxLayoutWidth = labelWidth
         
         // 1.设置不可选择
         pictureCollection.allowsSelection = false
@@ -77,6 +83,7 @@ class TTStatusTableViewCell: UITableViewCell {
         nickNameLabel.textColor = UIColor.blackColor()
         sourceLabel.text = nil
         statusTextLabel.text = nil
+        forwardStatusLabel?.text = nil
         // 守护数据
         guard let statusVM = data else {
             return
@@ -89,6 +96,8 @@ class TTStatusTableViewCell: UITableViewCell {
         sourceLabel.text = statusVM.sourceStr
         // 微博正文
         statusTextLabel.text = statusVM.status.text
+        // 转发微博
+        forwardStatusLabel?.text = statusVM.retweetText
         
         // 更新collection 尺寸
         let (cellSize, collectionSize) = calculateSize()
@@ -99,6 +108,19 @@ class TTStatusTableViewCell: UITableViewCell {
         pictureCellHeightCons.constant = collectionSize.height
         // 更新 collection 数据源
         pictureCollection.reloadData()
+        // 微博转发数
+        if statusVM.status.reposts_count != 0 {
+            retweetBtn.setTitle("\(statusVM.status.reposts_count)", forState: .Normal)
+        }
+        // 微博评论数
+        if statusVM.status.comments_count != 0 {
+            commitBtn.setTitle("\(statusVM.status.comments_count)", forState: .Normal)
+        }
+        // 微博转发数
+        if statusVM.status.attitudes_count != 0 {
+            likeBtn.setTitle("\(statusVM.status.attitudes_count)", forState: .Normal)
+        }
+        
         
         // 用户设置
         // 用户昵称
@@ -156,10 +178,14 @@ class TTStatusTableViewCell: UITableViewCell {
             let collectionH = calculateCollectionWH(2)
             return (CGSizeMake(imageWH, imageWH), CGSizeMake(collectionW, collectionH))
         }
-        // 5-9张配图
+        // 3, 5-9张配图
         let col = 3
         let row = (count - 1)/3 + 1
-        imageWH = (UIScreen.mainScreen().bounds.width - 12*2 + imageMargin)/CGFloat(col) - imageMargin
+        var w = UIScreen.mainScreen().bounds.width
+        TTLog(w)
+        w = self.bounds.width
+        TTLog(w)
+        imageWH = (w - 12*2 + imageMargin)/CGFloat(col) - imageMargin
         let collectionW = calculateCollectionWH(col)
         let collectionH = calculateCollectionWH(row)
         return (CGSizeMake(imageWH, imageWH), CGSizeMake(collectionW, collectionH))
