@@ -149,7 +149,6 @@ class HomeTableViewController: BaseTableViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        rowHeightCaches.removeAll()
     }
 
     /*
@@ -186,17 +185,16 @@ extension HomeTableViewController {
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let statusVM = statuses[indexPath.section]
-        var height = rowHeightCaches[statusVM.status.idstr] ?? 0
-        if height == 0 {
+        var y = rowHeightCaches[statusVM.status.idstr] ?? 0
+        if y == 0 {
             // 1.获取当前行对应的cell
             let currentCell = tableView.dequeueReusableCellWithIdentifier(R.reuseIdentifier.statusCell)!
             // 2.获取当前cell底部视图最大的Y值
-            height = currentCell.calcRowHeight(statusVM)
-            rowHeightCaches[statusVM.status.idstr] = height
-            TTLog(height)
+            y = currentCell.calcRowHeight(statusVM)
         }
+        TTLog(y)
         // 4.返回cell的高度
-        return height
+        return y
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
