@@ -48,10 +48,13 @@ class TTStatusTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        statusTextLabel.preferredMaxLayoutWidth = UIScreen.mainScreen().bounds.width - 12.0*2
         avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2.0
         verifiedImageView.layer.cornerRadius = verifiedImageView.bounds.width / 2.0
         verifiedImageView.layer.borderWidth = 2.0
         verifiedImageView.layer.borderColor = UIColor.whiteColor().CGColor
+        
         
         // 1.设置不可选择
         pictureCollection.allowsSelection = false
@@ -156,10 +159,14 @@ class TTStatusTableViewCell: UITableViewCell {
             let collectionH = calculateCollectionWH(2)
             return (CGSizeMake(imageWH, imageWH), CGSizeMake(collectionW, collectionH))
         }
-        // 5-9张配图
+        // 3, 5-9张配图
         let col = 3
         let row = (count - 1)/3 + 1
-        imageWH = (UIScreen.mainScreen().bounds.width - 12*2 + imageMargin)/CGFloat(col) - imageMargin
+        var w = UIScreen.mainScreen().bounds.width
+        TTLog(w)
+        w = self.bounds.width
+        TTLog(w)
+        imageWH = (w - 12*2 + imageMargin)/CGFloat(col) - imageMargin
         let collectionW = calculateCollectionWH(col)
         let collectionH = calculateCollectionWH(row)
         return (CGSizeMake(imageWH, imageWH), CGSizeMake(collectionW, collectionH))
