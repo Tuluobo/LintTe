@@ -124,7 +124,7 @@ class TTStatusTableViewCell: UITableViewCell {
         
         // 用户设置
         // 用户昵称
-        nickNameLabel.text = statusVM.status.user.screen_name
+        nickNameLabel.text = statusVM.status.user!.screen_name
         
         // 头像
         if let avatarUrl = statusVM.avatarURL {

@@ -18,7 +18,7 @@ class Status: NSObject {
     // 微博信息内容
     var text: String?
     // 微博作者的用户信息字段 详细
-    var user: User!
+    var user: User?
     // 微博来源
     var source: String?
     // 转发数

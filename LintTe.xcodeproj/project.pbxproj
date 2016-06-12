@@ -62,6 +62,8 @@
 		D24A910A1BD4CF72000B38D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */; };
 		D24A910C1BD4CF9E000B38D9 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */; };
 		D24A910E1BD4CFC1000B38D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */; };
+		D254E6E71D0D3D2800A0758F /* RefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D254E6E61D0D3D2800A0758F /* RefreshView.xib */; };
+		D254E6E91D0D3D7E00A0758F /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D254E6E81D0D3D7E00A0758F /* RefreshView.swift */; };
 		D2C443551BD6452B009348F7 /* d_aini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C442041BD6452B009348F7 /* d_aini@2x.png */; };
 		D2C443561BD6452B009348F7 /* d_aini@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C442051BD6452B009348F7 /* d_aini@3x.png */; };
 		D2C443571BD6452B009348F7 /* d_aoteman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C442061BD6452B009348F7 /* d_aoteman@2x.png */; };
@@ -493,6 +495,8 @@
 		D24A91091BD4CF72000B38D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D24A910B1BD4CF9E000B38D9 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		D24A910D1BD4CFC1000B38D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		D254E6E61D0D3D2800A0758F /* RefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshView.xib; sourceTree = "<group>"; };
+		D254E6E81D0D3D7E00A0758F /* RefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
 		D2C442041BD6452B009348F7 /* d_aini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aini@2x.png"; sourceTree = "<group>"; };
 		D2C442051BD6452B009348F7 /* d_aini@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aini@3x.png"; sourceTree = "<group>"; };
 		D2C442061BD6452B009348F7 /* d_aoteman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aoteman@2x.png"; sourceTree = "<group>"; };
@@ -925,6 +929,7 @@
 		D210F9B31D0682FA004679A1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D254E6E51D0D3CF700A0758F /* Refresh */,
 				D210FA121D06C24F004679A1 /* Popover */,
 				D210FA111D06C230004679A1 /* QRCode */,
 				D210F9B41D0682FA004679A1 /* HomeTableViewController.swift */,
@@ -1105,6 +1110,15 @@
 				D24A90C21BD4C90A000B38D9 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D254E6E51D0D3CF700A0758F /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				D254E6E81D0D3D7E00A0758F /* RefreshView.swift */,
+				D254E6E61D0D3D2800A0758F /* RefreshView.xib */,
+			);
+			name = Refresh;
 			sourceTree = "<group>";
 		};
 		D2C442021BD6452B009348F7 /* Emoticons */ = {
@@ -1840,6 +1854,7 @@
 				D2C4449F1BD6452B009348F7 /* lxh_zhenjing.png in Resources */,
 				D2C444311BD6452B009348F7 /* lxh_bengkui.png in Resources */,
 				D2C443D01BD6452B009348F7 /* d_zhuakuang@2x.png in Resources */,
+				D254E6E71D0D3D2800A0758F /* RefreshView.xib in Resources */,
 				D2C443E01BD6452B009348F7 /* f_meng@3x.png in Resources */,
 				D2C4441D1BD6452B009348F7 /* w_taiyang@2x.png in Resources */,
 				D2C443D31BD6452B009348F7 /* d_zhutou@3x.png in Resources */,
@@ -2129,6 +2144,7 @@
 				D210F9E41D0682FA004679A1 /* HomeTableViewController.swift in Sources */,
 				D210F9F81D0682FA004679A1 /* MessageTableViewController.swift in Sources */,
 				D210F9FB1D0682FA004679A1 /* UserAccount.swift in Sources */,
+				D254E6E91D0D3D7E00A0758F /* RefreshView.swift in Sources */,
 				D210F9E31D0682FA004679A1 /* DiscoverTableViewController.swift in Sources */,
 				D210FA061D0682FA004679A1 /* TitileButton.swift in Sources */,
 				D210FA1D1D06C354004679A1 /* NullTableViewController.swift in Sources */,

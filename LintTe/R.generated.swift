@@ -2707,7 +2707,7 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 299 images.
+  /// This `R.image` struct is generated, and contains static references to 297 images.
   struct image {
     /// Image `ad_background`.
     static let ad_background = ImageResource(bundle: _R.hostingBundle, name: "ad_background")
@@ -3259,12 +3259,8 @@ struct R: Rswift.Validatable {
     static let tabbar_profile_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_profile_highlighted")
     /// Image `tableview_loading`.
     static let tableview_loading = ImageResource(bundle: _R.hostingBundle, name: "tableview_loading")
-    /// Image `tableview_loading@2x副本`.
-    static let tableview_loading2x副本 = ImageResource(bundle: _R.hostingBundle, name: "tableview_loading@2x副本")
     /// Image `tableview_pull_refresh`.
     static let tableview_pull_refresh = ImageResource(bundle: _R.hostingBundle, name: "tableview_pull_refresh")
-    /// Image `tableview_pull_refresh@2x副本`.
-    static let tableview_pull_refresh2x副本 = ImageResource(bundle: _R.hostingBundle, name: "tableview_pull_refresh@2x副本")
     /// Image `timeline_card_bottom_background`.
     static let timeline_card_bottom_background = ImageResource(bundle: _R.hostingBundle, name: "timeline_card_bottom_background")
     /// Image `timeline_card_bottom_line_highlighted`.
@@ -4683,19 +4679,9 @@ struct R: Rswift.Validatable {
       return UIImage(resource: R.image.tableview_loading, compatibleWithTraitCollection: traitCollection)
     }
     
-    /// `UIImage(named: "tableview_loading@2x副本", bundle: ..., traitCollection: ...)`
-    static func tableview_loading2x副本(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
-      return UIImage(resource: R.image.tableview_loading2x副本, compatibleWithTraitCollection: traitCollection)
-    }
-    
     /// `UIImage(named: "tableview_pull_refresh", bundle: ..., traitCollection: ...)`
     static func tableview_pull_refresh(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
       return UIImage(resource: R.image.tableview_pull_refresh, compatibleWithTraitCollection: traitCollection)
-    }
-    
-    /// `UIImage(named: "tableview_pull_refresh@2x副本", bundle: ..., traitCollection: ...)`
-    static func tableview_pull_refresh2x副本(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
-      return UIImage(resource: R.image.tableview_pull_refresh2x副本, compatibleWithTraitCollection: traitCollection)
     }
     
     /// `UIImage(named: "timeline_card_bottom_background", bundle: ..., traitCollection: ...)`
@@ -4814,10 +4800,17 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
+    /// Nib `RefreshView`.
+    static let refreshView = _R.nib._RefreshView()
     /// Nib `VisitorView`.
     static let visitorView = _R.nib._VisitorView()
+    
+    /// `UINib(name: "RefreshView", bundle: ...)`
+    static func refreshView(_: Void) -> UINib {
+      return UINib(resource: R.nib.refreshView)
+    }
     
     /// `UINib(name: "VisitorView", bundle: ...)`
     static func visitorView(_: Void) -> UINib {
@@ -4953,6 +4946,17 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
+    struct _RefreshView: NibResourceType {
+      let bundle = _R.hostingBundle
+      let name = "RefreshView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> RefreshView? {
+        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? RefreshView
+      }
+      
+      private init() {}
+    }
+    
     struct _VisitorView: NibResourceType {
       let bundle = _R.hostingBundle
       let name = "VisitorView"

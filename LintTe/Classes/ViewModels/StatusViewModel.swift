@@ -49,29 +49,32 @@ class StatusViewModel: NSObject {
         }
         
         /// 用户
-        // 头像
-        avatarURL = NSURL(string: self.status.user.profile_image_url ?? "")
-        // 认证
-        switch self.status.user.verified_type {
+        if let user = self.status.user {
+            // 头像
+            avatarURL = NSURL(string: user.profile_image_url ?? "")
+            // 认证
+            switch user.verified_type {
             case 0:
-            verifiedImage = UIImage(resource: R.image.avatar_vip)
+                verifiedImage = UIImage(resource: R.image.avatar_vip)
             case 2, 3, 5:
-            verifiedImage = UIImage(resource: R.image.avatar_enterprise_vip)
+                verifiedImage = UIImage(resource: R.image.avatar_enterprise_vip)
             case 220:
-            verifiedImage = UIImage(resource: R.image.avatar_grassroot)
+                verifiedImage = UIImage(resource: R.image.avatar_grassroot)
             default:
-            verifiedImage = nil
+                verifiedImage = nil
+            }
+            // 会员
+            let rank = user.mbrank
+            if (rank > 0 && rank < 7) {
+                mbrankImage = UIImage(named: "common_icon_membership_level\(rank)")
+            }
         }
-        // 会员
-        let rank = self.status.user.mbrank
-        if (rank > 0 && rank < 7) {
-            mbrankImage = UIImage(named: "common_icon_membership_level\(rank)")
-        }
+        
         // 配图选择
         var picUrls = self.status.pic_urls
         // 转发微博
         if let retweetStatus = self.status.retweeted_status {
-            retweetText = "@\(retweetStatus.user.screen_name!):\(retweetStatus.text!)"
+            retweetText = "@\(retweetStatus.user?.screen_name ?? ""):\(retweetStatus.text ?? "")"
             picUrls = self.status.retweeted_status?.pic_urls
         }
         // 配图处理

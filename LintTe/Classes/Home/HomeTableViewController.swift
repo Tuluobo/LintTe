@@ -56,6 +56,10 @@ class HomeTableViewController: BaseTableViewController {
         tableView.estimatedRowHeight = 800
         //tableView.rowHeight = UITableViewAutomaticDimension
         
+        // 下拉刷新初始化
+        refreshControl = TTRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(pullLoadData), forControlEvents: .ValueChanged)
+        
     }
     deinit {
         // 移除通知
@@ -83,7 +87,10 @@ class HomeTableViewController: BaseTableViewController {
             
         }
     }
-    
+    // 下拉刷新
+    @objc private func pullLoadData() {
+        TTLog("")
+    }
     /**
      缓存微博配图
      
