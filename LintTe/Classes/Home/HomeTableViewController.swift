@@ -14,6 +14,8 @@ class HomeTableViewController: BaseTableViewController {
 
     // 数据源
     var statuses = [StatusViewModel]()
+    // 最后一条微博标记
+    var lastStatus = false
     // 行高缓存
     private var rowHeightCaches = [String: CGFloat]()
     
@@ -40,6 +42,7 @@ class HomeTableViewController: BaseTableViewController {
         tLabel.text = "没有更多微博"
         tLabel.textAlignment = .Center
         tLabel.textColor = UIColor.whiteColor()
+        tLabel.hidden = true
         return tLabel
     }()
     
@@ -82,8 +85,14 @@ class HomeTableViewController: BaseTableViewController {
      */
     @objc private func loadData() {
         
-        let id = statuses.first?.status.idstr
-        NetworkManager.shareInstance.loadStatuses(id) { (array, error) in
+        var since_id = statuses.first?.status.idstr
+        var max_id = statuses.last?.status.idstr
+        if lastStatus {
+            since_id = nil
+        } else {
+            max_id = nil
+        }
+        NetworkManager.shareInstance.loadStatuses(since_id, last_id: max_id) { (array, error) in
             if error != nil {
                 SVProgressHUD.showWithStatus("获取微博数据失败")
                 SVProgressHUD.setDefaultMaskType(.Black)
@@ -98,9 +107,14 @@ class HomeTableViewController: BaseTableViewController {
             // 缓存图片数据
             self.cachesImages(cacheStatusVM)
             // 更新数据源
-            self.statuses = cacheStatusVM + self.statuses
-            // 显示更新微博数目
-            self.showRefreshStatus(cacheStatusVM.count)
+            if self.lastStatus {
+                self.statuses = self.statuses + cacheStatusVM
+                self.lastStatus = false
+            } else {
+                self.statuses = cacheStatusVM + self.statuses
+                // 显示更新微博数目
+                self.showRefreshStatus(cacheStatusVM.count)
+            } 
         }
     }
 
@@ -140,7 +154,7 @@ class HomeTableViewController: BaseTableViewController {
         if numbers > 0 {
             tipLabel.text = "\(numbers)条微博"
         }
-        
+        self.tipLabel.hidden = false
         UIView.animateWithDuration(1.0, animations: {
             self.tipLabel.transform = CGAffineTransformMakeTranslation(0, 44)
         }) { (_) in
@@ -149,6 +163,7 @@ class HomeTableViewController: BaseTableViewController {
                     self.tipLabel.transform = CGAffineTransformIdentity
                 }, completion: { (_) in
                     self.tipLabel.text = "没有更多微博"
+                    self.tipLabel.hidden = true
                 })
                 
             })
@@ -224,6 +239,11 @@ extension HomeTableViewController {
         let cell  = tableView.dequeueReusableCellWithIdentifier(ID, forIndexPath: indexPath)!
         // 设置数据源
         cell.data = statusVM
+        // 判断是否是最后一条微博
+        if indexPath.section == self.statuses.count-1 {
+            lastStatus = true
+            loadData()
+        }
         return cell
     }
     

@@ -182,9 +182,7 @@ class TTStatusTableViewCell: UITableViewCell {
         let col = 3
         let row = (count - 1)/3 + 1
         var w = UIScreen.mainScreen().bounds.width
-        TTLog(w)
         w = self.bounds.width
-        TTLog(w)
         imageWH = (w - 12*2 + imageMargin)/CGFloat(col) - imageMargin
         let collectionW = calculateCollectionWH(col)
         let collectionH = calculateCollectionWH(row)
