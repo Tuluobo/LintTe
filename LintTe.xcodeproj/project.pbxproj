@@ -399,6 +399,7 @@
 		D2C444A11BD6452B009348F7 /* lxh_zhuanfa.gif in Resources */ = {isa = PBXBuildFile; fileRef = D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */; };
 		D2C444A21BD6452B009348F7 /* lxh_zhuanfa.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */; };
 		D2C444A31BD6452B009348F7 /* lxh_zhuanfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */; };
+		D2D78CE21D153DEE00835F2A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D78CE11D153DEE00835F2A /* Helper.swift */; };
 		D96B068EBA8FDC1610D82D9C /* Pods_LintTe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F00D234A072B6650DA1C0C1 /* Pods_LintTe.framework */; };
 		FA52DCB2048F9404F5208ED1 /* Pods_LintTeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4389852735BA4EDBC47D8294 /* Pods_LintTeTests.framework */; };
 /* End PBXBuildFile section */
@@ -832,6 +833,7 @@
 		D2C443521BD6452B009348F7 /* lxh_zhuanfa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lxh_zhuanfa.gif; sourceTree = "<group>"; };
 		D2C443531BD6452B009348F7 /* lxh_zhuanfa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lxh_zhuanfa.png; sourceTree = "<group>"; };
 		D2C443541BD6452B009348F7 /* lxh_zhuanfa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lxh_zhuanfa@2x.png"; sourceTree = "<group>"; };
+		D2D78CE11D153DEE00835F2A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FEADC5C561EED5FBD6DE8F32 /* Pods-LintTeTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1007,6 +1009,7 @@
 				D210F9DB1D0682FA004679A1 /* NetworkManager.swift */,
 				D210F9DD1D0682FA004679A1 /* TitileButton.swift */,
 				D210F9E01D0682FA004679A1 /* WeiBoURL.swift */,
+				D2D78CE11D153DEE00835F2A /* Helper.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -2137,6 +2140,7 @@
 				D210FA0A1D0682FA004679A1 /* StatusViewModel.swift in Sources */,
 				D210F9F11D0682FA004679A1 /* MainViewController.swift in Sources */,
 				D210F9E61D0682FA004679A1 /* PopoverViewController.swift in Sources */,
+				D2D78CE21D153DEE00835F2A /* Helper.swift in Sources */,
 				D210F9ED1D0682FA004679A1 /* BaseTableViewController.swift in Sources */,
 				D210FA011D0682FA004679A1 /* OAuthViewController.swift in Sources */,
 				D210F9FA1D0682FA004679A1 /* User.swift in Sources */,

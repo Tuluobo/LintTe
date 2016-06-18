@@ -9,7 +9,7 @@
 import UIKit
 
 enum TTRefreshState {
-    case UP, DOWN, DOING
+    case UP, DOWN, LODING
 }
 
 class RefreshView: UIView {
@@ -24,7 +24,19 @@ class RefreshView: UIView {
     }
     
     // MARK: - 外部控制方法
+    func startLoading() {
+        rotationArrow(.LODING)
+    }
+    
+    func stopLoading() {
+        // 去除动画
+        // 设置初始图片
+        self.arrowImageView.image = UIImage(named: "tableview_pull_refresh")
+        self.arrowImageView.layer.removeAllAnimations()
+    }
+    
     func rotationArrow(state: TTRefreshState) {
+        stopLoading()
         switch state {
         case .UP:
             lodingTextLabel.text = "释放更新..."
@@ -37,11 +49,25 @@ class RefreshView: UIView {
             })
        case .DOWN:
             lodingTextLabel.text = "下拉刷新..."
+            self.arrowImageView.image = UIImage(named: "tableview_pull_refresh")
             UIView.animateWithDuration(0.5, animations: {
                 self.arrowImageView.transform = CGAffineTransformRotate(self.arrowImageView.transform, CGFloat(M_PI)-0.0001)
             })
-        case .DOING:
-            break
+        case .LODING:
+            // 0.设置图片和文字
+            lodingTextLabel.text = "正在加载..."
+            self.arrowImageView.image = UIImage(named: "tableview_loading")
+            // 1.创建动画
+            let anim = CABasicAnimation(keyPath: "transform.rotation")
+            // 2.设置动画属性
+            anim.toValue = 2 * M_PI
+            anim.duration = 5.0
+            anim.repeatCount = MAXFLOAT
+            // 3.添加动画到图层
+            
+            self.arrowImageView.layer.addAnimation(anim, forKey: nil)
+            
+            
         }
     }
     
@@ -71,12 +97,27 @@ class TTRefreshControl: UIRefreshControl {
     
     // 记录是否需要旋转
     private var rotationFlag = true
+    private var loadingFlag = false
     // 监听方法
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         // 过滤到系统初始化数据
         if frame.origin.y == 0 || frame.origin.y == -64 {
             return
         }
+        
+        TTLog(refreshing)
+        
+        // 判断是否触发下拉刷新事件
+        // 并且让加载图片显示出来
+        if refreshing && !loadingFlag {
+            TTLog("------")
+            loadingFlag = true
+            refreshView.startLoading()
+            return
+        } else if loadingFlag {
+            return
+        }
+        
         // 直接在监听对象中可以直接使用此属性
         if frame.origin.y < -60 && rotationFlag {
             rotationFlag = !rotationFlag
@@ -84,6 +125,14 @@ class TTRefreshControl: UIRefreshControl {
         } else if frame.origin.y > -60 && !rotationFlag {
             rotationFlag = !rotationFlag
             refreshView.rotationArrow(.DOWN)
+        }
+    }
+    
+    override func endRefreshing() {
+        super.endRefreshing()
+        Helper.delay(1.0) { 
+            self.loadingFlag = false
+            self.refreshView.stopLoading()
         }
     }
 }

@@ -89,7 +89,12 @@ class HomeTableViewController: BaseTableViewController {
     }
     // 下拉刷新
     @objc private func pullLoadData() {
-        TTLog("")
+        
+        
+        
+        
+        
+        refreshControl?.endRefreshing()
     }
     /**
      缓存微博配图
@@ -109,8 +114,6 @@ class HomeTableViewController: BaseTableViewController {
                 dispatch_group_enter(group)
                 // 2 下载图片
                 SDWebImageManager.sharedManager().downloadImageWithURL(url, options: SDWebImageOptions(rawValue:0), progress: nil, completed: { (image, error, _, _, _) in
-                    
-                    TTLog("图片下载完成")
                     // 将当前下载从组中移除
                     dispatch_group_leave(group)
                 })
@@ -118,7 +121,6 @@ class HomeTableViewController: BaseTableViewController {
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue()) {
-            TTLog("全部下载完成")
             // 更新数据源
             self.tableView.reloadData()
         }
