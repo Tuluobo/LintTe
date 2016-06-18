@@ -105,12 +105,9 @@ class TTRefreshControl: UIRefreshControl {
             return
         }
         
-        TTLog(refreshing)
-        
         // 判断是否触发下拉刷新事件
         // 并且让加载图片显示出来
         if refreshing && !loadingFlag {
-            TTLog("------")
             loadingFlag = true
             refreshView.startLoading()
             return

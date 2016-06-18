@@ -24,7 +24,7 @@ class HomeTableViewController: BaseTableViewController {
         manager.presentFrame = CGRectMake(size.width/4, 54, size.width/2, size.height*3/5)
         return manager
     }()
-    
+    // 标题按钮
     private lazy var titleBtn: TitileButton = { () -> TitileButton in
         // 添加 titleView
         let btn = TitileButton()
@@ -32,6 +32,15 @@ class HomeTableViewController: BaseTableViewController {
         btn.setTitle(title, forState: .Normal)
         btn.addTarget(self, action: #selector(titleBtnClick(_:)), forControlEvents: .TouchUpInside)
         return btn
+    }()
+    // 刷新提醒视图
+    private lazy var tipLabel: UILabel = {
+        let tLabel = UILabel(frame: self.navigationController!.navigationBar.bounds)
+        tLabel.backgroundColor = UIColor.orangeColor()
+        tLabel.text = "没有更多微博"
+        tLabel.textAlignment = .Center
+        tLabel.textColor = UIColor.whiteColor()
+        return tLabel
     }()
     
     // MARK: - 系统进程方法
@@ -58,7 +67,9 @@ class HomeTableViewController: BaseTableViewController {
         
         // 下拉刷新初始化
         refreshControl = TTRefreshControl()
-        refreshControl?.addTarget(self, action: #selector(pullLoadData), forControlEvents: .ValueChanged)
+        refreshControl?.addTarget(self, action: #selector(loadData), forControlEvents: .ValueChanged)
+        
+        navigationController?.navigationBar.insertSubview(tipLabel, atIndex: 0)
         
     }
     deinit {
@@ -69,33 +80,30 @@ class HomeTableViewController: BaseTableViewController {
     /**
      加载微博数据
      */
-    private func loadData() {
-        NetworkManager.shareInstance.loadStatuses { (array, error) in
+    @objc private func loadData() {
+        
+        let id = statuses.first?.status.idstr
+        NetworkManager.shareInstance.loadStatuses(id) { (array, error) in
             if error != nil {
                 SVProgressHUD.showWithStatus("获取微博数据失败")
                 SVProgressHUD.setDefaultMaskType(.Black)
                 return
             }
             
+            var cacheStatusVM = [StatusViewModel]()
             for item in array! {
                 let statusVM = StatusViewModel(status: Status(dict: item))
-                self.statuses.append(statusVM)
+                cacheStatusVM.append(statusVM)
             }
-
             // 缓存图片数据
-            self.cachesImages(self.statuses)
-            
+            self.cachesImages(cacheStatusVM)
+            // 更新数据源
+            self.statuses = cacheStatusVM + self.statuses
+            // 显示更新微博数目
+            self.showRefreshStatus(cacheStatusVM.count)
         }
     }
-    // 下拉刷新
-    @objc private func pullLoadData() {
-        
-        
-        
-        
-        
-        refreshControl?.endRefreshing()
-    }
+
     /**
      缓存微博配图
      
@@ -121,9 +129,31 @@ class HomeTableViewController: BaseTableViewController {
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue()) {
+            // 停止加载
+            self.refreshControl?.endRefreshing()
             // 更新数据源
             self.tableView.reloadData()
         }
+    }
+    
+    private func showRefreshStatus(numbers: Int) {
+        if numbers > 0 {
+            tipLabel.text = "\(numbers)条微博"
+        }
+        
+        UIView.animateWithDuration(1.0, animations: {
+            self.tipLabel.transform = CGAffineTransformMakeTranslation(0, 44)
+        }) { (_) in
+            Helper.delay(1.0, excute: {
+                UIView.animateWithDuration(1.0, animations: { 
+                    self.tipLabel.transform = CGAffineTransformIdentity
+                }, completion: { (_) in
+                    self.tipLabel.text = "没有更多微博"
+                })
+                
+            })
+        }
+        
     }
     
     // MARK: - 响应函数

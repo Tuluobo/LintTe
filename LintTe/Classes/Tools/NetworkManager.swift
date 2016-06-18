@@ -25,11 +25,14 @@ class NetworkManager: AFHTTPSessionManager {
     }()
     
     
-    func loadStatuses(finished: (array: [[String: AnyObject]]?, error: NSError?) -> ()) {
+    func loadStatuses(since_id: String?, finished: (array: [[String: AnyObject]]?, error: NSError?) -> ()) {
         // 断言
         assert(UserAccount.userAccount != nil, "此方法必须授权调用")
         // 1.准备参数
-        let parameters:[String: AnyObject] = ["access_token": UserAccount.userAccount!.access_token!]
+        var parameters:[String: AnyObject] = ["access_token": UserAccount.userAccount!.access_token!]
+        if let id = since_id {
+            parameters.updateValue(id, forKey: "since_id")
+        }
         TTLog(parameters)
         // 2.发送GET
         GET(WeiBoURL.weiboHomeTimeLine, parameters: parameters, success: { (_, data) in
