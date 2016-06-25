@@ -86,13 +86,13 @@ class HomeTableViewController: BaseTableViewController {
     @objc private func loadData() {
         
         var since_id = statuses.first?.status.idstr
-        var max_id = statuses.last?.status.idstr
+        var last_id = statuses.last?.status.idstr
         if lastStatus {
             since_id = nil
         } else {
-            max_id = nil
+            last_id = nil
         }
-        NetworkManager.shareInstance.loadStatuses(since_id, last_id: max_id) { (array, error) in
+        NetworkManager.shareInstance.loadStatuses(since_id, max_id: last_id) { (array, error) in
             if error != nil {
                 SVProgressHUD.showWithStatus("获取微博数据失败")
                 SVProgressHUD.setDefaultMaskType(.Black)
@@ -108,9 +108,11 @@ class HomeTableViewController: BaseTableViewController {
             self.cachesImages(cacheStatusVM)
             // 更新数据源
             if self.lastStatus {
+                // 下面加载
                 self.statuses = self.statuses + cacheStatusVM
                 self.lastStatus = false
             } else {
+                // 上面加载
                 self.statuses = cacheStatusVM + self.statuses
                 // 显示更新微博数目
                 self.showRefreshStatus(cacheStatusVM.count)

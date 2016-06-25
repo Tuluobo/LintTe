@@ -51,7 +51,6 @@ extension OAuthViewController: UIWebViewDelegate {
             return true
         }
         
-        TTLog(urlStr)
         // 授权回调页面
         // 成功
         if urlStr.containsString("?code=") {
@@ -59,6 +58,7 @@ extension OAuthViewController: UIWebViewDelegate {
                 TTLog(code)
                 loadAccessToken(code)
             }
+            return false
         }
         // 取消
         TTLog("授权取消")
