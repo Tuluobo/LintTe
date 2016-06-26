@@ -69,7 +69,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VJS-cM-tqX">
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VJS-cM-tqX" customClass="TTPictureCollectionView" customModule="LintTe" customModuleProvider="target">
                                             <rect key="frame" x="12" y="80" width="290" height="90"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -116,7 +116,9 @@
                                                 </mask>
                                             </variation>
                                             <connections>
-                                                <outlet property="dataSource" destination="tiO-HZ-SKp" id="pc1-DY-d2z"/>
+                                                <outlet property="pictureCellHeightCons" destination="BAT-QB-WtL" id="Eyu-9Y-oJI"/>
+                                                <outlet property="pictureCellWidthCons" destination="FrV-co-lIt" id="WJH-4I-2j9"/>
+                                                <outlet property="pictureCollectionFlowLayout" destination="mMd-Qc-fX5" id="6Dv-7W-89h"/>
                                             </connections>
                                         </collectionView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-cU-87V">
@@ -217,10 +219,7 @@
                                     <outlet property="footerToolView" destination="OeI-cU-87V" id="zcS-EJ-gfG"/>
                                     <outlet property="likeBtn" destination="8dq-E6-7nr" id="nIZ-Ds-rbO"/>
                                     <outlet property="nickNameLabel" destination="8iQ-wj-GVJ" id="l5y-ZN-Ere"/>
-                                    <outlet property="pictureCellHeightCons" destination="BAT-QB-WtL" id="krk-S2-jYi"/>
-                                    <outlet property="pictureCellWidthCons" destination="FrV-co-lIt" id="ycb-B5-bmH"/>
                                     <outlet property="pictureCollection" destination="VJS-cM-tqX" id="6Jd-Rp-4TD"/>
-                                    <outlet property="pictureCollectionFlowLayout" destination="mMd-Qc-fX5" id="JiG-XJ-1Ux"/>
                                     <outlet property="retweetBtn" destination="Yw1-Fk-5Kh" id="de3-Km-CtL"/>
                                     <outlet property="sendTimeLabel" destination="bz0-QA-tBl" id="0hO-n4-fBg"/>
                                     <outlet property="sourceLabel" destination="HMf-3J-2Vo" id="lEi-IL-FzQ"/>
@@ -292,7 +291,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxb-HA-pbW">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxb-HA-pbW" customClass="TTPictureCollectionView" customModule="LintTe" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="16" width="290" height="90"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -339,7 +338,9 @@
                                                         </mask>
                                                     </variation>
                                                     <connections>
-                                                        <outlet property="dataSource" destination="wBp-Jk-LDH" id="a3x-Wx-TZn"/>
+                                                        <outlet property="pictureCellHeightCons" destination="6xp-sJ-jYI" id="gTA-eY-4E8"/>
+                                                        <outlet property="pictureCellWidthCons" destination="exX-fY-jTJ" id="bRu-6u-8e3"/>
+                                                        <outlet property="pictureCollectionFlowLayout" destination="cHe-zO-VGv" id="Iel-yw-Lxc"/>
                                                     </connections>
                                                 </collectionView>
                                             </subviews>
@@ -454,10 +455,7 @@
                                     <outlet property="forwardStatusLabel" destination="HRf-NO-ATi" id="AI3-0A-P2r"/>
                                     <outlet property="likeBtn" destination="QJ0-5q-tWq" id="lvi-aP-kLZ"/>
                                     <outlet property="nickNameLabel" destination="RNF-2O-MrB" id="agU-ub-V8h"/>
-                                    <outlet property="pictureCellHeightCons" destination="6xp-sJ-jYI" id="M5V-Aw-ukd"/>
-                                    <outlet property="pictureCellWidthCons" destination="exX-fY-jTJ" id="Z7o-ED-9rN"/>
                                     <outlet property="pictureCollection" destination="lxb-HA-pbW" id="cOu-EJ-W9t"/>
-                                    <outlet property="pictureCollectionFlowLayout" destination="cHe-zO-VGv" id="5VL-3X-qE0"/>
                                     <outlet property="retweetBtn" destination="rXR-lo-ytJ" id="uR5-70-jz4"/>
                                     <outlet property="sendTimeLabel" destination="lEv-Is-eDH" id="uyF-S8-Z2K"/>
                                     <outlet property="sourceLabel" destination="9VH-IT-JKM" id="P4z-vZ-gl1"/>
