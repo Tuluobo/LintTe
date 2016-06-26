@@ -36,13 +36,11 @@ class TTPictureCollectionView: UICollectionView, UICollectionViewDataSource, UIC
         super.awakeFromNib()
         self.dataSource = self
         self.delegate = self
-        // 1.设置不可选择
-        self.allowsSelection = false
-        // 2.设置隐藏滚动条
+        // 1.设置隐藏滚动条
         self.scrollEnabled = false
-        // 3.禁用回弹
+        // 2.禁用回弹
         self.bounces = false
-        // 4.设置cell之间的间隙
+        // 3.设置cell之间的间隙
         pictureCollectionFlowLayout.minimumLineSpacing = imageMargin
         pictureCollectionFlowLayout.minimumInteritemSpacing = imageMargin
     }
@@ -100,7 +98,7 @@ class TTPictureCollectionView: UICollectionView, UICollectionViewDataSource, UIC
         return imageWH*CGFloat(num) + imageMargin*CGFloat(num-1)
     }
     
-    // MARK: dataSource
+    // MARK: UICollectionViewDataSource
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let number = data?.thumbnail_pics.count ?? 0
         return number
@@ -111,9 +109,11 @@ class TTPictureCollectionView: UICollectionView, UICollectionViewDataSource, UIC
         return cell
     }
     
-    // MARK: delegate
+    // MARK: UICollectionViewDelegatex
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        TTLog(indexPath)
+        let bmiddle_pics = data!.bmiddle_pics
+        // 图片浏览
+        NSNotificationCenter.defaultCenter().postNotificationName(TTShowPhotoBrowserController, object: self, userInfo: ["bmiddle_pics":bmiddle_pics, "indexPath":indexPath])
     }
     
 

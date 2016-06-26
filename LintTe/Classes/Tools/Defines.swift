@@ -15,6 +15,8 @@ let TTPresentationManagerDidPresentedController = "TTPresentationManagerDidPrese
 let TTPresentationManagerDidDismissedController = "TTPresentationManagerDidDismissedController"
 // 根界面跳转
 let TTSwitchRootViewController = "TTSwitchRootViewController"
+// 图片浏览器展示
+let TTShowPhotoBrowserController = "TTShowPhotoBrowserController"
 
 
 // 自定义Log

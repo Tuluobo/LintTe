@@ -61,6 +61,7 @@ class HomeTableViewController: BaseTableViewController {
         // 注册通知
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(titleChange), name: TTPresentationManagerDidPresentedController, object: animationManager)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(titleChange), name: TTPresentationManagerDidDismissedController, object: animationManager)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(showBrowser(_:)), name: TTShowPhotoBrowserController, object: nil)
         
         // 加载微博数据
         loadData()
@@ -87,8 +88,8 @@ class HomeTableViewController: BaseTableViewController {
         
         statusList.loadData(lastFlag) { (statusVMs, error) in
             if error != nil {
-                SVProgressHUD.showWithStatus("获取微博数据失败")
-                SVProgressHUD.setErrorImage(nil)
+                SVProgressHUD.showErrorWithStatus("获取微博数据失败")
+                SVProgressHUD.setDefaultStyle(.Dark)
                 TTLog(error)
                 return
             }
@@ -144,7 +145,21 @@ class HomeTableViewController: BaseTableViewController {
         menuView.modalPresentationStyle = UIModalPresentationStyle.Custom
         // 2.3 显示菜单
         presentViewController(menuView, animated: true, completion: nil)
-        
+    }
+    
+    @objc private func showBrowser(notication: NSNotification) {
+        // 网络或者通知拿到的数据需要安全校验
+        guard let bmiddle_pics = (notication.userInfo?["bmiddle_pics"] as? [NSURL]) else {
+            SVProgressHUD.showErrorWithStatus("没有图片")
+            SVProgressHUD.setDefaultStyle(.Dark)
+            return
+        }
+        guard let indexPath = (notication.userInfo?["indexPath"] as? NSIndexPath) else {
+            SVProgressHUD.showErrorWithStatus("数据传输出错")
+            SVProgressHUD.setDefaultStyle(.Dark)
+            return
+        }
+        presentViewController(BrowserViewController(pics: bmiddle_pics, indexPath: indexPath), animated: true, completion: nil)
     }
     
     @IBAction func leftBarBtnClick() {
@@ -161,16 +176,6 @@ class HomeTableViewController: BaseTableViewController {
         super.didReceiveMemoryWarning()
         rowHeightCaches.removeAll()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
 
 // MARK: - Table view data source and delagate

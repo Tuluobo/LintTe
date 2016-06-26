@@ -124,8 +124,6 @@ class TTNewFeatureLayout: UICollectionViewFlowLayout {
         collectionView?.showsVerticalScrollIndicator = false
         collectionView?.showsHorizontalScrollIndicator = false
     }
-    
-
 }
 
 

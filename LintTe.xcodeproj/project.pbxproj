@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		62535EF31D1F5DD300A3ABE2 /* StatusListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62535EF21D1F5DD300A3ABE2 /* StatusListModel.swift */; };
 		62535EF51D1F634C00A3ABE2 /* TTPictureCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62535EF41D1F634C00A3ABE2 /* TTPictureCollectionView.swift */; };
+		62535EFA1D1FE15F00A3ABE2 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62535EF91D1FE15F00A3ABE2 /* BrowserViewController.swift */; };
 		CB119BA59E801518DBD1EB93 /* Pods_LintTeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4272B1CD7DAB42EC4F5897A /* Pods_LintTeUITests.framework */; };
 		D210F9E31D0682FA004679A1 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9B21D0682FA004679A1 /* DiscoverTableViewController.swift */; };
 		D210F9E41D0682FA004679A1 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210F9B41D0682FA004679A1 /* HomeTableViewController.swift */; };
@@ -434,6 +435,7 @@
 		59650343CC90ADC863B557E6 /* Pods-LintTeUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeUITests.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeUITests/Pods-LintTeUITests.appstore.xcconfig"; sourceTree = "<group>"; };
 		62535EF21D1F5DD300A3ABE2 /* StatusListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusListModel.swift; sourceTree = "<group>"; };
 		62535EF41D1F634C00A3ABE2 /* TTPictureCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPictureCollectionView.swift; sourceTree = "<group>"; };
+		62535EF91D1FE15F00A3ABE2 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		6CEB3699E5CF762AA9284218 /* Pods-LintTeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeTests/Pods-LintTeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9591B6E7DDDE91AE02C49167 /* Pods-LintTe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTe.release.xcconfig"; path = "Pods/Target Support Files/Pods-LintTe/Pods-LintTe.release.xcconfig"; sourceTree = "<group>"; };
 		9C96A5390F6BE4FF3F1669FF /* Pods-LintTeUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LintTeUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-LintTeUITests/Pods-LintTeUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
@@ -895,6 +897,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		62535EF81D1FE13800A3ABE2 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				62535EF91D1FE15F00A3ABE2 /* BrowserViewController.swift */,
+			);
+			name = Browser;
+			sourceTree = "<group>";
+		};
 		AB126A99B66CB41488562E6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -935,6 +945,7 @@
 		D210F9B31D0682FA004679A1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				62535EF81D1FE13800A3ABE2 /* Browser */,
 				D254E6E51D0D3CF700A0758F /* Refresh */,
 				D210FA121D06C24F004679A1 /* Popover */,
 				D210FA111D06C230004679A1 /* QRCode */,
@@ -2161,6 +2172,7 @@
 				D210FA071D0682FA004679A1 /* UIButton+Extension.swift in Sources */,
 				D210FA0F1D06B02B004679A1 /* R.generated.swift in Sources */,
 				D210FA031D0682FA004679A1 /* Defines.swift in Sources */,
+				62535EFA1D1FE15F00A3ABE2 /* BrowserViewController.swift in Sources */,
 				D210F9FD1D0682FA004679A1 /* NewFeatureViewController.swift in Sources */,
 				62535EF51D1F634C00A3ABE2 /* TTPictureCollectionView.swift in Sources */,
 				62535EF31D1F5DD300A3ABE2 /* StatusListModel.swift in Sources */,

@@ -25,6 +25,7 @@ class StatusViewModel: NSObject {
     var sendTimeStr: String
     var sourceStr: String?
     var thumbnail_pics = [NSURL]()
+    var bmiddle_pics = [NSURL]()
     var retweetText: String?
     // 用户
     var verifiedImage: UIImage?
@@ -87,6 +88,9 @@ class StatusViewModel: NSObject {
                 }
                 // 3 创建URL
                 thumbnail_pics.append(NSURL(string: urlStr)!)
+                // 4 创建大图url
+                let bmiddle = urlStr.stringByReplacingOccurrencesOfString("thumbnail", withString: "bmiddle")
+                bmiddle_pics.append(NSURL(string: bmiddle)!)
             }
         }
     }
