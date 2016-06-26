@@ -9,8 +9,8 @@
 import UIKit
 import SDWebImage
 
-class TTPictureCollectionView: UICollectionView, UICollectionViewDataSource {
-
+class TTPictureCollectionView: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate {
+    
     // collection 流式布局
     @IBOutlet weak var pictureCollectionFlowLayout: UICollectionViewFlowLayout!
     // 自动布局高约束
@@ -31,10 +31,11 @@ class TTPictureCollectionView: UICollectionView, UICollectionViewDataSource {
             self.reloadData()
         }
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         self.dataSource = self
+        self.delegate = self
         // 1.设置不可选择
         self.allowsSelection = false
         // 2.设置隐藏滚动条
@@ -99,7 +100,7 @@ class TTPictureCollectionView: UICollectionView, UICollectionViewDataSource {
         return imageWH*CGFloat(num) + imageMargin*CGFloat(num-1)
     }
     
-    // MARK: 数据源方法
+    // MARK: dataSource
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let number = data?.thumbnail_pics.count ?? 0
         return number
@@ -108,6 +109,11 @@ class TTPictureCollectionView: UICollectionView, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("pictureCell", forIndexPath: indexPath) as! TTStatusPictureCell
         cell.url = data!.thumbnail_pics[indexPath.item]
         return cell
+    }
+    
+    // MARK: delegate
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        TTLog(indexPath)
     }
     
 
