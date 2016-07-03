@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import SVProgressHUD
 
 let browserCellIdentifier = "BrowserViewControllerCellIdentifier"
 
@@ -21,7 +22,7 @@ class BrowserViewController: UIViewController {
     private lazy var collectionView: UICollectionView = {
         let clv = UICollectionView(frame: self.view.bounds, collectionViewLayout: TTBrowserLayout())
         clv.dataSource = self
-        clv.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: browserCellIdentifier)
+        clv.registerClass(TTBrowserCell.self, forCellWithReuseIdentifier: browserCellIdentifier)
         return clv
     }()
     
@@ -74,21 +75,54 @@ extension BrowserViewController: UICollectionViewDataSource {
     }
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(browserCellIdentifier, forIndexPath: indexPath)
-        
-        let pictureView = UIImageView(frame: cell.bounds)
-        pictureView.sd_setImageWithURL(bmiddle_pics[indexPath.item]) { (_, error, _, _) in
-            if error != nil {
-                TTLog(error)
-                return
-            }
-            pictureView.sizeToFit()
-        }
-        cell.addSubview(pictureView)
-        pictureView.sizeToFit()
-        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(browserCellIdentifier, forIndexPath: indexPath) as! TTBrowserCell
+        cell.data = bmiddle_pics[indexPath.item]
         return cell
     }
+    
+}
+
+// MARK: - 自定义图片浏览Cell
+class TTBrowserCell: UICollectionViewCell {
+ 
+    var data: NSURL? {
+        didSet {
+            SVProgressHUD.show()
+            SVProgressHUD.setDefaultStyle(.Dark)
+            imageView.sd_setImageWithURL(data) { (image, error, _, _) in
+                if error != nil {
+                    TTLog("图片获取失败")
+                    return
+                }
+                // 调整
+                let scale = image.size.width/image.size.height
+                let newWidth = UIScreen.mainScreen().bounds.size.width
+                let newHeight = newWidth/scale
+                let x: CGFloat = 0.0
+                let y = (UIScreen.mainScreen().bounds.size.height - newHeight)/2
+                self.imageView.frame = CGRectMake(x, y, newWidth, newHeight)
+                SVProgressHUD.dismiss()
+            }
+        }
+    }
+    private lazy var scrollView: UIScrollView = UIScrollView()
+    private lazy var imageView: UIImageView = UIImageView()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupUI() {
+        scrollView.frame = self.frame
+        scrollView.addSubview(imageView)
+        contentView.addSubview(scrollView)
+    }
+    
     
 }
 
