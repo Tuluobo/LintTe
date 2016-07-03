@@ -43,18 +43,28 @@ class BrowserViewController: UIViewController {
         self.view.addSubview(collectionView)
         let size = self.view.frame.size
         // 关闭按钮
-        let closeBtnFrame = CGRectMake(44, size.height-44, 44, 20)
+        let closeBtnFrame = CGRectMake(20, size.height-60, 80, 40)
         let closeBtn = UIButton(frame: closeBtnFrame)
+        closeBtn.backgroundColor = UIColor(white: 0.8, alpha: 0.5)
+        closeBtn.layer.cornerRadius = 4.0
         closeBtn.setTitle("关闭", forState: .Normal)
         self.view.addSubview(closeBtn)
         // 保存按钮
-        let saveBtnFrame = CGRectMake(size.width-44*2, size.height-44, 44, 20)
+        let saveBtnFrame = CGRectMake(size.width-100, size.height-60, 80, 40)
         let saveBtn = UIButton(frame: saveBtnFrame)
+        saveBtn.backgroundColor = UIColor(white: 0.5, alpha: 0.8)
+        saveBtn.layer.cornerRadius = 4.0
         saveBtn.setTitle("保存", forState: .Normal)
         self.view.addSubview(saveBtn)
         // 设置点击事件
         closeBtn.addTarget(self, action: #selector(closeController), forControlEvents: .TouchUpInside)
         saveBtn.addTarget(self, action: #selector(savePicture), forControlEvents: .TouchUpInside)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .Left, animated: false)
     }
     
     @objc private func closeController() {
@@ -99,13 +109,21 @@ class TTBrowserCell: UICollectionViewCell {
                 let newWidth = UIScreen.mainScreen().bounds.size.width
                 let newHeight = newWidth/scale
                 let x: CGFloat = 0.0
-                let y = (UIScreen.mainScreen().bounds.size.height - newHeight)/2
+                var y = (UIScreen.mainScreen().bounds.size.height - newHeight)/2
+                if y < 0  {
+                    y = 0.0
+                    self.scrollView.contentSize = CGSizeMake(newWidth, newHeight)
+                }
                 self.imageView.frame = CGRectMake(x, y, newWidth, newHeight)
                 SVProgressHUD.dismiss()
             }
         }
     }
-    private lazy var scrollView: UIScrollView = UIScrollView()
+    private lazy var scrollView: UIScrollView = {
+       let sv = UIScrollView()
+        sv.backgroundColor = UIColor(white: 0.15, alpha: 1.0)
+        return sv;
+    }()
     private lazy var imageView: UIImageView = UIImageView()
     
     override init(frame: CGRect) {
@@ -118,11 +136,13 @@ class TTBrowserCell: UICollectionViewCell {
     }
     
     private func setupUI() {
-        scrollView.frame = self.frame
+        scrollView.frame = UIScreen.mainScreen().bounds
         scrollView.addSubview(imageView)
         contentView.addSubview(scrollView)
     }
-    
+}
+
+extension TTBrowserCell: UIScrollViewDelegate {
     
 }
 
@@ -140,7 +160,7 @@ class TTBrowserLayout: UICollectionViewFlowLayout {
         // 4.设置分页
         collectionView?.pagingEnabled = true
         // 5.回弹
-        collectionView?.bounces = true
+        collectionView?.bounces = false
         // 6.去除滚动条
         collectionView?.showsVerticalScrollIndicator = false
         collectionView?.showsHorizontalScrollIndicator = false
