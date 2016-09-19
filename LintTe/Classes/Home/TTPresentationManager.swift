@@ -15,7 +15,7 @@ class TTPresentationManager: NSObject, UIViewControllerTransitioningDelegate, UI
     
     // MARK: - UIViewControllerTransitioningDelegate delegate
     // 该方法用于返回一个负责转场的动画，修改尺寸等
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController?, sourceViewController source: UIViewController) -> UIPresentationController? {
         let tpc = TTPresentationController(presentedViewController: presented, presentingViewController: presenting)
         tpc.presentFrame = presentFrame
         return tpc
@@ -71,7 +71,7 @@ class TTPresentationManager: NSObject, UIViewControllerTransitioningDelegate, UI
         // 1、获取需要弹出的视图
         guard let toView = transitionContext.viewForKey(UITransitionContextToViewKey) else { return }
         // 2、将需要弹出的视图添加到containerView
-        transitionContext.containerView()?.addSubview(toView)
+        transitionContext.containerView().addSubview(toView)
         // 3、执行动画
         toView.transform = CGAffineTransformMakeScale(1.0, 0.0)
         toView.layer.anchorPoint = CGPointMake(0.5, 0)

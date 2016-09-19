@@ -153,7 +153,7 @@ extension QRCodeViewController: UINavigationControllerDelegate, UIImagePickerCon
         // 1.创建一个探测器
         let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy:CIDetectorAccuracyHigh])
         // 2.利用这个探测器探测数据
-        let features = detector.featuresInImage(CIImage(image: image)!)
+        let features = detector!.featuresInImage(CIImage(image: image)!)
         // 3.去除探测数据
         TTLog(features)
         guard let urlStr = (features.last as? CIQRCodeFeature)?.messageString else { return }

@@ -54,12 +54,12 @@ class QRCodeCreateViewController: UIViewController {
         let context = CIContext(options: nil)
         let bitmapImage = context.createCGImage(image, fromRect: extent)
         
-        CGContextSetInterpolationQuality(bitmapRef, CGInterpolationQuality.None)
-        CGContextScaleCTM(bitmapRef, scale, scale)
-        CGContextDrawImage(bitmapRef, extent, bitmapImage)
+        CGContextSetInterpolationQuality(bitmapRef!, CGInterpolationQuality.None)
+        CGContextScaleCTM(bitmapRef!, scale, scale)
+        CGContextDrawImage(bitmapRef!, extent, bitmapImage!)
         
         // 2.保存bitmap到图片
-        let scaledImage = CGBitmapContextCreateImage(bitmapRef)!
+        let scaledImage = CGBitmapContextCreateImage(bitmapRef!)!
         
         return UIImage(CGImage: scaledImage)
     }

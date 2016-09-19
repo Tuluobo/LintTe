@@ -368,250 +368,250 @@ struct R: Rswift.Validatable {
     static let l_xin3xPng = FileResource(bundle: _R.hostingBundle, name: "l_xin@3x", pathExtension: "png")
     /// Resource file `lxh.plist`.
     static let lxhPlist = FileResource(bundle: _R.hostingBundle, name: "lxh", pathExtension: "plist")
-    /// Resource file `lxh_beicui@2x.png`.
-    static let lxh_beicui2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_beicui@2x", pathExtension: "png")
     /// Resource file `lxh_beicui.gif`.
     static let lxh_beicuiGif = FileResource(bundle: _R.hostingBundle, name: "lxh_beicui", pathExtension: "gif")
     /// Resource file `lxh_beicui.png`.
     static let lxh_beicuiPng = FileResource(bundle: _R.hostingBundle, name: "lxh_beicui", pathExtension: "png")
-    /// Resource file `lxh_beidian@2x.png`.
-    static let lxh_beidian2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_beidian@2x", pathExtension: "png")
+    /// Resource file `lxh_beicui@2x.png`.
+    static let lxh_beicui2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_beicui@2x", pathExtension: "png")
     /// Resource file `lxh_beidian.gif`.
     static let lxh_beidianGif = FileResource(bundle: _R.hostingBundle, name: "lxh_beidian", pathExtension: "gif")
     /// Resource file `lxh_beidian.png`.
     static let lxh_beidianPng = FileResource(bundle: _R.hostingBundle, name: "lxh_beidian", pathExtension: "png")
-    /// Resource file `lxh_bengkui@2x.png`.
-    static let lxh_bengkui2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_bengkui@2x", pathExtension: "png")
+    /// Resource file `lxh_beidian@2x.png`.
+    static let lxh_beidian2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_beidian@2x", pathExtension: "png")
     /// Resource file `lxh_bengkui.gif`.
     static let lxh_bengkuiGif = FileResource(bundle: _R.hostingBundle, name: "lxh_bengkui", pathExtension: "gif")
     /// Resource file `lxh_bengkui.png`.
     static let lxh_bengkuiPng = FileResource(bundle: _R.hostingBundle, name: "lxh_bengkui", pathExtension: "png")
-    /// Resource file `lxh_biefanwo@2x.png`.
-    static let lxh_biefanwo2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_biefanwo@2x", pathExtension: "png")
+    /// Resource file `lxh_bengkui@2x.png`.
+    static let lxh_bengkui2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_bengkui@2x", pathExtension: "png")
     /// Resource file `lxh_biefanwo.gif`.
     static let lxh_biefanwoGif = FileResource(bundle: _R.hostingBundle, name: "lxh_biefanwo", pathExtension: "gif")
     /// Resource file `lxh_biefanwo.png`.
     static let lxh_biefanwoPng = FileResource(bundle: _R.hostingBundle, name: "lxh_biefanwo", pathExtension: "png")
-    /// Resource file `lxh_buhaoyisi@2x.png`.
-    static let lxh_buhaoyisi2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_buhaoyisi@2x", pathExtension: "png")
+    /// Resource file `lxh_biefanwo@2x.png`.
+    static let lxh_biefanwo2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_biefanwo@2x", pathExtension: "png")
     /// Resource file `lxh_buhaoyisi.gif`.
     static let lxh_buhaoyisiGif = FileResource(bundle: _R.hostingBundle, name: "lxh_buhaoyisi", pathExtension: "gif")
     /// Resource file `lxh_buhaoyisi.png`.
     static let lxh_buhaoyisiPng = FileResource(bundle: _R.hostingBundle, name: "lxh_buhaoyisi", pathExtension: "png")
-    /// Resource file `lxh_buxiangshangban@2x.png`.
-    static let lxh_buxiangshangban2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_buxiangshangban@2x", pathExtension: "png")
+    /// Resource file `lxh_buhaoyisi@2x.png`.
+    static let lxh_buhaoyisi2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_buhaoyisi@2x", pathExtension: "png")
     /// Resource file `lxh_buxiangshangban.gif`.
     static let lxh_buxiangshangbanGif = FileResource(bundle: _R.hostingBundle, name: "lxh_buxiangshangban", pathExtension: "gif")
     /// Resource file `lxh_buxiangshangban.png`.
     static let lxh_buxiangshangbanPng = FileResource(bundle: _R.hostingBundle, name: "lxh_buxiangshangban", pathExtension: "png")
-    /// Resource file `lxh_deyidexiao@2x.png`.
-    static let lxh_deyidexiao2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_deyidexiao@2x", pathExtension: "png")
+    /// Resource file `lxh_buxiangshangban@2x.png`.
+    static let lxh_buxiangshangban2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_buxiangshangban@2x", pathExtension: "png")
     /// Resource file `lxh_deyidexiao.gif`.
     static let lxh_deyidexiaoGif = FileResource(bundle: _R.hostingBundle, name: "lxh_deyidexiao", pathExtension: "gif")
     /// Resource file `lxh_deyidexiao.png`.
     static let lxh_deyidexiaoPng = FileResource(bundle: _R.hostingBundle, name: "lxh_deyidexiao", pathExtension: "png")
-    /// Resource file `lxh_geijin@2x.png`.
-    static let lxh_geijin2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_geijin@2x", pathExtension: "png")
+    /// Resource file `lxh_deyidexiao@2x.png`.
+    static let lxh_deyidexiao2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_deyidexiao@2x", pathExtension: "png")
     /// Resource file `lxh_geijin.gif`.
     static let lxh_geijinGif = FileResource(bundle: _R.hostingBundle, name: "lxh_geijin", pathExtension: "gif")
     /// Resource file `lxh_geijin.png`.
     static let lxh_geijinPng = FileResource(bundle: _R.hostingBundle, name: "lxh_geijin", pathExtension: "png")
-    /// Resource file `lxh_haoaio@2x.png`.
-    static let lxh_haoaio2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haoaio@2x", pathExtension: "png")
+    /// Resource file `lxh_geijin@2x.png`.
+    static let lxh_geijin2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_geijin@2x", pathExtension: "png")
     /// Resource file `lxh_haoaio.gif`.
     static let lxh_haoaioGif = FileResource(bundle: _R.hostingBundle, name: "lxh_haoaio", pathExtension: "gif")
     /// Resource file `lxh_haoaio.png`.
     static let lxh_haoaioPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haoaio", pathExtension: "png")
-    /// Resource file `lxh_haobang@2x.png`.
-    static let lxh_haobang2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haobang@2x", pathExtension: "png")
+    /// Resource file `lxh_haoaio@2x.png`.
+    static let lxh_haoaio2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haoaio@2x", pathExtension: "png")
     /// Resource file `lxh_haobang.gif`.
     static let lxh_haobangGif = FileResource(bundle: _R.hostingBundle, name: "lxh_haobang", pathExtension: "gif")
     /// Resource file `lxh_haobang.png`.
     static let lxh_haobangPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haobang", pathExtension: "png")
-    /// Resource file `lxh_haojiong@2x.png`.
-    static let lxh_haojiong2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haojiong@2x", pathExtension: "png")
+    /// Resource file `lxh_haobang@2x.png`.
+    static let lxh_haobang2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haobang@2x", pathExtension: "png")
     /// Resource file `lxh_haojiong.gif`.
     static let lxh_haojiongGif = FileResource(bundle: _R.hostingBundle, name: "lxh_haojiong", pathExtension: "gif")
     /// Resource file `lxh_haojiong.png`.
     static let lxh_haojiongPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haojiong", pathExtension: "png")
-    /// Resource file `lxh_haoxihuan@2x.png`.
-    static let lxh_haoxihuan2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haoxihuan@2x", pathExtension: "png")
+    /// Resource file `lxh_haojiong@2x.png`.
+    static let lxh_haojiong2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haojiong@2x", pathExtension: "png")
     /// Resource file `lxh_haoxihuan.gif`.
     static let lxh_haoxihuanGif = FileResource(bundle: _R.hostingBundle, name: "lxh_haoxihuan", pathExtension: "gif")
     /// Resource file `lxh_haoxihuan.png`.
     static let lxh_haoxihuanPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haoxihuan", pathExtension: "png")
-    /// Resource file `lxh_holdzhu@2x.png`.
-    static let lxh_holdzhu2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_holdzhu@2x", pathExtension: "png")
+    /// Resource file `lxh_haoxihuan@2x.png`.
+    static let lxh_haoxihuan2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_haoxihuan@2x", pathExtension: "png")
     /// Resource file `lxh_holdzhu.gif`.
     static let lxh_holdzhuGif = FileResource(bundle: _R.hostingBundle, name: "lxh_holdzhu", pathExtension: "gif")
     /// Resource file `lxh_holdzhu.png`.
     static let lxh_holdzhuPng = FileResource(bundle: _R.hostingBundle, name: "lxh_holdzhu", pathExtension: "png")
-    /// Resource file `lxh_jiekexun@2x.png`.
-    static let lxh_jiekexun2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_jiekexun@2x", pathExtension: "png")
+    /// Resource file `lxh_holdzhu@2x.png`.
+    static let lxh_holdzhu2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_holdzhu@2x", pathExtension: "png")
     /// Resource file `lxh_jiekexun.gif`.
     static let lxh_jiekexunGif = FileResource(bundle: _R.hostingBundle, name: "lxh_jiekexun", pathExtension: "gif")
     /// Resource file `lxh_jiekexun.png`.
     static let lxh_jiekexunPng = FileResource(bundle: _R.hostingBundle, name: "lxh_jiekexun", pathExtension: "png")
-    /// Resource file `lxh_jiujie@2x.png`.
-    static let lxh_jiujie2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_jiujie@2x", pathExtension: "png")
+    /// Resource file `lxh_jiekexun@2x.png`.
+    static let lxh_jiekexun2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_jiekexun@2x", pathExtension: "png")
     /// Resource file `lxh_jiujie.gif`.
     static let lxh_jiujieGif = FileResource(bundle: _R.hostingBundle, name: "lxh_jiujie", pathExtension: "gif")
     /// Resource file `lxh_jiujie.png`.
     static let lxh_jiujiePng = FileResource(bundle: _R.hostingBundle, name: "lxh_jiujie", pathExtension: "png")
-    /// Resource file `lxh_juhan@2x.png`.
-    static let lxh_juhan2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_juhan@2x", pathExtension: "png")
+    /// Resource file `lxh_jiujie@2x.png`.
+    static let lxh_jiujie2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_jiujie@2x", pathExtension: "png")
     /// Resource file `lxh_juhan.gif`.
     static let lxh_juhanGif = FileResource(bundle: _R.hostingBundle, name: "lxh_juhan", pathExtension: "gif")
     /// Resource file `lxh_juhan.png`.
     static let lxh_juhanPng = FileResource(bundle: _R.hostingBundle, name: "lxh_juhan", pathExtension: "png")
-    /// Resource file `lxh_koubishi@2x.png`.
-    static let lxh_koubishi2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_koubishi@2x", pathExtension: "png")
+    /// Resource file `lxh_juhan@2x.png`.
+    static let lxh_juhan2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_juhan@2x", pathExtension: "png")
     /// Resource file `lxh_koubishi.gif`.
     static let lxh_koubishiGif = FileResource(bundle: _R.hostingBundle, name: "lxh_koubishi", pathExtension: "gif")
     /// Resource file `lxh_koubishi.png`.
     static let lxh_koubishiPng = FileResource(bundle: _R.hostingBundle, name: "lxh_koubishi", pathExtension: "png")
-    /// Resource file `lxh_kunsile@2x.png`.
-    static let lxh_kunsile2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_kunsile@2x", pathExtension: "png")
+    /// Resource file `lxh_koubishi@2x.png`.
+    static let lxh_koubishi2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_koubishi@2x", pathExtension: "png")
     /// Resource file `lxh_kunsile.gif`.
     static let lxh_kunsileGif = FileResource(bundle: _R.hostingBundle, name: "lxh_kunsile", pathExtension: "gif")
     /// Resource file `lxh_kunsile.png`.
     static let lxh_kunsilePng = FileResource(bundle: _R.hostingBundle, name: "lxh_kunsile", pathExtension: "png")
-    /// Resource file `lxh_leifeng@2x.png`.
-    static let lxh_leifeng2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_leifeng@2x", pathExtension: "png")
+    /// Resource file `lxh_kunsile@2x.png`.
+    static let lxh_kunsile2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_kunsile@2x", pathExtension: "png")
     /// Resource file `lxh_leifeng.gif`.
     static let lxh_leifengGif = FileResource(bundle: _R.hostingBundle, name: "lxh_leifeng", pathExtension: "gif")
     /// Resource file `lxh_leifeng.png`.
     static let lxh_leifengPng = FileResource(bundle: _R.hostingBundle, name: "lxh_leifeng", pathExtension: "png")
-    /// Resource file `lxh_leiliumanmian@2x.png`.
-    static let lxh_leiliumanmian2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_leiliumanmian@2x", pathExtension: "png")
+    /// Resource file `lxh_leifeng@2x.png`.
+    static let lxh_leifeng2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_leifeng@2x", pathExtension: "png")
     /// Resource file `lxh_leiliumanmian.gif`.
     static let lxh_leiliumanmianGif = FileResource(bundle: _R.hostingBundle, name: "lxh_leiliumanmian", pathExtension: "gif")
     /// Resource file `lxh_leiliumanmian.png`.
     static let lxh_leiliumanmianPng = FileResource(bundle: _R.hostingBundle, name: "lxh_leiliumanmian", pathExtension: "png")
-    /// Resource file `lxh_meigui@2x.png`.
-    static let lxh_meigui2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_meigui@2x", pathExtension: "png")
+    /// Resource file `lxh_leiliumanmian@2x.png`.
+    static let lxh_leiliumanmian2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_leiliumanmian@2x", pathExtension: "png")
     /// Resource file `lxh_meigui.gif`.
     static let lxh_meiguiGif = FileResource(bundle: _R.hostingBundle, name: "lxh_meigui", pathExtension: "gif")
     /// Resource file `lxh_meigui.png`.
     static let lxh_meiguiPng = FileResource(bundle: _R.hostingBundle, name: "lxh_meigui", pathExtension: "png")
+    /// Resource file `lxh_meigui@2x.png`.
+    static let lxh_meigui2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_meigui@2x", pathExtension: "png")
     /// Resource file `lxh_mobaile.gif`.
     static let lxh_mobaileGif = FileResource(bundle: _R.hostingBundle, name: "lxh_mobaile", pathExtension: "gif")
-    /// Resource file `lxh_oye@2x.png`.
-    static let lxh_oye2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_oye@2x", pathExtension: "png")
     /// Resource file `lxh_oye.gif`.
     static let lxh_oyeGif = FileResource(bundle: _R.hostingBundle, name: "lxh_oye", pathExtension: "gif")
     /// Resource file `lxh_oye.png`.
     static let lxh_oyePng = FileResource(bundle: _R.hostingBundle, name: "lxh_oye", pathExtension: "png")
+    /// Resource file `lxh_oye@2x.png`.
+    static let lxh_oye2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_oye@2x", pathExtension: "png")
     /// Resource file `lxh_paishou.gif`.
     static let lxh_paishouGif = FileResource(bundle: _R.hostingBundle, name: "lxh_paishou", pathExtension: "gif")
-    /// Resource file `lxh_pili@2x.png`.
-    static let lxh_pili2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_pili@2x", pathExtension: "png")
     /// Resource file `lxh_pili.gif`.
     static let lxh_piliGif = FileResource(bundle: _R.hostingBundle, name: "lxh_pili", pathExtension: "gif")
     /// Resource file `lxh_pili.png`.
     static let lxh_piliPng = FileResource(bundle: _R.hostingBundle, name: "lxh_pili", pathExtension: "png")
-    /// Resource file `lxh_qiaoqiao@2x.png`.
-    static let lxh_qiaoqiao2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiaoqiao@2x", pathExtension: "png")
+    /// Resource file `lxh_pili@2x.png`.
+    static let lxh_pili2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_pili@2x", pathExtension: "png")
     /// Resource file `lxh_qiaoqiao.gif`.
     static let lxh_qiaoqiaoGif = FileResource(bundle: _R.hostingBundle, name: "lxh_qiaoqiao", pathExtension: "gif")
     /// Resource file `lxh_qiaoqiao.png`.
     static let lxh_qiaoqiaoPng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiaoqiao", pathExtension: "png")
-    /// Resource file `lxh_qiubite@2x.png`.
-    static let lxh_qiubite2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiubite@2x", pathExtension: "png")
+    /// Resource file `lxh_qiaoqiao@2x.png`.
+    static let lxh_qiaoqiao2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiaoqiao@2x", pathExtension: "png")
     /// Resource file `lxh_qiubite.gif`.
     static let lxh_qiubiteGif = FileResource(bundle: _R.hostingBundle, name: "lxh_qiubite", pathExtension: "gif")
     /// Resource file `lxh_qiubite.png`.
     static let lxh_qiubitePng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiubite", pathExtension: "png")
-    /// Resource file `lxh_qiuguanzhu@2x.png`.
-    static let lxh_qiuguanzhu2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiuguanzhu@2x", pathExtension: "png")
+    /// Resource file `lxh_qiubite@2x.png`.
+    static let lxh_qiubite2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiubite@2x", pathExtension: "png")
     /// Resource file `lxh_qiuguanzhu.gif`.
     static let lxh_qiuguanzhuGif = FileResource(bundle: _R.hostingBundle, name: "lxh_qiuguanzhu", pathExtension: "gif")
     /// Resource file `lxh_qiuguanzhu.png`.
     static let lxh_qiuguanzhuPng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiuguanzhu", pathExtension: "png")
-    /// Resource file `lxh_quntiweiguan@2x.png`.
-    static let lxh_quntiweiguan2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_quntiweiguan@2x", pathExtension: "png")
+    /// Resource file `lxh_qiuguanzhu@2x.png`.
+    static let lxh_qiuguanzhu2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_qiuguanzhu@2x", pathExtension: "png")
     /// Resource file `lxh_quntiweiguan.gif`.
     static let lxh_quntiweiguanGif = FileResource(bundle: _R.hostingBundle, name: "lxh_quntiweiguan", pathExtension: "gif")
     /// Resource file `lxh_quntiweiguan.png`.
     static let lxh_quntiweiguanPng = FileResource(bundle: _R.hostingBundle, name: "lxh_quntiweiguan", pathExtension: "png")
-    /// Resource file `lxh_shuaishuaishou@2x.png`.
-    static let lxh_shuaishuaishou2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_shuaishuaishou@2x", pathExtension: "png")
+    /// Resource file `lxh_quntiweiguan@2x.png`.
+    static let lxh_quntiweiguan2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_quntiweiguan@2x", pathExtension: "png")
     /// Resource file `lxh_shuaishuaishou.gif`.
     static let lxh_shuaishuaishouGif = FileResource(bundle: _R.hostingBundle, name: "lxh_shuaishuaishou", pathExtension: "gif")
     /// Resource file `lxh_shuaishuaishou.png`.
     static let lxh_shuaishuaishouPng = FileResource(bundle: _R.hostingBundle, name: "lxh_shuaishuaishou", pathExtension: "png")
-    /// Resource file `lxh_toule@2x.png`.
-    static let lxh_toule2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_toule@2x", pathExtension: "png")
+    /// Resource file `lxh_shuaishuaishou@2x.png`.
+    static let lxh_shuaishuaishou2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_shuaishuaishou@2x", pathExtension: "png")
     /// Resource file `lxh_toule.gif`.
     static let lxh_touleGif = FileResource(bundle: _R.hostingBundle, name: "lxh_toule", pathExtension: "gif")
     /// Resource file `lxh_toule.png`.
     static let lxh_toulePng = FileResource(bundle: _R.hostingBundle, name: "lxh_toule", pathExtension: "png")
-    /// Resource file `lxh_tuijian@2x.png`.
-    static let lxh_tuijian2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_tuijian@2x", pathExtension: "png")
+    /// Resource file `lxh_toule@2x.png`.
+    static let lxh_toule2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_toule@2x", pathExtension: "png")
     /// Resource file `lxh_tuijian.gif`.
     static let lxh_tuijianGif = FileResource(bundle: _R.hostingBundle, name: "lxh_tuijian", pathExtension: "gif")
     /// Resource file `lxh_tuijian.png`.
     static let lxh_tuijianPng = FileResource(bundle: _R.hostingBundle, name: "lxh_tuijian", pathExtension: "png")
-    /// Resource file `lxh_xianghumobai@2x.png`.
-    static let lxh_xianghumobai2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xianghumobai@2x", pathExtension: "png")
+    /// Resource file `lxh_tuijian@2x.png`.
+    static let lxh_tuijian2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_tuijian@2x", pathExtension: "png")
     /// Resource file `lxh_xianghumobai.gif`.
     static let lxh_xianghumobaiGif = FileResource(bundle: _R.hostingBundle, name: "lxh_xianghumobai", pathExtension: "gif")
     /// Resource file `lxh_xianghumobai.png`.
     static let lxh_xianghumobaiPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xianghumobai", pathExtension: "png")
-    /// Resource file `lxh_xiangyixiang@2x.png`.
-    static let lxh_xiangyixiang2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiangyixiang@2x", pathExtension: "png")
+    /// Resource file `lxh_xianghumobai@2x.png`.
+    static let lxh_xianghumobai2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xianghumobai@2x", pathExtension: "png")
     /// Resource file `lxh_xiangyixiang.gif`.
     static let lxh_xiangyixiangGif = FileResource(bundle: _R.hostingBundle, name: "lxh_xiangyixiang", pathExtension: "gif")
     /// Resource file `lxh_xiangyixiang.png`.
     static let lxh_xiangyixiangPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiangyixiang", pathExtension: "png")
-    /// Resource file `lxh_xiaohaha@2x.png`.
-    static let lxh_xiaohaha2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiaohaha@2x", pathExtension: "png")
+    /// Resource file `lxh_xiangyixiang@2x.png`.
+    static let lxh_xiangyixiang2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiangyixiang@2x", pathExtension: "png")
     /// Resource file `lxh_xiaohaha.gif`.
     static let lxh_xiaohahaGif = FileResource(bundle: _R.hostingBundle, name: "lxh_xiaohaha", pathExtension: "gif")
     /// Resource file `lxh_xiaohaha.png`.
     static let lxh_xiaohahaPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiaohaha", pathExtension: "png")
-    /// Resource file `lxh_xiudada@2x.png`.
-    static let lxh_xiudada2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiudada@2x", pathExtension: "png")
+    /// Resource file `lxh_xiaohaha@2x.png`.
+    static let lxh_xiaohaha2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiaohaha@2x", pathExtension: "png")
     /// Resource file `lxh_xiudada.gif`.
     static let lxh_xiudadaGif = FileResource(bundle: _R.hostingBundle, name: "lxh_xiudada", pathExtension: "gif")
     /// Resource file `lxh_xiudada.png`.
     static let lxh_xiudadaPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiudada", pathExtension: "png")
-    /// Resource file `lxh_xuyuan@2x.png`.
-    static let lxh_xuyuan2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xuyuan@2x", pathExtension: "png")
+    /// Resource file `lxh_xiudada@2x.png`.
+    static let lxh_xiudada2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xiudada@2x", pathExtension: "png")
     /// Resource file `lxh_xuyuan.gif`.
     static let lxh_xuyuanGif = FileResource(bundle: _R.hostingBundle, name: "lxh_xuyuan", pathExtension: "gif")
     /// Resource file `lxh_xuyuan.png`.
     static let lxh_xuyuanPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xuyuan", pathExtension: "png")
-    /// Resource file `lxh_youyali@2x.png`.
-    static let lxh_youyali2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_youyali@2x", pathExtension: "png")
+    /// Resource file `lxh_xuyuan@2x.png`.
+    static let lxh_xuyuan2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_xuyuan@2x", pathExtension: "png")
     /// Resource file `lxh_youyali.gif`.
     static let lxh_youyaliGif = FileResource(bundle: _R.hostingBundle, name: "lxh_youyali", pathExtension: "gif")
     /// Resource file `lxh_youyali.png`.
     static let lxh_youyaliPng = FileResource(bundle: _R.hostingBundle, name: "lxh_youyali", pathExtension: "png")
-    /// Resource file `lxh_zana@2x.png`.
-    static let lxh_zana2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zana@2x", pathExtension: "png")
+    /// Resource file `lxh_youyali@2x.png`.
+    static let lxh_youyali2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_youyali@2x", pathExtension: "png")
     /// Resource file `lxh_zana.gif`.
     static let lxh_zanaGif = FileResource(bundle: _R.hostingBundle, name: "lxh_zana", pathExtension: "gif")
     /// Resource file `lxh_zana.png`.
     static let lxh_zanaPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zana", pathExtension: "png")
-    /// Resource file `lxh_zaokuangzheng@2x.png`.
-    static let lxh_zaokuangzheng2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zaokuangzheng@2x", pathExtension: "png")
+    /// Resource file `lxh_zana@2x.png`.
+    static let lxh_zana2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zana@2x", pathExtension: "png")
     /// Resource file `lxh_zaokuangzheng.gif`.
     static let lxh_zaokuangzhengGif = FileResource(bundle: _R.hostingBundle, name: "lxh_zaokuangzheng", pathExtension: "gif")
     /// Resource file `lxh_zaokuangzheng.png`.
     static let lxh_zaokuangzhengPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zaokuangzheng", pathExtension: "png")
-    /// Resource file `lxh_zhenjing@2x.png`.
-    static let lxh_zhenjing2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zhenjing@2x", pathExtension: "png")
+    /// Resource file `lxh_zaokuangzheng@2x.png`.
+    static let lxh_zaokuangzheng2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zaokuangzheng@2x", pathExtension: "png")
     /// Resource file `lxh_zhenjing.gif`.
     static let lxh_zhenjingGif = FileResource(bundle: _R.hostingBundle, name: "lxh_zhenjing", pathExtension: "gif")
     /// Resource file `lxh_zhenjing.png`.
     static let lxh_zhenjingPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zhenjing", pathExtension: "png")
-    /// Resource file `lxh_zhuanfa@2x.png`.
-    static let lxh_zhuanfa2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zhuanfa@2x", pathExtension: "png")
+    /// Resource file `lxh_zhenjing@2x.png`.
+    static let lxh_zhenjing2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zhenjing@2x", pathExtension: "png")
     /// Resource file `lxh_zhuanfa.gif`.
     static let lxh_zhuanfaGif = FileResource(bundle: _R.hostingBundle, name: "lxh_zhuanfa", pathExtension: "gif")
     /// Resource file `lxh_zhuanfa.png`.
     static let lxh_zhuanfaPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zhuanfa", pathExtension: "png")
+    /// Resource file `lxh_zhuanfa@2x.png`.
+    static let lxh_zhuanfa2xPng = FileResource(bundle: _R.hostingBundle, name: "lxh_zhuanfa@2x", pathExtension: "png")
     /// Resource file `o_dangao@2x.png`.
     static let o_dangao2xPng = FileResource(bundle: _R.hostingBundle, name: "o_dangao@2x", pathExtension: "png")
     /// Resource file `o_dangao@3x.png`.
@@ -1739,12 +1739,6 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_beicui@2x", withExtension: "png")`
-    static func lxh_beicui2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_beicui2xPng
-      return fileResource.bundle.URLForResource(fileResource)
-    }
-    
     /// `bundle.URLForResource("lxh_beicui", withExtension: "gif")`
     static func lxh_beicuiGif(_: Void) -> NSURL? {
       let fileResource = R.file.lxh_beicuiGif
@@ -1757,9 +1751,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_beidian@2x", withExtension: "png")`
-    static func lxh_beidian2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_beidian2xPng
+    /// `bundle.URLForResource("lxh_beicui@2x", withExtension: "png")`
+    static func lxh_beicui2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_beicui2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1775,9 +1769,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_bengkui@2x", withExtension: "png")`
-    static func lxh_bengkui2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_bengkui2xPng
+    /// `bundle.URLForResource("lxh_beidian@2x", withExtension: "png")`
+    static func lxh_beidian2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_beidian2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1793,9 +1787,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_biefanwo@2x", withExtension: "png")`
-    static func lxh_biefanwo2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_biefanwo2xPng
+    /// `bundle.URLForResource("lxh_bengkui@2x", withExtension: "png")`
+    static func lxh_bengkui2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_bengkui2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1811,9 +1805,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_buhaoyisi@2x", withExtension: "png")`
-    static func lxh_buhaoyisi2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_buhaoyisi2xPng
+    /// `bundle.URLForResource("lxh_biefanwo@2x", withExtension: "png")`
+    static func lxh_biefanwo2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_biefanwo2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1829,9 +1823,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_buxiangshangban@2x", withExtension: "png")`
-    static func lxh_buxiangshangban2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_buxiangshangban2xPng
+    /// `bundle.URLForResource("lxh_buhaoyisi@2x", withExtension: "png")`
+    static func lxh_buhaoyisi2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_buhaoyisi2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1847,9 +1841,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_deyidexiao@2x", withExtension: "png")`
-    static func lxh_deyidexiao2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_deyidexiao2xPng
+    /// `bundle.URLForResource("lxh_buxiangshangban@2x", withExtension: "png")`
+    static func lxh_buxiangshangban2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_buxiangshangban2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1865,9 +1859,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_geijin@2x", withExtension: "png")`
-    static func lxh_geijin2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_geijin2xPng
+    /// `bundle.URLForResource("lxh_deyidexiao@2x", withExtension: "png")`
+    static func lxh_deyidexiao2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_deyidexiao2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1883,9 +1877,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_haoaio@2x", withExtension: "png")`
-    static func lxh_haoaio2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_haoaio2xPng
+    /// `bundle.URLForResource("lxh_geijin@2x", withExtension: "png")`
+    static func lxh_geijin2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_geijin2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1901,9 +1895,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_haobang@2x", withExtension: "png")`
-    static func lxh_haobang2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_haobang2xPng
+    /// `bundle.URLForResource("lxh_haoaio@2x", withExtension: "png")`
+    static func lxh_haoaio2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_haoaio2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1919,9 +1913,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_haojiong@2x", withExtension: "png")`
-    static func lxh_haojiong2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_haojiong2xPng
+    /// `bundle.URLForResource("lxh_haobang@2x", withExtension: "png")`
+    static func lxh_haobang2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_haobang2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1937,9 +1931,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_haoxihuan@2x", withExtension: "png")`
-    static func lxh_haoxihuan2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_haoxihuan2xPng
+    /// `bundle.URLForResource("lxh_haojiong@2x", withExtension: "png")`
+    static func lxh_haojiong2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_haojiong2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1955,9 +1949,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_holdzhu@2x", withExtension: "png")`
-    static func lxh_holdzhu2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_holdzhu2xPng
+    /// `bundle.URLForResource("lxh_haoxihuan@2x", withExtension: "png")`
+    static func lxh_haoxihuan2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_haoxihuan2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1973,9 +1967,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_jiekexun@2x", withExtension: "png")`
-    static func lxh_jiekexun2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_jiekexun2xPng
+    /// `bundle.URLForResource("lxh_holdzhu@2x", withExtension: "png")`
+    static func lxh_holdzhu2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_holdzhu2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -1991,9 +1985,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_jiujie@2x", withExtension: "png")`
-    static func lxh_jiujie2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_jiujie2xPng
+    /// `bundle.URLForResource("lxh_jiekexun@2x", withExtension: "png")`
+    static func lxh_jiekexun2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_jiekexun2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2009,9 +2003,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_juhan@2x", withExtension: "png")`
-    static func lxh_juhan2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_juhan2xPng
+    /// `bundle.URLForResource("lxh_jiujie@2x", withExtension: "png")`
+    static func lxh_jiujie2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_jiujie2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2027,9 +2021,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_koubishi@2x", withExtension: "png")`
-    static func lxh_koubishi2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_koubishi2xPng
+    /// `bundle.URLForResource("lxh_juhan@2x", withExtension: "png")`
+    static func lxh_juhan2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_juhan2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2045,9 +2039,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_kunsile@2x", withExtension: "png")`
-    static func lxh_kunsile2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_kunsile2xPng
+    /// `bundle.URLForResource("lxh_koubishi@2x", withExtension: "png")`
+    static func lxh_koubishi2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_koubishi2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2063,9 +2057,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_leifeng@2x", withExtension: "png")`
-    static func lxh_leifeng2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_leifeng2xPng
+    /// `bundle.URLForResource("lxh_kunsile@2x", withExtension: "png")`
+    static func lxh_kunsile2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_kunsile2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2081,9 +2075,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_leiliumanmian@2x", withExtension: "png")`
-    static func lxh_leiliumanmian2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_leiliumanmian2xPng
+    /// `bundle.URLForResource("lxh_leifeng@2x", withExtension: "png")`
+    static func lxh_leifeng2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_leifeng2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2099,9 +2093,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_meigui@2x", withExtension: "png")`
-    static func lxh_meigui2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_meigui2xPng
+    /// `bundle.URLForResource("lxh_leiliumanmian@2x", withExtension: "png")`
+    static func lxh_leiliumanmian2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_leiliumanmian2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2117,15 +2111,15 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_mobaile", withExtension: "gif")`
-    static func lxh_mobaileGif(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_mobaileGif
+    /// `bundle.URLForResource("lxh_meigui@2x", withExtension: "png")`
+    static func lxh_meigui2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_meigui2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_oye@2x", withExtension: "png")`
-    static func lxh_oye2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_oye2xPng
+    /// `bundle.URLForResource("lxh_mobaile", withExtension: "gif")`
+    static func lxh_mobaileGif(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_mobaileGif
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2141,15 +2135,15 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_paishou", withExtension: "gif")`
-    static func lxh_paishouGif(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_paishouGif
+    /// `bundle.URLForResource("lxh_oye@2x", withExtension: "png")`
+    static func lxh_oye2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_oye2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_pili@2x", withExtension: "png")`
-    static func lxh_pili2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_pili2xPng
+    /// `bundle.URLForResource("lxh_paishou", withExtension: "gif")`
+    static func lxh_paishouGif(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_paishouGif
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2165,9 +2159,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_qiaoqiao@2x", withExtension: "png")`
-    static func lxh_qiaoqiao2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_qiaoqiao2xPng
+    /// `bundle.URLForResource("lxh_pili@2x", withExtension: "png")`
+    static func lxh_pili2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_pili2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2183,9 +2177,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_qiubite@2x", withExtension: "png")`
-    static func lxh_qiubite2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_qiubite2xPng
+    /// `bundle.URLForResource("lxh_qiaoqiao@2x", withExtension: "png")`
+    static func lxh_qiaoqiao2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_qiaoqiao2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2201,9 +2195,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_qiuguanzhu@2x", withExtension: "png")`
-    static func lxh_qiuguanzhu2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_qiuguanzhu2xPng
+    /// `bundle.URLForResource("lxh_qiubite@2x", withExtension: "png")`
+    static func lxh_qiubite2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_qiubite2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2219,9 +2213,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_quntiweiguan@2x", withExtension: "png")`
-    static func lxh_quntiweiguan2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_quntiweiguan2xPng
+    /// `bundle.URLForResource("lxh_qiuguanzhu@2x", withExtension: "png")`
+    static func lxh_qiuguanzhu2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_qiuguanzhu2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2237,9 +2231,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_shuaishuaishou@2x", withExtension: "png")`
-    static func lxh_shuaishuaishou2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_shuaishuaishou2xPng
+    /// `bundle.URLForResource("lxh_quntiweiguan@2x", withExtension: "png")`
+    static func lxh_quntiweiguan2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_quntiweiguan2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2255,9 +2249,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_toule@2x", withExtension: "png")`
-    static func lxh_toule2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_toule2xPng
+    /// `bundle.URLForResource("lxh_shuaishuaishou@2x", withExtension: "png")`
+    static func lxh_shuaishuaishou2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_shuaishuaishou2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2273,9 +2267,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_tuijian@2x", withExtension: "png")`
-    static func lxh_tuijian2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_tuijian2xPng
+    /// `bundle.URLForResource("lxh_toule@2x", withExtension: "png")`
+    static func lxh_toule2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_toule2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2291,9 +2285,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_xianghumobai@2x", withExtension: "png")`
-    static func lxh_xianghumobai2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_xianghumobai2xPng
+    /// `bundle.URLForResource("lxh_tuijian@2x", withExtension: "png")`
+    static func lxh_tuijian2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_tuijian2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2309,9 +2303,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_xiangyixiang@2x", withExtension: "png")`
-    static func lxh_xiangyixiang2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_xiangyixiang2xPng
+    /// `bundle.URLForResource("lxh_xianghumobai@2x", withExtension: "png")`
+    static func lxh_xianghumobai2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_xianghumobai2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2327,9 +2321,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_xiaohaha@2x", withExtension: "png")`
-    static func lxh_xiaohaha2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_xiaohaha2xPng
+    /// `bundle.URLForResource("lxh_xiangyixiang@2x", withExtension: "png")`
+    static func lxh_xiangyixiang2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_xiangyixiang2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2345,9 +2339,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_xiudada@2x", withExtension: "png")`
-    static func lxh_xiudada2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_xiudada2xPng
+    /// `bundle.URLForResource("lxh_xiaohaha@2x", withExtension: "png")`
+    static func lxh_xiaohaha2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_xiaohaha2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2363,9 +2357,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_xuyuan@2x", withExtension: "png")`
-    static func lxh_xuyuan2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_xuyuan2xPng
+    /// `bundle.URLForResource("lxh_xiudada@2x", withExtension: "png")`
+    static func lxh_xiudada2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_xiudada2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2381,9 +2375,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_youyali@2x", withExtension: "png")`
-    static func lxh_youyali2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_youyali2xPng
+    /// `bundle.URLForResource("lxh_xuyuan@2x", withExtension: "png")`
+    static func lxh_xuyuan2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_xuyuan2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2399,9 +2393,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_zana@2x", withExtension: "png")`
-    static func lxh_zana2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_zana2xPng
+    /// `bundle.URLForResource("lxh_youyali@2x", withExtension: "png")`
+    static func lxh_youyali2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_youyali2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2417,9 +2411,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_zaokuangzheng@2x", withExtension: "png")`
-    static func lxh_zaokuangzheng2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_zaokuangzheng2xPng
+    /// `bundle.URLForResource("lxh_zana@2x", withExtension: "png")`
+    static func lxh_zana2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_zana2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2435,9 +2429,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_zhenjing@2x", withExtension: "png")`
-    static func lxh_zhenjing2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_zhenjing2xPng
+    /// `bundle.URLForResource("lxh_zaokuangzheng@2x", withExtension: "png")`
+    static func lxh_zaokuangzheng2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_zaokuangzheng2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2453,9 +2447,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.URLForResource(fileResource)
     }
     
-    /// `bundle.URLForResource("lxh_zhuanfa@2x", withExtension: "png")`
-    static func lxh_zhuanfa2xPng(_: Void) -> NSURL? {
-      let fileResource = R.file.lxh_zhuanfa2xPng
+    /// `bundle.URLForResource("lxh_zhenjing@2x", withExtension: "png")`
+    static func lxh_zhenjing2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_zhenjing2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2468,6 +2462,12 @@ struct R: Rswift.Validatable {
     /// `bundle.URLForResource("lxh_zhuanfa", withExtension: "png")`
     static func lxh_zhuanfaPng(_: Void) -> NSURL? {
       let fileResource = R.file.lxh_zhuanfaPng
+      return fileResource.bundle.URLForResource(fileResource)
+    }
+    
+    /// `bundle.URLForResource("lxh_zhuanfa@2x", withExtension: "png")`
+    static func lxh_zhuanfa2xPng(_: Void) -> NSURL? {
+      let fileResource = R.file.lxh_zhuanfa2xPng
       return fileResource.bundle.URLForResource(fileResource)
     }
     
@@ -2711,10 +2711,10 @@ struct R: Rswift.Validatable {
   struct image {
     /// Image `ad_background`.
     static let ad_background = ImageResource(bundle: _R.hostingBundle, name: "ad_background")
-    /// Image `avatar_default`.
-    static let avatar_default = ImageResource(bundle: _R.hostingBundle, name: "avatar_default")
     /// Image `avatar_default_small`.
     static let avatar_default_small = ImageResource(bundle: _R.hostingBundle, name: "avatar_default_small")
+    /// Image `avatar_default`.
+    static let avatar_default = ImageResource(bundle: _R.hostingBundle, name: "avatar_default")
     /// Image `avatar_enterprise_vip`.
     static let avatar_enterprise_vip = ImageResource(bundle: _R.hostingBundle, name: "avatar_enterprise_vip")
     /// Image `avatar_grassroot`.
@@ -2725,8 +2725,6 @@ struct R: Rswift.Validatable {
     static let avatar_vip = ImageResource(bundle: _R.hostingBundle, name: "avatar_vip")
     /// Image `common_button_white_disable`.
     static let common_button_white_disable = ImageResource(bundle: _R.hostingBundle, name: "common_button_white_disable")
-    /// Image `common_icon_membership`.
-    static let common_icon_membership = ImageResource(bundle: _R.hostingBundle, name: "common_icon_membership")
     /// Image `common_icon_membership_expired`.
     static let common_icon_membership_expired = ImageResource(bundle: _R.hostingBundle, name: "common_icon_membership_expired")
     /// Image `common_icon_membership_level1`.
@@ -2741,6 +2739,8 @@ struct R: Rswift.Validatable {
     static let common_icon_membership_level5 = ImageResource(bundle: _R.hostingBundle, name: "common_icon_membership_level5")
     /// Image `common_icon_membership_level6`.
     static let common_icon_membership_level6 = ImageResource(bundle: _R.hostingBundle, name: "common_icon_membership_level6")
+    /// Image `common_icon_membership`.
+    static let common_icon_membership = ImageResource(bundle: _R.hostingBundle, name: "common_icon_membership")
     /// Image `d_aini`.
     static let d_aini = ImageResource(bundle: _R.hostingBundle, name: "d_aini")
     /// Image `d_aoteman`.
@@ -2917,182 +2917,182 @@ struct R: Rswift.Validatable {
     static let l_shangxin = ImageResource(bundle: _R.hostingBundle, name: "l_shangxin")
     /// Image `l_xin`.
     static let l_xin = ImageResource(bundle: _R.hostingBundle, name: "l_xin")
-    /// Image `lxh_beicui`.
-    static let lxh_beicui = ImageResource(bundle: _R.hostingBundle, name: "lxh_beicui")
     /// Image `lxh_beicui.gif`.
     static let lxh_beicuiGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_beicui.gif")
-    /// Image `lxh_beidian`.
-    static let lxh_beidian = ImageResource(bundle: _R.hostingBundle, name: "lxh_beidian")
+    /// Image `lxh_beicui`.
+    static let lxh_beicui = ImageResource(bundle: _R.hostingBundle, name: "lxh_beicui")
     /// Image `lxh_beidian.gif`.
     static let lxh_beidianGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_beidian.gif")
-    /// Image `lxh_bengkui`.
-    static let lxh_bengkui = ImageResource(bundle: _R.hostingBundle, name: "lxh_bengkui")
+    /// Image `lxh_beidian`.
+    static let lxh_beidian = ImageResource(bundle: _R.hostingBundle, name: "lxh_beidian")
     /// Image `lxh_bengkui.gif`.
     static let lxh_bengkuiGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_bengkui.gif")
-    /// Image `lxh_biefanwo`.
-    static let lxh_biefanwo = ImageResource(bundle: _R.hostingBundle, name: "lxh_biefanwo")
+    /// Image `lxh_bengkui`.
+    static let lxh_bengkui = ImageResource(bundle: _R.hostingBundle, name: "lxh_bengkui")
     /// Image `lxh_biefanwo.gif`.
     static let lxh_biefanwoGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_biefanwo.gif")
-    /// Image `lxh_buhaoyisi`.
-    static let lxh_buhaoyisi = ImageResource(bundle: _R.hostingBundle, name: "lxh_buhaoyisi")
+    /// Image `lxh_biefanwo`.
+    static let lxh_biefanwo = ImageResource(bundle: _R.hostingBundle, name: "lxh_biefanwo")
     /// Image `lxh_buhaoyisi.gif`.
     static let lxh_buhaoyisiGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_buhaoyisi.gif")
-    /// Image `lxh_buxiangshangban`.
-    static let lxh_buxiangshangban = ImageResource(bundle: _R.hostingBundle, name: "lxh_buxiangshangban")
+    /// Image `lxh_buhaoyisi`.
+    static let lxh_buhaoyisi = ImageResource(bundle: _R.hostingBundle, name: "lxh_buhaoyisi")
     /// Image `lxh_buxiangshangban.gif`.
     static let lxh_buxiangshangbanGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_buxiangshangban.gif")
-    /// Image `lxh_deyidexiao`.
-    static let lxh_deyidexiao = ImageResource(bundle: _R.hostingBundle, name: "lxh_deyidexiao")
+    /// Image `lxh_buxiangshangban`.
+    static let lxh_buxiangshangban = ImageResource(bundle: _R.hostingBundle, name: "lxh_buxiangshangban")
     /// Image `lxh_deyidexiao.gif`.
     static let lxh_deyidexiaoGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_deyidexiao.gif")
-    /// Image `lxh_geijin`.
-    static let lxh_geijin = ImageResource(bundle: _R.hostingBundle, name: "lxh_geijin")
+    /// Image `lxh_deyidexiao`.
+    static let lxh_deyidexiao = ImageResource(bundle: _R.hostingBundle, name: "lxh_deyidexiao")
     /// Image `lxh_geijin.gif`.
     static let lxh_geijinGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_geijin.gif")
-    /// Image `lxh_haoaio`.
-    static let lxh_haoaio = ImageResource(bundle: _R.hostingBundle, name: "lxh_haoaio")
+    /// Image `lxh_geijin`.
+    static let lxh_geijin = ImageResource(bundle: _R.hostingBundle, name: "lxh_geijin")
     /// Image `lxh_haoaio.gif`.
     static let lxh_haoaioGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_haoaio.gif")
-    /// Image `lxh_haobang`.
-    static let lxh_haobang = ImageResource(bundle: _R.hostingBundle, name: "lxh_haobang")
+    /// Image `lxh_haoaio`.
+    static let lxh_haoaio = ImageResource(bundle: _R.hostingBundle, name: "lxh_haoaio")
     /// Image `lxh_haobang.gif`.
     static let lxh_haobangGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_haobang.gif")
-    /// Image `lxh_haojiong`.
-    static let lxh_haojiong = ImageResource(bundle: _R.hostingBundle, name: "lxh_haojiong")
+    /// Image `lxh_haobang`.
+    static let lxh_haobang = ImageResource(bundle: _R.hostingBundle, name: "lxh_haobang")
     /// Image `lxh_haojiong.gif`.
     static let lxh_haojiongGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_haojiong.gif")
-    /// Image `lxh_haoxihuan`.
-    static let lxh_haoxihuan = ImageResource(bundle: _R.hostingBundle, name: "lxh_haoxihuan")
+    /// Image `lxh_haojiong`.
+    static let lxh_haojiong = ImageResource(bundle: _R.hostingBundle, name: "lxh_haojiong")
     /// Image `lxh_haoxihuan.gif`.
     static let lxh_haoxihuanGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_haoxihuan.gif")
-    /// Image `lxh_holdzhu`.
-    static let lxh_holdzhu = ImageResource(bundle: _R.hostingBundle, name: "lxh_holdzhu")
+    /// Image `lxh_haoxihuan`.
+    static let lxh_haoxihuan = ImageResource(bundle: _R.hostingBundle, name: "lxh_haoxihuan")
     /// Image `lxh_holdzhu.gif`.
     static let lxh_holdzhuGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_holdzhu.gif")
-    /// Image `lxh_jiekexun`.
-    static let lxh_jiekexun = ImageResource(bundle: _R.hostingBundle, name: "lxh_jiekexun")
+    /// Image `lxh_holdzhu`.
+    static let lxh_holdzhu = ImageResource(bundle: _R.hostingBundle, name: "lxh_holdzhu")
     /// Image `lxh_jiekexun.gif`.
     static let lxh_jiekexunGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_jiekexun.gif")
-    /// Image `lxh_jiujie`.
-    static let lxh_jiujie = ImageResource(bundle: _R.hostingBundle, name: "lxh_jiujie")
+    /// Image `lxh_jiekexun`.
+    static let lxh_jiekexun = ImageResource(bundle: _R.hostingBundle, name: "lxh_jiekexun")
     /// Image `lxh_jiujie.gif`.
     static let lxh_jiujieGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_jiujie.gif")
-    /// Image `lxh_juhan`.
-    static let lxh_juhan = ImageResource(bundle: _R.hostingBundle, name: "lxh_juhan")
+    /// Image `lxh_jiujie`.
+    static let lxh_jiujie = ImageResource(bundle: _R.hostingBundle, name: "lxh_jiujie")
     /// Image `lxh_juhan.gif`.
     static let lxh_juhanGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_juhan.gif")
-    /// Image `lxh_koubishi`.
-    static let lxh_koubishi = ImageResource(bundle: _R.hostingBundle, name: "lxh_koubishi")
+    /// Image `lxh_juhan`.
+    static let lxh_juhan = ImageResource(bundle: _R.hostingBundle, name: "lxh_juhan")
     /// Image `lxh_koubishi.gif`.
     static let lxh_koubishiGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_koubishi.gif")
-    /// Image `lxh_kunsile`.
-    static let lxh_kunsile = ImageResource(bundle: _R.hostingBundle, name: "lxh_kunsile")
+    /// Image `lxh_koubishi`.
+    static let lxh_koubishi = ImageResource(bundle: _R.hostingBundle, name: "lxh_koubishi")
     /// Image `lxh_kunsile.gif`.
     static let lxh_kunsileGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_kunsile.gif")
-    /// Image `lxh_leifeng`.
-    static let lxh_leifeng = ImageResource(bundle: _R.hostingBundle, name: "lxh_leifeng")
+    /// Image `lxh_kunsile`.
+    static let lxh_kunsile = ImageResource(bundle: _R.hostingBundle, name: "lxh_kunsile")
     /// Image `lxh_leifeng.gif`.
     static let lxh_leifengGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_leifeng.gif")
-    /// Image `lxh_leiliumanmian`.
-    static let lxh_leiliumanmian = ImageResource(bundle: _R.hostingBundle, name: "lxh_leiliumanmian")
+    /// Image `lxh_leifeng`.
+    static let lxh_leifeng = ImageResource(bundle: _R.hostingBundle, name: "lxh_leifeng")
     /// Image `lxh_leiliumanmian.gif`.
     static let lxh_leiliumanmianGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_leiliumanmian.gif")
-    /// Image `lxh_meigui`.
-    static let lxh_meigui = ImageResource(bundle: _R.hostingBundle, name: "lxh_meigui")
+    /// Image `lxh_leiliumanmian`.
+    static let lxh_leiliumanmian = ImageResource(bundle: _R.hostingBundle, name: "lxh_leiliumanmian")
     /// Image `lxh_meigui.gif`.
     static let lxh_meiguiGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_meigui.gif")
+    /// Image `lxh_meigui`.
+    static let lxh_meigui = ImageResource(bundle: _R.hostingBundle, name: "lxh_meigui")
     /// Image `lxh_mobaile.gif`.
     static let lxh_mobaileGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_mobaile.gif")
-    /// Image `lxh_oye`.
-    static let lxh_oye = ImageResource(bundle: _R.hostingBundle, name: "lxh_oye")
     /// Image `lxh_oye.gif`.
     static let lxh_oyeGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_oye.gif")
+    /// Image `lxh_oye`.
+    static let lxh_oye = ImageResource(bundle: _R.hostingBundle, name: "lxh_oye")
     /// Image `lxh_paishou.gif`.
     static let lxh_paishouGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_paishou.gif")
-    /// Image `lxh_pili`.
-    static let lxh_pili = ImageResource(bundle: _R.hostingBundle, name: "lxh_pili")
     /// Image `lxh_pili.gif`.
     static let lxh_piliGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_pili.gif")
-    /// Image `lxh_qiaoqiao`.
-    static let lxh_qiaoqiao = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiaoqiao")
+    /// Image `lxh_pili`.
+    static let lxh_pili = ImageResource(bundle: _R.hostingBundle, name: "lxh_pili")
     /// Image `lxh_qiaoqiao.gif`.
     static let lxh_qiaoqiaoGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiaoqiao.gif")
-    /// Image `lxh_qiubite`.
-    static let lxh_qiubite = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiubite")
+    /// Image `lxh_qiaoqiao`.
+    static let lxh_qiaoqiao = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiaoqiao")
     /// Image `lxh_qiubite.gif`.
     static let lxh_qiubiteGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiubite.gif")
-    /// Image `lxh_qiuguanzhu`.
-    static let lxh_qiuguanzhu = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiuguanzhu")
+    /// Image `lxh_qiubite`.
+    static let lxh_qiubite = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiubite")
     /// Image `lxh_qiuguanzhu.gif`.
     static let lxh_qiuguanzhuGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiuguanzhu.gif")
-    /// Image `lxh_quntiweiguan`.
-    static let lxh_quntiweiguan = ImageResource(bundle: _R.hostingBundle, name: "lxh_quntiweiguan")
+    /// Image `lxh_qiuguanzhu`.
+    static let lxh_qiuguanzhu = ImageResource(bundle: _R.hostingBundle, name: "lxh_qiuguanzhu")
     /// Image `lxh_quntiweiguan.gif`.
     static let lxh_quntiweiguanGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_quntiweiguan.gif")
-    /// Image `lxh_shuaishuaishou`.
-    static let lxh_shuaishuaishou = ImageResource(bundle: _R.hostingBundle, name: "lxh_shuaishuaishou")
+    /// Image `lxh_quntiweiguan`.
+    static let lxh_quntiweiguan = ImageResource(bundle: _R.hostingBundle, name: "lxh_quntiweiguan")
     /// Image `lxh_shuaishuaishou.gif`.
     static let lxh_shuaishuaishouGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_shuaishuaishou.gif")
-    /// Image `lxh_toule`.
-    static let lxh_toule = ImageResource(bundle: _R.hostingBundle, name: "lxh_toule")
+    /// Image `lxh_shuaishuaishou`.
+    static let lxh_shuaishuaishou = ImageResource(bundle: _R.hostingBundle, name: "lxh_shuaishuaishou")
     /// Image `lxh_toule.gif`.
     static let lxh_touleGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_toule.gif")
-    /// Image `lxh_tuijian`.
-    static let lxh_tuijian = ImageResource(bundle: _R.hostingBundle, name: "lxh_tuijian")
+    /// Image `lxh_toule`.
+    static let lxh_toule = ImageResource(bundle: _R.hostingBundle, name: "lxh_toule")
     /// Image `lxh_tuijian.gif`.
     static let lxh_tuijianGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_tuijian.gif")
-    /// Image `lxh_xianghumobai`.
-    static let lxh_xianghumobai = ImageResource(bundle: _R.hostingBundle, name: "lxh_xianghumobai")
+    /// Image `lxh_tuijian`.
+    static let lxh_tuijian = ImageResource(bundle: _R.hostingBundle, name: "lxh_tuijian")
     /// Image `lxh_xianghumobai.gif`.
     static let lxh_xianghumobaiGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_xianghumobai.gif")
-    /// Image `lxh_xiangyixiang`.
-    static let lxh_xiangyixiang = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiangyixiang")
+    /// Image `lxh_xianghumobai`.
+    static let lxh_xianghumobai = ImageResource(bundle: _R.hostingBundle, name: "lxh_xianghumobai")
     /// Image `lxh_xiangyixiang.gif`.
     static let lxh_xiangyixiangGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiangyixiang.gif")
-    /// Image `lxh_xiaohaha`.
-    static let lxh_xiaohaha = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiaohaha")
+    /// Image `lxh_xiangyixiang`.
+    static let lxh_xiangyixiang = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiangyixiang")
     /// Image `lxh_xiaohaha.gif`.
     static let lxh_xiaohahaGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiaohaha.gif")
-    /// Image `lxh_xiudada`.
-    static let lxh_xiudada = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiudada")
+    /// Image `lxh_xiaohaha`.
+    static let lxh_xiaohaha = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiaohaha")
     /// Image `lxh_xiudada.gif`.
     static let lxh_xiudadaGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiudada.gif")
-    /// Image `lxh_xuyuan`.
-    static let lxh_xuyuan = ImageResource(bundle: _R.hostingBundle, name: "lxh_xuyuan")
+    /// Image `lxh_xiudada`.
+    static let lxh_xiudada = ImageResource(bundle: _R.hostingBundle, name: "lxh_xiudada")
     /// Image `lxh_xuyuan.gif`.
     static let lxh_xuyuanGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_xuyuan.gif")
-    /// Image `lxh_youyali`.
-    static let lxh_youyali = ImageResource(bundle: _R.hostingBundle, name: "lxh_youyali")
+    /// Image `lxh_xuyuan`.
+    static let lxh_xuyuan = ImageResource(bundle: _R.hostingBundle, name: "lxh_xuyuan")
     /// Image `lxh_youyali.gif`.
     static let lxh_youyaliGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_youyali.gif")
-    /// Image `lxh_zana`.
-    static let lxh_zana = ImageResource(bundle: _R.hostingBundle, name: "lxh_zana")
+    /// Image `lxh_youyali`.
+    static let lxh_youyali = ImageResource(bundle: _R.hostingBundle, name: "lxh_youyali")
     /// Image `lxh_zana.gif`.
     static let lxh_zanaGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_zana.gif")
-    /// Image `lxh_zaokuangzheng`.
-    static let lxh_zaokuangzheng = ImageResource(bundle: _R.hostingBundle, name: "lxh_zaokuangzheng")
+    /// Image `lxh_zana`.
+    static let lxh_zana = ImageResource(bundle: _R.hostingBundle, name: "lxh_zana")
     /// Image `lxh_zaokuangzheng.gif`.
     static let lxh_zaokuangzhengGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_zaokuangzheng.gif")
-    /// Image `lxh_zhenjing`.
-    static let lxh_zhenjing = ImageResource(bundle: _R.hostingBundle, name: "lxh_zhenjing")
+    /// Image `lxh_zaokuangzheng`.
+    static let lxh_zaokuangzheng = ImageResource(bundle: _R.hostingBundle, name: "lxh_zaokuangzheng")
     /// Image `lxh_zhenjing.gif`.
     static let lxh_zhenjingGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_zhenjing.gif")
-    /// Image `lxh_zhuanfa`.
-    static let lxh_zhuanfa = ImageResource(bundle: _R.hostingBundle, name: "lxh_zhuanfa")
+    /// Image `lxh_zhenjing`.
+    static let lxh_zhenjing = ImageResource(bundle: _R.hostingBundle, name: "lxh_zhenjing")
     /// Image `lxh_zhuanfa.gif`.
     static let lxh_zhuanfaGif = ImageResource(bundle: _R.hostingBundle, name: "lxh_zhuanfa.gif")
+    /// Image `lxh_zhuanfa`.
+    static let lxh_zhuanfa = ImageResource(bundle: _R.hostingBundle, name: "lxh_zhuanfa")
     /// Image `navigationbar_arrow_down`.
     static let navigationbar_arrow_down = ImageResource(bundle: _R.hostingBundle, name: "navigationbar_arrow_down")
     /// Image `navigationbar_arrow_up`.
     static let navigationbar_arrow_up = ImageResource(bundle: _R.hostingBundle, name: "navigationbar_arrow_up")
-    /// Image `navigationbar_friendattention`.
-    static let navigationbar_friendattention = ImageResource(bundle: _R.hostingBundle, name: "navigationbar_friendattention")
     /// Image `navigationbar_friendattention_highlighted`.
     static let navigationbar_friendattention_highlighted = ImageResource(bundle: _R.hostingBundle, name: "navigationbar_friendattention_highlighted")
-    /// Image `navigationbar_pop`.
-    static let navigationbar_pop = ImageResource(bundle: _R.hostingBundle, name: "navigationbar_pop")
+    /// Image `navigationbar_friendattention`.
+    static let navigationbar_friendattention = ImageResource(bundle: _R.hostingBundle, name: "navigationbar_friendattention")
     /// Image `navigationbar_pop_highlighted`.
     static let navigationbar_pop_highlighted = ImageResource(bundle: _R.hostingBundle, name: "navigationbar_pop_highlighted")
+    /// Image `navigationbar_pop`.
+    static let navigationbar_pop = ImageResource(bundle: _R.hostingBundle, name: "navigationbar_pop")
     /// Image `new_feature_1`.
     static let new_feature_1 = ImageResource(bundle: _R.hostingBundle, name: "new_feature_1")
     /// Image `new_feature_2`.
@@ -3101,14 +3101,14 @@ struct R: Rswift.Validatable {
     static let new_feature_3 = ImageResource(bundle: _R.hostingBundle, name: "new_feature_3")
     /// Image `new_feature_4`.
     static let new_feature_4 = ImageResource(bundle: _R.hostingBundle, name: "new_feature_4")
-    /// Image `new_feature_button`.
-    static let new_feature_button = ImageResource(bundle: _R.hostingBundle, name: "new_feature_button")
     /// Image `new_feature_button_highlighted`.
     static let new_feature_button_highlighted = ImageResource(bundle: _R.hostingBundle, name: "new_feature_button_highlighted")
-    /// Image `new_feature_finish_button`.
-    static let new_feature_finish_button = ImageResource(bundle: _R.hostingBundle, name: "new_feature_finish_button")
+    /// Image `new_feature_button`.
+    static let new_feature_button = ImageResource(bundle: _R.hostingBundle, name: "new_feature_button")
     /// Image `new_feature_finish_button_highlighted`.
     static let new_feature_finish_button_highlighted = ImageResource(bundle: _R.hostingBundle, name: "new_feature_finish_button_highlighted")
+    /// Image `new_feature_finish_button`.
+    static let new_feature_finish_button = ImageResource(bundle: _R.hostingBundle, name: "new_feature_finish_button")
     /// Image `new_feature_share_false`.
     static let new_feature_share_false = ImageResource(bundle: _R.hostingBundle, name: "new_feature_share_false")
     /// Image `new_feature_share_true`.
@@ -3137,18 +3137,18 @@ struct R: Rswift.Validatable {
     static let o_zhaoxiangji = ImageResource(bundle: _R.hostingBundle, name: "o_zhaoxiangji")
     /// Image `o_zhong`.
     static let o_zhong = ImageResource(bundle: _R.hostingBundle, name: "o_zhong")
-    /// Image `popover_background`.
-    static let popover_background = ImageResource(bundle: _R.hostingBundle, name: "popover_background")
     /// Image `popover_background_left`.
     static let popover_background_left = ImageResource(bundle: _R.hostingBundle, name: "popover_background_left")
     /// Image `popover_background_right`.
     static let popover_background_right = ImageResource(bundle: _R.hostingBundle, name: "popover_background_right")
-    /// Image `preview_like_icon`.
-    static let preview_like_icon = ImageResource(bundle: _R.hostingBundle, name: "preview_like_icon")
+    /// Image `popover_background`.
+    static let popover_background = ImageResource(bundle: _R.hostingBundle, name: "popover_background")
     /// Image `preview_like_icon_disable`.
     static let preview_like_icon_disable = ImageResource(bundle: _R.hostingBundle, name: "preview_like_icon_disable")
     /// Image `preview_like_icon_highlighted`.
     static let preview_like_icon_highlighted = ImageResource(bundle: _R.hostingBundle, name: "preview_like_icon_highlighted")
+    /// Image `preview_like_icon`.
+    static let preview_like_icon = ImageResource(bundle: _R.hostingBundle, name: "preview_like_icon")
     /// Image `qrcode_border`.
     static let qrcode_border = ImageResource(bundle: _R.hostingBundle, name: "qrcode_border")
     /// Image `qrcode_button_background`.
@@ -3163,14 +3163,14 @@ struct R: Rswift.Validatable {
     static let qrcode_scanline_qrcode = ImageResource(bundle: _R.hostingBundle, name: "qrcode_scanline_qrcode")
     /// Image `qrcode_tabbar_background`.
     static let qrcode_tabbar_background = ImageResource(bundle: _R.hostingBundle, name: "qrcode_tabbar_background")
-    /// Image `qrcode_tabbar_icon_barcode`.
-    static let qrcode_tabbar_icon_barcode = ImageResource(bundle: _R.hostingBundle, name: "qrcode_tabbar_icon_barcode")
     /// Image `qrcode_tabbar_icon_barcode_highlighted`.
     static let qrcode_tabbar_icon_barcode_highlighted = ImageResource(bundle: _R.hostingBundle, name: "qrcode_tabbar_icon_barcode_highlighted")
-    /// Image `qrcode_tabbar_icon_qrcode`.
-    static let qrcode_tabbar_icon_qrcode = ImageResource(bundle: _R.hostingBundle, name: "qrcode_tabbar_icon_qrcode")
+    /// Image `qrcode_tabbar_icon_barcode`.
+    static let qrcode_tabbar_icon_barcode = ImageResource(bundle: _R.hostingBundle, name: "qrcode_tabbar_icon_barcode")
     /// Image `qrcode_tabbar_icon_qrcode_highlighted`.
     static let qrcode_tabbar_icon_qrcode_highlighted = ImageResource(bundle: _R.hostingBundle, name: "qrcode_tabbar_icon_qrcode_highlighted")
+    /// Image `qrcode_tabbar_icon_qrcode`.
+    static let qrcode_tabbar_icon_qrcode = ImageResource(bundle: _R.hostingBundle, name: "qrcode_tabbar_icon_qrcode")
     /// Image `qrcode_tip_background`.
     static let qrcode_tip_background = ImageResource(bundle: _R.hostingBundle, name: "qrcode_tip_background")
     /// Image `tabbar_background`.
@@ -3183,16 +3183,16 @@ struct R: Rswift.Validatable {
     static let tabbar_compose_background_icon_return = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_background_icon_return")
     /// Image `tabbar_compose_below_background`.
     static let tabbar_compose_below_background = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_below_background")
-    /// Image `tabbar_compose_below_button`.
-    static let tabbar_compose_below_button = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_below_button")
     /// Image `tabbar_compose_below_button_highlighted`.
     static let tabbar_compose_below_button_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_below_button_highlighted")
+    /// Image `tabbar_compose_below_button`.
+    static let tabbar_compose_below_button = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_below_button")
     /// Image `tabbar_compose_book`.
     static let tabbar_compose_book = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_book")
-    /// Image `tabbar_compose_button`.
-    static let tabbar_compose_button = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_button")
     /// Image `tabbar_compose_button_highlighted`.
     static let tabbar_compose_button_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_button_highlighted")
+    /// Image `tabbar_compose_button`.
+    static let tabbar_compose_button = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_button")
     /// Image `tabbar_compose_camera`.
     static let tabbar_compose_camera = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_camera")
     /// Image `tabbar_compose_delete`.
@@ -3201,22 +3201,22 @@ struct R: Rswift.Validatable {
     static let tabbar_compose_envelope = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_envelope")
     /// Image `tabbar_compose_friend`.
     static let tabbar_compose_friend = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_friend")
-    /// Image `tabbar_compose_icon_add`.
-    static let tabbar_compose_icon_add = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_icon_add")
     /// Image `tabbar_compose_icon_add_highlighted`.
     static let tabbar_compose_icon_add_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_icon_add_highlighted")
+    /// Image `tabbar_compose_icon_add`.
+    static let tabbar_compose_icon_add = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_icon_add")
     /// Image `tabbar_compose_idea`.
     static let tabbar_compose_idea = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_idea")
     /// Image `tabbar_compose_lbs`.
     static let tabbar_compose_lbs = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_lbs")
-    /// Image `tabbar_compose_left_button`.
-    static let tabbar_compose_left_button = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_left_button")
     /// Image `tabbar_compose_left_button_highlighted`.
     static let tabbar_compose_left_button_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_left_button_highlighted")
-    /// Image `tabbar_compose_more`.
-    static let tabbar_compose_more = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_more")
+    /// Image `tabbar_compose_left_button`.
+    static let tabbar_compose_left_button = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_left_button")
     /// Image `tabbar_compose_more_mask`.
     static let tabbar_compose_more_mask = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_more_mask")
+    /// Image `tabbar_compose_more`.
+    static let tabbar_compose_more = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_more")
     /// Image `tabbar_compose_music`.
     static let tabbar_compose_music = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_music")
     /// Image `tabbar_compose_notloaded`.
@@ -3225,10 +3225,10 @@ struct R: Rswift.Validatable {
     static let tabbar_compose_photo = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_photo")
     /// Image `tabbar_compose_review`.
     static let tabbar_compose_review = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_review")
-    /// Image `tabbar_compose_right_button`.
-    static let tabbar_compose_right_button = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_right_button")
     /// Image `tabbar_compose_right_button_highlighted`.
     static let tabbar_compose_right_button_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_right_button_highlighted")
+    /// Image `tabbar_compose_right_button`.
+    static let tabbar_compose_right_button = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_right_button")
     /// Image `tabbar_compose_shooting`.
     static let tabbar_compose_shooting = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_shooting")
     /// Image `tabbar_compose_transfer`.
@@ -3241,22 +3241,22 @@ struct R: Rswift.Validatable {
     static let tabbar_compose_wbcamera = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_wbcamera")
     /// Image `tabbar_compose_weibo`.
     static let tabbar_compose_weibo = ImageResource(bundle: _R.hostingBundle, name: "tabbar_compose_weibo")
-    /// Image `tabbar_discover`.
-    static let tabbar_discover = ImageResource(bundle: _R.hostingBundle, name: "tabbar_discover")
     /// Image `tabbar_discover_highlighted`.
     static let tabbar_discover_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_discover_highlighted")
-    /// Image `tabbar_home`.
-    static let tabbar_home = ImageResource(bundle: _R.hostingBundle, name: "tabbar_home")
+    /// Image `tabbar_discover`.
+    static let tabbar_discover = ImageResource(bundle: _R.hostingBundle, name: "tabbar_discover")
     /// Image `tabbar_home_highlighted`.
     static let tabbar_home_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_home_highlighted")
-    /// Image `tabbar_message_center`.
-    static let tabbar_message_center = ImageResource(bundle: _R.hostingBundle, name: "tabbar_message_center")
+    /// Image `tabbar_home`.
+    static let tabbar_home = ImageResource(bundle: _R.hostingBundle, name: "tabbar_home")
     /// Image `tabbar_message_center_highlighted`.
     static let tabbar_message_center_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_message_center_highlighted")
-    /// Image `tabbar_profile`.
-    static let tabbar_profile = ImageResource(bundle: _R.hostingBundle, name: "tabbar_profile")
+    /// Image `tabbar_message_center`.
+    static let tabbar_message_center = ImageResource(bundle: _R.hostingBundle, name: "tabbar_message_center")
     /// Image `tabbar_profile_highlighted`.
     static let tabbar_profile_highlighted = ImageResource(bundle: _R.hostingBundle, name: "tabbar_profile_highlighted")
+    /// Image `tabbar_profile`.
+    static let tabbar_profile = ImageResource(bundle: _R.hostingBundle, name: "tabbar_profile")
     /// Image `tableview_loading`.
     static let tableview_loading = ImageResource(bundle: _R.hostingBundle, name: "tableview_loading")
     /// Image `tableview_pull_refresh`.
@@ -3265,10 +3265,10 @@ struct R: Rswift.Validatable {
     static let timeline_card_bottom_background = ImageResource(bundle: _R.hostingBundle, name: "timeline_card_bottom_background")
     /// Image `timeline_card_bottom_line_highlighted`.
     static let timeline_card_bottom_line_highlighted = ImageResource(bundle: _R.hostingBundle, name: "timeline_card_bottom_line_highlighted")
-    /// Image `timeline_card_middle_background`.
-    static let timeline_card_middle_background = ImageResource(bundle: _R.hostingBundle, name: "timeline_card_middle_background")
     /// Image `timeline_card_middle_background_highlighted`.
     static let timeline_card_middle_background_highlighted = ImageResource(bundle: _R.hostingBundle, name: "timeline_card_middle_background_highlighted")
+    /// Image `timeline_card_middle_background`.
+    static let timeline_card_middle_background = ImageResource(bundle: _R.hostingBundle, name: "timeline_card_middle_background")
     /// Image `timeline_icon_comment`.
     static let timeline_icon_comment = ImageResource(bundle: _R.hostingBundle, name: "timeline_icon_comment")
     /// Image `timeline_icon_like`.
@@ -4826,10 +4826,10 @@ struct R: Rswift.Validatable {
     static let forwardStatusCell: ReuseIdentifier<TTStatusTableViewCell> = ReuseIdentifier(identifier: "ForwardStatusCell")
     /// Reuse identifier `NewFeatureImageCell`.
     static let newFeatureImageCell: ReuseIdentifier<UIView> = ReuseIdentifier(identifier: "NewFeatureImageCell")
-    /// Reuse identifier `pictureCell`.
-    static let pictureCell: ReuseIdentifier<TTStatusPictureCell> = ReuseIdentifier(identifier: "pictureCell")
     /// Reuse identifier `StatusCell`.
     static let statusCell: ReuseIdentifier<TTStatusTableViewCell> = ReuseIdentifier(identifier: "StatusCell")
+    /// Reuse identifier `pictureCell`.
+    static let pictureCell: ReuseIdentifier<TTStatusPictureCell> = ReuseIdentifier(identifier: "pictureCell")
     
     private init() {}
   }
@@ -4989,8 +4989,8 @@ struct _R: Rswift.Validatable {
       let name = "Discover"
       
       static func validate() throws {
-        if UIImage(named: "tabbar_discover") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_discover' is used in storyboard 'Discover', but couldn't be loaded.") }
-        if UIImage(named: "tabbar_discover_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_discover_highlighted' is used in storyboard 'Discover', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_discover") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tabbar_discover' is used in storyboard 'Discover', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_discover_highlighted") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tabbar_discover_highlighted' is used in storyboard 'Discover', but couldn't be loaded.") }
       }
       
       private init() {}
@@ -5003,19 +5003,19 @@ struct _R: Rswift.Validatable {
       let name = "Home"
       
       static func validate() throws {
-        if UIImage(named: "tabbar_home") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_home' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "tabbar_home_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_home_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "avatar_vip") == nil { throw ValidationError(description: "[R.swift] Image named 'avatar_vip' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "avatar_default") == nil { throw ValidationError(description: "[R.swift] Image named 'avatar_default' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "timeline_icon_retweet") == nil { throw ValidationError(description: "[R.swift] Image named 'timeline_icon_retweet' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "timeline_card_bottom_background") == nil { throw ValidationError(description: "[R.swift] Image named 'timeline_card_bottom_background' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "timeline_icon_comment") == nil { throw ValidationError(description: "[R.swift] Image named 'timeline_icon_comment' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "navigationbar_friendattention_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'navigationbar_friendattention_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "navigationbar_pop") == nil { throw ValidationError(description: "[R.swift] Image named 'navigationbar_pop' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "timeline_icon_unlike") == nil { throw ValidationError(description: "[R.swift] Image named 'timeline_icon_unlike' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "navigationbar_friendattention") == nil { throw ValidationError(description: "[R.swift] Image named 'navigationbar_friendattention' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "common_icon_membership") == nil { throw ValidationError(description: "[R.swift] Image named 'common_icon_membership' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIImage(named: "navigationbar_pop_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'navigationbar_pop_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_home") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tabbar_home' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_home_highlighted") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tabbar_home_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "avatar_vip") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar_vip' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "avatar_default") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar_default' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "timeline_icon_retweet") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'timeline_icon_retweet' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "timeline_card_bottom_background") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'timeline_card_bottom_background' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "timeline_icon_comment") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'timeline_icon_comment' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "navigationbar_friendattention_highlighted") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'navigationbar_friendattention_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "navigationbar_pop") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'navigationbar_pop' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "timeline_icon_unlike") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'timeline_icon_unlike' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "navigationbar_friendattention") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'navigationbar_friendattention' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "common_icon_membership") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'common_icon_membership' is used in storyboard 'Home', but couldn't be loaded.") }
+        if UIImage(named: "navigationbar_pop_highlighted") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'navigationbar_pop_highlighted' is used in storyboard 'Home', but couldn't be loaded.") }
       }
       
       private init() {}
@@ -5046,8 +5046,8 @@ struct _R: Rswift.Validatable {
       let name = "Message"
       
       static func validate() throws {
-        if UIImage(named: "tabbar_message_center") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_message_center' is used in storyboard 'Message', but couldn't be loaded.") }
-        if UIImage(named: "tabbar_message_center_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_message_center_highlighted' is used in storyboard 'Message', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_message_center") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tabbar_message_center' is used in storyboard 'Message', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_message_center_highlighted") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tabbar_message_center_highlighted' is used in storyboard 'Message', but couldn't be loaded.") }
       }
       
       private init() {}
@@ -5087,7 +5087,7 @@ struct _R: Rswift.Validatable {
       let name = "Popover"
       
       static func validate() throws {
-        if UIImage(named: "popover_background") == nil { throw ValidationError(description: "[R.swift] Image named 'popover_background' is used in storyboard 'Popover', but couldn't be loaded.") }
+        if UIImage(named: "popover_background") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'popover_background' is used in storyboard 'Popover', but couldn't be loaded.") }
       }
       
       private init() {}
@@ -5100,8 +5100,8 @@ struct _R: Rswift.Validatable {
       let name = "Profile"
       
       static func validate() throws {
-        if UIImage(named: "tabbar_profile_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_profile_highlighted' is used in storyboard 'Profile', but couldn't be loaded.") }
-        if UIImage(named: "tabbar_profile") == nil { throw ValidationError(description: "[R.swift] Image named 'tabbar_profile' is used in storyboard 'Profile', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_profile_highlighted") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tabbar_profile_highlighted' is used in storyboard 'Profile', but couldn't be loaded.") }
+        if UIImage(named: "tabbar_profile") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tabbar_profile' is used in storyboard 'Profile', but couldn't be loaded.") }
       }
       
       private init() {}
@@ -5114,12 +5114,12 @@ struct _R: Rswift.Validatable {
       let name = "QRCode"
       
       static func validate() throws {
-        if UIImage(named: "qrcode_border") == nil { throw ValidationError(description: "[R.swift] Image named 'qrcode_border' is used in storyboard 'QRCode', but couldn't be loaded.") }
-        if UIImage(named: "qrcode_tabbar_icon_qrcode") == nil { throw ValidationError(description: "[R.swift] Image named 'qrcode_tabbar_icon_qrcode' is used in storyboard 'QRCode', but couldn't be loaded.") }
-        if UIImage(named: "qrcode_tabbar_icon_barcode") == nil { throw ValidationError(description: "[R.swift] Image named 'qrcode_tabbar_icon_barcode' is used in storyboard 'QRCode', but couldn't be loaded.") }
-        if UIImage(named: "qrcode_tabbar_icon_barcode_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'qrcode_tabbar_icon_barcode_highlighted' is used in storyboard 'QRCode', but couldn't be loaded.") }
-        if UIImage(named: "qrcode_scanline_barcode") == nil { throw ValidationError(description: "[R.swift] Image named 'qrcode_scanline_barcode' is used in storyboard 'QRCode', but couldn't be loaded.") }
-        if UIImage(named: "qrcode_tabbar_icon_qrcode_highlighted") == nil { throw ValidationError(description: "[R.swift] Image named 'qrcode_tabbar_icon_qrcode_highlighted' is used in storyboard 'QRCode', but couldn't be loaded.") }
+        if UIImage(named: "qrcode_border") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'qrcode_border' is used in storyboard 'QRCode', but couldn't be loaded.") }
+        if UIImage(named: "qrcode_tabbar_icon_qrcode") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'qrcode_tabbar_icon_qrcode' is used in storyboard 'QRCode', but couldn't be loaded.") }
+        if UIImage(named: "qrcode_tabbar_icon_barcode") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'qrcode_tabbar_icon_barcode' is used in storyboard 'QRCode', but couldn't be loaded.") }
+        if UIImage(named: "qrcode_tabbar_icon_barcode_highlighted") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'qrcode_tabbar_icon_barcode_highlighted' is used in storyboard 'QRCode', but couldn't be loaded.") }
+        if UIImage(named: "qrcode_scanline_barcode") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'qrcode_scanline_barcode' is used in storyboard 'QRCode', but couldn't be loaded.") }
+        if UIImage(named: "qrcode_tabbar_icon_qrcode_highlighted") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'qrcode_tabbar_icon_qrcode_highlighted' is used in storyboard 'QRCode', but couldn't be loaded.") }
       }
       
       private init() {}
@@ -5132,8 +5132,8 @@ struct _R: Rswift.Validatable {
       let name = "Welcome"
       
       static func validate() throws {
-        if UIImage(named: "avatar_default_big") == nil { throw ValidationError(description: "[R.swift] Image named 'avatar_default_big' is used in storyboard 'Welcome', but couldn't be loaded.") }
-        if UIImage(named: "ad_background") == nil { throw ValidationError(description: "[R.swift] Image named 'ad_background' is used in storyboard 'Welcome', but couldn't be loaded.") }
+        if UIImage(named: "avatar_default_big") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar_default_big' is used in storyboard 'Welcome', but couldn't be loaded.") }
+        if UIImage(named: "ad_background") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ad_background' is used in storyboard 'Welcome', but couldn't be loaded.") }
       }
       
       private init() {}
